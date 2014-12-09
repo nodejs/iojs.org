@@ -1,0 +1,28 @@
+{
+  "name": "iojs.github.io",
+  "version": "1.0.0",
+  "description": "Website - ISC Licensed",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iojs/iojs.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iojs/iojs.github.io/issues"
+  },
+  "homepage": "https://github.com/iojs/iojs.github.io",
+  "dependencies": {},
+  "devDependencies": {
+    "domready": "^1.0.7",
+    "lodash": "^2.4.1",
+    "moment": "^2.8.4",
+    "store": "^1.3.17",
+    "superagent": "^0.21.0",
+    "zepto-browserify": "^1.1.3-0"
+  }
+}
