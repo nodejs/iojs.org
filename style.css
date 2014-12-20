@@ -61,6 +61,7 @@ abbr {
 }
 .multi-button .button {
   margin: 10px 0;
+  border-right: 1px solid rgba(100, 100, 100, 0.08);
 }
 .multi-button .button:first-child {
   margin: 10px 0 10px 10px;
@@ -68,5 +69,6 @@ abbr {
 }
 .multi-button .button:last-child {
   margin: 10px 10px 10px 0;
+  border-right: none;
   border-radius: 0 3px 3px 0;
 }
