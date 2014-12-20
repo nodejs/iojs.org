@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,100 +10,112 @@
     <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
 
     <title>JavaScript I/O</title>
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
-
     <style>
-      html {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 1.4;
-        text-align: center;
-      }
-
-      body {
-        display: inline-block;
-        max-width: 600px;
-        margin: 5px 6px;
-      }
-
-      h1 {
-        font-size: 2em;
-      }
-
-      h2 {
-        font-size: 1.125em;
-        margin: 2.2em 0;
-      }
-
-      p {
-        font-size: 15px;
-        margin: .6em 0;
-      }
-
-      a {
-        text-decoration: none;
-        color: #455A64;
-        border-bottom: 1px solid #CFD8DC;
-      }
-      a:hover {
-        color: #607D8B;
-        border-bottom: 1px solid #607D8B;
-      }
-
-      abbr {
-        cursor: pointer;
-      }
-
-      .button {
-        border: none;
-        display: inline-block;
-        padding: 0.5em;
-        margin: 10px;
-        background-color: rgba(100, 100, 100, 0.06);
-        border-radius: 3px;
-      }
-      .button:hover {
-        border: none;
-        background-color: rgba(100, 100, 100, 0.1);
-      }
-      .logo{
-        margin-top:20px;
-      }
+        html {
+            font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", Arial, sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.4;
+            text-align: center;
+        }
+        .brand {
+            margin: 5px 10px;
+            color: #aaa;
+            text-align: left;
+        }
+        .heading {
+            font-size: 55px;
+            line-height: 175px;
+        }
+        body {
+            display: inline-block;
+            max-width: 700px;
+            margin: 5px 6px;
+            background: #111;
+            color: #eee;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.125em;
+            margin: 2.2em 0;
+        }
+        p {
+            font-size: 15px;
+            margin: .6em 0;
+        }
+        a {
+            text-decoration: none;
+            color: #eee;
+            border-bottom: 1px solid #eee;
+            transition: .3s all ease;
+        }
+        a:hover {
+            color: #aaa;
+            border-bottom: 1px solid #aaa;
+        }
+        .button {
+            border: solid 1px #eee;
+            display: inline-block;
+            padding: 1em;
+            margin: 10px;
+            background-color: transparent;
+            border-radius: 3px;
+            transition: .3s all ease;
+            color: #eee;
+        }
+        .large {
+            font-size: 20px;
+            margin: 15px !important;
+            padding: 1.3em;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #eee;
+            color: #333;
+        }
+        .logo {
+            margin-top: 20px;
+        }
+        .footer-nav {
+            border:solid 1px #eee;
+            border-radius: 3px;
+        }
+        .footer-nav .button {
+            border: none;
+            margin: 0;
+            border-radius: 0;
+        }
     </style>
 
-  </head>
+</head>
 
-  <body>
-    <h1>JavaScript I/O</h1>
-
+<body>
+    <h2 class='brand'>io.js</h2>
+    <h1 class='heading'>JavaScript I/O</h1>
     <h2>
-     <a href="https://github.com/iojs/io.js"><code>io.js</code></a> is a JavaScript platform that is compatible with <a href="https://nodejs.org">Node.js</a> &amp; <a href="https://www.npmjs.org/">npm</a>.
+     <a href="https://github.com/iojs/io.js">io.js</a> is a JavaScript platform that is compatible with <a href="https://nodejs.org">Node.js</a> &amp; <a href="https://www.npmjs.org/">npm</a>.
     </h2>
-
+    <a class='large button' href='https://github.com/iojs/io.js'>Coming soon...</a>
     <p>
-      <code>io.js</code> contributions, releases, and contributorship are under an <a href="https://github.com/iojs/io.js/blob/v0.12/CONTRIBUTING.md#governance">open governance</a> model.
+        The initial 1.0.0-alpha.1 release <a href="https://github.com/iojs/io.js/issues/28">is planned</a> for January 13, 2015.
     </p>
     <p>
-      The initial 1.0.0-alpha.1 release <a href="https://github.com/iojs/io.js/issues/28">is planned</a> for January 13, 2015.
+        <code>io.js</code> contributions, releases, and contributorship are under an <a href="https://github.com/iojs/io.js/blob/v0.12/CONTRIBUTING.md#governance">open governance</a> model.
     </p>
 
-    <a class="button" href="faq.html">
+    <div class='footer-nav'>
+        <a class="button" href="faq.html">
       FAQ
-    </a>
-    <a class="button" target="_blank" href="https://github.com/iojs/io.js/issues">
+    </a><a class="button" target="_blank" href="https://github.com/iojs/io.js/issues">
       Github Issues
-    </a>
-    <a class="button" target="_blank" href="http://logs.libuv.org/io.js/latest">
+    </a><a class="button" target="_blank" href="http://logs.libuv.org/io.js/latest">
       IRC logs
+    </a><a class="button" href="https://github.com/iojs">
+      Github Org
     </a>
-    <br/>
-    <a class="button" href="https://github.com/iojs">
-      There is a Github Org.
-      </br>
-      That's your kind of thing, right?
-    </a>
-  </body>
+    </div>
+</body>
+
 </html>
