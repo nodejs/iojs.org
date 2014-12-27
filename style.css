@@ -1,74 +1,79 @@
 html {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: center;
+    font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
 }
-
+.brand {
+    margin: 5px 10px;
+    color: #aaa;
+    text-align: left;
+}
+.heading {
+    font-size: 55px;
+    line-height: 175px;
+}
 body {
-  display: inline-block;
-  max-width: 600px;
-  margin: 5px 6px;
+    display: inline-block;
+    max-width: 700px;
+    margin: 5px 6px;
+    background: #111;
+    color: #eee;
 }
-
 h1 {
-  font-size: 2em;
+    font-size: 2em;
 }
-
 h2 {
-  font-size: 1.125em;
-  margin: 2.2em 0;
+    font-size: 1.125em;
+    margin: 2.2em 0;
 }
-
 p {
-  font-size: 15px;
-  margin: .6em 0;
+    font-size: 15px;
+    margin: .6em 0;
 }
-
 a {
-  text-decoration: none;
-  color: #455A64;
-  border-bottom: 1px solid #CFD8DC;
+    text-decoration: none;
+    color: #eee;
+    border-bottom: 1px solid #eee;
+    transition: .3s all ease;
 }
 a:hover {
-  color: #607D8B;
-  border-bottom: 1px solid #607D8B;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
 }
-
-abbr {
-  cursor: pointer;
-}
-
 .button {
-  border: none;
-  display: inline-block;
-  padding: 0.5em;
-  margin: 10px;
-  background-color: rgba(100, 100, 100, 0.06);
-  border-radius: 3px;
+    border: solid 1px #eee;
+    display: inline-block;
+    padding: 1em;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 3px;
+    transition: .3s all ease;
+    color: #eee;
+}
+.large {
+    font-size: 20px;
+    margin: 15px !important;
+    padding: 1.3em;
+    border-radius: 5px;
 }
 .button:hover {
-  border: none;
-  background-color: rgba(100, 100, 100, 0.1);
+    background-color: #eee;
+    color: #333;
 }
-.logo {
-  margin-top:20px;
-}
-
 .multi-button {
-  display: inline-block
+    display: inline-block
 }
 .multi-button .button {
-  margin: 10px 0;
-  border-right: 1px solid rgba(100, 100, 100, 0.08);
+    margin: 0;
+    border-left: none;
 }
 .multi-button .button:first-child {
-  margin: 10px 0 10px 10px;
-  border-radius: 3px 0 0 3px;
+    margin: 0;
+    border-radius: 3px 0 0 3px;
+    border: solid 1px #eee;
 }
 .multi-button .button:last-child {
-  margin: 10px 10px 10px 0;
-  border-right: none;
-  border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
 }
