@@ -11,15 +11,6 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.brand {
-    margin: 5px 10px;
-    color: #aaa;
-    text-align: left;
-}
-.heading {
-    font-size: 55px;
-    line-height: 175px;
-}
 body {
     display: inline-block;
     max-width: 700px;
@@ -96,4 +87,16 @@ a:hover {
 }
 .faq-body {
     margin:1em;
+}
+.brand {
+    margin: 5px 10px;
+    text-align: left;
+}
+.brand a {
+    border-bottom: none;
+    color: #aaa;
+}
+.heading {
+    font-size: 55px;
+    line-height: 175px;
 }
