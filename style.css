@@ -1,9 +1,15 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
 html {
     font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", Arial, sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.4;
     text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .brand {
     margin: 5px 10px;
@@ -52,7 +58,7 @@ a:hover {
     transition: .3s all ease;
     color: #eee;
 }
-.large {
+.button-large {
     font-size: 20px;
     margin: 15px !important;
     padding: 1.3em;
