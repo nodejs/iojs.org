@@ -31,13 +31,13 @@ p {
 }
 a {
     text-decoration: none;
-    color: #2F2E2C;
-    border-bottom: 1px solid #2F2E2C;
+    color: #D3C132;
+    border-bottom: 1px solid #F8E233;
     transition: .3s all ease;
 }
 a:hover {
-    color: #aaa;
-    border-bottom: 1px solid #aaa;
+    color: #F7E133;
+    border-bottom: 1px solid #F8E233;
 }
 .button {
     border: solid 1px #2F2E2C;
@@ -87,6 +87,7 @@ a:hover {
 }
 .faq-body {
     margin:1em;
+    text-align:left;
 }
 .brand {
     margin: 5px 10px;
@@ -143,4 +144,8 @@ div.release-mac {
   float:left;
   margin: 0 0 0 0;
   padding: 1em;
+}
+
+div.description {
+  text-align:left;
 }
