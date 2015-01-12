@@ -15,15 +15,15 @@ body {
     display: inline-block;
     max-width: 700px;
     margin: 5px 6px;
-    background: #111;
-    color: #eee;
+    background: white;
+    color: #2F2E2C;
 }
 h1 {
     font-size: 2em;
 }
 h2 {
     font-size: 1.125em;
-    margin: 2.2em 0;
+    margin: 1em 0;
 }
 p {
     font-size: 15px;
@@ -31,8 +31,8 @@ p {
 }
 a {
     text-decoration: none;
-    color: #eee;
-    border-bottom: 1px solid #eee;
+    color: #2F2E2C;
+    border-bottom: 1px solid #2F2E2C;
     transition: .3s all ease;
 }
 a:hover {
@@ -40,14 +40,14 @@ a:hover {
     border-bottom: 1px solid #aaa;
 }
 .button {
-    border: solid 1px #eee;
+    border: solid 1px #2F2E2C;
     display: inline-block;
     padding: 1em;
     margin: 10px;
     background-color: transparent;
     border-radius: 3px;
     transition: .3s all ease;
-    color: #eee;
+    color: #2F2E2C;
 }
 .button-large {
     font-size: 20px;
@@ -56,7 +56,7 @@ a:hover {
     border-radius: 5px;
 }
 .button:hover {
-    background-color: #eee;
+    background-color: #2F2E2C;
     color: #333;
 }
 .multi-button {
@@ -69,21 +69,21 @@ a:hover {
 .multi-button .button:first-child {
     margin: 0;
     border-radius: 3px 0 0 3px;
-    border: solid 1px #eee;
+    border: solid 1px #2F2E2C;
 }
 .multi-button .button:last-child {
     border-radius: 0 3px 3px 0;
 }
 .faq-item {
     border-radius: 3px;
-    border:solid 1px #eee;
+    border:solid 1px #2F2E2C;
     margin:20px;
 }
 .faq-title {
     margin:0;
     line-height:3em;
-    background: #eee;
-    color:#333;
+    background: #2F2E2C;
+    color:white;
 }
 .faq-body {
     margin:1em;
@@ -99,4 +99,48 @@ a:hover {
 .heading {
     font-size: 55px;
     line-height: 175px;
+}
+
+/*releases*/
+
+div.release {
+  /*border: solid 1px #2F2E2C;*/
+  display: inline-block;
+  padding: 0 0 0 0;
+  margin: 10px;
+  background-color: transparent;
+  border-radius: 3px;
+  transition: .3s all ease;
+  color: #2F2E2C;
+  font-weight:bold;
+}
+div.release-stability {
+  float:left;
+  padding: 1em;
+  border-right: solid 1px #2F2E2C;
+  border-left: solid 1px #2F2E2C;
+}
+div.release-date {
+  float:left;
+  padding: 1em;
+  border-right: solid 1px #2F2E2C;
+}
+div.release-logo {
+  float:left;
+  padding-right:1em;
+}
+div.release-source {
+  float:left;
+  padding: 1em;
+  border-right: solid 1px #2F2E2C;
+}
+div.release-windows {
+  float:left;
+  padding: 1em;
+  border-right: solid 1px #2F2E2C;
+}
+div.release-mac {
+  float:left;
+  margin: 0 0 0 0;
+  padding: 1em;
 }
