@@ -125,6 +125,7 @@ ul {
 }
 
 .release-version {
+  display: block;
   font-size: 1.4rem;
   font-weight: 700;
   color: black;
@@ -174,6 +175,17 @@ p.lead {
   text-align:center;
 }
 
+@media (max-width: 560px) {
+  nav a {
+    line-height: 3;
+    display: block;
+    border: none;
+  }
+  .release-version em {
+    display: block;
+  }
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: 2rem;
@@ -187,17 +199,30 @@ p.lead {
     margin-top: 20px;
   }
 
-  nav a {
-    line-height: 3;
-    display: block;
-    border: none;
-  }
-
   header .content {
     padding: 0;
   }
 
   header a {
     padding-left: 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .release-logo-link {
+    display: block;
+    text-align: center;
+  }
+  .release-logo {
+    position: relative;
+    top: initial;
+    left: initial;
+  }
+  .release-version {
+    text-align: center;
+  }
+  .release-details {
+    padding-left: initial;
+    padding-top: initial;
   }
 }
