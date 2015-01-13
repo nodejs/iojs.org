@@ -79,9 +79,9 @@
       <div class="faq-body">
         <ul class="task-list">
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">Classes</a> (strict mode only)</li>
-          <li><a href="http://wiki.ecmascript.org/doku.php?id=harmony:object_literals">Object literal extensions</a></li>
-          <li>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (user-definable results for <code>Object.prototype.toString</code>)</li>
+          <li><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal extensions</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (user-definable results for <code>Object.prototype.toString</code>)</li>
+          <li><a href="https://github.com/lukehoban/es6features#arrows"><code>Arrow Functions</code></a></li>
         </ul>
       </div>
     </div>
@@ -103,20 +103,10 @@
       </h2>
       <div class="faq-body">
         <p>io.js provides a simple way to list all dependencies and respective versions that ship with a specific binary through the <code>process</code> global object. In case of the V8 engine, type the following in your terminal to retrieve its version:</p>
-        <div class="highlight highlight-sh"><pre>iojs -e <span class="pl-s1"><span class="pl-pds">'</span>console.log(process.versions.v8)<span class="pl-pds">'</span></span></pre></div>
+        <div class="highlight highlight-sh"><pre>iojs -p process.versions.v8</span></pre></div>
 
         <p>E.g. output: <code>3.31.71.4</code>.</p>
 
-      </div>
-    </div>
-
-    <div class="faq-item">
-
-      <h2 class="faq-title">
-         How frequently do you plan on updating V8?
-      </h2>
-      <div class="faq-body">
-        <p>A formal plan has not been discussed yet but the TC is looking into regular updates, especially if there are no breaking changes from V8's API.</p>
       </div>
     </div>
 
