@@ -18,27 +18,40 @@ body {
   text-align: center;
 }
 
-header {
-  background: #292829;
-  padding: 20px;
-}
-
-header a {
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-header a:hover {
-  color: #F7DF31;
-}
-
-#content {
+.content {
   position: relative;
   max-width: 640px;
   padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
+}
+
+header {
+  background: #292829;
+  padding: 20px;
+}
+
+header .content {
+  display: -webkit-flex;
+  display: flex;
+}
+
+header a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 1rem;
+  padding-left: 1.5rem;
+}
+header a.logo {
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: left;
+  padding: 0;
+}
+
+header a:hover {
+  color: #F7DF31;
 }
 
 h1 {
@@ -172,5 +185,13 @@ p.lead {
     line-height: 3;
     display: block;
     border: none;
+  }
+
+  header .content {
+    padding: 0;
+  }
+
+  header a {
+    padding-left: 1rem;
   }
 }
