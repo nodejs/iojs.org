@@ -78,6 +78,10 @@ p a:hover {
   text-decoration: none;
 }
 
+ul {
+  text-align: left;
+}
+
 .release {
   position: relative;
   background: #EEE;
