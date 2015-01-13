@@ -209,6 +209,10 @@ p.lead {
 }
 
 @media (max-width: 410px) {
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .release-logo-link {
     display: block;
     text-align: center;
