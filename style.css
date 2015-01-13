@@ -151,6 +151,10 @@ nav a:hover {
   border-radius: 3px;
 }
 
+p.lead {
+  text-align:center;
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: 2rem;
