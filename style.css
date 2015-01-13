@@ -23,13 +23,13 @@ header {
   padding: 20px;
 }
 
-a.logo {
+header a {
   color: rgba(255, 255, 255, 0.4);
   font-weight: 700;
   font-size: 1rem;
 }
 
-a.logo:hover {
+header a:hover {
   color: #F7DF31;
 }
 
@@ -71,6 +71,7 @@ p a {
   padding-right: 2px;
   margin-left: -2px;
   margin-right: -2px;
+  border-radius: 2px;
 }
 
 p a:hover {
@@ -136,11 +137,11 @@ nav a {
   line-height: 2.2;
   padding: 0 15px;
   margin: 0;
-  border-right: 1px solid #DDD;
+  border-left: 1px solid #DDD;
   transition: all 0.2s;
 }
 
-nav a:last-child, nav:hover a {
+nav a:first-child, nav a:hover, nav a:hover + a {
   border-color: transparent;
 }
 
