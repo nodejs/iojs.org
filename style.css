@@ -35,14 +35,22 @@ a.logo:hover {
 }
 
 #content {
-  position-relative;
+  position: relative;
   max-width: 600px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin: 0 auto;
 }
 
 h1 {
   color: black;
   font-size: 3rem;
+}
+
+h2 {
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 3rem;
 }
 
 p {
@@ -94,4 +102,26 @@ nav a:hover {
   background: #F7DF31;
   color: #292829;
   border-radius: 3px;
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    line-height: 1.6;
+    /* text-align: left; */
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav a {
+    line-height: 3;
+    display: block;
+    border: none;
+  }
 }
