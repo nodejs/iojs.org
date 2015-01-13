@@ -36,18 +36,24 @@ header .content {
   display: flex;
 }
 
-header a {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 700;
-  font-size: 1rem;
-  padding-left: 1.5rem;
-}
-header a.logo {
-  color: rgba(255, 255, 255, 0.5);
+header .spacer {
   -webkit-flex: 1;
   flex: 1;
-  text-align: left;
-  padding: 0;
+}
+
+header a {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0 0.7rem;
+}
+
+header a:first-child {
+  padding-left: 0;
+}
+
+header a:last-child {
+  padding-right: 0;
 }
 
 header a:hover {
