@@ -31,13 +31,13 @@ p {
 }
 a {
     text-decoration: none;
-    color: #D3C132;
-    border-bottom: 1px solid #F8E233;
+    color: #FE7110;
+    border-bottom: 1px solid #FE7110;
     transition: .3s all ease;
 }
 a:hover {
-    color: #F7E133;
-    border-bottom: 1px solid #F8E233;
+    color: #FFA158;
+    /*border-bottom: 1px solid #FFA158;*/
 }
 .button {
     border: solid 1px #2F2E2C;
@@ -57,7 +57,9 @@ a:hover {
 }
 .button:hover {
     background-color: #2F2E2C;
-    color: #FFFFFF;
+    color: #FADF3F;
+    /*color: #FE7110;*/
+    /*color: #FE5210;*/
 }
 .multi-button {
     display: inline-block
@@ -83,7 +85,7 @@ a:hover {
     margin:0;
     line-height:3em;
     background: #2F2E2C;
-    color:white;
+    color: #FADF3F;
 }
 .faq-body {
     margin:1em;
@@ -104,48 +106,51 @@ a:hover {
 
 /*releases*/
 
-div.release {
+.release {
   /*border: solid 1px #2F2E2C;*/
-  display: inline-block;
+  display: block;
+  text-align: center;
   padding: 0 0 0 0;
-  margin: 10px;
+  margin: 26px 10px;
   background-color: transparent;
   border-radius: 3px;
   transition: .3s all ease;
   color: #2F2E2C;
   font-weight:bold;
 }
-div.release-stability {
-  float:left;
+.release > * {
+  display: inline-block;
+  vertical-align: middle;
+  border-left: solid 1px #757575;
+}
+.release > *:first-child {
+  border-left: none;
+}
+.release-stability {
+  /*float:left;*/
   padding: 1em;
-  border-right: solid 1px #2F2E2C;
-  border-left: solid 1px #2F2E2C;
 }
-div.release-date {
-  float:left;
+.release-date {
+  /*float:left;*/
   padding: 1em;
-  border-right: solid 1px #2F2E2C;
 }
-div.release-logo {
-  float:left;
-  padding-right:1em;
+.release-logo {
+  margin-right: 1em;
 }
-div.release-source {
-  float:left;
+.release-source {
+  /*float:left;*/
   padding: 1em;
-  border-right: solid 1px #2F2E2C;
 }
-div.release-windows {
-  float:left;
+.release-windows {
+  /*float:left;*/
   padding: 1em;
-  border-right: solid 1px #2F2E2C;
 }
-div.release-mac {
-  float:left;
+.release-mac {
+  /*float:left;*/
   margin: 0 0 0 0;
   padding: 1em;
 }
 
-div.description {
+.description {
   text-align:left;
 }
