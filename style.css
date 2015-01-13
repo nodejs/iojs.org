@@ -21,7 +21,6 @@ body {
 header {
   background: #292829;
   padding: 20px;
-
 }
 
 a.logo {
@@ -36,7 +35,7 @@ a.logo:hover {
 
 #content {
   position: relative;
-  max-width: 600px;
+  max-width: 640px;
   padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
@@ -55,7 +54,7 @@ h2 {
 
 p {
   font-size: 1rem;
-  line-height: 1.9;
+  line-height: 1.8;
   margin: 0.5rem 0;
   font-weight: 400;
   text-align: justify;
@@ -79,6 +78,49 @@ p a:hover {
   text-decoration: none;
 }
 
+.release {
+  position: relative;
+  background: #EEE;
+  border-radius: 4px;
+  margin: 40px 0;
+  padding: 20px;
+  min-height: 160px;
+}
+
+.release-logo {
+  position: absolute;
+  top: 20px;
+  left: 26px;
+  height: 120px;
+}
+
+.release-details {
+  padding-left: 150px;
+  padding-top: 24px;
+  text-align: left;
+}
+
+.release-version {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: black;
+}
+
+.release-version em {
+  color: rgba(0, 0, 0, 0.5);
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.release-downloads {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+.release-downloads a:hover {
+  text-decoration: underline;
+}
+
 nav {
   font-size: 0.9rem;
   margin: 70px 0 30px 0;
@@ -88,7 +130,7 @@ nav {
 nav a {
   display: inline-block;
   line-height: 2.2;
-  padding: 0 20px;
+  padding: 0 15px;
   margin: 0;
   border-right: 1px solid #DDD;
   transition: all 0.2s;
@@ -104,7 +146,6 @@ nav a:hover {
   border-radius: 3px;
 }
 
-
 @media (max-width: 480px) {
   h1 {
     font-size: 2rem;
@@ -112,13 +153,12 @@ nav a:hover {
 
   p {
     line-height: 1.6;
-    /* text-align: left; */
   }
 
   nav {
     margin-top: 20px;
   }
-  
+
   nav a {
     line-height: 3;
     display: block;
