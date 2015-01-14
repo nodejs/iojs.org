@@ -131,6 +131,15 @@ ul {
   color: black;
 }
 
+.release-changelog {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.release-changelog a {
+  text-decoration: underline;
+}
+
 .release-version em {
   color: rgba(0, 0, 0, 0.5);
   font-style: normal;
@@ -173,6 +182,10 @@ nav a:hover {
 
 p.lead {
   text-align:center;
+}
+
+p.small {
+  font-size: 12px;
 }
 
 @media (max-width: 560px) {
@@ -224,6 +237,10 @@ p.lead {
   }
   .release-version {
     text-align: center;
+  }
+  .release-changelog {
+    text-align: center;
+    font-size: 0.7rem;
   }
   .release-details {
     padding-left: initial;
