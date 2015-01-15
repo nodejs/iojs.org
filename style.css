@@ -84,8 +84,11 @@ a {
   color: #000;
 }
 
-p a {
+p a,
+.faq-item a {
   text-decoration: underline;
+}
+p a {
   padding-left: 2px;
   padding-right: 2px;
   margin-left: -2px;
@@ -93,6 +96,7 @@ p a {
   border-radius: 2px;
 }
 
+.faq-item a:hover,
 p a:hover {
   background: #F7DF31;
   text-decoration: none;
