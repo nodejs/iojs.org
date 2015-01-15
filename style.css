@@ -84,8 +84,11 @@ a {
   color: #000;
 }
 
-p a {
+p a,
+.faq-item a {
   text-decoration: underline;
+}
+p a {
   padding-left: 2px;
   padding-right: 2px;
   margin-left: -2px;
@@ -93,6 +96,7 @@ p a {
   border-radius: 2px;
 }
 
+.faq-item a:hover,
 p a:hover {
   background: #F7DF31;
   text-decoration: none;
@@ -143,6 +147,15 @@ ul {
 
 .release-details a:hover {
   text-decoration: underline;
+}
+
+.note {
+  background-color: #FAFAD2;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  font-size: 0.9rem;
 }
 
 nav {
