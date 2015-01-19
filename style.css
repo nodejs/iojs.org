@@ -26,37 +26,29 @@ body {
   margin: 0 auto;
 }
 
-header {
+/* utility classes*/
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.header {
   background: #292829;
   padding: 20px;
+  height: 67px;
 }
 
-header .content {
-  display: -webkit-flex;
-  display: flex;
-}
-
-header .spacer {
-  -webkit-flex: 1;
-  flex: 1;
-}
-
-header a {
-  color: rgba(255, 255, 255, 0.5);
+.header a {
+  color: #939393;
   font-weight: 700;
   font-size: 1rem;
-  padding: 0 0.7rem;
+  padding: 0 12px;
 }
 
-header a:first-child {
-  padding-left: 0;
-}
-
-header a:last-child {
-  padding-right: 0;
-}
-
-header a:hover {
+.header a:hover {
   color: #F7DF31;
 }
 
@@ -158,13 +150,13 @@ ul {
   font-size: 0.9rem;
 }
 
-nav {
+.nav {
   font-size: 0.9rem;
   margin: 70px 0 30px 0;
   transition: all 0.2s;
 }
 
-nav a {
+.nav a {
   display: inline-block;
   line-height: 2.2;
   padding: 0 15px;
@@ -173,22 +165,26 @@ nav a {
   transition: all 0.2s;
 }
 
-nav a:first-child, nav a:hover, nav a:hover + a {
+.nav a:first-child, .nav a:hover, .nav a:hover + a {
   border-color: transparent;
 }
 
-nav a:hover {
+.nav a:hover {
   background: #F7DF31;
   color: #292829;
   border-radius: 3px;
 }
 
 p.lead {
-  text-align:center;
+  text-align: center;
+}
+
+.release-logo {
+  border: none;
 }
 
 @media (max-width: 560px) {
-  nav a {
+  .nav a {
     line-height: 3;
     display: block;
     border: none;
@@ -207,15 +203,15 @@ p.lead {
     line-height: 1.6;
   }
 
-  nav {
+  .nav {
     margin-top: 20px;
   }
 
-  header .content {
+  .header .content {
     padding: 0;
   }
 
-  header a {
+  .header a {
     padding-left: 1rem;
   }
 }
