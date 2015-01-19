@@ -96,7 +96,7 @@ Items are added to the WG agenda which are considered contentious or
 are modifications of governance, contribution policy, WG membership,
 or release process.
 
-The intention of the agenda is not to approve or review all paWGhes,
+The intention of the agenda is not to approve or review all patches,
 that should happen continuously on GitHub and be handled by the larger
 group of Collaborators.
 
