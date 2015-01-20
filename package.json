@@ -1,0 +1,44 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "The website build for iojs.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iojs/website.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iojs/website/issues"
+  },
+  "homepage": "https://github.com/iojs/website",
+  "contributors": [
+    {
+      "name": "Trent Oswald",
+      "github": "therebelrobot",
+      "email": "trentoswald@therebelrobot.com"
+    },
+    {
+      "name": "Mikeal Rogers",
+      "github": "mikeal"
+    },
+    {
+      "name": "Jeremiah Senkpiel",
+      "github": "Fishrock123"
+    },
+    {
+      "name": "Charlie Robbins",
+      "github": "indexzero"
+    },
+    {
+      "name": "Sean Ouimet",
+      "github": "snostorm"
+    },
+    {
+      "name": "Zeke Sikelianos",
+      "github": "zeke"
+    }
+  ],
+  "dependencies": {
+    "gulp": "^3.8.10"
+  }
+}
