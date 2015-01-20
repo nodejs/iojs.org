@@ -41,9 +41,13 @@
   "dependencies": {
     "browserify": "^8.1.1",
     "gulp": "^3.8.10",
+    "gulp-changed": "^1.1.0",
+    "gulp-filesize": "0.0.6",
     "gulp-htmlmin": "^1.0.0",
+    "gulp-imagemin": "^2.1.0",
     "gulp-less": "^2.0.1",
     "gulp-markdown": "^1.0.0",
-    "gulp-minify-css": "^0.3.13"
+    "gulp-minify-css": "^0.3.13",
+    "require-dir": "^0.1.0"
   }
 }
