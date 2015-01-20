@@ -39,6 +39,11 @@
     }
   ],
   "dependencies": {
-    "gulp": "^3.8.10"
+    "browserify": "^8.1.1",
+    "gulp": "^3.8.10",
+    "gulp-htmlmin": "^1.0.0",
+    "gulp-less": "^2.0.1",
+    "gulp-markdown": "^1.0.0",
+    "gulp-minify-css": "^0.3.13"
   }
 }
