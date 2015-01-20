@@ -1,0 +1,138 @@
+*, *:before, *:after
+  box-sizing border-box
+  -webkit-tap-highlight-color transparent
+
+html
+  font-family 'Lato', sans-serif
+  font-size 18px
+  line-height 1.5
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+body
+  color #666
+  margin 0
+  padding 0
+  text-align center
+
+a
+  text-decoration none
+  color #000
+
+.content
+  position relative
+  max-width 640px
+  padding-left 25px
+  padding-right 25px
+  margin 0 auto
+
+header
+  background #292829
+  padding 20px
+
+  .content
+    display flex
+
+  .spacer
+    flex 1
+
+  a
+    color rgba(255, 255, 255, 0.5)
+    font-weight 700
+    font-size 1rem
+    padding 0 0.7rem
+
+    &:first-child
+      padding-left 0
+
+    &:last-child
+      padding-right 0
+
+    &:hover
+      color #F7DF31
+
+h1
+  color black
+  font-size 3rem
+
+h2
+  color black
+  font-size 1.4rem
+  margin-top 3rem
+
+p
+  font-size 1rem
+  line-height 1.8
+  margin 0.5rem 0
+  font-weight 400
+  text-align justify
+
+  a
+    padding-left 2px
+    padding-right 2px
+    margin-left -2px
+    margin-right -2px
+    border-radius 2px
+
+p a,
+.faq-item a
+  text-decoration underline
+
+
+.faq-item a:hover,
+p a:hover
+  background #F7DF31
+  text-decoration none
+
+ul
+  text-align left
+  p
+    text-align left
+.clearfix:after
+  content ""
+  display table
+  clear both
+.content[i18n-content]
+  display block
+  width 100%
+  margin auto
+  ul > li > ul > li > p
+    margin 0
+    line-height 0.7rem
+.footer
+  display block
+  float left
+  width 100%
+blockquote
+  background-color #FAFAD2
+  padding 5px
+  padding-left 20px
+  padding-right 20px
+  margin 10px
+  p
+    font-size 0.9rem
+    line-height 1.2rem
+
+nav
+  font-size 0.9rem
+  margin 70px 0 30px 0
+  transition all 0.2s
+
+  a
+    display inline-block
+    line-height 2.2
+    padding 0 15px
+    margin 0
+    border-left 1px solid #DDD
+    transition all 0.2s
+
+    &:first-child, &:hover, &:hover + a
+      border-color transparent
+
+    &:hover
+      background #F7DF31
+      color #292829
+      border-radius 3px
+
+p.lead
+  text-align center
