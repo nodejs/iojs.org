@@ -11,13 +11,20 @@ module.exports = {
     }
   },
   templates: {
-    src: src + "/templates/**",
+    src: src + "/templates/**/*.md",
     content: content,
     dest: dest
   },
   images:{
     src: dest + "/img/**",
     dest: dest + "/img"
+  },
+  del:{
+    files: [
+      "public/index.html",
+      "public/**/*.js",
+      "public/**/*.css"
+    ]
   },
   stylSrc: dest + '/*.styl'
   cssSrc: dest + '/*.css',

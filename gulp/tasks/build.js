@@ -1,3 +1,8 @@
 var gulp = require('gulp');
+var runSequence = require('run-sequence');
 
-gulp.task('build', ['clean', 'stylus', 'templates', 'minifyCss', 'minifyHtml']);
+gulp.task('build', function(cb){
+  runSequence('clean',
+    ['stylus', 'templates', 'minifyCss', 'minifyHtml'],
+    cb);
+});

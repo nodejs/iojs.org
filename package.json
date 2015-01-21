@@ -42,6 +42,7 @@
     "autoprefixer-core": "^5.0.0",
     "browserify": "^8.1.1",
     "csswring": "^3.0.0",
+    "del": "^1.1.1",
     "gulp": "^3.8.10",
     "gulp-changed": "^1.1.0",
     "gulp-filesize": "0.0.6",
@@ -50,6 +51,7 @@
     "gulp-less": "^2.0.1",
     "gulp-markdown": "^1.0.0",
     "gulp-postcss": "^4.0.0",
-    "require-dir": "^0.1.0"
+    "require-dir": "^0.1.0",
+    "run-sequence": "^1.0.2"
   }
 }
