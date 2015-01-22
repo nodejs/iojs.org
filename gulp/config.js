@@ -1,10 +1,10 @@
-var dest = "./public";
+var dest = "./public_test";
 var src = './source';
 var content = './content';
 
 module.exports = {
   stylus: {
-    src: src + "/styles/*.{styl}",
+    src: src + "/styles/**/*.styl",
     dest: dest,
     settings: {
       // put stylus settings here
@@ -15,18 +15,17 @@ module.exports = {
     content: content,
     dest: dest
   },
-  images:{
+  images: {
     src: dest + "/img/**",
     dest: dest + "/img"
   },
-  del:{
+  del: {
     files: [
-      "public/index.html",
-      "public/**/*.js",
-      "public/**/*.css"
+      dest + "/**/*.html",
+      dest + "/**/*.js",
+      dest + "/**/*.css"
     ]
   },
-  stylSrc: dest + '/*.styl'
   cssSrc: dest + '/*.css',
   htmlSrc: dest + '/*.html',
   dest: dest

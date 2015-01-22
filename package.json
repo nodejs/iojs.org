@@ -50,7 +50,8 @@
     "gulp-imagemin": "^2.1.0",
     "gulp-less": "^2.0.1",
     "gulp-markdown": "^1.0.0",
-    "gulp-postcss": "^4.0.0",
+    "gulp-postcss": "^4.0.2",
+    "gulp-stylus": "^2.0.0",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2"
   }
