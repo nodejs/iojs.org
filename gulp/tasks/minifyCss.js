@@ -4,6 +4,7 @@ var postcss   = require('gulp-postcss');
 var autoprefixer = require('autoprefixer-core');
 var csswring  = require('csswring');
 var size      = require('gulp-filesize');
+var rename = require('gulp-rename');
 
 gulp.task('minifyCss', function() {
   return gulp.src(config.cssSrc)
@@ -11,6 +12,9 @@ gulp.task('minifyCss', function() {
       autoprefixer(),
       csswring
     ]))
+    .pipe(rename(function(path){
+      path.extname = ".min.css";
+    }))
     .pipe(gulp.dest(config.dest))
     .pipe(size());
 })
