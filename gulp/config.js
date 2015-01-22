@@ -11,8 +11,9 @@ module.exports = {
     }
   },
   templates: {
-    src: src + "/templates/**/*.md",
-    content: content,
+    templateSrc: src + "/templates/**/*.html",
+    contentSrc: content + "/**/*.md",
+    templateJSONsrc: content + "/**/template.json",
     dest: dest
   },
   images: {

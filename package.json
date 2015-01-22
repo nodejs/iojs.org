@@ -43,6 +43,7 @@
     "browserify": "^8.1.1",
     "csswring": "^3.0.0",
     "del": "^1.1.1",
+    "glob": "^4.3.5",
     "gulp": "^3.8.10",
     "gulp-changed": "^1.1.0",
     "gulp-filesize": "0.0.6",
@@ -53,7 +54,11 @@
     "gulp-postcss": "^4.0.2",
     "gulp-rename": "^1.2.0",
     "gulp-stylus": "^2.0.0",
+    "html-template": "^1.1.0",
+    "lodash": "^2.4.1",
+    "markdown-it": "^3.0.4",
     "require-dir": "^0.1.0",
-    "run-sequence": "^1.0.2"
+    "run-sequence": "^1.0.2",
+    "vinyl-source-stream": "^1.0.0"
   }
 }
