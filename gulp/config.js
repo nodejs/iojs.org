@@ -1,30 +1,30 @@
-var dest = "./public";
+var dest = './public';
 var src = './source';
 var content = './content';
 
 module.exports = {
   stylus: {
-    src: src + "/styles/**/*.styl",
+    src: src + '/styles/**/*.styl',
     dest: dest,
     settings: {
       // put stylus settings here
     }
   },
   templates: {
-    templateSrc: src + "/templates/**/*.html",
-    contentSrc: content + "/**/*.md",
-    templateJSONsrc: content + "/**/template.json",
+    templateSrc: src + '/templates/**/*.html',
+    contentSrc: content + '/**/*.md',
+    templateJSONsrc: content + '/**/template.json',
     dest: dest
   },
   images: {
-    src: dest + "/img/**",
-    dest: dest + "/img"
+    src: dest + '/img/**',
+    dest: dest + '/img'
   },
   del: {
     files: [
-      dest + "/**/*.html",
-      dest + "/**/*.js",
-      dest + "/**/*.css",
+      dest + '/**/*.html',
+      dest + '/**/*.js',
+      dest + '/**/*.css',
       '!'+ dest + '/index.html',
       '!'+ dest + '/es6.html',
       '!'+ dest + '/faq.html',

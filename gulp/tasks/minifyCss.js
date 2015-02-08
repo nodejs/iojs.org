@@ -13,7 +13,7 @@ gulp.task('minifyCss', function() {
       csswring
     ]))
     .pipe(rename(function(path){
-      path.extname = ".min.css";
+      path.extname = '.min.css';
     }))
     .pipe(gulp.dest(config.dest))
     .pipe(size());
