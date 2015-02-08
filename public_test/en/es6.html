@@ -40,8 +40,7 @@
 <p>With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for <strong>shipping</strong>, <strong>staged</strong> and <strong>in progress</strong> features:</p>
 <ul>
 <li>All <strong>shipping</strong> features, the ones that V8 has considered stable, like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">templates</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">new string methods</a> and many others are turned <strong>on by default on io.js</strong> and do <strong>NOT</strong> require any kind of runtime flag.*   Then there are <strong>staged</strong> features which are almost-completed features that haven't been completely tested or updated to the latest spec yet and therefore are not considered stable by the V8 team (e.g. there might be some edge cases left to discover). This is probably the equivalent of the state of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> on 3.26. These are the &quot;use at your own risk&quot; type of features that now require a runtime flag: <code>--es_staging</code> (or its synonym, <code>--harmony</code>).</li>
-<li>Finally, all <strong>in progress</strong> features can be activated individually by their respective harmony flag (e.g. <code>--harmony_arrow_functions</code>), although this is highly discouraged unless for testing purposes.
-&lt;/div&gt;</li>
+<li>Finally, all <strong>in progress</strong> features can be activated individually by their respective harmony flag (e.g. <code>--harmony_arrow_functions</code>), although this is highly discouraged unless for testing purposes.</li>
 </ul>
 <h2>Which ES6 features ship with io.js by default (no runtime flag required)?</h2>
 <ul>
@@ -55,7 +54,7 @@
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a></p>
 </li>
 <li>
-<p><code>function</code>-in-blocks&lt;/a&gt;</p>
+<p><code>function</code>-in-blocks</p>
 </li>
 </ul>
 <p>As of v8 3.31.74.1, block-scoped declarations are <a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">intentionally implemented with a non-compliant limitation to strict mode code</a>. Developers should be aware that this will change as v8 continues towards ES6 specification compliance.</p>
