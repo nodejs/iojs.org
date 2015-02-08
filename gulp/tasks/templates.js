@@ -33,16 +33,20 @@ gulp.task('templates', function() {
       var markdown = String(fs.readFileSync(file.srcPath)); // read in the md file, convert buffer to string
       var html = md.render(markdown); // convert md string to html string
       var thisFileJSON = _.cloneDeep(templateJSON); // clone in the template JSON object
-      thisFileJSON['[i18n-content]'] = html; // Attach md2html string to the interpolation object
+      var finalJSON = {};
+      _.forEach(thisFileJSON, function(value, key){
+        finalJSON['[i18n-'+key+']'] = value;
+      })
+      finalJSON['[i18n-content]'] = html; // Attach md2html string to the interpolation object
       var htmlObj = HTMLtemplate(); // finally using that holder for the template stream
-      i18nObj = htmlObj.template('i18n',true); // same
-      var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/test.html'; // get the main template file location. There can be multiple, this is just a proof of concept
-
-      fs.createReadStream(filepath) // pulling this code from substack's example on html-template
-      .pipe(htmlObj)
+      i18nObj = htmlObj.template('i18n',{include:false}); // same
+      var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.html'; // get the main template file location. There can be multiple, this is just a proof of concept
+      var fileStream = fs.createReadStream(filepath) // pulling this code from substack's example on html-template
+        .pipe(htmlObj)
+      // .pipe(process.stdout)
         .pipe(source(file.filename + '.html')) // converting the readStream to a vinyl stream so gulp can write it back to the disk
-      .pipe(gulp.dest('public_test/' + lang + '/')); // dump it in the appropriate language subfolder
-      i18nObj.write(thisFileJSON); // write the interpolation JSON to the template
+        .pipe(gulp.dest('public_test/' + lang + '/')); // dump it in the appropriate language subfolder
+      i18nObj.write(finalJSON); // write the interpolation JSON to the template
       i18nObj.end(); // saving? this is taken from substack too.
     });
   });
