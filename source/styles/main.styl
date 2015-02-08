@@ -86,6 +86,8 @@ p a:hover
 
 ul
   text-align left
+  p
+    text-align left
 .clearfix:after
   content ""
   display table
@@ -94,17 +96,22 @@ ul
   display block
   width 100%
   margin auto
+  ul > li > ul > li > p
+    margin 0
+    line-height 0.7rem
 .footer
   display block
   float left
   width 100%
-.note
+blockquote
   background-color #FAFAD2
   padding 5px
   padding-left 20px
   padding-right 20px
   margin 10px
-  font-size 0.9rem
+  p
+    font-size 0.9rem
+    line-height 1.2rem
 
 nav
   font-size 0.9rem

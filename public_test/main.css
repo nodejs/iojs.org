@@ -88,6 +88,9 @@ p a:hover {
 ul {
   text-align: left;
 }
+ul p {
+  text-align: left;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -98,18 +101,25 @@ ul {
   width: 100%;
   margin: auto;
 }
+.content[i18n-content] ul > li > ul > li > p {
+  margin: 0;
+  line-height: 0.7rem;
+}
 .footer {
   display: block;
   float: left;
   width: 100%;
 }
-.note {
+blockquote {
   background-color: #fafad2;
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 10px;
+}
+blockquote p {
   font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 nav {
   font-size: 0.9rem;
