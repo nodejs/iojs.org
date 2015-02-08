@@ -98,91 +98,6 @@ ul {
   width: 100%;
   margin: auto;
 }
-.content p:nth-child(2) {
-  text-align: center;
-}
-.content p:nth-child(3) {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.content p:nth-child(4) {
-  position: relative;
-  background: #eee;
-  border-radius: 4px 0 0 4px;
-  margin: 0;
-  padding: 20px 16px 20px 24px;
-  padding-bottom: 15px;
-  min-height: 160px;
-  display: block;
-  float: left;
-  height: 165px;
-  max-height: 165px;
-}
-.content p:nth-child(4) a:hover {
-  background: transparent;
-}
-.content p:nth-child(4) a img {
-  height: 120px;
-}
-.content p:nth-child(5),
-.content p:nth-child(6),
-.content p:nth-child(7) {
-  position: relative;
-  background: #eee;
-  margin: 0;
-  padding: 20px;
-  display: block;
-  float: left;
-  width: 445px;
-}
-.content p:nth-child(5) a,
-.content p:nth-child(6) a,
-.content p:nth-child(7) a {
-  text-decoration: none;
-}
-.content p:nth-child(5) a:hover,
-.content p:nth-child(6) a:hover,
-.content p:nth-child(7) a:hover {
-  background: transparent;
-  text-decoration: underline;
-}
-.content p:nth-child(5) {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #000;
-  height: 85px;
-  max-height: 85px;
-  border-radius: 0 4px 0 0;
-}
-.content p:nth-child(6) {
-  color: rgba(0,0,0,0.5);
-  font-size: 0.9rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  height: 28px;
-  max-height: 28px;
-}
-.content p:nth-child(7) {
-  padding-top: 0;
-  height: 52px;
-  max-height: 52px;
-  border-radius: 0 0 4px 0;
-}
-.content p:nth-child(8),
-.content p:nth-child(9) {
-  display: block;
-  float: left;
-  width: 100%;
-  text-align: center;
-}
-.content p:nth-child(8) {
-  margin-top: 40px;
-  margin-bottom: 0px;
-}
-.content p:nth-child(9) {
-  margin-top: 0px;
-}
 .footer {
   display: block;
   float: left;
@@ -270,4 +185,89 @@ p.lead {
     padding-left: initial;
     padding-top: initial;
   }
+}
+[markdown-page="index"] .content p:nth-child(2) {
+  text-align: center;
+}
+[markdown-page="index"] .content p:nth-child(3) {
+  text-align: center;
+  margin-bottom: 40px;
+}
+[markdown-page="index"] .content p:nth-child(4) {
+  position: relative;
+  background: #eee;
+  border-radius: 4px 0 0 4px;
+  margin: 0;
+  padding: 20px 16px 20px 24px;
+  padding-bottom: 15px;
+  min-height: 160px;
+  display: block;
+  float: left;
+  height: 165px;
+  max-height: 165px;
+}
+[markdown-page="index"] .content p:nth-child(4) a:hover {
+  background: transparent;
+}
+[markdown-page="index"] .content p:nth-child(4) a img {
+  height: 120px;
+}
+[markdown-page="index"] .content p:nth-child(5),
+[markdown-page="index"] .content p:nth-child(6),
+[markdown-page="index"] .content p:nth-child(7) {
+  position: relative;
+  background: #eee;
+  margin: 0;
+  padding: 20px;
+  display: block;
+  float: left;
+  width: 445px;
+}
+[markdown-page="index"] .content p:nth-child(5) a,
+[markdown-page="index"] .content p:nth-child(6) a,
+[markdown-page="index"] .content p:nth-child(7) a {
+  text-decoration: none;
+}
+[markdown-page="index"] .content p:nth-child(5) a:hover,
+[markdown-page="index"] .content p:nth-child(6) a:hover,
+[markdown-page="index"] .content p:nth-child(7) a:hover {
+  background: transparent;
+  text-decoration: underline;
+}
+[markdown-page="index"] .content p:nth-child(5) {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  height: 85px;
+  max-height: 85px;
+  border-radius: 0 4px 0 0;
+}
+[markdown-page="index"] .content p:nth-child(6) {
+  color: rgba(0,0,0,0.5);
+  font-size: 0.9rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 28px;
+  max-height: 28px;
+}
+[markdown-page="index"] .content p:nth-child(7) {
+  padding-top: 0;
+  height: 52px;
+  max-height: 52px;
+  border-radius: 0 0 4px 0;
+}
+[markdown-page="index"] .content p:nth-child(8),
+[markdown-page="index"] .content p:nth-child(9) {
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+[markdown-page="index"] .content p:nth-child(8) {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+[markdown-page="index"] .content p:nth-child(9) {
+  margin-top: 0px;
 }

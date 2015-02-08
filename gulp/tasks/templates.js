@@ -6,6 +6,7 @@ var gulp = require('gulp'); // because this is a gulp task. duh.
 var HTMLtemplate = require('html-template'); // substack's html template implementation
 var md = require('markdown-it')(); // to convert markdown to html
 var source = require('vinyl-source-stream'); // used to convert substack's readStream to vinylStream
+var replaceStream = require('replacestream'); // used to add an element to the html: making sure each page has it's own class if needed in css
 
 gulp.task('templates', function() {
   var contentFiles = glob.sync(config.contentSrc); // read in all content files in the repo
@@ -42,6 +43,7 @@ gulp.task('templates', function() {
       i18nObj = htmlObj.template('i18n',{include:false}); // same
       var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.html'; // get the main template file location. There can be multiple, this is just a proof of concept
       var fileStream = fs.createReadStream(filepath) // pulling this code from substack's example on html-template
+        .pipe(replaceStream('markdown-page=""', 'markdown-page="'+file.filename+'"'))
         .pipe(htmlObj)
       // .pipe(process.stdout)
         .pipe(source(file.filename + '.html')) // converting the readStream to a vinyl stream so gulp can write it back to the disk
