@@ -49,7 +49,6 @@ gulp.task('templates', function() {
         .pipe(replaceStream('markdown-page=""', 'markdown-page="'+file.filename+'"')) // add css-triggerable attribute to body
         .pipe(replaceStream('[page-stylesheet]',file.filename)) // require in specific stylesheet
         .pipe(htmlObj)
-      // .pipe(process.stdout)
         .pipe(source(file.filename + '.html')) // converting the readStream to a vinyl stream so gulp can write it back to the disk
         .pipe(gulp.dest('public/' + lang + '/')); // dump it in the appropriate language subfolder
       i18nObj.write(finalJSON); // write the interpolation JSON to the template
