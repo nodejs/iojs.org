@@ -29,5 +29,8 @@ module.exports = {
   },
   cssSrc: dest + '/*.css',
   htmlSrc: dest + '/*.html',
-  dest: dest
+  dest: dest,
+  server: {
+    port: 4657
+  }
 };
