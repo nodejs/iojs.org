@@ -34,6 +34,8 @@ gulp.task('templates', function() {
       var markdown = String(fs.readFileSync(file.srcPath)); // read in the md file, convert buffer to string
       var html = md.render(markdown); // convert md string to html string
       var thisFileJSON = _.cloneDeep(templateJSON); // clone in the template JSON object
+      var pageTitle = thisFileJSON['browser-title'];
+      thisFileJSON = _.omit(thisFileJSON,'browser-title');
       var finalJSON = {};
       _.forEach(thisFileJSON, function(value, key){
         finalJSON['[i18n-'+key+']'] = value;
@@ -43,6 +45,7 @@ gulp.task('templates', function() {
       i18nObj = htmlObj.template('i18n',{include:false}); // same
       var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.html'; // get the main template file location. There can be multiple, this is just a proof of concept
       var fileStream = fs.createReadStream(filepath) // pulling this code from substack's example on html-template
+        .pipe(replaceStream('<title i18n-title>io.js - JavaScript I/O</title>','<title i18n-title>'+pageTitle+'</title>'))
         .pipe(replaceStream('markdown-page=""', 'markdown-page="'+file.filename+'"')) // add css-triggerable attribute to body
         .pipe(replaceStream('[page-stylesheet]',file.filename)) // require in specific stylesheet
         .pipe(htmlObj)
