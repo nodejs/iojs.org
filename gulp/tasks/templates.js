@@ -51,7 +51,7 @@ gulp.task('templates', function() {
         .pipe(htmlObj)
       // .pipe(process.stdout)
         .pipe(source(file.filename + '.html')) // converting the readStream to a vinyl stream so gulp can write it back to the disk
-        .pipe(gulp.dest('public_test/' + lang + '/')); // dump it in the appropriate language subfolder
+        .pipe(gulp.dest('public/' + lang + '/')); // dump it in the appropriate language subfolder
       i18nObj.write(finalJSON); // write the interpolation JSON to the template
       i18nObj.end(); // saving? this is taken from substack too.
     });

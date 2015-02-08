@@ -1,4 +1,4 @@
-var dest = "./public_test";
+var dest = "./public";
 var src = './source';
 var content = './content';
 
