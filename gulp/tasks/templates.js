@@ -43,7 +43,8 @@ gulp.task('templates', function() {
       i18nObj = htmlObj.template('i18n',{include:false}); // same
       var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.html'; // get the main template file location. There can be multiple, this is just a proof of concept
       var fileStream = fs.createReadStream(filepath) // pulling this code from substack's example on html-template
-        .pipe(replaceStream('markdown-page=""', 'markdown-page="'+file.filename+'"'))
+        .pipe(replaceStream('markdown-page=""', 'markdown-page="'+file.filename+'"')) // add css-triggerable attribute to body
+        .pipe(replaceStream('[page-stylesheet]',file.filename)) // require in specific stylesheet
         .pipe(htmlObj)
       // .pipe(process.stdout)
         .pipe(source(file.filename + '.html')) // converting the readStream to a vinyl stream so gulp can write it back to the disk
