@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>io.js - ES6 i io.js</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="iojs">
+  <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+  <body>
+
+  <header>
+    <div class="content">
+      <a href="/" class="logo">io.js</a>
+      <div class="spacer"></div>
+      <a href="faq.html">FAQ</a>
+      <a href="es6.html">ES6</a>
+      <a href="https://iojs.org/api/">API-dokumentation</a>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <h1>ES6 i io.js</h1>
+
+    <div class="description">
+
+      <p>io.js er bygget op mod en moderne version af <a href="https://code.google.com/p/v8/">V8</a>. Ved at holde det opdateret med de seneste udgivelser af denne motor, sikrer vi at nye funktioner fra <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262-specifikationen</a> bliver rettidigt tilgængelige for io.js-udviklere, hvilket også gælder forbedringer til ydeevne og stabilitet.</p>
+      <p>Version 1.1.0 af io.js leveres med V8 4.1.0.14, som inkluderer ES6-funktioner et godt stykke forbi version 3.26.33, som vil blive leveret med joyent/node@0.12.x.</p>
+    </div>
+
+    <div class="faq-item">
+
+      <h2 class="faq-title">Ikke mere --harmony-flag</h2>
+      <div class="faq-body">
+        <p>I joyent/node@0.12.x (V8 3.26), slår <code>--harmony</code>-runtime-flaget alle <strong>færdige</strong>, <strong>staged</strong> og <strong>igangværende</strong> ES6-funktioner til sammen på samme tid (med undtagelse af ikke-standard/ikke-harmonerende semantikker for <code>typeof</code>, som blev skjult under <code>--harmony-typeof</code>). Dette betød at nogle meget fejlfyldte eller ikke-virkende funktioner som <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxy'er</a> var lige så tilgængelige for udviklere som <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generatorer</a>, der havde meget få eller endda ingen kendte problemer. Derfor var det den bedste praksis kun at slå bestemte funktioner til ved at bruge specifikke runtime-flag (fx <code>--harmony-generators</code>), eller ved simpelthen at slå dem alle til og derefter bruge et begrænset udsnit.</p>
+        <p>Med io.js@1.x (V8 4.1+) forsvinder al den kompleksitet. Alle harmoni-funktioner er nu logisk delt op i tre grupper for <strong>færdige</strong>, <strong>staged</strong> og <strong>igangværende</strong> funktioner:</p>
+
+        <ul class="task-list">
+    <li>Alle <strong>færdige</strong> funktioner, dem som V8 betragter som stabile, som <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generatorer</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">skabeloner</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">ny streng-metode</a> og mange andre er slået <strong>til som standard i io.js</strong> og kræver <strong>IKKE</strong> nogen form for runtime-flag. </li>
+    <li>Så er der <strong>staged</strong> funktioner, som er næsten-komplette funktioner, der ikke er fuldstændigt testede eller opdaterede til seneste specifikation endnu, og derfor ikke bliver betragtet som stabile af V8-teamet (fx kan der være grænsetilfælde, der ikke er fundet endnu). Det er formentlig tilsvarende status af <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generatorer</a> i 3.26. Disse er "brug på egen risiko"-typen af funktioner, der nu kræver runtime-flaget: <code>--es_staging</code> (eller dets synonym <code>--harmony</code>).</li>
+    <li>Som det sidste kan alle <strong>igangværende</strong> funktioner aktiveres individuelt med deres respektive harmoni-flag (fx <code>--harmony_arrow_functions</code>), selvom dette kraftigt frarådes udover til testing-formål.</li>
+    </ul>
+  </div>
+
+      <h2 class="faq-title">
+         Hvilke ES6-funktioner leveres med io.js som standard (ingen runtime-flag påkrævet)?
+      </h2>
+      <div class="faq-body">
+      <ul class="task-list">
+        <li>Block scoping</li>
+        <ul class="task-list">
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">let</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a></li>
+          <li><code>function</code>-in-blocks</a></li>
+        </ul>
+
+        <div class="note">
+          Fra v8 3.31.74.1, er block-scoped-deklarationer <a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">bevidst implementeret med en ikke-opfyldt begrænsning i forhold til strict-tilstandskode</a>. Udviklere bør være opmærksomme på, at dette vil ændre sig, mens v8 bevæger sig nærmere opfyldelse af ES6-specifikationen.
+        </div>
+
+        <li>Collections</li>
+        <ul class="task-list">
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">WeakMap</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a></li>
+        </ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals">Binary and Octal literals</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">New String methods</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">Template strings</a></li>
+      </ul>
+
+      <p>You can view a more detailed list, including a comparison with other engines, on the <a href="https://kangax.github.io/compat-table/es6/">compat-table</a> project page.</p>
+    </div>
+    </div>
+
+    <div class="faq-item">
+      <h2 class="faq-title">
+         Hvis ES6-funktioner er gemt bag --es_staging-flaget?
+      </h2>
+      <div class="faq-body">
+        <ul class="task-list">
+          <li><a href="https://github.com/lukehoban/es6features#classes">Klasser</a> (kun strict-tilstand)</li>
+          <li><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal extensions</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (brugerdefinerbare resultater for <code>Object.prototype.toString</code>)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-item">
+
+      <h2 class="faq-title">
+        Jeg har sat min infrastruktur op til at benytte sige af --harmony-flaget. Skal jeg fjerne det?
+      </h2>
+      <div class="faq-body">
+        <p>Den nuværende opførsel af <code>--harmony</code>-flaget i io.js har til formål kun at slå <strong>staged</strong>-funktioner til. Det er nu et synonym for <code>--es_staging</code>. Som nævnt ovenfor, så er det færdiggjorte funktioner, der ikke bliver betragtet som stabile endnu. Hvis du være på den sikre side, specielt i produktionsmiljøer, overvej at fjerne dette runtime-flag indtil det leveres som standard med V8 og derved også io.js. Hvis du vil beholde dette slået til, skal du være forberedt på at senere io.js-opgraderinger kan ødelægge din kode, hvis V8 ændrer deres semantik til at følge standarden tættere.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+
+      <h2 class="faq-title">
+         Hvordan finder jeg ud af hvilken version af V8, der leveres med en bestemt version af io.js?
+      </h2>
+      <div class="faq-body">
+        <p>io.js giver en simpel måde at liste alle dependencies og respektive versioner, der leveres med en specifik binary gennem det globale <code>process</code>-objekt. I forbindelse med V8-motoren, tast da det følgende ind i din terminal for at finde dens version:</p>
+        <div class="highlight highlight-sh"><pre>iojs -p process.versions.v8</span></pre></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="content">
+    <nav>
+      <a href="https://github.com/iojs/io.js/issues">GitHub-issues</a><!--
+   --><a href="https://github.com/iojs">GitHub-organisation</a><!--
+   --><a href="https://webchat.freenode.net/?channels=io.js">IRC-chat</a><!--
+   --><a href="http://logs.libuv.org/io.js/latest">Logs</a><!--
+   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">Forvaltning</a>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
