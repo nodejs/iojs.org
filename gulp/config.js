@@ -24,7 +24,10 @@ module.exports = {
     files: [
       dest + "/**/*.html",
       dest + "/**/*.js",
-      dest + "/**/*.css"
+      dest + "/**/*.css",
+      '!'+ dest + '/index.html',
+      '!'+ dest + '/es6.html',
+      '!'+ dest + '/faq.html',
     ]
   },
   cssSrc: dest + '/*.css',

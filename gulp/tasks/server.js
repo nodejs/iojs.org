@@ -6,7 +6,7 @@ function startExpress(cb) {
   var app = express();
   app.use(express.static(config.dest));
   app.listen(config.server.port, function() {
-    console.log(`Development server running on http://127.0.0.1:${config.server.port}/`);
+    console.log('Development server running on http://127.0.0.1:'+config.server.port);
     cb();
   });
 }
