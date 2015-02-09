@@ -10,9 +10,10 @@ Bringing [ES6](es6.html) to the Node Community!
 
 Download for
 [Linux](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-x86.msi), [Win64](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-x64.msi),
-or
-[Mac](https://iojs.org/dist/v1.1.0/iojs-v1.1.0.pkg).
+[Win32](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-x86.msi),
+[Win64](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-x64.msi),
+[Mac](https://iojs.org/dist/v1.1.0/iojs-v1.1.0.pkg) or
+[others](https://iojs.org/dist/v1.1.0/iojs-v1.1.0.pkg).
 
 
 [Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
