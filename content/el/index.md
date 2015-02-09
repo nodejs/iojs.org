@@ -1,6 +1,6 @@
 # JavaScript I/O
 
-Μεταφέρουμε την [ES6](es6.html) στην κοινότητα του Node!
+Φέρνουμε την [ES6](es6.html) στην κοινότητα του Node!
 
 [io.js](https://github.com/iojs/io.js) είναι μια πλατφόρμα συμβατή με το [npm](https://www.npmjs.org/),  βασισμένη στο [node.js](https://nodejs.org/)&#8482;.
 
