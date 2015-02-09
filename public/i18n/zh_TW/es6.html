@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>io.js - ES6 on io.js</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="iojs">
+  <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+  <body>
+
+  <header>
+    <div class="content">
+      <a href="/" class="logo">io.js</a>
+      <div class="spacer"></div>
+      <a href="faq.html">常見問題</a>
+      <a href="es6.html">ES6</a>
+      <a href="https://iojs.org/api/">API 文件</a>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <h1>io.js 的 ES6</h1>
+
+    <div class="description">
+
+    <p>io.js 建構於目前版本的 <a href="https://code.google.com/p/v8/">V8</a> 之上，將會持續更新並引入最新的引擎版本，以確保最新的<a href="http://www.ecma-international.org/publications/standards/Ecma-662.htm">JavaScript ECMA-262 specification</a> 特性能以最短的時間內被 io.js 的開發人員所使用，此外能藉此持續改善效能及穩定度。
+    <p>目前釋出的 io.js v1.1.0 版本已採用 V8 4.1.0.14，其支援的 ES6 特性遠超過 joyent/node@0.12.x 所使用的 V8 3.26.23 。</p>
+    </div>
+
+    <div class="faq-item">
+
+      <h2 class="faq-title">不再需要 --harmony 參數</h2>
+      <div class="faq-body">
+      <p>在 joyent/node@0.12.x (V8 3.26) 上，參數 <code>--harmony</code> 將會啟用所有 <strong>完成（completed）</strong>、<strong>階段性（staged）</strong> 及 <strong>程序中（in progress）</strong> 狀態之下的 ES6 特性支援，甚至是非標準（nonstandard/non-harmonious）的 <code>typeof</code> 支援（此特性在使用參數 <code>--harmony-typeof</code> 時會被隱藏）。這意味著一些臭蟲或是很有問題的特性像是 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> ，可能將會很容易的被開發人員所誤用在專案中，就如同沒有問題的特性 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> 一般。因此，往往最好的做法就是代入一些參數，只啟動特定的 harmony 特性支援（如：<code>--harmony-generators</code>），或是直接啟用所有的特性支援，然後在開發時限定只使用特定某些穩定的功能。</p>
+      <p>不過在使用 io.js@1.x (V8 4.1+) 之後，前面所提到的所有麻煩將不再是問題。現在所有的 harmony 特性都將會被分類到不同的群組中，分別為 <strong>shipping</strong> 、 <strong>staged</strong> 和 <strong>in progress</strong>：</p>
+
+        <ul class="task-list">
+      <li>所有屬於 <strong>shipping</strong> 群組的特性，都是被 V8 認定為穩定（stable）的功能，如：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> 、 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">templates</a> 、 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">new string methods</a> 。值得一提的是，現在屬於此群組的更多特性都將被 <strong>預設啟用於 io.js</strong> ，且不需要在執行時添加使用任何參數。</li>
+      <li>那些被歸類為 <strong>staged</strong> 群組的特性，都是功能上幾乎已經完整支援（almost-completed）的特性，但缺少測試或尚未支援到最新的 ES6 規格，所以尚未被 V8 的開發團隊視為穩定（stable）。這些特性的支援可能相當於 V8 3.26 時的 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> ，如果要使用，開發人員必須要自行承擔其風險，而且必須要在執行時使用 <code>--es_staging</code> 參數（同等於 --harmony）。</li>
+      <li>最後，所有處於 <strong>in progress</strong> 群組的特性，可以以特定的參數啟用支援（如：<code>--harmony_arrow_functions</code>，儘管這些特性不被推薦使用。</li>
+    </ul>
+  </div>
+
+      <h2 class="faq-title">
+         什麼樣的 ES6 特性將被 io.js 預設支援？（不需要代入任何參數）
+      </h2>
+      <div class="faq-body">
+      <ul class="task-list">
+        <li>Block scoping</li>
+        <ul class="task-list">
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">let</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a></li>
+          <li><code>function</code>-in-blocks</a></li>
+        </ul>
+
+        <div class="note">
+          As of v8 3.31.74.1, block-scoped declarations are <a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">intentionally implemented with a non-compliant limitation to strict mode code</a>. Developers should be aware that this will change as v8 continues towards ES6 specification compliance.
+        </div>
+
+        <li>Collections</li>
+        <ul class="task-list">
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">WeakMap</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a></li>
+        </ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals">Binary and Octal literals</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">New String methods</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">Template strings</a></li>
+      </ul>
+
+    <p>你可以參閱更多的細節，以及比較其他的 JavaScript 引擎，在 <a href="https://kangax.github.io/compat-table/es6/">compat-table</a> 專案網頁。</p>
+    </div>
+    </div>
+
+    <div class="faq-item">
+      <h2 class="faq-title">
+         什麼樣的 ES6 特性需要代入 --es_staging 參數？
+      </h2>
+      <div class="faq-body">
+        <ul class="task-list">
+          <li><a href="https://github.com/lukehoban/es6features#classes">Classes</a> （只有嚴格模式支援）</li>
+          <li><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal extensions</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (user-definable results for <code>Object.prototype.toString</code>)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-item">
+
+      <h2 class="faq-title">
+        我過去已經大量使用了 --harmony 參數，我該移除它嗎？
+      </h2>
+      <div class="faq-body">
+    <p>目前 <code>--harmony</code> 在 io.js 的行為，只會啟用 <strong>staged</strong> 的特性，與 <code>--es_staging</code> 參數相同。如前面所提及，這些都是些尚未被視為穩定的特性，如果你想要更安全的使用 io.js ，尤其特別是在已上線的服務或產品上使用，請考慮移除並停止使用此參數，直到這些特性被 V8 所預設支援，接著被 io.js 所支援。假設你仍然持續使用這個參數，你可能要有因為升級 io.js 而導致程式壞掉的心理準備，尤其是如果 V8 為了更接近標準而修改語法，就會出現這樣的問題。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+
+      <h2 class="faq-title">
+         我如何得知 io.js 正在使用的 V8 版本？
+      </h2>
+      <div class="faq-body">
+      <p>io.js 提供了一個非常簡單的方法去取得所有的依賴函式庫及版本號，只要透過存取 <code>process</code> 全域物件即可。所以，如果想知道 V8 引擎的版本資訊，可以直接在終端機（Terminal）上輸入：</p>
+        <div class="highlight highlight-sh"><pre>iojs -p process.versions.v8</span></pre></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="content">
+    <nav>
+      <a href="https://github.com/iojs/io.js/issues">GitHub 議題</a><!--
+   --><a href="https://github.com/iojs">GitHub 組織</a><!--
+   --><a href="https://webchat.freenode.net/?channels=io.js">IRC 聊天</a><!--
+   --><a href="http://logs.libuv.org/io.js/latest">更新日誌</a><!--
+   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">專案管理</a>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
