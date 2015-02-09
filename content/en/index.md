@@ -13,7 +13,7 @@ Download for
 [Win32](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-x86.msi),
 [Win64](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-x64.msi),
 [Mac](https://iojs.org/dist/v1.1.0/iojs-v1.1.0.pkg) or
-[others](https://iojs.org/dist/v1.1.0/iojs-v1.1.0.pkg).
+[others](https://iojs.org/dist/v1.1.0/).
 
 
 [Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
