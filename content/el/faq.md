@@ -1,34 +1,34 @@
 # FAQ
 
-## What is io.js?
+## Τι σημαίνει io.js?
 
-[io.js](https://github.com/iojs/io.js) is a JavaScript platform built on [Chrome's V8 runtime](http://code.google.com/p/v8/). This project began as a fork of [Joyent's Node.js™](https://nodejs.org/) and is compatible with the [npm](https://www.npmjs.org/) ecosystem.
+[io.js](https://github.com/iojs/io.js) είναι μία JavaScript πλατφόρμα, βασισμένη στο [V8 runtime του Chrome](http://code.google.com/p/v8/). Αυτό το πρότζεκτ ξεκίνησε σαν ένα fork του [Node.js™ της Joyent](https://nodejs.org/), και είναι συμβατό με το οικοσύστημα του [npm](https://www.npmjs.org/) .
 
-Why? io.js aims to provide faster and predictable release cycles. It currently merges in the latest language, API and performance improvements to V8 while also updating libuv and other base libraries.
+Γιατί? Το io.js στοχεύει στο να παράσχει γρηγορότερες και πιο προβλέψιμες εκδόσεις. Αυτην την στιγμή, συγχωνεύει τις πιο πρόσφατες αλλαγές του V8 ως προς την γλώσσα, το API και τις βελτιώσεις στην απόδοση, ενώ παράλληλα προσφέρει αναβαθμίσεις από την βιβλιοθήκη libuv και άλλες βιβλιοθήκες.
 
-This project aims to continue development of io.js under an "[open governance model](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" as opposed to corporate stewardship.
+Το πρότζεκτ στοχεύει στην συνεχή ανάπτυξη του io.js, ύπο μία "[ανοιχτή διακυβέρνηση](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" αντιθέτα από μία καθοδήγηση από κάποια εταιρία.
 
-## Version 1.0.x?
+## Έκδοση 1.0.x?
 
-io.js has moved to [Semver](http://semver.org/) and the changes between Node.js™ 0.10 and io.js 1.0.0 were significant enough
-to warrant a major version increment.
+Το io.js πήγε σε [Semver](http://semver.org/) και οι αλλαγές μεταξύ Node.js™ 0.10 και io.js 1.0.0 είναι αρκετές για να υποστηρίξουν την αύξηση της κύριας έκδοσης (major version).
 
-Our [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) for v1.x provides a [summary of changes from Node.js v0.10.35 to io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
-## How can I contribute?
+Το [ιστορικό αλλαγών](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) για την v1.x παρέχει μία [περίληψη των αλλαγών από το Node.js v0.10.35 στο io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
-Everyone can help. io.js adheres to a [code of conduct](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), and contributions, releases, and contributorship are under an [open governance](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme) model.
+## Πως μπορώ να συνεισφέρω;
 
-To get started, there are open [ discussions on GitHub](https://github.com/iojs/io.js/issues), and we'd love to hear your feedback.
-Becoming involved in discussions is a good way to get a feel of where you can help out further. If there is
-something there you feel you can tackle, please [make a pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Οποιοσδήποτε μπορεί να βοηθήσει. Το io.js υπακούει σε εναν [κώδικα συμπεριφοράς](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), και οι συνεισφορές και εκδόσεις γίνονται με ένα μοντέλο "[ανοιχτής διακυβέρνησης](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)".
 
-In addition, using [Nodebug.me](http://nodebug.me/) is a good way to help Triage the issues in the backlog.
+Για να ξεκινήσετε, υπάρχουν ανοιχτές [συζητήσεις στο GitHub](https://github.com/iojs/io.js/issues), θα θέλαμε να ακούσουμε την γνώμη σας και τις απόψεις σας.
 
-## Where do discussions take place?
+Συμμετέχοντας στις συζητήσεις είναι ένας καλός τρόπος για να δείτε που και πως μπορείτε να βοηθήσετε το πρότζεκτ. Αν υπάρχει κάτι που θα θέλατε να προσθέσετε ή να βελτιώσετε, δημιουργήστε ένα [pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
 
-There is an #io.js channel on Freenode IRC. We keep logs of the channel [here](http://logs.libuv.org/io.js/latest).
+Επίσης, χρησιμοποιώντας το [Nodebug.me](http://nodebug.me/) μπορείτε να λύσετε υπάρχοντα προβλήματα.
 
-## What is open source governance?
+## Που γίνονται οι συζητήσεις;
 
-Open source governance advocates the application of the philosophies of the open source and open content movements in order to enable any interested party to add to the creation of the end product, as with a wiki document. Legislation is democratically opened to the general citizenry, employing their collective wisdom to benefit the decision-making process and improve democracy. [[source]](https://en.wikipedia.org/wiki/Open-source_governance)
+Υπάρχει ένα #io.js κανάλι στο Freenode IRC. Κρατάμε ιστορικό του καναλιού [εδώ](http://logs.libuv.org/io.js/latest).
+
+## Τι σημαίνει "ανοιχτή διακυβέρνηση";
+
+Η "ανοιχτή διακυβέρνηση" προωθεί τις αξίες του ανοιχτού κώδικα (open source) και του ανοιχτού περιεχομένου έτσι ώστε να μπορεί οποιοσδήποτε ενδιαφερόμενος να προσθέσει κάτι στην δημιουργία του τελικού αποτελέσματος, όπως σε ένα έγγραφο τύπου "wiki". Η νομοθεσία είναι δημοκρατικά ανοιχτή σε γενική κριτική έτσι ώστε να επωφεληθεί από τις γνώσεις όλων και να προωθεί την ιδέα της δημοκρατίας.
