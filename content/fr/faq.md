@@ -1,34 +1,33 @@
 # FAQ
 
-## What is io.js?
+## Qu'est-ce que io.js?
 
-[io.js](https://github.com/iojs/io.js) is a JavaScript platform built on [Chrome's V8 runtime](http://code.google.com/p/v8/). This project began as a fork of [Joyent's Node.js™](https://nodejs.org/) and is compatible with the [npm](https://www.npmjs.org/) ecosystem.
+[io.js](https://github.com/iojs/io.js) est une plateforme JavaScript construite sur le [moteur d'exécution de Chrome's, V8](http://code.google.com/p/v8/). Ce projet a commencé comme un fork de [Node.js™ de Joyent](https://nodejs.org/) et est compatible avec l'écosystème [npm](https://www.npmjs.org/).
 
-Why? io.js aims to provide faster and predictable release cycles. It currently merges in the latest language, API and performance improvements to V8 while also updating libuv and other base libraries.
+Pourquoi? L'objectif de io.js est de fournir des cycles de développement plus rapides et prévisibles. Il fusionne actuellement les dernières fonctionnalités du langage, API et améliorations de performance de V8 tout en mettant à jour libuv et d'autres bibliothèques de base.
 
-This project aims to continue development of io.js under an "[open governance model](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" as opposed to corporate stewardship.
+Ce projet vise à poursuivre le développement de io.js sous un "[modèle de gouvernance ouvert](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" par opposition à la gérance de Node.js™ organisée par Joyent, jugée restreinte.
 
 ## Version 1.0.x?
 
-io.js has moved to [Semver](http://semver.org/) and the changes between Node.js™ 0.10 and io.js 1.0.0 were significant enough
-to warrant a major version increment.
+io.js est passé  à une gestion sémantique de version, [Semver](http://semver.org/) et les changements entre Node.js™ 0.10 et io.js 1.0.0 sont assez significatifs pour légitimer le passage à une nouvelle version majeure.
 
-Our [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) for v1.x provides a [summary of changes from Node.js v0.10.35 to io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+Notre [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) pour la v1.x fournit un [résumé des changements effectués entre Node.js v0.10.35 et io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
-## How can I contribute?
+## Comment puis-je contribuer?
 
-Everyone can help. io.js adheres to a [code of conduct](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), and contributions, releases, and contributorship are under an [open governance](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme) model.
+Tout le monde peut aider. Io.js adhère à un [code de conduite](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), et les contributions sont sous un modèle de [gouvernance ouverte](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme).
 
-To get started, there are open [ discussions on GitHub](https://github.com/iojs/io.js/issues), and we'd love to hear your feedback.
-Becoming involved in discussions is a good way to get a feel of where you can help out further. If there is
-something there you feel you can tackle, please [make a pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Pour commencer, il y a des [ discussions ouvertes sur GitHub](https://github.com/iojs/io.js/issues), et nous aimerons entendre votre avis.
+S'impliquer dans les discussions est un bon moyen pour savoir comment aider davantage. S'il y a
+quelque chose que vous vous sentez capable d'améliorer, [créez une pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
 
-In addition, using [Nodebug.me](http://nodebug.me/) is a good way to help Triage the issues in the backlog.
+En outre, utiliser [Nodebug.me](http://nodebug.me/) est un bon moyen pour aider au triage des issues dans le backlog.
 
-## Where do discussions take place?
+## Où les discussions ont-elles lieu?
 
-There is an #io.js channel on Freenode IRC. We keep logs of the channel [here](http://logs.libuv.org/io.js/latest).
+Il y a un canal de discussion IRC #io.js sur Freenode. Nous gardons les logs du canal [ici](http://logs.libuv.org/io.js/latest).
 
-## What is open source governance?
+## Qu'est-ce que la gouvernance open source?
 
-Open source governance advocates the application of the philosophies of the open source and open content movements in order to enable any interested party to add to the creation of the end product, as with a wiki document. Legislation is democratically opened to the general citizenry, employing their collective wisdom to benefit the decision-making process and improve democracy. [[source]](https://en.wikipedia.org/wiki/Open-source_governance)
+La gouvernance open source préconise l'application de la philosophie des mouvements open source et open content dans afin de permettre toute personne intéressée de contribuer à la création finale du produit, comme dans un document wiki. La législation est démocratiquement ouverte à l'ensemble des citoyens, employant leur sagesse collective afin d'en faire bénéficier le processus de décision et améliorer la démocratie. [[source]](https://en.wikipedia.org/wiki/Open-source_governance)
