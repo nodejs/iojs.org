@@ -2,7 +2,7 @@
 
 Traer [ES6](es6.html) a la Comunidad Nodo!
 
-[io.js](https://github.com/iojs/io.js) es una plataforma compatible [npm](https://www.npmjs.org/) originalmente basado en [node.js](https://nodejs.org/)&#8482;.
+[io.js](https://github.com/iojs/io.js) es una plataforma compatible [npm](https://www.npmjs.com/) originalmente basado en [node.js](https://nodejs.org/)&#8482;.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.1.0/)
 
