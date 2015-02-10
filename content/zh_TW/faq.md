@@ -1,36 +1,33 @@
-# FAQ
+# 常見問題（FAQ）
 
-## What is io.js?
+## 什麼是 io.js ？
 
-[io.js](https://github.com/iojs/io.js) is a JavaScript platform built on [Chrome's V8 runtime](http://code.google.com/p/v8/). This project began as a fork of [Joyent's Node.js™](https://nodejs.org/) and is compatible with the [npm](https://www.npmjs.org/) ecosystem.
+[io.js](https://github.com/iojs/io.js) 是一個以 [Chrome's V8 runtime](http://code.google.com/p/v8/) 為基礎的 JavaScript 應用程式開發平台，這個專案一開始是從 [Joyent's Node.js™](https://nodejs.org/) 分支出來的一個版本，完全與  [npm](https://www.npmjs.org/) 相容。
 
-## Why? 
+## 為什麼這麼做呢？
 
-io.js aims to provide faster and predictable release cycles. It currently merges in the latest language, API and performance improvements to V8 while also updating libuv and other base libraries.
+io.js 目標將提供更快速且可預期的釋出週期，目前已經整合了最新的語言特性、 API 以及 V8 的效能改進，此外也更新了 libuv 與其他的基礎函式庫。
 
-This project aims to continue development of io.js under an "[open governance model](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" as opposed to corporate stewardship.
+這個專案目標將以『[開放管理模式（open governance model）](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)』持續進行維護與開發，不同於被特定公司所主導發展的營運方式。
 
-## Version 1.0.x?
+## 版本 1.0.x？
 
-io.js has moved to [Semver](http://semver.org/) and the changes between Node.js™ 0.10 and io.js 1.0.0 were significant enough
-to warrant a major version increment.
+io.js 的改進與版本更新將遵守[語意化版本控制規範（Semver）](http://semver.org/)，我們認為目前專案的發展狀況，完全有足夠的理由提升主版本號，使專案從 Node.js™ 0.10 到 io.js 1.0.0 版本。
 
-Our [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) for v1.x provides a [summary of changes from Node.js v0.10.35 to io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+我們的 v1.x 版本的[更新日誌](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)將提供[從 Node.js v0.10.35 到 io.js v1.0.x 版本的變更說明](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100)。
 
-## How can I contribute?
+## 我如何能貢獻？
 
-Everyone can help. io.js adheres to a [code of conduct](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), and contributions, releases, and contributorship are under an [open governance](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme) model.
+任何人都可以給予這個專案幫助，io.js 遵守[行為準則（code of conduct）](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct)且接受不違反[開放管理模式（open governance model）](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)下的任何貢獻、釋出及貢獻關係。
 
-To get started, there are open [ discussions on GitHub](https://github.com/iojs/io.js/issues), and we'd love to hear your feedback.
-Becoming involved in discussions is a good way to get a feel of where you can help out further. If there is
-something there you feel you can tackle, please [make a pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+一開始，可以在[discussions on GitHub](https://github.com/iojs/io.js/issues)進行公開討論，我們非常樂意聽到您的意見回饋。 加入並參與各種討論是一個找到能貢獻之處的好方法，如果你找到一個自己可以幫得上忙的事，請直接[建立一個 pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions)。
 
-In addition, using [Nodebug.me](http://nodebug.me/) is a good way to help Triage the issues in the backlog.
+此外，使用[Nodebug.me](http://nodebug.me/) 是一個協助社群指派分配任務的好方法。
 
-## Where do discussions take place?
+## 哪裡是一個進行討論的好地方？
 
-There is an #io.js channel on Freenode IRC. We keep logs of the channel [here](http://logs.libuv.org/io.js/latest).
+Freenode IRC 的 #io.js 頻道是一個可以進行討論的地方，我們將保存該頻道的討論紀錄[在這](http://logs.libuv.org/io.js/latest)。
 
-## What is open source governance?
+## 什麼是開放原始碼管理？
 
-Open source governance advocates the application of the philosophies of the open source and open content movements in order to enable any interested party to add to the creation of the end product, as with a wiki document. Legislation is democratically opened to the general citizenry, employing their collective wisdom to benefit the decision-making process and improve democracy. [[source]](https://en.wikipedia.org/wiki/Open-source_governance)
+開源管理方式引入開放原始碼的哲學以及開放內容運動，讓各個有興趣的團體對最終產品做出貢獻。其決策程序對於一般公民開放，就能夠以眾人的智慧來改善決策、深化參與。 [參考連結](https://en.wikipedia.org/wiki/Open-source_governance)
