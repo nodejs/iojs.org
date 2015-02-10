@@ -16,9 +16,9 @@ io.js 已经转移到 [Semver](http://semver.org/) 而且 io.js 1.0.0 相对于 
 
 ## 如何贡献？
 
-每个人都可以提供帮助。 io.js 的 [代码合并](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct)， 贡献，发布都会在 [开放的管理模式](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme) 下完成。
+每个人都可以提供帮助。io.js 的 [代码合并](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct)，贡献，发布都会在 [开放的管理模式](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme) 下完成。
 
-开始使用前不妨看一下我们在 [GitHub 上的讨论](https://github.com/iojs/io.js/issues)，我们很乐意听到你的反馈. 亲身参与讨论会让你更加感同身受，以后更是可以提供更多帮助。如果你有想法参与贡献的话，敬请[提交 pr](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions)。
+开始使用前不妨看一下我们在 [GitHub 上的讨论](https://github.com/iojs/io.js/issues)，我们很乐意听到你的反馈. 亲身参与讨论会让你更加感同身受，以后更是可以提供更多帮助。如果你有想法参与贡献的话，敬请 [提交 pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions)。
 
 此外，最好通过 [Nodebug.me](http://nodebug.me/) 帮助分担积压的问题。
 
@@ -28,4 +28,4 @@ io.js 已经转移到 [Semver](http://semver.org/) 而且 io.js 1.0.0 相对于 
 
 ## 什么是开源管理？
 
-开源项目管理提倡共同维护开源且开放的内容，以便所有想贡献的人都可以参与进来，譬如一个wiki文档。开放的规则对每一位开发者都是公平的，集体的智慧更有利于决策项目和共建一个更加民主的气氛。[[来自 wikipedia]](https://en.wikipedia.org/wiki/Open-source_governance)
+开源项目管理提倡共同维护开源且开放的内容，以便所有想贡献的人都可以参与进来，譬如一个wiki文档。开放的规则对每一位开发者都是公平的，集体的智慧更有利于决策项目和共建一个更加民主的氛围。[[来自 wikipedia]](https://en.wikipedia.org/wiki/Open-source_governance)
