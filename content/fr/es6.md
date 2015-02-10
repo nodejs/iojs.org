@@ -10,11 +10,11 @@ Avec joyent/node@0.12.x (V8 3.26), l'option `--harmony` activait toutes les fonc
 
 Avec io.js@1.x (V8 4.1+), cette complexité disparait. Toutes les fonctionnalités d'harmony sont à présent séparées en trois groupes distincts: **livrées**, **en phase d'acceptation** ou **en développement**.
 
-*   Toutes les fonctionnalitées **livrées**, celles que V8 considère comme stables, tels que les [générateurs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [*templates*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [nouvelles méthodes de *string*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) et bien d'autres sont activées par défaut avec io.js, et ne nécessitent **AUCUN** autre type d'option d'éxécution.
+*   Toutes les fonctionnalités **livrées**, celles que V8 considère comme stables, tels que les [générateurs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [*templates*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [nouvelles méthodes de *string*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) et bien d'autres sont activées par défaut avec io.js, et ne nécessitent **AUCUN** autre type d'option d'éxécution.
 *   Puis il y a les fonctionnalités en **phase d'acceptation**, qui sont quasiment terminées mais n'ont pas encore été complètement testées ou mises conformité avec les dernières spécifications et ne sont pas considérées comme stables par l'équipe de V8 (certaines peuvent par exemple présentés des cas d'erreurs particuliers encore inconnus). Cet état est probablement équivalent à celui des [générateurs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) lors de la version 3.26. Ce sont les fonctionnalités à utiliser "à vos risques" et qui nécessitent l'option d'éxécution `--es_staging` (ou son équivalent `--harmony`).
-*   Enfin, toutes les fonctionnalitées **en cours de développement** peuvent être activées individuellement via leur *flag* harmony respectif (par exemple `--harmony_arrow_functions`), bien que ceci soit déconseillé à d'autres fins que pour les tester.
+*   Enfin, toutes les fonctionnalités **en cours de développement** peuvent être activées individuellement via leur *flag* harmony respectif (par exemple `--harmony_arrow_functions`), bien que ceci soit déconseillé à d'autres fins que pour les tester.
 
-## Quelles fonctionnalitées d'ES6 sont livrées par défaut avec io.js (sans nécessiter d'option d'éxécution)?
+## Quelles fonctionnalités d'ES6 sont livrées par défaut avec io.js (sans nécessiter d'option d'éxécution)?
 
 *   Portée de bloc
 
@@ -50,7 +50,7 @@ Avec io.js@1.x (V8 4.1+), cette complexité disparait. Toutes les fonctionnalit�
 
 Vous pouvez trouver une liste plus détaillée, incluant une comparaison avec d'autres moteurs, sur la [compat-table](https://kangax.github.io/compat-table/es6/).
 
-## Quelles fonctionnalitées ES6 sont derrière l'option --es_staging?
+## Quelles fonctionnalités ES6 sont derrière l'option --es_staging?
 
 *   [Les classes](https://github.com/lukehoban/es6features#classes) (uniquement en mode strict)
 *   [Extensions d'objets littéraux](https://github.com/lukehoban/es6features#enhanced-object-literals)
@@ -63,7 +63,7 @@ Le comportement actuel de l'option `--harmony` d'io.js est d'activer les fonctio
 
 ## Comment savoir quelle version de V8 est livrée avec une version particulière d'io.js?
 
-io.js fourni une méthode simple pour lister toutes les dépendances et versions respectives livrées avec un binaire spécific via l'objet global `process` Dans le cas du moteur V8, saisissez la commande suivante dans votre terminal afin de récupérer la version:
+io.js fourni une méthode simple pour lister toutes les dépendances et versions respectives livrées avec un binaire spécifique via l'objet global `process`. Dans le cas du moteur V8, saisissez la commande suivante dans votre terminal afin d'obtenir la version:
 
 ```sh
 iojs -p process.versions.v8
