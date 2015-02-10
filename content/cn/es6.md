@@ -2,7 +2,7 @@
 
 io.js 是基于 [V8](https://code.google.com/p/v8/) 引擎的现代版本构建的。通过持续更进最新版的 V8 引擎，我们确保可以及时为开发者带来最新的 [JavaScript ECMA-262 规范](http://www.ecma-international.org/publications/standards/Ecma-262.htm) 语言特性，同时也会有性能和稳定性的提升。
 
-io.js 1.2.0 集成了 V8 4.1.0.14 版本，其中包含的 ES6 特性远远超出 joyent/node@0.12.x 集成的 3.26.33 版本。
+io.js 1.2.0 集成了 V8 4.1.0.14 版本，其中包含的 ES6 特性远超出 joyent/node@0.12.x 集成的 3.26.33 版本。
 
 ## 干掉 --harmony
 
@@ -49,7 +49,7 @@ io.js 1.2.0 集成了 V8 4.1.0.14 版本，其中包含的 ES6 特性远远超�
 
 *   [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
 
-在[compat-table](https://kangax.github.io/compat-table/es6/)里可以看到更多详细内容和与其他引擎的对比。
+在 [兼容列表](https://kangax.github.io/compat-table/es6/) 里可以看到更多详细内容和与其他引擎的对比。
 
 ## 通过 --es_staging 参数开启的特性有哪些?
 
@@ -60,7 +60,7 @@ io.js 1.2.0 集成了 V8 4.1.0.14 版本，其中包含的 ES6 特性远远超�
 
 ## 我已经用了 --harmony 需要删除吗?
 
-当前 `--harmony` 参数在 io.js 中的行为是开启 **待完成** 特性。别忘了，它还有个别名 `--es_staging`。如上面提到的，这些待完成的特性还不稳定。如果想安全地使用，尤其是在生产环境中，最好删除此运行参数，直到特性被默认开启支持。因此，在 io.js 中。如果你保留这个启用，也应该为以后进一步升级 io.js 做好准备，以备 V8 改为更加符合标准的语意。
+当前 `--harmony` 参数在 io.js 中的行为是开启 **待完成** 特性。别忘了，它还有个别名 `--es_staging`。如上面提到的，这些待完成的特性还不稳定。如果想安全地使用，尤其是在生产环境中，最好删除此运行参数，直到特性被默认开启。因此，在 io.js 中。如果你现在保留了这个启用，也应该为以后进一步升级 io.js 做好准备，以备 V8 改为更加符合标准的语意。
 
 ## 如何找到某一版本的 io.js 所集成的 V8 的版本？
 

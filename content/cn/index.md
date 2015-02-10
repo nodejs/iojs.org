@@ -2,7 +2,7 @@
 
 为 Node 社区带来 [ES6](es6.html) ！
 
-[io.js](https://github.com/iojs/io.js) 是基于 [node.js](https://nodejs.org/)&#8482; 的 [npm](https://www.npmjs.org/) 兼容平台。
+[io.js](https://github.com/iojs/io.js) 是衍生于 [node.js](https://nodejs.org/)&#8482; 并兼容 [npm](https://www.npmjs.org/) 的开发平台。
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.2.0/)
 
@@ -11,12 +11,11 @@
 下载
 [Linux](https://iojs.org/dist/v1.2.0/iojs-v1.2.0-linux-x64.tar.xz),
 [Win32](https://iojs.org/dist/v1.2.0/iojs-v1.2.0-x86.msi), [Win64](https://iojs.org/dist/v1.2.0/iojs-v1.2.0-x64.msi),
-或
-[Mac](https://iojs.org/dist/v1.2.0/iojs-v1.2.0.pkg) 版。
+[Mac](https://iojs.org/dist/v1.2.0/iojs-v1.2.0.pkg), 或 [其他](https://iojs.org/dist/v1.2.0/) 版本。
 
 
 [更新日志](https://github.com/iojs/iojs-cn/blob/master/CHANGELOG.md)
 
-[每日构建版本](https://iojs.org/download/nightly/) 皆通过测试。
+[每日构建版本](https://iojs.org/download/nightly/) 可用于测试。
 
 [常见问题](faq.html)
