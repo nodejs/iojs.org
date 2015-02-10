@@ -56,6 +56,16 @@ You can view a more detailed list, including a comparison with other engines, on
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (user-definable results for `Object.prototype.toString`)
 
+## Which ES6 features are in progress?
+
+New features are constantly being added to the V8 engine. Generally speaking, expect them to land on a future io.js release, although timing is unknown.
+
+You may list all the *in progress* features available on each io.js release by grepping through the `--v8-options` argument. Please note that these are incomplete and possibly broken features of V8, so use them at your own risk:
+
+```sh
+iojs --v8-options | grep "in progress"
+```
+
 ## I have my infrastructure set up to leverage the --harmony flag. Should I remove it?
 
 The current behaviour of the `--harmony` flag on io.js is to enable **staged** features only. After all, it is now a synonym of `--es_staging`. As mentioned above, these are completed features that have not been considered stable yet. If you want to play safe, especially on production environments, consider removing this runtime flag until it ships by default on V8 and, consequently, on io.js. If you keep this enabled, you should be prepared for further io.js upgrades to break your code if V8 changes their semantics to more closely follow the standard.
