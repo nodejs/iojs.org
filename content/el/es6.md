@@ -1,4 +1,4 @@
-# ES6 on io.js
+# H ES6 στην io.js
 
 To io.js έχει δομηθεί πάνω στις νεότερες εκδόσεις της [V8](https://code.google.com/p/v8/). Με συνεχείς ενημερώσεις σύμφωνα με τις τελευταίες εκδόσεις της V8 εξασφαλίζουμε ότι νέες δυνατότητες και χαρακτηριστικά από την [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) προσφέρονται στους io.js developers εγκαίρως, καθώς και συνεχής βελτιώση της απόδοσης και της σταθερότητας.
 
