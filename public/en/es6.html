@@ -34,7 +34,7 @@
 
   <div class="content clearfix" i18n-content><h1>ES6 on io.js</h1>
 <p>io.js is built against modern versions of <a href="https://code.google.com/p/v8/">V8</a>. By keeping up-to-date with the latest releases of this engine we ensure new features from the <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> are brought to io.js developers in a timely manner, as well as continued performance and stability improvements.</p>
-<p>Version 1.1.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x.</p>
+<p>Version 1.2.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x.</p>
 <h2>No more --harmony flag</h2>
 <p>On Node.js™@0.12.x (V8 3.28+), the <code>--harmony</code> runtime flag enables all <strong>completed</strong>, <strong>staged</strong> and <strong>in progress</strong> ES6 features together, in bulk (with the exception of <code>proxies</code> which are hidden under <code>--harmony-proxies</code>). This means that some really buggy or even broken features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a> are just as readily available for developers as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, which have very little or even no known-issues. As such, most developers tend to enable only certain features by using specific runtime harmony feature flags (e.g. <code>--harmony-generators</code>), or simply enable all of them and then use a restricted subset.</p>
 <p>With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for <strong>shipping</strong>, <strong>staged</strong> and <strong>in progress</strong> features:</p>
@@ -99,15 +99,20 @@
 <h2>Which ES6 features are behind the --es_staging flag?</h2>
 <ul>
 <li>
-<p><a href="https://github.com/lukehoban/es6features#classes">Classes</a> (strict mode only)</p>
+<p><a href="https://github.com/lukehoban/es6features#classes">Classes</a> (strict mode only, behind flag <code>--harmony_classes</code> which implies block scoping &amp; object literal extensions)</p>
 </li>
 <li>
-<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal extensions</a></p>
+<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal extensions</a> (behind flag <code>--harmony_object_literals</code>)</p>
 </li>
 <li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (user-definable results for <code>Object.prototype.toString</code>)</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (user-definable results for <code>Object.prototype.toString</code>, behind flag <code>--harmony_tostring</code>)</p>
 </li>
 </ul>
+<h2>Which ES6 features are in progress?</h2>
+<p>New features are constantly being added to the V8 engine. Generally speaking, expect them to land on a future io.js release, although timing is unknown.</p>
+<p>You may list all the <em>in progress</em> features available on each io.js release by grepping through the <code>--v8-options</code> argument. Please note that these are incomplete and possibly broken features of V8, so use them at your own risk:</p>
+<pre><code class="language-sh">iojs --v8-options | grep &quot;in progress&quot;
+</code></pre>
 <h2>I have my infrastructure set up to leverage the --harmony flag. Should I remove it?</h2>
 <p>The current behaviour of the <code>--harmony</code> flag on io.js is to enable <strong>staged</strong> features only. After all, it is now a synonym of <code>--es_staging</code>. As mentioned above, these are completed features that have not been considered stable yet. If you want to play safe, especially on production environments, consider removing this runtime flag until it ships by default on V8 and, consequently, on io.js. If you keep this enabled, you should be prepared for further io.js upgrades to break your code if V8 changes their semantics to more closely follow the standard.</p>
 <h2>How do I find which version of V8 ships with a particular version of io.js?</h2>
