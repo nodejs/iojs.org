@@ -20,4 +20,4 @@
 
 每天定時釋出的 [Nightly releases](https://iojs.org/download/nightly/) 版本開放測試！
 
-[常見問與答](/faq.html)
+[常見問與答](faq.html)
