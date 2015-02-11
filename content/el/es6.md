@@ -8,13 +8,13 @@ To io.js έχει δομηθεί πάνω στις νεότερες εκδόσε
 
 Στην joyent/node@0.12.x (V8 3.26), με `--harmony` runtime flag ενεργοποιούνται όλες μαζί οι δυνατότητες της ES6 είτε είναι **ολοκληρομένες**, είτε **σε φάση ελέγχου** είτε **υπό ανάπτυξη** (με εξαίρεση τα nonstandard/non-harmonious semantics για το `typeof` τα οποία βρίσκονται υπό το flag `--harmony-typeof`). Αυτό σημαίνει πως κάποια χαρακτηριστικά τα οποία περιέχουν σφάλματα ή δεν λειτουργούν καθόλου, όπως π.χ. [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) ήταν διαθέσιμα στους developers μαζί με χαρακτηριστικά τα οποία είχαν λίγα ή καθόλου γνωστά προβλήματα όπως π.χ. οι [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*). Ως εκ τούτου, ήταν καλή πρακτική είτε να ενεργοποιείς μόνο συγκεκριμένα χαρακτηριστικά χρησιμοποιώντας συγκεκριμένα runtime harmony flags (π.χ. `--harmony-generators`), είτε να τα ενεργοποιείς όλα τα χαρακτηριστικά και να χρησιμοποιείς μόνο ένα υποσύνολο από αυτά.
 
-With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for **shipping**, **staged** and **in progress** features:
+Με την io.js@1.x (V8 4.1+), όλη αυτή η πολυπλοκότητα εξαλείφεται. Όλα τα χαρακτηριστικά της έκδοσης harmony είναι λογικά διαχωρισμένα σε τρεις ομάδες **έτοιμα (shipping)**, **σε φάση ελέγχου(staged)** και **υπό ανάπτυξη(in progress)**:
 
-*   All **shipping** features, the ones that V8 has considered stable, like [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [new string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) and many others are turned **on by default on io.js** and do **NOT** require any kind of runtime flag.
-*   Then there are **staged** features which are almost-completed features that haven't been completely tested or updated to the latest spec yet and therefore are not considered stable by the V8 team (e.g. there might be some edge cases left to discover). This is probably the equivalent of the state of [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) on 3.26. These are the "use at your own risk" type of features that now require a runtime flag: `--es_staging` (or its synonym, `--harmony`).
-*   Finally, all **in progress** features can be activated individually by their respective harmony flag (e.g. `--harmony_arrow_functions`), although this is highly discouraged unless for testing purposes.
+*   Όλα τα **(έτοιμα) shipping** χαρακτηριστικά, αυτά που η V8 θεωρεί αρκετά σταθερά, όπως π.χ. [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [new string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) και αρκετά αλλά ενεργοποιούνται **εξ ορισμού στο io.js** και **ΔΕΝ** απαιτούν οποιοδήποτε runtime flag.
+*   Υπάρχουν χαρακτηριστικά που βρίσκονται **σε φάση ελέγχου (staged)** τα οποία είναι σχεδόν πλήρη αλλά δεν έχουν ελεγχθεί πλήρως ή δεν έχουν ενημερωθεί με τις τελευταίες προδιαγραφές και ως εκ τούτου δεν θεωρούνται σταθερά από την ομάδα της V8 (π.χ. μπορεί να υπάρχουν κάποιες ακραίες περιπτώσεις που θα πρέπει να ελεγχθούν). Αυτό πιθανόν ισοδυναμεί με την κατάσταση των [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) στην έκδοση 3.26. Αυτά είναι χαρακτηριστικά τύπου "χρησιμοποίησε τα με δική σου ευθύνη" τα οποία τώρα απαιτούν για να ενεργοποιηθούν την χρήση ενός runtime flag: `--es_staging` (or its synonym, `--harmony`).
+*   Εν τέλη, όλα τα χαρακτηριστικά που βρίσκονται **(υπό ανάπτυξη) in progress** μπορούν να ενεργοποιηθούν ξεχωριστά με το δικό τους  αντίστοιχο harmony flag (e.g. `--harmony_arrow_functions`), αν και αυτό δεν συνίσταται εκτός από περιπτώσεις που αυτό γίνεται για δοκιμές των χαρακτηριστικών αυτών.
 
-## Which ES6 features ship with io.js by default (no runtime flag required)?
+## Ποια χαρακτηριστικά της ES6 έρχονται με io.js εξ ορισμού (χωρίς την χρήση runtime flag)?
 
 
 *   Block scoping
@@ -25,7 +25,7 @@ With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features ar
 
     *   `function`-in-blocks
 
-    >As of v8 3.31.74.1, block-scoped declarations are [intentionally implemented with a non-compliant limitation to strict mode code](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Developers should be aware that this will change as v8 continues towards ES6 specification compliance.
+    >Από την έκδοση v8 3.31.74.1, οι block-scoped δηλώσεις είναι [σκόπιμα υλοποιημένες όχι σε strict mode](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Οι developers πρέπει να είναι ενήμεροι ότι αυτό θα αλλάξει όσο η v8 συνεχίζει περαιτέρω την υλοποίηση περισσότερων πρωτύπων της ES6.
 
 *   Collections
 
@@ -47,22 +47,22 @@ With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features ar
 
 *   [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
 
-You can view a more detailed list, including a comparison with other engines, on the [compat-table](https://kangax.github.io/compat-table/es6/) project page.
+Μπορείτε να δείτε μια λεπτομερή λίστα, συμπεριλαμβανομένου ενός συγκριτικού πίναμε με άλλες μηχανές, στην σελίδα του project[compat-table](https://kangax.github.io/compat-table/es6/).
 
-## Which ES6 features are behind the --es_staging flag?
+## Ποία χαρακτηριστικά της ES6 βρίσκονται πίσω από το --es_staging flag?
 
 *   [Classes](https://github.com/lukehoban/es6features#classes) (strict mode only)
 *   [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals)
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (user-definable results for `Object.prototype.toString`)
 
-## I have my infrastructure set up to leverage the --harmony flag. Should I remove it?
+## Έχω ρυθμίση την υποδομή μου με την χρησή του --harmony flag. Πρέπει να το αφαιρέσω?
 
-The current behaviour of the `--harmony` flag on io.js is to enable **staged** features only. After all, it is now a synonym of `--es_staging`. As mentioned above, these are completed features that have not been considered stable yet. If you want to play safe, especially on production environments, consider removing this runtime flag until it ships by default on V8 and, consequently, on io.js. If you keep this enabled, you should be prepared for further io.js upgrades to break your code if V8 changes their semantics to more closely follow the standard.
+Το `--harmony` flag στην παρούσα έκδοση της io.js ενεργοποιεί μόνο χαρακτηριστικά που είναι **σε φάση ελέγχου (staged)**. Πλέον είναι συνώνυμο με το `--es_staging` flag. Όπως αναφέρθηκε προηγουμένος αυτά είναι ολοκληρωμένα χαρακτηριστικά τα οποία δεν θεωρούνται σταθερά ακόμη. Αν θέλετε να είστε ασφαλής, ειδικά σε production environments, εξετάστε το ενδεχόμενο να αφαιρέσετε αυτό runtime flag μέχρις ότου να παρέχεται εξ ορισμού με την V8, και ως εκ τούτου και, στην io.js. Αν επιλέξετε να το αφήσετε ενεργοποιημένο, θα πρέπει να προετοιμαστείτε για περισσότερα αναβαθμήσεις της io.js οι οποίες θα απαιτούν αλλαγές στον κώδικα σας αν αλλαγές η V8 αλλάξει τα semantics της ώστε να ακολουθεί πιο πιστά τα πρώτυπα.
 
-## How do I find which version of V8 ships with a particular version of io.js?
+## Πως μπορώ να βρω ποια έκδοση της V8 παρέχεται μαζί με μια συγκεκριμένη έκδοση της io.js?
 
-io.js provides a simple way to list all dependencies and respective versions that ship with a specific binary through the `process` global object. In case of the V8 engine, type the following in your terminal to retrieve its version:
+Η io.js παρέχει έναν απλό τρόπο να απαριθμήσετε όλες τις εξαρτήσεις και τις αντίστοιχες εκδόσεις οι οποίες παρέχονται με μια συγκεκριμένη έκδοση μέσω της `διαδικασίας` a simple way to list all dependencies and respective versions that ship with a specific binary through the `process` ενός global αντικειμένου. Στην περίπτωση της μηχανής V8, πληκτρολογήστε την ακόλουθη εντολή στο τερματικό ώστε να βρείτε την έκδοση:
 
 ```sh
 iojs -p process.versions.v8
