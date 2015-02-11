@@ -1,12 +1,12 @@
 # ES6 on io.js
 
-io.js is built against modern versions of [V8](https://code.google.com/p/v8/). By keeping up-to-date with the latest releases of this engine we ensure new features from the [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) are brought to io.js developers in a timely manner, as well as continued performance and stability improvements.
+To io.js έχει δομηθεί πάνω στις νεότερες εκδόσεις της [V8](https://code.google.com/p/v8/). Με συνεχείς ενημερώσεις σύμφωνα με τις τελευταίες εκδόσεις της V8 εξασφαλίζουμε ότι νέες δυνατότητες και χαρακτηριστικά από την [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) προσφέρονται στους io.js developers εγκαίρως, καθώς και συνεχής βελτιώση της απόδοσης και της σταθερότητας.
 
-Version 1.2.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.26.33 that will be shipped with joyent/node@0.12.x.
+Η έκδοση 1.2.0 του io.js έρχεται μαζί με την έκδοση 4.1.0.14 της V8, η οποία περιλαμβάνει χαρακτηριστικά από την ES6, πολύ περισσότερα από την έκδοση 3.26.33 που προσφέρετε από την joyent/node@0.12.x.
 
-## No more --harmony flag
+## Όχι πια --harmony flag
 
-On joyent/node@0.12.x (V8 3.26), the `--harmony` runtime flag enabled all **completed**, **staged** and **in progress** ES6 features together, in bulk (with the exception of nonstandard/non-harmonious semantics for `typeof` which were hidden under `--harmony-typeof`). This meant that some really buggy or even broken features like [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) were just as readily available for developers as [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), which had very little or even no known-issues. As such, it was best practice to either enable only certain features by using specific runtime harmony feature flags (e.g. `--harmony-generators`), or simply enable all of them and then use a restricted subset.
+Στην joyent/node@0.12.x (V8 3.26), με `--harmony` runtime flag ενεργοποιούνται όλες μαζί οι δυνατότητες της ES6 είτε είναι **ολοκληρομένες**, είτε **σε φάση ελέγχου** είτε **υπό ανάπτυξη**, in bulk (with the exception of nonstandard/non-harmonious semantics for `typeof` which were hidden under `--harmony-typeof`). This meant that some really buggy or even broken features like [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) were just as readily available for developers as [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), which had very little or even no known-issues. As such, it was best practice to either enable only certain features by using specific runtime harmony feature flags (e.g. `--harmony-generators`), or simply enable all of them and then use a restricted subset.
 
 With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for **shipping**, **staged** and **in progress** features:
 
