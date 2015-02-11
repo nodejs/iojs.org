@@ -22,7 +22,7 @@
 
 ### Dependencies
 ```
-git pull https://github.com/iojs/website.git
+git clone https://github.com/iojs/website.git
 npm install -g gulp
 npm install
 ```
