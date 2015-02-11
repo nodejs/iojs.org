@@ -2,11 +2,11 @@
 
 ## 什麼是 io.js ？
 
-[io.js](https://github.com/iojs/io.js) 是一個以 [Chrome's V8 runtime](http://code.google.com/p/v8/) 為基礎的 JavaScript 應用程式開發平台，這個專案一開始是從 [Joyent's Node.js™](https://nodejs.org/) 分支出來的一個版本，完全與  [npm](https://www.npmjs.org/) 相容。
+[io.js](https://github.com/iojs/io.js) 是一個以 [Chrome's V8 runtime](http://code.google.com/p/v8/) 為基礎的 JavaScript 應用程式開發平台，這個專案一開始是從 [Joyent's Node.js™](https://nodejs.org/) 分支出來的一個版本，完全與 [npm](https://www.npmjs.org/) 相容。
 
 ## 為什麼這麼做呢？
 
-io.js 目標將提供更快速且可預期的釋出週期，目前已經整合了最新的語言特性、 API 以及 V8 的效能改進，此外也更新了 libuv 與其他的基礎函式庫。
+io.js 目標將提供更快速且可預期的釋出週期，目前已經整合了最新的語言特性、API 以及 V8 的效能改進，此外也更新了 libuv 與其他的基礎函式庫。
 
 這個專案目標將以『[開放管理模式（open governance model）](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)』持續進行維護與開發，不同於被特定公司所主導發展的營運方式。
 
@@ -30,4 +30,4 @@ Freenode IRC 的 #io.js 頻道是一個可以進行討論的地方，我們將�
 
 ## 什麼是開放原始碼管理？
 
-開源管理方式引入開放原始碼的哲學以及開放內容運動，讓各個有興趣的團體對最終產品做出貢獻。其決策程序對於一般公民開放，就能夠以眾人的智慧來改善決策、深化參與。 [參考連結](https://en.wikipedia.org/wiki/Open-source_governance)
+開源管理方式引入開放原始碼的哲學以及開放內容運動，讓各個有興趣的團體對最終產品做出貢獻。其決策程序對於一般公民開放，就能夠以眾人的智慧來改善決策、深化參與。[參考連結](https://en.wikipedia.org/wiki/Open-source_governance)
