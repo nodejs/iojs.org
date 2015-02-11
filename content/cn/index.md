@@ -4,15 +4,15 @@
 
 [io.js](https://github.com/iojs/io.js) 是基于 [node.js](https://nodejs.org/)&#8482; 的 [npm](https://www.npmjs.org/) 兼容平台。
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.1.0/)
+[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.2.0/)
 
-[1.1.0 版本](https://iojs.org/dist/v1.1.0/)
+[1.2.0 版本](https://iojs.org/dist/v1.2.0/)
 
 下载
-[Linux](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-x86.msi), [Win64](https://iojs.org/dist/v1.1.0/iojs-v1.1.0-x64.msi),
+[Linux](https://iojs.org/dist/v1.2.0/iojs-v1.2.0-linux-x64.tar.xz),
+[Win32](https://iojs.org/dist/v1.2.0/iojs-v1.2.0-x86.msi), [Win64](https://iojs.org/dist/v1.2.0/iojs-v1.2.0-x64.msi),
 或
-[Mac](https://iojs.org/dist/v1.1.0/iojs-v1.1.0.pkg) 版。
+[Mac](https://iojs.org/dist/v1.2.0/iojs-v1.2.0.pkg) 版。
 
 
 [更新日志](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
