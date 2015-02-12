@@ -17,6 +17,6 @@ ou
 
 [Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
 
-[Versões Nightly](https://iojs.org/download/nightly/) estão disponíveis para testes.
+[Versões Nightly](https://iojs.org/download/nightly/) estão disponíveis para teste.
 
 [Perguntas Frequentes (FAQ)](/faq.html)

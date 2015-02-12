@@ -28,4 +28,4 @@ Existe um canal #io.js no IRC Freenode. Guardamos os logs do canal [aqui](http:/
 
 ## O que é governança de software livre?
 
-A governança de software livre defende a aplicação das filosofias dos movimentos software livre e conteúdo aberto de modo a permitirem a todos os interessados que possam contribuir na criação do produto final, tal como acontece com um documento wiki. A legislação é democraticamente aberta à cidadania em geral, aplicando a sua inteligência coletiva para o benefício do processo de tomada de decisão e melhoria da democracia. [[fonte]](https://en.wikipedia.org/wiki/Open-source_governance)
+A governança de software livre defende a aplicação das filosofias dos movimentos software livre e conteúdo aberto de modo a permitir que todos os interessados que possam contribuir na criação do produto final, tal como acontece com um documento wiki. A legislação é democraticamente aberta à cidadania em geral, aplicando a sua inteligência coletiva para o benefício do processo de tomada de decisão e melhoria da democracia. [[fonte]](https://en.wikipedia.org/wiki/Open-source_governance)
