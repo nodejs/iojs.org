@@ -4,19 +4,19 @@
 
 ## Project Structure
 
-- [./content]() contains the source articles, organized by language-team groupings.
+- [./content](https://github.com/iojs/website/tree/master/content) contains the source articles, organized by language-team groupings.
   Articles are written in
   [Github-flavoured Markdown](https://help.github.com/articles/github-flavored-markdown/).
-- [./gulp]() organizes the [Gulp.js](http://gulpjs.com/)-driven build scripts used
+- [./gulp](https://github.com/iojs/website/tree/master/gulp) organizes the [Gulp.js](http://gulpjs.com/)-driven build scripts used
   by the project.
-- [./public]() **currently** contains the full library of website content generated
+- [./public](https://github.com/iojs/website/tree/master/public) **currently** contains the full library of website content generated
   by the build scripts. Changes should not be made directly here. Soon, we'll
   be switching over to leveraging [iojs/build](https://github.com/iojs/build)
   to help automate this.
-- [./source] houses the reusable styling and structural elements used by the
+- [./source](https://github.com/iojs/website/tree/master/source) houses the reusable styling and structural elements used by the
   project.
-- [./wg-meetings] is an archive of the meeting minutes from this project's
-  Working Group (see [./GOVERNANCE.md]()).
+- [./wg-meetings](https://github.com/iojs/website/tree/master/wg-meetings) is an archive of the meeting minutes from this project's
+  Working Group (see [./GOVERNANCE.md](https://github.com/iojs/website/blob/master/GOVERNANCE.md)).
 
 ## Running Locally
 
