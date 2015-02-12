@@ -1,8 +1,8 @@
 # JavaScript I/O
 
-为 Node 社区带来 [ES6](es6.html) ！
+将 [ES6](es6.html) 带入 Node 社区！
 
-[io.js](https://github.com/iojs/io.js) 是衍生于 [node.js](https://nodejs.org/)&#8482; 并兼容 [npm](https://www.npmjs.org/) 的开发平台。
+[io.js](https://github.com/iojs/io.js) 是一个衍生自 [node.js](https://nodejs.org/)&#8482; ，并兼容 [npm](https://www.npmjs.org/) 的开发平台。
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.2.0/)
 
