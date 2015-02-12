@@ -5,8 +5,37 @@ separate languages is handled by the localization working group of the language 
 would like to contribute to the translation of iojs.org, please refer to the following process:
 
 ## For Individuals wanting to contribute
-* Contact your appropriate localization group, and discuss with them the best possible way to contribute. A list of the localization groups can be found here: [TBD]
-
+* Contact your appropriate localization group, and discuss with them the best possible way to contribute. A list of the localization groups can be found here: 
+    * [iojs-bn](https://github.com/iojs/iojs-bn) Bengali Localizations
+    * [iojs-cn](https://github.com/iojs/iojs-cn) Chinese Localizations 
+    * [iojs-cs](https://github.com/iojs/iojs-cs) Czech Localizations 
+    * [iojs-da](https://github.com/iojs/iojs-da) Danish Localizations 
+    * [iojs-de](https://github.com/iojs/iojs-de) German Localizations
+    * [iojs-el](https://github.com/iojs/iojs-el) Greek Localizations
+    * [iojs-es](https://github.com/iojs/iojs-es) Spanish Localizations
+    * [iojs-fa](https://github.com/iojs/iojs-fa) Persian Localizations 
+    * [iojs-fi](https://github.com/iojs/iojs-fi) Finnish Localizations
+    * [iojs-fr](https://github.com/iojs/iojs-fr) French Localizations
+    * [iojs-he](https://github.com/iojs/iojs-he) Hebrew Localizations
+    * [iojs-hi](https://github.com/iojs/iojs-hi) Hindi Localizations 
+    * [iojs-hu](https://github.com/iojs/iojs-hu) Hungarian Localizations
+    * [iojs-id](https://github.com/iojs/iojs-id) Indonesian Localizations
+    * [iojs-it](https://github.com/iojs/iojs-it) Italian Localizations
+    * [iojs-ja](https://github.com/iojs/iojs-ja) Japanese Localizations
+    * [iojs-ka](https://github.com/iojs/iojs-ka) Georgian Localizations
+    * [iojs-kr](https://github.com/iojs/iojs-kr) Korean Localizations
+    * [iojs-mk](https://github.com/iojs/iojs-mk) Macedonian Localizations
+    * [iojs-nl](https://github.com/iojs/iojs-nl) Dutch Localizations
+    * [iojs-no](https://github.com/iojs/iojs-no) Norwegian Localizations
+    * [iojs-pl](https://github.com/iojs/iojs-pl) Polish Localizations
+    * [iojs-pt](https://github.com/iojs/iojs-pt) Portuguese Localizations
+    * [iojs-ro](https://github.com/iojs/iojs-ro) Romanian Localizations
+    * [iojs-ru](https://github.com/iojs/iojs-ru) Russian Localizations
+    * [iojs-sv](https://github.com/iojs/iojs-sv) Swedish Localizations
+    * [iojs-tr](https://github.com/iojs/iojs-tr) Turkish Localizations
+    * [iojs-tw](https://github.com/iojs/iojs-tw) Taiwan Localizations
+    * [iojs-uk](https://github.com/iojs/iojs-uk) Ukranian Localizations
+    
 ## For Localization Groups
 * Ensure that any site translations are done as pull requests into this repo. This will ensure the build process, layout, and styling, remain consistent across the different translations of the site.
 * You can find the appropriate language folder within `content/`
