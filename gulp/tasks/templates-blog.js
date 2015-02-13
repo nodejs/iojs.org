@@ -31,7 +31,7 @@ gulp.task('template-blog', function() {
       var html = md.render(markdown); // convert md string to html string
       console.log(html);
       var $ = cheerio.load(html);
-      var firstHeadline = $('h3').text();
+      var firstHeadline = $($('h3').get(0)).text();
       articles.push({
         title: firstHeadline,
         date: file.filename.substr(0, 10), // 'YYY-MM-DD'

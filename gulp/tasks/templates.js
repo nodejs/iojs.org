@@ -25,7 +25,11 @@ gulp.task('templates', function() {
       var html = md.render(markdown); // convert md string to html string
 
       templateJSON.page = file.filename; // extend locals for special styles on each page
-      templateJSON['page-stylesheet'] = file.filename; // for special css files for the page
+      if (file.filepathArray[1] !== 'blog') {
+        templateJSON['page-stylesheet'] = file.filename; // for special css files for the page
+      } else {
+        templateJSON['page-stylesheet'] = 'blog';
+      }
       templateJSON.lang = lang; // extend to provide html lang attribute into the template
       templateJSON['i18n-content'] = html; // attach the rendered markdown into the body
 
