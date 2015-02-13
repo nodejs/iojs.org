@@ -32,18 +32,38 @@
     </div>
   </header>
 
-  <div class="content clearfix" i18n-content><h1>ES6 on io.js</h1>
-<p>io.js is built against modern versions of <a href="https://code.google.com/p/v8/">V8</a>. By keeping up-to-date with the latest releases of this engine we ensure new features from the <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> are brought to io.js developers in a timely manner, as well as continued performance and stability improvements.</p>
-<p>Version 1.2.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.26.33 that will be shipped with joyent/node@0.12.x.</p>
-<h2>No more --harmony flag</h2>
-<p>On joyent/node@0.12.x (V8 3.26), the <code>--harmony</code> runtime flag enabled all <strong>completed</strong>, <strong>staged</strong> and <strong>in progress</strong> ES6 features together, in bulk (with the exception of nonstandard/non-harmonious semantics for <code>typeof</code> which were hidden under <code>--harmony-typeof</code>). This meant that some really buggy or even broken features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> were just as readily available for developers as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, which had very little or even no known-issues. As such, it was best practice to either enable only certain features by using specific runtime harmony feature flags (e.g. <code>--harmony-generators</code>), or simply enable all of them and then use a restricted subset.</p>
-<p>With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for <strong>shipping</strong>, <strong>staged</strong> and <strong>in progress</strong> features:</p>
+  <div class="content clearfix" i18n-content><h1>io.jsにおけるES6</h1>
+<p>&lt;!-- io.js is built against modern versions of <a href="https://code.google.com/p/v8/">V8</a>. By keeping up-to-date with the latest releases of this engine we ensure new features from the <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> are brought to io.js developers in a timely manner, as well as continued performance and stability improvements. --&gt;</p>
+<p>io.jsは新しいバージョンの<a href="https://code.google.com/p/v8/">V8エンジン</a>を対象にビルドされています。V8エンジンを最新版に保つことで、io.js開発者は<a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMA-262 specification</a>で定義されたJavaScriptの新機能をすぐに利用することができます。</p>
+<p>&lt;!-- Version 1.2.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x. --&gt;</p>
+<p>io.js 1.2.0はV8 4.1.0.14を利用しています。これはNode.js™ 0.12.xが利用しているV8 3.28.73よりもES6サポートが進んだバージョンです。</p>
+<p>&lt;!-- ## No more --harmony flag --&gt;</p>
+<h2>--harmonyフラグは不要になります</h2>
+<p>&lt;!-- On Node.js™@0.12.x (V8 3.28+), the <code>--harmony</code> runtime flag enables all <strong>completed</strong>, <strong>staged</strong> and <strong>in progress</strong> ES6 features together, in bulk (with the exception of <code>proxies</code> which are hidden under <code>--harmony-proxies</code>). This means that some really buggy or even broken features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a> are just as readily available for developers as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, which have very little or even no known-issues. As such, most developers tend to enable only certain features by using specific runtime harmony feature flags (e.g. <code>--harmony-generators</code>), or simply enable all of them and then use a restricted subset. --&gt;</p>
+<p>Node.js™ 0.12.x (V8 3.28+)においては、<code>--harmony</code>ランタイムフラグを使うと<strong>実装済み</strong>、<strong>ステージング段階</strong>、<strong>開発中</strong>のすべてのES6機能（<code>--harmony-proxies</code>でのみ有効な<code>proxies</code>を除く）をまとめて有効にします。つまり、<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a>のような極めてバグの多いもしくは壊れた機能も、ほとんど問題なく使える<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function*">generators</a>などと同様に有効になるということです。そういった事情から、ほとんどの開発者はharmony featureフラグ（例: <code>--harmony-generators</code>）を使って特定の機能のみを有効にしがちです。</p>
+<p>&lt;!-- With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for <strong>shipping</strong>, <strong>staged</strong> and <strong>in progress</strong> features: --&gt;</p>
+<p>io.js 1.x (V8 4.1+)では、こういった複雑なことをする必要は一切ありません。すべてのharmony featuresは<strong>shipping</strong>、<strong>staged</strong>、そして<strong>in progress</strong>の三つのグループに分けられました。</p>
+<p>&lt;!-- *   All <strong>shipping</strong> features, the ones that V8 has considered stable, like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">templates</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">new string methods</a> and many others are turned <strong>on by default on io.js</strong> and do <strong>NOT</strong> require any kind of runtime flag.</p>
 <ul>
-<li>All <strong>shipping</strong> features, the ones that V8 has considered stable, like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">templates</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">new string methods</a> and many others are turned <strong>on by default on io.js</strong> and do <strong>NOT</strong> require any kind of runtime flag.</li>
-<li>Then there are <strong>staged</strong> features which are almost-completed features that haven't been completely tested or updated to the latest spec yet and therefore are not considered stable by the V8 team (e.g. there might be some edge cases left to discover). This is probably the equivalent of the state of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> on 3.26. These are the &quot;use at your own risk&quot; type of features that now require a runtime flag: <code>--es_staging</code> (or its synonym, <code>--harmony</code>).</li>
-<li>Finally, all <strong>in progress</strong> features can be activated individually by their respective harmony flag (e.g. <code>--harmony_arrow_functions</code>), although this is highly discouraged unless for testing purposes.</li>
+<li>
+<p>Then there are <strong>staged</strong> features which are almost-completed features that haven't been completely tested or updated to the latest spec yet and therefore are not considered stable by the V8 team (e.g. there might be some edge cases left to discover). This is probably the equivalent of the state of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> on 3.26. These are the &quot;use at your own risk&quot; type of features that now require a runtime flag: <code>--es_staging</code> (or its synonym, <code>--harmony</code>).</p>
+</li>
+<li>
+<p>Finally, all <strong>in progress</strong> features can be activated individually by their respective harmony flag (e.g. <code>--harmony_arrow_functions</code>), although this is highly discouraged unless for testing purposes.--&gt;</p>
+</li>
+<li>
+<p><strong>shipping</strong> featuresは、V8において安定していると判断された多くの機能、例えば<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function*">generators</a>や<a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/template_strings">templates</a>、<a href="https://developer.mozilla.org/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">新しいstringメソッド</a>などです。これらは<strong>io.jsではデフォルトで利用可能</strong>であり、<strong>ランタイムフラグは必要ありません</strong>。</p>
+</li>
+<li>
+<p><strong>staged</strong> featuresは、ほぼ完成に近いものの、テストが完全ではなかったり最新の仕様に沿っていないなどの理由で、V8チームがまだ安定していると判断していない（例えば、まだ見つかっていないエッジケースがある可能性がある）機能です。V8 3.26における<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function*">generators</a>の状態に相当すると言えるでしょう。これらは「各自の責任で使う」タイプの機能であり、使うには<code>--es_staging</code>（または<code>--harmony</code>）フラグを必要とします。</p>
+</li>
+<li>
+<p><strong>in progress</strong> featuresはそれぞれのharmonyフラグ（例: <code>--harmony_arrow_functions</code>）で個別に利用可能です。しかし、テスト目的以外での使用は非推奨です。</p>
+</li>
 </ul>
-<h2>Which ES6 features ship with io.js by default (no runtime flag required)?</h2>
+<p>&lt;!-- ## Which ES6 features ship with io.js by default (no runtime flag required)? --&gt;</p>
+<h2>io.jsでデフォルトで利用可能なES6の新機能</h2>
+<p>&lt;!--</p>
 <ul>
 <li>
 <p>Block scoping</p>
@@ -59,9 +79,30 @@
 </li>
 </ul>
 <blockquote>
-<p>As of v8 3.31.74.1, block-scoped declarations are <a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">intentionally implemented with a non-compliant limitation to strict mode code</a>. Developers should be aware that this will change as v8 continues towards ES6 specification compliance.</p>
+<p>As of v8 3.31.74.1, block-scoped declarations are <a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">intentionally implemented with a non-compliant limitation to strict mode code</a>. Developers should be aware that this will change as v8 continues towards ES6 specification compliance.
+--&gt;</p>
 </blockquote>
 </li>
+<li>
+<p>Block scoping</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/let">let</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/const">const</a></p>
+</li>
+<li>
+<p><code>function</code>-in-blocks</p>
+</li>
+</ul>
+<blockquote>
+<p>V8 3.31.74.1時点で、block-scoped declarationsは<a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">意図的にstrict modeのコードにしか適用されないように実装されています</a>。V8がES6の仕様に追従することで今後この実装に変更があるということを覚えておいてください。</p>
+</blockquote>
+</li>
+</ul>
+<p>&lt;!--</p>
+<ul>
 <li>
 <p>Collections</p>
 <ul>
@@ -75,46 +116,125 @@
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></p>
 </li>
 <li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a>*   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a>
+--&gt;</p>
 </li>
 </ul>
 </li>
 <li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a></p>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals">Binary and Octal literals</a></p>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a></p>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">New String methods</a></p>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a></p>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">Template strings</a></p>
-</li>
-</ul>
-<p>You can view a more detailed list, including a comparison with other engines, on the <a href="https://kangax.github.io/compat-table/es6/">compat-table</a> project page.</p>
-<h2>Which ES6 features are behind the --es_staging flag?</h2>
+<p>Collections</p>
 <ul>
 <li>
-<p><a href="https://github.com/lukehoban/es6features#classes">Classes</a> (strict mode only)</p>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></p>
 </li>
 <li>
-<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal extensions</a></p>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">WeakMap</a></p>
 </li>
 <li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (user-definable results for <code>Object.prototype.toString</code>)</p>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a></p>
 </li>
 </ul>
-<h2>I have my infrastructure set up to leverage the --harmony flag. Should I remove it?</h2>
-<p>The current behaviour of the <code>--harmony</code> flag on io.js is to enable <strong>staged</strong> features only. After all, it is now a synonym of <code>--es_staging</code>. As mentioned above, these are completed features that have not been considered stable yet. If you want to play safe, especially on production environments, consider removing this runtime flag until it ships by default on V8 and, consequently, on io.js. If you keep this enabled, you should be prepared for further io.js upgrades to break your code if V8 changes their semantics to more closely follow the standard.</p>
-<h2>How do I find which version of V8 ships with a particular version of io.js?</h2>
-<p>io.js provides a simple way to list all dependencies and respective versions that ship with a specific binary through the <code>process</code> global object. In case of the V8 engine, type the following in your terminal to retrieve its version:</p>
+</li>
+</ul>
+<p>&lt;!--</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a>
+--&gt;</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function*">Generators</a></p>
+</li>
+</ul>
+<p>&lt;!--</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals">Binary and Octal literals</a>
+--&gt;</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals">Binary and Octal literals</a></p>
+</li>
+</ul>
+<p>&lt;!--</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a>
+--&gt;</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a></p>
+</li>
+</ul>
+<p>&lt;!--</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">New String methods</a>
+--&gt;</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">新しいStringメソッド</a></p>
+</li>
+</ul>
+<p>&lt;!--</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a>
+--&gt;</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a></p>
+</li>
+</ul>
+<p>&lt;!--</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">Template strings</a>
+--&gt;</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/template_strings">Template strings</a></p>
+</li>
+</ul>
+<p>&lt;!-- You can view a more detailed list, including a comparison with other engines, on the <a href="https://kangax.github.io/compat-table/es6/">compat-table</a> project page. --&gt;</p>
+<p>ほかのエンジンとの比較を含むより詳細な一覧が、<a href="https://kangax.github.io/compat-table/es6/">compat-table</a>プロジェクトのページで閲覧できます。</p>
+<p>&lt;!-- ## Which ES6 features are behind the --es_staging flag? --&gt;</p>
+<h2>--es_stagingフラグで使えるES6の機能</h2>
+<p>&lt;!--</p>
+<ul>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#classes">Classes</a> (strict mode only, behind flag <code>--harmony_classes</code> which implies block scoping &amp; object literal extensions)
+--&gt;</p>
+</li>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#classes">クラス</a> (strict modeでのみ使用可。<code>--harmony_classes</code>フラグでも有効。block scopingと拡張オブジェクトリテラルの有効化を伴います)</p>
+</li>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">拡張オブジェクトリテラル</a> (<code>--harmony_object_literals</code>フラグでも有効)</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (ユーザーが定義可能な<code>Object.prototype.toString</code>。<code>--harmony_tostring</code>でも有効)</p>
+</li>
+</ul>
+<p>&lt;!-- ## Which ES6 features are in progress? --&gt;</p>
+<h2>開発段階のES6の機能</h2>
+<p>&lt;!-- New features are constantly being added to the V8 engine. Generally speaking, expect them to land on a future io.js release, although timing is unknown. --&gt;</p>
+<p>V8エンジンには絶えず新機能が追加されています。一般的に、それらの機能は将来的にはio.jsでも使えるようになると言えます。ただし、具体的な時期はまだお伝えできません。</p>
+<p>&lt;!-- You may list all the <em>in progress</em> features available on each io.js release by grepping through the <code>--v8-options</code> argument. Please note that these are incomplete and possibly broken features of V8, so use them at your own risk: --&gt;</p>
+<p>io.jsに<code>--v8-options</code>フラグを渡した結果をgrepすることで、どの<em>in progress</em>な機能が利用可能かを一覧表示できます。ただし、それらは未完成で壊れている可能性のある機能であることに注意してください。各自の責任のもとに使用してください。</p>
+<pre><code class="language-sh">iojs --v8-options | grep &quot;in progress&quot;
+</code></pre>
+<p>&lt;!-- ## I have my infrastructure set up to leverage the --harmony flag. Should I remove it? --&gt;</p>
+<h2>--harmonyフラグを利用したインフラがあります。フラグを無効にすべきですか？</h2>
+<p>&lt;!-- The current behaviour of the <code>--harmony</code> flag on io.js is to enable <strong>staged</strong> features only. After all, it is now a synonym of <code>--es_staging</code>. As mentioned above, these are completed features that have not been considered stable yet. If you want to play safe, especially on production environments, consider removing this runtime flag until it ships by default on V8 and, consequently, on io.js. If you keep this enabled, you should be prepared for further io.js upgrades to break your code if V8 changes their semantics to more closely follow the standard. --&gt;</p>
+<p>現在のio.jsにおける<code>--harmony</code>フラグの挙動は<strong>staged</strong> featuresのみを有効化するものです。<code>--harmony</code>フラグはio.jsにおいては<code>--es_staging</code>フラグと全く同じ作用をします。上述の通り、それらの機能は完成されてはいるものの、まだ安定しているとは言えません。安全を重視すべき場面、特にプロダクション環境であれば、V8、ひいてはio.jsでデフォルトで利用可能になるまでフラグを無効にすることを検討してください。有効化したまま運用するのであれば、V8の動作が仕様に近づくことでセマンティクスに変更があった場合、io.jsのアップグレード時に使用中のコードが意図通りに動作しなくなる可能性に備えてください。</p>
+<p>&lt;!-- ## How do I find which version of V8 ships with a particular version of io.js? --&gt;</p>
+<h2>io.jsがどのバージョンのV8を使っているか調べるには？</h2>
+<p>&lt;!-- io.js provides a simple way to list all dependencies and respective versions that ship with a specific binary through the <code>process</code> global object. In case of the V8 engine, type the following in your terminal to retrieve its version: --&gt;</p>
+<p>io.jsは、使用中のio.jsのすべての依存ソフトウェアとそのバージョンを一覧できる簡単な方法を、<code>process</code>グローバルオブジェクトを介して提供しています。例えば、V8エンジンのバージョンを調べるには、ターミナルで以下のコマンドを入力します。</p>
 <pre><code class="language-sh">iojs -p process.versions.v8
 </code></pre>
 </div>
