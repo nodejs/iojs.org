@@ -3,16 +3,9 @@ var _ = require('lodash');
 var DEFAULT_LANG = 'en';
 var CONTENT_DIRECTORY = 'content';
 
-// load template.json for given language, but use default language as fallback
-// for properties which are not present in the given language
+// load template.json for given language
 module.exports.loadTemplateJSON = function(lang) {
-  var defaultJSON = require('../../' + CONTENT_DIRECTORY + '/' + DEFAULT_LANG + '/template.json'); 
-  var templateJSON = require('../../' + CONTENT_DIRECTORY + '/' + lang + '/template.json');
-  var finalJSON = _.cloneDeep(defaultJSON);
-  _.forEach(templateJSON, function(value, key) {
-    finalJSON[key] = value;
-  });
-  return finalJSON;
+  return require('../../' + CONTENT_DIRECTORY + '/' + lang + '/template.json'); 
 };
 
 // load all the files for a given language

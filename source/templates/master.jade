@@ -33,7 +33,9 @@ html(lang=locals.lang)
       .content
         a.logo(href='/' + locals.lang +'/index.html')=locals['logo-text']
         .spacer
-        a(href='/' + locals.lang +'/blog/')=locals['blog-link']
+        if locals['blog-link']
+            //- if there is no 'blog-link' hide the menu item
+            a(href='/' + locals.lang +'/blog/')=locals['blog-link']
         a(href='/' + locals.lang +'/faq.html')=locals['faq-link']
         a(href='/' + locals.lang +'/es6.html')=locals['es6-link']
         a(href='https://iojs.org/api/')=locals['api-link']
