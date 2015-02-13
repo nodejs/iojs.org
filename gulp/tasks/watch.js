@@ -7,5 +7,5 @@ gulp.task('watch', function(callback) {
     config.templates.templateSrc,
     config.templates.contentSrc,
     config.templates.templateJSONsrc
-  ], ['templates']);
+  ], ['templates', 'template-blog']);
 });
