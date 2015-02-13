@@ -51,16 +51,15 @@
     "gulp-filesize": "0.0.6",
     "gulp-htmlmin": "^1.0.0",
     "gulp-imagemin": "^2.1.0",
+    "gulp-jade": "^0.11.0",
     "gulp-less": "^2.0.1",
     "gulp-markdown": "^1.0.0",
     "gulp-postcss": "^4.0.2",
+    "gulp-rename": "^1.2.0",
     "gulp-stylus": "^2.0.0",
-    "html-template": "^1.2.1",
     "lodash": "^2.4.1",
     "markdown-it": "^3.0.4",
-    "replacestream": "^2.0.0",
     "require-dir": "^0.1.0",
-    "run-sequence": "^1.0.2",
-    "vinyl-source-stream": "^1.0.0"
+    "run-sequence": "^1.0.2"
   }
 }
