@@ -20,9 +20,12 @@ module.exports.loadTemplateJSON = function(lang) {
 // - the origin srcPath
 // - the filename without extension
 // - the filepath as an array, reduced by the starting './content' directory
-module.exports.loadMdFiles = function(contentFiles, lang) {
+module.exports.loadMdFiles = function(contentFiles, lang, prefix) {
+  if (prefix == null) {
+    prefix = '';
+  }
   var templateFiles = _.where(contentFiles, function(str) { // return list of content files in this language alone
-    return str.indexOf('./' + CONTENT_DIRECTORY + '/' + lang) > -1;
+    return str.indexOf('./' + CONTENT_DIRECTORY + '/' + lang + '/' + prefix) > -1;
   });
 
   var templateFilesInThisLang = _.map(templateFiles, function(str) { // expand the file list to include the extrapolated filename
