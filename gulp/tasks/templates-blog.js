@@ -46,7 +46,7 @@ gulp.task('template-blog', function() {
     var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/blog.jade'; // get the main template file location. There can be multiple, this is just a proof of concept
     gulp.src(filepath) // read jade template
     .pipe(jade({ // render template while passing locals
-      locals: templateJSON
+      locals: _.cloneDeep(templateJSON)
     }))
     .pipe(rename('index.html')) // rename output file, using md filename 
     .pipe(gulp.dest('public/' + lang + '/blog')); // dump it in the appropriate language subfolder

@@ -34,7 +34,7 @@ gulp.task('templates', function() {
 
       gulp.src(filepath) // read jade template
       .pipe(jade({ // render template while passing locals
-        locals: templateJSON
+        locals: _.cloneDeep(templateJSON)
       }))
       .pipe(rename(file.filename + '.html')) // rename output file, using md filename 
       .pipe(gulp.dest(destinationDirectory)); // dump it in the appropriate language subfolder
