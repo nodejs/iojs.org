@@ -23,13 +23,10 @@ gulp.task('template-blog', function() {
     if (blogFilesInThisLang.length === 0) {
       return;
     }
-    console.log(blogFilesInThisLang);
     var articles = [];
     _.forEach(blogFilesInThisLang, function(file) { // iterate over the md files present in this language to apply the template to them
       var markdown = String(fs.readFileSync(file.srcPath)); // read in the md file, convert buffer to string
-      console.log(markdown);
       var html = md.render(markdown); // convert md string to html string
-      console.log(html);
       var $ = cheerio.load(html);
       var firstHeadline = $($('h3').get(0)).text();
       articles.push({
