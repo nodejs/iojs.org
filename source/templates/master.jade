@@ -1,0 +1,52 @@
+//- extends master
+
+//- block main-content
+//-   div WTF?
+//-   span=locals.page
+//-   //- markdown will be injected here
+
+doctype html
+html(lang=locals.lang)
+
+  head
+    meta(charset='utf-8')
+    title=locals['page-title']
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    meta(name='description', content='io.js is an npm compatible platform originally based on node.js')
+    meta(name='keywords', content='iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700', rel='stylesheet')
+    link(href='/main.css', rel='stylesheet')
+    link(href='/mobile.css', rel='stylesheet')
+    if locals['page-stylesheet']
+      link(href='/' + locals['page-stylesheet'] + '.css', rel='stylesheet')
+    link(rel='icon', href='/images/1.0.0.ico', type='image/x-icon')
+    link(rel='apple-touch-icon', href='/images/apple-touch-icon-1.0.0.png')
+    meta(property='og:image', content='https://iojs.org/images/1.0.0.png')
+    meta(property='og:image:type', content='image/png')
+    meta(property='og:image:width', content='1369')
+    meta(property='og:image:height', content='1563')
+
+  body(markdown-page=locals.page)
+
+    header
+      .content
+        a.logo(href='/' + locals.lang +'/index.html')=locals['logo-text']
+        .spacer
+        a(href='/' + locals.lang +'/blog/')=locals['blog-link']
+        a(href='/' + locals.lang +'/faq.html')=locals['faq-link']
+        a(href='/' + locals.lang +'/es6.html')=locals['es6-link']
+        a(href='https://iojs.org/api/')=locals['api-link']
+
+    .content.clearfix.main-content
+      block main-content
+
+    footer.content
+      nav
+        a(href='https://github.com/iojs/io.js/issues')=locals['issues-link']
+        a(href='https://github.com/iojs')=locals['org-link']
+        a(href='https://webchat.freenode.net/?channels=io.js')=locals['irc-link']
+        a(href='http://logs.libuv.org/io.js/latest')=locals['irc-logs-link']
+        a(href='https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme')=locals['gov-link']
+
+  // See something you like? Want to help? Visit https://github.com/iojs/website to contribute
