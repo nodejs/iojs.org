@@ -39,7 +39,7 @@
     }
   ],
   "dependencies": {
-    "autoprefixer-core": "^5.0.0",
+    "autoprefixer-core": "^5.1.5",
     "browserify": "^8.1.1",
     "csswring": "^3.0.0",
     "del": "^1.1.1",
@@ -54,7 +54,6 @@
     "gulp-less": "^2.0.1",
     "gulp-markdown": "^1.0.0",
     "gulp-postcss": "^4.0.2",
-    "gulp-rename": "^1.2.0",
     "gulp-stylus": "^2.0.0",
     "html-template": "^1.2.1",
     "lodash": "^2.4.1",
