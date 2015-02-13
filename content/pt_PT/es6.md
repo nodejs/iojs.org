@@ -1,6 +1,6 @@
 # ES6 no io.js
 
-O io.js é construído com versões modernas do [V8](https://code.google.com/p/v8/). Mantendo-nos atualizados com a última versão deste motor, garantimos que as novas funcionalidades da [especificação JavaScript ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm) são disponibilizadas rapidamente aos programadores io.js, bem como as melhorias de performance e estabilidade.
+O io.js é compilado com versões modernas do [V8](https://code.google.com/p/v8/). Mantendo-nos atualizados com a última versão deste motor, garantimos que as novas funcionalidades da [especificação JavaScript ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm) são disponibilizadas rapidamente aos programadores io.js, bem como as melhorias de performance e estabilidade.
 
 A versão 1.2.0 do io.js vem com o V8 4.1.0.14 que inclui funcionalidades ES6 muito além da versão 3.26.33 presente no joyent/node@0.12.x.
 
