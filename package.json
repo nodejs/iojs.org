@@ -58,6 +58,7 @@
     "html-template": "^1.2.1",
     "lodash": "^2.4.1",
     "markdown-it": "^3.0.4",
+    "moment-timezone": "^0.3.0",
     "replacestream": "^2.0.0",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
