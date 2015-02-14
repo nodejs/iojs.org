@@ -9,10 +9,10 @@ html(lang=locals.lang)
     meta(name='description', content='io.js is an npm compatible platform originally based on node.js')
     meta(name='keywords', content='iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript')
     link(href='https://fonts.googleapis.com/css?family=Lato:400,700', rel='stylesheet')
-    link(href='/main.css', rel='stylesheet')
-    link(href='/mobile.css', rel='stylesheet')
+    link(href='#{locals.urlPrefix}/main.css', rel='stylesheet')
+    link(href='#{locals.urlPrefix}/mobile.css', rel='stylesheet')
     if locals['page-stylesheet']
-      link(href='/' + locals['page-stylesheet'] + '.css', rel='stylesheet')
+      link(href='#{locals.urlPrefix}/#{locals["page-stylesheet"]}.css', rel='stylesheet')
     link(rel='icon', href='/images/1.0.0.ico', type='image/x-icon')
     link(rel='apple-touch-icon', href='/images/apple-touch-icon-1.0.0.png')
     meta(property='og:image', content='https://iojs.org/images/1.0.0.png')
@@ -24,13 +24,13 @@ html(lang=locals.lang)
 
     header
       .content
-        a.logo(href='/' + locals.lang +'/index.html')=locals['logo-text']
+        a.logo(href='#{locals.urlPrefix}/#{locals.lang}/index.html')=locals['logo-text']
         .spacer
-            a(href='/' + locals.lang +'/blog/')=locals['blog-link']
-        a(href='/' + locals.lang +'/faq.html')=locals['faq-link']
-        a(href='/' + locals.lang +'/es6.html')=locals['es6-link']
         if locals.__translated['blog-link']
             //- if 'blog-link' is not translated for the given lang, hide the menu item
+            a(href='#{locals.urlPrefix}/#{locals.lang}/blog/')=locals['blog-link']
+        a(href='#{locals.urlPrefix}/#{locals.lang}/faq.html')=locals['faq-link']
+        a(href='#{locals.urlPrefix}/#{locals.lang}/es6.html')=locals['es6-link']
         a(href='https://iojs.org/api/')=locals['api-link']
 
     .content.clearfix.main-content

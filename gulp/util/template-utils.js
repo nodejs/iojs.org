@@ -1,5 +1,7 @@
 var _ = require('lodash');
 
+var config = require('../config').templates; // pull in the pathing config file
+
 var DEFAULT_LANG = 'en';
 var CONTENT_DIRECTORY = 'content';
 
@@ -13,6 +15,7 @@ module.exports.loadTemplateJSON = function(lang) {
     finalJSON[key] = value;
     finalJSON.__translated[key] = true;
   });
+  finalJSON.urlPrefix = config.urlPrefix;
   finalJSON.lang = lang; // extend to provide html lang attribute into the template
 
   return finalJSON;
