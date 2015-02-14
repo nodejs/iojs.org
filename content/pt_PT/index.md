@@ -19,4 +19,4 @@ ou
 
 [Versões Nightly](https://iojs.org/download/nightly/) estão disponíveis para teste.
 
-[Perguntas Frequentes (FAQ)](/faq.html)
+[Perguntas Frequentes (FAQ)](faq.html)
