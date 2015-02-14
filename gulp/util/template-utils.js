@@ -13,6 +13,9 @@ module.exports.loadTemplateJSON = function(lang) {
     finalJSON[key] = value;
     finalJSON.__translated[key] = true;
   });
+  finalJSON.lang = lang; // extend to provide html lang attribute into the template
+
+  return finalJSON;
 };
 
 // load all the files for a given language

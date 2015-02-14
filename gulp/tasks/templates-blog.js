@@ -38,7 +38,6 @@ gulp.task('template-blog', function() {
     templateJSON.page = 'blog';
     templateJSON['page-stylesheet'] = 'blog';
     templateJSON.articles = articles;
-    templateJSON.lang = lang;
 
     var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/blog.jade'; // get the main template file location. There can be multiple, this is just a proof of concept
     gulp.src(filepath) // read jade template

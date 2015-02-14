@@ -30,7 +30,6 @@ gulp.task('templates', function() {
       } else {
         templateJSON['page-stylesheet'] = 'blog';
       }
-      templateJSON.lang = lang; // extend to provide html lang attribute into the template
       templateJSON['i18n-content'] = html; // attach the rendered markdown into the body
 
       var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.jade'; // get the main template file location. There can be multiple, this is just a proof of concept
