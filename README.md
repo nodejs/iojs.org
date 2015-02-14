@@ -35,6 +35,12 @@ Runs a local HTTP server on port 4657 with live-reload, which will update
 your browser immediately with content or style changes. Generated assets
 are provided to the [./public]() directory for publishing.
 
+### Deploy to gh-pages
+
+```
+make upload-gh-pages
+```
+
 ## Deployment
 
 The website is currently hosted on a (sponsored) 3rd party provider with a deployment
