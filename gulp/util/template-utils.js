@@ -5,7 +5,14 @@ var CONTENT_DIRECTORY = 'content';
 
 // load template.json for given language
 module.exports.loadTemplateJSON = function(lang) {
-  return require('../../' + CONTENT_DIRECTORY + '/' + lang + '/template.json'); 
+  var defaultJSON = require('../../' + CONTENT_DIRECTORY + '/' + DEFAULT_LANG + '/template.json'); 
+  var templateJSON = require('../../' + CONTENT_DIRECTORY + '/' + lang + '/template.json');
+  var finalJSON = _.cloneDeep(defaultJSON);
+  finalJSON.__translated = {}; // meta information if a key was translated in the given lang
+  _.forEach(templateJSON, function(value, key) {
+    finalJSON[key] = value;
+    finalJSON.__translated[key] = true;
+  });
 };
 
 // load all the files for a given language
