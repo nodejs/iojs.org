@@ -25,11 +25,7 @@ gulp.task('templates', function() {
       var html = md.render(markdown); // convert md string to html string
 
       templateJSON.page = file.filename; // extend locals for special styles on each page
-      if (file.filepathArray[1] !== 'blog') {
-        templateJSON['page-stylesheet'] = file.filename; // for special css files for the page
-      } else {
-        templateJSON['page-stylesheet'] = 'blog';
-      }
+      templateJSON['page-stylesheet'] = file.filename; // for special css files for the page
       templateJSON['i18n-content'] = html; // attach the rendered markdown into the body
 
       var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.jade'; // get the main template file location. There can be multiple, this is just a proof of concept

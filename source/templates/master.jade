@@ -26,9 +26,6 @@ html(lang=locals.lang)
       .content
         a.logo(href='#{locals.urlPrefix}/#{locals.lang}/index.html')=locals['logo-text']
         .spacer
-        if locals.__translated['blog-link']
-            //- if 'blog-link' is not translated for the given lang, hide the menu item
-            a(href='#{locals.urlPrefix}/#{locals.lang}/blog/')=locals['blog-link']
         a(href='#{locals.urlPrefix}/#{locals.lang}/faq.html')=locals['faq-link']
         a(href='#{locals.urlPrefix}/#{locals.lang}/es6.html')=locals['es6-link']
         a(href='https://iojs.org/api/')=locals['api-link']

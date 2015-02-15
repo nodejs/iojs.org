@@ -4,7 +4,7 @@ var runSequence = require('run-sequence');
 gulp.task('default', function(cb){
   runSequence(
     'clean',
-    ['stylus', 'templates', 'template-blog'],
+    ['stylus', 'templates'],
     'minifyCss',
     ['watch', 'server'],
   cb);
