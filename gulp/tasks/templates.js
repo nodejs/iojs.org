@@ -7,10 +7,26 @@ var gulp = require('gulp'); // because this is a gulp task. duh.
 var jade = require('gulp-jade'); // to render jade to html.
 var rename = require('gulp-rename'); // to use different file name between input and output
 var md = require('markdown-it')(); // to convert markdown to html
+var moment = require('moment-timezone');
+var exec = require('child_process').exec;
 var utils = require('../util/template-utils.js');
 
 gulp.task('templates', function() {
   var contentFiles = glob.sync(config.contentSrc); // read in all content files in the repo
+  var separator = '<SEPARATOR>';
+  var cmd = 'git log --no-color --pretty=format:\'[ "%H", "%s", "%cr", "%an" ],\' --abbrev-commit';
+  cmd = cmd.replace(/"/g, separator);
+  _command(cmd, function(str) {
+    str = str.substr(0, str.length - 1);
+    str = str.replace(/"/g, '\\"');
+    str = str.replace(/\\\./g, '\\\\.');
+    str = str.replace(new RegExp(separator, 'g'), '"');
+    var commits = JSON.parse('[' + str + ']');
+    var thisCommit = commits[0];
+    var commitSha = thisCommit[0];
+    var commitMsg = thisCommit[1];
+    var commitUser = thisCommit[3];
+    var buildTime = moment().tz('UTC').format('YYYY-MM-DD HH:mm:ss') + ' UTC';
 
   var languages = _.uniq(_.map(contentFiles, function(str) { // extrapolate the languages from the content filepaths
     return str.split('/')[2];
@@ -27,6 +43,9 @@ gulp.task('templates', function() {
       templateJSON.page = file.filename; // extend locals for special styles on each page
       templateJSON['page-stylesheet'] = file.filename; // for special css files for the page
       templateJSON['i18n-content'] = html; // attach the rendered markdown into the body
+      templateJSON.buildTime = buildTime;
+      templateJSON.commitSha = commitSha;
+      templateJSON.commitMsg = commitMsg;
 
       var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.jade'; // get the main template file location. There can be multiple, this is just a proof of concept
       var destinationDirectory = path.dirname('public/' + file.filepathArray.join('/')); // consider 
@@ -41,3 +60,10 @@ gulp.task('templates', function() {
      });
   });
 });
+});
+
+function _command(cmd, cb) {
+  exec(cmd, function(err, stdout, stderr) {
+    cb(stdout.split('\n').join(''));
+  });
+}

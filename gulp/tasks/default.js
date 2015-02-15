@@ -5,7 +5,6 @@ gulp.task('default', function(cb){
   runSequence(
     'clean',
     ['stylus', 'templates'],
-    'minifyCss',
     ['watch', 'server'],
   cb);
 });
