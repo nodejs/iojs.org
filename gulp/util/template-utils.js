@@ -1,5 +1,6 @@
 var _ = require('lodash');
-
+var exec = require('child_process').exec;
+var moment = require('moment-timezone');
 var config = require('../config').templates; // pull in the pathing config file
 
 var DEFAULT_LANG = 'en';
@@ -49,3 +50,32 @@ module.exports.loadMdFiles = function(contentFiles, lang, prefix) {
   });
   return templateFilesInThisLang;
 };
+
+module.exports.addBuildMeta = function(templateJSON, cb) {
+  var separator = '<SEPARATOR>';
+  var cmd = 'git log --no-color --pretty=format:\'[ "%H", "%s", "%cr", "%an" ],\' --abbrev-commit';
+  cmd = cmd.replace(/"/g, separator);
+  _command(cmd, function(str) {
+    str = str.substr(0, str.length - 1);
+    str = str.replace(/"/g, '\\"');
+    str = str.replace(/\\\./g, '\\\\.');
+    str = str.replace(new RegExp(separator, 'g'), '"');
+    var commits = JSON.parse('[' + str + ']');
+    var lastCommit = commits[0];
+    templateJSON.buildTime = moment().tz('UTC').format('YYYY-MM-DD HH:mm:ss') + ' UTC';
+    templateJSON.commitSha = lastCommit[0];
+    templateJSON.commitMsg = lastCommit[1];
+    cb();
+ });
+};
+
+function _command(cmd, cb) {
+  exec(cmd, function(err, stdout, stderr) {
+    if (err) {
+      console.log(err);
+      console.log(stderr);
+      process.exit(1);
+    }
+    cb(stdout.split('\n').join(''));
+  });
+}
