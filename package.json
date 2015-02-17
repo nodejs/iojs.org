@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/iojs/website.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iojs/website/issues"
   },
