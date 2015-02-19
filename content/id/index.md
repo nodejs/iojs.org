@@ -18,6 +18,6 @@ or
 
 [Log Perubahan](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
 
-[Relase setiap malam](https://iojs.org/download/nightly/) tersedia untuk pengujian.
+[Rilis setiap malam](https://iojs.org/download/nightly/) tersedia untuk pengujian.
 
 [Pertanyaan yang Sering Diajukan](/faq.html)
