@@ -21,16 +21,18 @@
 ## Running Locally
 
 ### Dependencies
+
 ```
 git clone https://github.com/iojs/website.git
-npm install -g gulp
 npm install
 ```
 
 ### Local Development
+
 ```
-gulp
+npm run serve
 ```
+
 Runs a local HTTP server on port 4657 with live-reload, which will update
 your browser immediately with content or style changes. Generated assets
 are provided to the [./public]() directory for publishing.
