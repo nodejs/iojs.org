@@ -18,6 +18,6 @@
 
 [Ιστορικό](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
 
-[Nightly εκδόσεις](https://iojs.org/download/nightly/) είναι διαθέσιμες για testing.
+[Nightly εκδόσεις](https://iojs.org/download/nightly/) είναι διαθέσιμες για δοκιμές.
 
 [Συχνές ερωτήσεις](/faq.html)
