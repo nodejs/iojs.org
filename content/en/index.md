@@ -4,16 +4,16 @@ Bringing [ES6](es6.html) to the Node Community!
 
 [io.js](https://github.com/iojs/io.js) is an [npm](https://www.npmjs.org/) compatible platform originally based on [node.js](https://nodejs.org/)&#8482;.
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.3.0/)
+[![io.js](../images/1.0.0.png)]({{io.js_latest.link}})
 
-[Version 1.3.0](https://iojs.org/dist/v1.3.0/)
+[Version {{io.js_latest.value}}]({{io.js_latest.link}})
 
 Download for
-[Linux](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi),
-[Win64](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi),
-[Mac](https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg) or
-[others](https://iojs.org/dist/v1.3.0/).
+[{{io.js_latest_linux.name}}]({{io.js_latest_linux.link}}),
+[{{io.js_latest_win32.name}}]({{io.js_latest_win32.link}}),
+[{{io.js_latest_win64.name}}]({{io.js_latest_win64.link}}),
+[{{io.js_latest_mac.name}}]({{io.js_latest_mac.link}}), or
+[{{io.js_latest_others.name}}]({{io.js_latest_others.link}}).
 
 
 [Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
