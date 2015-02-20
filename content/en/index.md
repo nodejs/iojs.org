@@ -12,7 +12,7 @@ Download for
 [{{io.js_latest_linux.name}}]({{io.js_latest_linux.link}}),
 [{{io.js_latest_win32.name}}]({{io.js_latest_win32.link}}),
 [{{io.js_latest_win64.name}}]({{io.js_latest_win64.link}}),
-[{{io.js_latest_mac.name}}]({{io.js_latest_mac.link}}), or
+[{{io.js_latest_mac.name}}]({{io.js_latest_mac.link}}) or
 [{{io.js_latest_others.name}}]({{io.js_latest_others.link}}).
 
 

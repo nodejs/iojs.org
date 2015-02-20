@@ -1,6 +1,7 @@
 var dest = './public';
 var src = './source';
 var content = './content';
+var versions = require('../versions');
 
 module.exports = {
   stylus: {
@@ -35,5 +36,6 @@ module.exports = {
   dest: dest,
   server: {
     port: 4657
-  }
+  },
+  versions: versions
 };
