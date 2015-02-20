@@ -7,10 +7,10 @@ io.js is built against modern versions of [V8](https://code.google.com/p/v8/). B
 io.jsは新しいバージョンの[V8エンジン](https://code.google.com/p/v8/)を対象にビルドされています。V8エンジンを最新版に保つことで、io.js開発者は[ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm)で定義されたJavaScriptの新機能をすぐに利用することができます。
 
 <!-- 
-Version 1.2.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x. 
+Version 1.3.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x. 
 -->
 
-io.js 1.2.0はV8 4.1.0.14を利用しています。これはNode.js™ 0.12.xが利用しているV8 3.28.73よりもES6サポートが進んだバージョンです。
+io.js 1.3.0はV8 4.1.0.14を利用しています。これはNode.js™ 0.12.xが利用しているV8 3.28.73よりもES6サポートが進んだバージョンです。
 
 <!-- 
 ## No more --harmony flag 
