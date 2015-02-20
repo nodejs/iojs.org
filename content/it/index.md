@@ -18,6 +18,6 @@ o
 
 [Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
 
-[Nightly releases](https://iojs.org/download/nightly/) sono disponibili per essere testati.
+Sono disponibili le [Nightly releases](https://iojs.org/download/nightly/) per essere testate.
 
 [Frequently Asked Questions](/faq.html)
