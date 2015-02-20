@@ -18,8 +18,6 @@ var injectVersions;
 //  function to inject the versions into the string given
 injectVersions = function(string, versions){
 
-  console.time('injectVersions');
-
   if( !Array.isArray(versions) ){
     throw new Error('expecting an array of versions!');
   }
@@ -38,7 +36,6 @@ injectVersions = function(string, versions){
     if(thisVersion.valueRegExp !== 'undefined'){
       string = string.replace(thisVersion.valueRegExp, thisVersion.value);
     }
-
   });
 
   return string;
