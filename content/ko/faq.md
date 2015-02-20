@@ -2,7 +2,7 @@
 
 ## io.js란?
 
-[io.js](https://github.com/iojs/io.js)는 [Chrome의 V8 런타임](http://code.google.com/p/v8/)위에서 만들어진 JavaScript 플랫폼이다. [Joyent의 Node.js™](https://nodejs.org/)의 포크로 시작해, [npm](https://www.npmjs.org/) 환경과 호환하고 있다.
+[io.js](https://github.com/iojs/io.js)는 [Chrome의 V8 런타임](http://code.google.com/p/v8/) 위에서 만들어진 JavaScript 플랫폼이다. [Joyent의 Node.js™](https://nodejs.org/)의 포크로 시작해, [npm](https://www.npmjs.org/) 환경과 호환하고 있다.
 
 ## 왜?
 
@@ -12,9 +12,9 @@ io.js는 보다 빠르고 예측 가능한 릴리스 주기를 목표로 하고 
 
 ## 버전 1.0.x?
 
-io.js는 [Semver](http://semver.org/)([번역](http://hatemogi.com/semver/))로 옮겼고 Node.js™ 0.10과 io.js 1.0.0의 차이는 주 버전을 올리기에 충분하다.
+io.js는 [Semver](http://semver.org/)([번역](http://semver.org/lang/ko/))로 옮겼고 Node.js™ 0.10과 io.js 1.0.0의 차이는 주 버전을 올리기에 충분하다.
 
-v1.x [변경이력](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)에는 [Node.js v0.10.35에서 io.js v1.0.x까지 변경점이 요약](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100)되어 있다.
+v1.x [변경이력](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)에는 [Node.js v0.10.35에서 io.js v1.0.x까지의 변경점이 요약](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100)되어 있다.
 
 ## 어떻게 기여할 수 있나?
 
