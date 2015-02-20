@@ -74,13 +74,15 @@ gulp.task('templates', function() {
       var markdownFilesInThisLang = utils.loadMdFiles(contentFiles, lang); // load all the md files
 
       _.forEach(markdownFilesInThisLang, function(file) { // iterate over the md files present in this language to apply the template to them
-        var markdown = String(fs.readFileSync(file.srcPath)); // read in the md file, convert buffer to string
-        markdown = injectVersions(markdown.toString(), versions); // inject the versions in the markdown
-        var html = md.render(markdown); // convert md string to html string
-        var thisFileJSON = _.cloneDeep(templateJSON); // clone in the template JSON object
-        var pageTitle = thisFileJSON['browser-title'];
-        thisFileJSON = _.omit(thisFileJSON, 'browser-title');
-        var finalJSON = {};
+        var markdown      = String(fs.readFileSync(file.srcPath)); // read in the md file, convert buffer to string
+        markdown          = injectVersions(markdown.toString(), versions); // inject the versions in the markdown
+
+        var html          = md.render(markdown); // convert md string to html string
+
+        var thisFileJSON  = _.cloneDeep(templateJSON); // clone in the template JSON object
+        var pageTitle     = thisFileJSON['browser-title'];
+        thisFileJSON      = _.omit(thisFileJSON, 'browser-title');
+        var finalJSON     = {};
 
         _.forEach(thisFileJSON, function(value, key) {
           finalJSON['[i18n-' + key + ']'] = value;
