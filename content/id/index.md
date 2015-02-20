@@ -2,7 +2,7 @@
 
 Membawa [ES6](es6.html) ke Komunitas Node!
 
-[io.js](https://github.com/iojs/io.js) adalah [npm](https://www.npmjs.org/) platform yang aslinya kompatibel dengan [node.js] (https: //nodejs.org/)™.
+[io.js](https://github.com/iojs/io.js) adalah [npm](https://www.npmjs.org/) platform yang kompatibel dengan [node.js] (https: //nodejs.org/)™.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.2.0/)
 
@@ -20,4 +20,4 @@ or
 
 [Rilis setiap malam](https://iojs.org/download/nightly/) tersedia untuk pengujian.
 
-[Pertanyaan yang Sering Diajukan](/faq.html)
+[Pertanyaan yang sering ditanyakan](/faq.html)
