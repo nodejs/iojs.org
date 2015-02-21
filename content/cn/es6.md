@@ -2,7 +2,7 @@
 
 io.js 是基于 [V8](https://code.google.com/p/v8/) 引擎的较新版本构建的。通过持续跟进最新版的 V8 引擎，我们可以保证及时地为开发者带来最新的 [JavaScript ECMA-262 规范](http://www.ecma-international.org/publications/standards/Ecma-262.htm) 中的语言特性，同时也能得到性能和稳定性的提升。
 
-io.js 1.3.0 集成了 V8 4.1.0.14 版本，其中包含的 ES6 特性远超 joyent/node@0.12.x 集成的 3.26.33 版本所包含的。
+io.js {{iojs.value}} 集成了 V8 {{V8.value}} 版本，其中包含的 ES6 特性远超 joyent/node@0.12.x 集成的 3.26.33 版本所包含的。
 
 ## 干掉 --harmony
 

@@ -4,16 +4,16 @@
 
 [io.js](https://github.com/iojs/io.js) це [npm](https://www.npmjs.org/) сумісна платформа, що побудована на основі [node.js](https://nodejs.org/)&#8482;.
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.3.0/)
+[![io.js]({{iojs.img}})]({{iojs.link}})
 
-[Версія 1.3.0](https://iojs.org/dist/v1.3.0/)
+[Версія {{iojs.value}}]({{iojs.link}})
 
 Завантажити для
-[Linux](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi),
-[Win64](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi),
-[Mac](https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg) чи
-[інших ОС](https://iojs.org/dist/v1.3.0/).
+[Linux]({{linux.link}}),
+[Win32]({{win32.link}}),
+[Win64]({{win64.link}}),
+[Mac]({{mac.link}}) чи
+[інших ОС]({{iojs.link}}).
 
 [Історія змін](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
 

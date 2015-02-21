@@ -3,58 +3,67 @@
 
 var versions;
 
-//  declare the current versions for the build system to use
+/*  declare the current versions for the build system to use
+    the id is used to construct a RegExp in order to inject the values of
+    a version into the templates.
+
+    for example:
+    we define an io.js version
+    {
+      id: 'iojs',
+      name: 'io.js',
+      value: '1.3.0',
+      link: 'https://iojs.org/dist/v1.3.0/',
+    }
+
+    then, in the template, in order to inject the link, we add to the
+    template this : `{{ iojs.link }}`
+    For the value : `{{ iojs.value }}`
+    so in general, we use the `id` plus a dot and the key
+*/
 versions =
 [
   {
-    "name": "io.js",
-    "nameRegExp": /{{\s*io\.js_latest\.name\s*}}/mg,
-    "value": "1.3.0",
-    "valueRegExp": /{{\s*io\.js_latest\.value\s*}}/mg,
-    "link": "https://iojs.org/dist/v1.3.0/",
-    "linkRegExp": /{{\s*io\.js_latest\.link\s*}}/mg,
+    id: 'iojs',
+    name: 'io.js',
+    value: '1.3.0',
+    link: 'https://iojs.org/dist/v1.3.0/',
+    img: '../images/1.0.0.png'
   },
   {
-    "name": "Linux",
-    "nameRegExp": /{{\s*io\.js_latest_linux\.name\s*}}/mg,
-    "value": "1.3.0",
-    "link": "https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz",
-    "linkRegExp": /{{\s*io\.js_latest_linux\.link\s*}}/mg,
+    id: 'linux',
+    name: 'Linux',
+    value: '1.3.0',
+    link: 'https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz'
   },
   {
-    "name": "Win32",
-    "nameRegExp": /{{\s*io\.js_latest_win32\.name\s*}}/mg,
-    "value": "1.3.0",
-    "link": "https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi",
-    "linkRegExp": /{{\s*io\.js_latest_win32\.link\s*}}/mg,
+    id: 'win32',
+    name: 'Win32',
+    value: '1.3.0',
+    link: 'https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi'
   },
   {
-    "name": "Win64",
-    "nameRegExp": /{{\s*io\.js_latest_win64\.name\s*}}/mg,
-    "value": "1.3.0",
-    "link": "https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi",
-    "linkRegExp": /{{\s*io\.js_latest_win64\.link\s*}}/mg,
+    id: 'win64',
+    name: 'Win64',
+    value: '1.3.0',
+    link: 'https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi'
   },
   {
-    "name": "Mac",
-    "nameRegExp": /{{\s*io\.js_latest_mac\.name\s*}}/mg,
-    "value": "1.3.0",
-    "link": "https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg",
-    "linkRegExp": /{{\s*io\.js_latest_mac\.link\s*}}/mg,
+    id: 'mac',
+    name: 'Mac',
+    value: '1.3.0',
+    link: 'https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg'
   },
   {
-    "name": "others",
-    "nameRegExp": /{{\s*io\.js_latest_others\.name\s*}}/mg,
-    "value": "1.3.0",
-    "link": "https://iojs.org/dist/v1.3.0/",
-    "linkRegExp": /{{\s*io\.js_latest_others\.link\s*}}/mg,
+    id: 'others',
+    name: 'others'
   },
   {
-    "name": "V8",
-    "value": "4.1.0.14",
-    "valueRegExp": /{{\s*io\.js_latest_V8\.value\s*}}/mg
+    id: 'V8',
+    name: 'V8',
+    value: '4.1.0.14'
   }
 ];
 
-
+//  export the versions Array
 module.exports = versions;
