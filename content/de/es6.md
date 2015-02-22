@@ -1,6 +1,6 @@
 # ES6 und io.js
 
-io.js wird basierent auf der aktuellen Version der [V8](https://code.google.com/p/v8/) Engine entwickelt. Mit der Verpflichtung ständig die aktuelle V8 Engine einzusetzen, stellen wir sicher, dass neue Funktionen der [JavaScript ECMA-262 Spezifikation](http://www.ecma-international.org/publications/standards/Ecma-262.htm) schnell für io.js Entwickler bereit stehen. Nebenbei kann sich deswegen die Geschwindkeit und Stabilität verbessern.
+Die io.js-Entwicklung basiert auf der aktuellen Version der [V8](https://code.google.com/p/v8/)-Engine. Mit der Bestrebung, ständig die aktuellste Version der V8-Engine einzusetzen, stellen wir sicher, dass neue Funktionen der [JavaScript ECMA-262 Spezifikation](http://www.ecma-international.org/publications/standards/Ecma-262.htm) sowie Geschwindigkeits- und Stabilitätsverbesserungen schnell für io.js-Entwickler zu Verfügung stehen.
 
 Die Version 1.3.0 von io.js wird mit V8 Version 4.1.0.14 ausgeliefert, welche bereits ES6 Funktionen beinhaltet, die deutlich weiterentwickelter sind, als jene Funktionen der V8 Version 3.26.33 die in joyent/node@0.12.x enthalten ist.
 
