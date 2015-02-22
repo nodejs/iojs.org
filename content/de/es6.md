@@ -49,7 +49,7 @@ Anders in io.js<span>@</span>1.x (V8 4.1+), hier entfällt diese Komplexität: A
 
 *   [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
 
-Eine detailliertere Liste, die dazu noch Vergleiche zu anderen Engines enthält, gibt es auf der [compat-table](https://kangax.github.io/compat-table/es6/)-Projektseite.
+Eine detailliertere Liste, die dazu noch Vergleiche zu anderen Engines enthält, gibt es auf der [compat-table-Projektseite](https://kangax.github.io/compat-table/es6/).
 
 ## Welche ES6-Funktionen stehen mit dem Parameter `--es_staging` zur Verfügung?
 
