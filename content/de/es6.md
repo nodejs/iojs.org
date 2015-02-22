@@ -60,11 +60,11 @@ Eine detailliertere Liste, die dazu noch Vergleiche zu anderen Engines enthält,
 
 ## In meiner Infrastruktur kommt der Paramterer `--harmony` zum Einsatz. Ist es sinnvoll diesen Parameter zu entfernen?
 
-Das Startparameter `--harmony` schaltet lediglich die **staged** Funktionen ein und ist als synomum zu `--es_staging` zu verstehen. Wie oben bereits beschrieben, werden hierdurch mehr oder weniger vollständige Funktionen aktiviert die noch nicht als stabil zu bezeichnen sind. Wer auf nummer Sicher gehen will, gerade in produktiven Umgebungen, sollte ernsthaft darüber nachdenken diesen Startparameter nicht zu verwenden. Wird dennoch nicht auf diesen Startparameter verzichtet, muss man damit rechnen, dass io.js Aktualisierungen die eigene Anwendung unbrauchbar macht. Das geschiet insbesondere dann, wenn Funktionen an dem aktuellen Standard angepasst werden.
+Das Startparameter `--harmony` schaltet lediglich die **staged**-Funktionen ein und ist als Synonym zu `--es_staging` zu verstehen. Wie oben bereits beschrieben, werden hierdurch mehr oder weniger vollständige Funktionen aktiviert, die noch nicht als stabil zu bezeichnen sind. Wer auf Nummer sicher gehen will, gerade in produktiven Umgebungen, sollte ernsthaft darüber nachdenken, diesen Startparameter nicht zu verwenden, bis die benötigte Funktion in V8 standardmäßig zu Verfügung steht, und somit auch in io.js. Wird der Parameter trotzdem verwendet, muss man damit rechnen, dass künftige io.js-Aktualisierungen den eigenen Code fehlschlagen lässt, falls Funktionen der V8-Engine an den aktuellen Standard angepasst werden.
 
 ## Wie erkenne ich, mit welcher V8 Version io.js ausgeliefert wurde?
 
-io.js bietet eine einfache Möglichkeit, alle Abhängigkeiten der jeweilig installierten Version, durch das globale Objekt `process` aufzulisten. Die V8 Engine stellt ein Befehl zur Verfügung, der die Versionsinformationen ausgibt, wenn man folgendes in der Konsole eingibt:
+io.js bietet eine einfache Möglichkeit, alle Abhängigkeiten der jeweilig installierten Version, durch das globale Objekt `process` aufzulisten. Die V8-Engine stellt einen Befehl zur Verfügung, der die Versions-Informationen durch folgenden Konsolenbefehl ausgibt:
 
 ```sh
 iojs -p process.versions.v8
