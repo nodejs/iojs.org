@@ -25,7 +25,7 @@ Anders in io.js<span>@</span>1.x (V8 4.1+), hier entfällt diese Komplexität: A
 
     *   `function`-in-blocks
 
-    >As of v8 3.31.74.1, block-scoped declarations are [intentionally implemented with a non-compliant limitation to strict mode code](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Developers should be aware that this will change as v8 continues towards ES6 specification compliance.
+    >Ähnlich wie in v8 3.31.74.1, block-scoped Deklarationen sind [bewusst mit der Limitierung auf den strict-Modus umgesetzt](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Entwickler sollten gewarnt sein, denn es wird Änderungen geben, sowie die Entwicklung an V8 weitergeführt werden um den ES6-Spezifikation zu folgen.
 
 *   Collections
 
