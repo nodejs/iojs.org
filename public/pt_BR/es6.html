@@ -34,7 +34,7 @@
 
   <div class="content clearfix" i18n-content><h1>ES6 no io.js</h1>
 <p>O io.js é construído usando versões modernas do <a href="https://code.google.com/p/v8/">V8</a>. Mantendo-nos atualizados com as últimas versões desta engine, garantimos que novas funcionalidades da <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">especificação JavaScript ECMA-262</a> são trazidas para desenvolvedores io.js rapidamente, além de manter performance continuada e melhorias de estabilidade.</p>
-<p>A versão 1.2.0 do io.js vem com o V8 4.1.0.14, que inclui funcionalidades do ES6 bem além da versão 3.26.33 que vem com o joyent/node@0.12.x.</p>
+<p>A versão 1.3.0 do io.js vem com o V8 4.1.0.14, que inclui funcionalidades do ES6 bem além da versão 3.26.33 que vem com o joyent/node@0.12.x.</p>
 <h2>Não mais flag --harmony</h2>
 <p>No joyent/node@0.12.x (V8 3.26), a flag de runtime <code>--harmony</code> habilitava todas funcionalidades ES6 <strong>completas</strong>, <strong>em teste</strong> e <strong>em progresso</strong> juntas, de uma vez só (com a exceção de semânticas não padrão/não harmoniosas para <code>typeof</code> que estavam escondidas sob <code>--harmony-typeof</code>). Isto significava que algumas funcionalidades realmente bugadas ou mesmo quebradas como os <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> estavam prontamente disponíveis para desenvolvedores como os <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, que tinham poucos ou mesmo nenhuma issue conhecida. Portanto, era uma boa prática ou habilitar apenas certas funcionalidades usando flags de runtime harmony para funcionalidades específicas (por ex. <code>--harmony-generators</code>), ou simplesmente habilitar tudo e depois usar apenas um subconjunto restrito.</p>
 <p>Com o io.js@1.x (V8 4.1+), toda esta complexidade vai embora. Todas as funcionalidades harmony agora estão logicamente divididas em três grupos para funcionalidades <strong>entregues</strong>, <strong>sob testes</strong> e <strong>em progresso</strong>:</p>
@@ -136,10 +136,10 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-02-16 17:02:08 UTC
+Build Time: 2015-02-20 14:45:25 UTC
 
-Commit Sha: e0a2a01ab37286519fcc2c4e2666f48482382744
-Commit Msg: build: add `html:true` option for markdown-it
+Commit Sha: 626785252f037c99c2fdbf1d93e71019684a2cb4
+Commit Msg: update io.js version to 1.3.0 in all languages
 
 =========== END BUILD INFORMATION ===========
 -->

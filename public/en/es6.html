@@ -34,7 +34,7 @@
 
   <div class="content clearfix" i18n-content><h1>ES6 on io.js</h1>
 <p>io.js is built against modern versions of <a href="https://code.google.com/p/v8/">V8</a>. By keeping up-to-date with the latest releases of this engine we ensure new features from the <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> are brought to io.js developers in a timely manner, as well as continued performance and stability improvements.</p>
-<p>Version 1.2.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x.</p>
+<p>Version 1.3.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x.</p>
 <h2>No more --harmony flag</h2>
 <p>On Node.js™@0.12.x (V8 3.28+), the <code>--harmony</code> runtime flag enables all <strong>completed</strong>, <strong>staged</strong> and <strong>in progress</strong> ES6 features together, in bulk (with the exception of <code>proxies</code> which are hidden under <code>--harmony-proxies</code>). This means that some really buggy or even broken features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a> are just as readily available for developers as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, which have very little or even no known-issues. As such, most developers tend to enable only certain features by using specific runtime harmony feature flags (e.g. <code>--harmony-generators</code>), or simply enable all of them and then use a restricted subset.</p>
 <p>With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for <strong>shipping</strong>, <strong>staged</strong> and <strong>in progress</strong> features:</p>
@@ -141,10 +141,10 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-02-16 17:02:08 UTC
+Build Time: 2015-02-20 14:45:25 UTC
 
-Commit Sha: e0a2a01ab37286519fcc2c4e2666f48482382744
-Commit Msg: build: add `html:true` option for markdown-it
+Commit Sha: 626785252f037c99c2fdbf1d93e71019684a2cb4
+Commit Msg: update io.js version to 1.3.0 in all languages
 
 =========== END BUILD INFORMATION ===========
 -->
