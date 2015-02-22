@@ -14,7 +14,7 @@ Anders in io.js<span>@</span>1.x (V8 4.1+), hier entfällt diese Komplexität: A
 *   Dann die **staged**-Funktionen. Diese mehr oder weniger vollständig Funktionen wurden noch nicht komplett getestet oder sind noch nicht auf dem aktuellen Stand der Spezifikationen. Diese werden vom V8 Team deswegen auch als instabil gehandelt (z.B. Verhaltensvorhersagen zu Ausnahmefällen sind noch nicht möglich). Vergleichbar war oder ist die Situation der [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) in V8 3.26. Das sind nun "benutzen auf eigene Gefahr" Funktionen, welche nur über den Startparameter: `--es_staging` (oder dessen synonym, `--harmony`) aktivierbar sind.
 *   Abschließend, alle **in progress**-Funktionen die nur einzelln mittels harmony Startparameter aktivierbar sind (z.B. `--harmony_arrow_functions`), davon ist aber dringend abzuraten, auser zu testzwecken.
 
-## Welche ES6 Funktionen sind bereits in io.js enthalten und aktiv (ohne Startparameter verwendbar)?
+## Welche ES6-Funktionen sind bereits in io.js enthalten und aktiv (ohne Startparameter verwendbar)?
 
 
 *   Block scoping
@@ -49,9 +49,9 @@ Anders in io.js<span>@</span>1.x (V8 4.1+), hier entfällt diese Komplexität: A
 
 *   [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
 
-Mehr dazu auf einer detailierten Liste, die dazu noch Vergleiche zu anderen Engines enthält, gibt es auf der [compat-table](https://kangax.github.io/compat-table/es6/) Projekt Seite.
+Eine detailliertere Liste, die dazu noch Vergleiche zu anderen Engines enthält, gibt es auf der [compat-table](https://kangax.github.io/compat-table/es6/)-Projektseite.
 
-## Welche ES6 Funktionen stehen mit dem Parameter `--es_staging` zur Verfügung?
+## Welche ES6-Funktionen stehen mit dem Parameter `--es_staging` zur Verfügung?
 
 *   [Classes](https://github.com/lukehoban/es6features#classes) (Nur im `'use strict';` Modus)
 *   [Object literal Erweiterung](https://github.com/lukehoban/es6features#enhanced-object-literals)
