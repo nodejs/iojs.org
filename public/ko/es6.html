@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title i18n-title>io.js - JavaScript I/O</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
+  <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="../main.css" rel="stylesheet">
+  <link href="../mobile.css" rel="stylesheet">
+  <link href="../es6.css" rel="stylesheet">
+  <link rel="icon" href="/images/1.0.0.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-1.0.0.png">
+  <meta property="og:image" content="https://iojs.org/images/1.0.0.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1369">
+  <meta property="og:image:height" content="1563">
+</head>
+
+<body markdown-page="es6">
+
+  <header>
+    <div class="content">
+      <a href="index.html" class="logo" i18n-logo-text>io.js</a>
+      <div class="spacer"></div>
+      <a href="faq.html" i18n-faq-link>FAQ</a>
+      <a href="es6.html" i18n-es6-link>ES6</a>
+      <a href="https://iojs.org/api/" i18n-api-link>API 문서</a>
+    </div>
+  </header>
+
+  <div class="content clearfix" i18n-content><h1>io.js의 ES6</h1>
+<p>io.js는 <a href="https://code.google.com/p/v8/">V8</a>의 새로운 버전으로 빌드한다. V8 엔진의 최신 버전을 사용함으로써 <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 사양</a>의 신기능을 io.js 개발자가 즉시 이용할 수 있을 뿐만 아니라, 지속적인 성능과 안정성 개선 또한 보장하게 된다.</p>
+<p>io.js 1.3.0 버전은 V8 4.1.0.14와 함께 제공되는데, 이는 Node.js™ 0.12.x의 3.28.73 버전보다 더 많은 ES6 기능이 구현되어 있다.</p>
+<h2>--harmony 플래그는 이제 그만</h2>
+<p>Node.js™@0.12.x (V8 3.28+)에서 <code>--harmony</code> 플래그를 사용하면 ES6 기능에서 <strong>완료됨</strong>, <strong>준비됨</strong>, <strong>진행 중</strong> 상태인 (<code>--harmony-proxies</code> 밑에 숨어 있는 <code>proxies</code>를 제외하고) 모든 기능을 사용할 수 있게 한다. 이 말은 거의 문제없는 <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function*">제네레이터</a>도, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a> 같은 정말 버그가 많거나 망가져 있는 기능도 사용 가능하게 된다는 이야기이다. 그래서 개발자 대부분은 특정 하모니 기능 플래그(예를 들어 <code>--harmony-generators</code>)를 사용해 특정 기능만 사용하거나, 모두 사용 가능하게 한 다음에 일부분만 사용하는 경향이 있다.</p>
+<p>io.js@1.x (V8 4.1+)는 이렇게 복잡하지 않도록 모든 하모니 기능을 논리적인 3가지 그룹 <strong>배포 중</strong>, <strong>준비됨</strong>, <strong>개발 중</strong>으로 나뉜다.</p>
+<ul>
+<li>모든 <strong>배포 중</strong> 기능, 예를 들면 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">제네레이터</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">템플릿</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">새 String 메소드</a> 같은 V8의 안정적인 모든 기능은 어떤 실행 플래그도 <strong>없이</strong>, <strong>io.js에서 기본적으로 사용 가능</strong>하다.</li>
+<li>그리고 <strong>준비됨</strong> 기능은 거의 완성되었지만, 아직 테스트가 완료되지 않았거나 최신 사양으로 고쳐지지 않아서 V8 팀이 안정적이라 판단하지 않는(예를 들어 아직 발견되지 않은 에지 케이스가 있을 수 있음) 기능이다. 이건 아마 3.26의 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">제네레이터</a>의 상태와 같다. 이 &quot;사용할 때의 위험성은 직접 감수해야&quot; 하는 기능들은 이제 <code>--es_staging</code> (아니면, <code>--harmony</code>) 실행 플래그가 필요하다.</li>
+<li>마지막으로, 모든 <strong>개발 중</strong> 기능은 각각의 하모니 플래그로 (예를 들어 <code>--harmony_arrow_functions</code>) 독립적으로 사용 가능하다. 하지만 테스트 이외의 목적으로 사용하는 것은 매우 권장하지 않는다.</li>
+</ul>
+<h2>io.js에서 기본으로(실행 플래그 없이) 제공하는 ES6 기능은 무엇인가?</h2>
+<ul>
+<li>
+<p>블록 스코핑</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">let</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a></p>
+</li>
+<li>
+<p>블록 내 <code>function</code></p>
+</li>
+</ul>
+<blockquote>
+<p>V8 3.31.74.1에서 블록 스코프의 선언은 <a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">strict 모드 코드에서만 호환되도록 의도적으로 구현되었다</a>. 개발자는 V8이 ES6 사양을 준수함에 따라 이것이 변경될 수도 있다는 것을 알아야 한다.</p>
+</blockquote>
+</li>
+<li>
+<p>컬렉션</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">WeakMap</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">제네레이터</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals">이진, 팔진 리터럴</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">새 String 메소드</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">템플릿 String</a></p>
+</li>
+</ul>
+<p><a href="https://kangax.github.io/compat-table/es6/">compat-table</a> 프로젝트 페이지에서 다른 엔진과의 비교와 함께 더 자세한 목록을 볼 수 있다.</p>
+<h2>--es_staging에는 어떤 ES6 기능이 있는가?</h2>
+<ul>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#classes">Classes</a> (<code>--harmony_classes</code> 플래그로, strict 모드에서만 사용 가능하며, 이는 블록 스코프와 객체 리터럴 확장을 포함함)</p>
+</li>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">객체 리터럴 확장</a> (<code>--harmony_object_literals</code> 플래그)</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (<code>Object.prototype.toString</code>의 결과를 사용자가 정의 가능, <code>--harmony_tostring</code> 플래그)</p>
+</li>
+</ul>
+<h2>어떤 ES6 기능이 개발 중(in progress)인가?</h2>
+<p>V8 엔진에 지속적으로 새로운 기능이 추가되고 있다. 일반적으로 이런 기능은 앞으로 io.js에서도 사용하게 될 수는 있지만, 언제가 될지는 모른다.</p>
+<p>io.js에 <code>--v8-options</code> 인자를 넘긴 다음 grep해서 어떤 <em>개발 중</em> 기능을 사용할 수 있는지 볼 수 있다. 미완성이거나 작동되지 않을 수 있는 기능이므로, 사용할 때의 위험성은 직접 감수해야 한다.</p>
+<pre><code class="language-sh">iojs --v8-options | grep &quot;in progress&quot;
+</code></pre>
+<h2>--harmony 플래그를 사용하는 인프라가 있다. 제거해야 하는가?</h2>
+<p>현재 io.js의 <code>--harmony</code> 플래그는 <strong>준비됨</strong> 기능만 사용하므로 <code>--es_staging</code> 플래그와 같다. 위에서 언급한 바와 같이 완성된 기능이지만, 안정적이라고 말할 수 없다. 안전을 중시해야 할 상황, 특히 프로덕션 환경이라면, V8, 나아가 io.js에서 기본적으로 사용할 수 있을 때까지 플래그를 해제하는 것을 고려하라. 활성화 한 채로 운용하는 경우, V8이 사양에 가까워지도록 변경되어 io.js를 업그레이드 할 때 사용 중인 코드가 의도대로 작동하지 않을 가능성에 대비해야 한다.</p>
+<h2>특정 io.js 버전이 사용하는 V8의 버전을 확인하려면</h2>
+<p>io.js는 사용 중인 모든 의존성을 버전과 함께 쉽게 볼 방법을 <code>process</code> 전역 객체로 제공한다. 예를 들어, V8 엔진의 버전을 확인하려면 터미널에서 다음 명령을 입력한다.</p>
+<pre><code class="language-sh">iojs -p process.versions.v8
+</code></pre>
+</div>
+
+  <footer class="content">
+    <nav>
+      <a href="https://github.com/iojs/io.js/issues" i18n-issues-link>GitHub 이슈</a><!--
+   --><a href="https://github.com/iojs" i18n-org-link>GitHub 그룹</a><!--
+   --><a href="https://webchat.freenode.net/?channels=io.js" i18n-irc-link>IRC 채팅</a><!--
+   --><a href="http://logs.libuv.org/io.js/latest" i18n-irc-logs-link>IRC 채팅 로그</a><!--
+   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme" i18n-gov-link>거버넌스</a>
+    </nav>
+  </footer>
+
+<!-- See something you like? Want to help? Visit https://github.com/iojs/website to contribute  -->
+</body>
+
+</html>
+<!--
+=========== BUILD INFORMATION ===========
+
+Build Time: 2015-02-23 14:14:37 UTC
+
+Commit Sha: 376152ea842064dcfebad73deeca744e22dc87f0
+Commit Msg: Merge pull request #230 from paazmaya/finnish-coming
+
+=========== END BUILD INFORMATION ===========
+-->

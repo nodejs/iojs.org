@@ -28,7 +28,7 @@
       <div class="spacer"></div>
       <a href="faq.html" i18n-faq-link>FAQ</a>
       <a href="es6.html" i18n-es6-link>ES6</a>
-      <a href="https://iojs.org/api/" i18n-api-link>API Dokumen</a>
+      <a href="https://iojs.org/api/" i18n-api-link>Dokumentasi API</a>
     </div>
   </header>
 
@@ -36,12 +36,12 @@
 <p>io.js dikembangkan dengan versi modern dari <a href="https://code.google.com/p/v8/">V8</a>. Dengan menjaga tetap teranyar dengan rilis terbaru dari <em>engine</em> ini kami memastikan fitur terbaru dari <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 spesifikasi</a>  tersedia untuk pengembang io.js dengan tepat waktu, serta perbaikan yang berkelanjutan pada kinerja dan stabilitas.</p>
 <p>Versi 1.3.0 dari io.js dikeluarkan dengan V8 4.1.0.14, yang meliputi ES6 fitur jauh melampaui versi 3.26.33 yang akan dikirim dengan joyent/node@0.12.x.</p>
 <h2>Tidak ada lagi --harmony flag</h2>
-<p>Di joyent/node@0.12.x (V8 3.26), <code>--harmony</code> <em>flag</em> runtime memungkinkan semua ** diselesaikan**, ** staged ** dan ** in progress ** fitur ES6 bersama-sama, dalam jumlah besar (dengan pengecualian tidak standar/semantik non-harmonis untuk <code>typeof</code> yang tersembunyi di bawah<code>--harmony-typeof</code>). Ini berarti bahwa beberapa fitur yang sangat <em>buggy</em> atau bahkan rusak seperti <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxy</a> hanya sebagai tersedia untuk pengembang sebagai <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, yang memiliki sangat sedikit atau bahkan tidak ada yang diketahui-masalah. Dengan demikian, itu praktek terbaik baik memungkinkan hanya fitur tertentu dengan menggunakan flag fitur runtime harmoni tertentu (misalnya <code>--harmony-generators</code>), atau dengan mengaktifkan semua dari mereka dan kemudian menggunakan subset terbatas.</p>
+<p>Di joyent/node@0.12.x (V8 3.26), <code>--harmony</code> <em>flag</em> runtime memungkinkan semua <strong>diselesaikan</strong>, <strong>staged</strong> dan <strong>in progress</strong> fitur ES6 bersama-sama, dalam jumlah besar (dengan pengecualian tidak standar/semantik non-harmonis untuk <code>typeof</code> yang tersembunyi di bawah<code>--harmony-typeof</code>). Ini berarti bahwa beberapa fitur yang sangat <em>buggy</em> atau bahkan rusak seperti <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxy</a> hanya sebagai tersedia untuk pengembang sebagai <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, yang memiliki sangat sedikit atau bahkan tidak ada yang diketahui-masalah. Dengan demikian, itu praktek terbaik baik memungkinkan hanya fitur tertentu dengan menggunakan flag fitur runtime harmoni tertentu (misalnya <code>--harmony-generators</code>), atau dengan mengaktifkan semua dari mereka dan kemudian menggunakan subset terbatas.</p>
 <p>Dengan io.js@1.x (V8 4.1+), semua kerumitan itu hilang. Semua fitur harmoni sekarang dibagi dengan logis menjadi tiga kelompok untuk <strong>shipping</strong>, <strong>staged</strong> dan <strong>in progress</strong> fitur:</p>
 <ul>
-<li>Semua fitur <strong>shipping</strong>, setelah V8 dianggap stabil, seperti <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">templates</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">new string methods</a> dan banyak lagi yang berubah ** secara default pada io.js ** dan ** TIDAK ** memerlukan jenis <em>flag</em> runtime.</li>
-<li>Lalu ada fitur ** staged ** dimana fitur yang belum sepenuhnya diuji atau belum diperbarui dengan spesifikasi terbaru dan oleh karena itu tidak dianggap stabil oleh tim V8 (misalnya mungkin ada beberapa kasus yang belum ditemukan). Ini mungkin sama dengan generator <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generator</a> pada versi 3.26. Ini adalah &quot;penggunaan di risiko Anda sendiri&quot; jenis fitur yang sekarang memerlukan flag runtime: <code>--es_staging</code> (atau sinonimnya,<code>--harmony</code>).</li>
-<li>Akhirnya, semua fitur ** in progress ** masing-masing dapat dapat diaktifkan dengan <em>flag</em> harmoni masing-masing (misalnya <code>--harmony_arrow_functions</code>), meskipun hal ini sangat tidak disarankan kecuali untuk tujuan pengujian.</li>
+<li>Semua fitur <strong>shipping</strong>, setelah V8 dianggap stabil, seperti <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">templates</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">new string methods</a> dan banyak lagi yang berubah <strong>secara default pada io.js</strong> dan <strong>TIDAK</strong> memerlukan jenis <em>flag</em> runtime.</li>
+<li>Lalu ada fitur <strong>staged</strong> dimana fitur yang belum sepenuhnya diuji atau belum diperbarui dengan spesifikasi terbaru dan oleh karena itu tidak dianggap stabil oleh tim V8 (misalnya mungkin ada beberapa kasus yang belum ditemukan). Ini mungkin sama dengan generator <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generator</a> pada versi 3.26. Ini adalah &quot;penggunaan di risiko Anda sendiri&quot; jenis fitur yang sekarang memerlukan flag runtime: <code>--es_staging</code> (atau sinonimnya,<code>--harmony</code>).</li>
+<li>Akhirnya, semua fitur <strong>in progress</strong> masing-masing dapat dapat diaktifkan dengan <em>flag</em> harmoni masing-masing (misalnya <code>--harmony_arrow_functions</code>), meskipun hal ini sangat tidak disarankan kecuali untuk tujuan pengujian.</li>
 </ul>
 <h2>Apa saja fitur ES6 yang ada pada dengan io.js (tanpa <em>flag</em> runtime yang diperlukan)?</h2>
 <ul>
@@ -112,7 +112,7 @@
 </li>
 </ul>
 <h2>Saya telah setup infrastruktur saya untuk memanfaatkan bendera --harmony. Haruskah saya hapus itu?</h2>
-<p>Fungsi flag --harmony pada io.js saat ini adalah untuk mengaktifkan fitur ** staged ** saja. Selain itu, fungsi tersebut adalah sinonim dari --es_staging. Seperti disebutkan di atas, fitur-fitur tersebut belum dianggap stabil. Jika Anda ingin aman, terutama pada lingkungan produksi, pertimbangkan untuk menghapus flag runtime ini sampai fitur-fitur tersebut menjadi fitur bawaan pada V8 dan io.js. Jika Anda tetap mengaktifkan ini, Anda harus bersiap-siap untuk mengganti sumber kode anda jika ada pembaruan io.js dan perubahan pada V8 terlalu signifikan.</p>
+<p>Fungsi flag --harmony pada io.js saat ini adalah untuk mengaktifkan fitur <strong>staged</strong> saja. Selain itu, fungsi tersebut adalah sinonim dari --es_staging. Seperti disebutkan di atas, fitur-fitur tersebut belum dianggap stabil. Jika Anda ingin aman, terutama pada lingkungan produksi, pertimbangkan untuk menghapus flag runtime ini sampai fitur-fitur tersebut menjadi fitur bawaan pada V8 dan io.js. Jika Anda tetap mengaktifkan ini, Anda harus bersiap-siap untuk mengganti sumber kode anda jika ada pembaruan io.js dan perubahan pada V8 terlalu signifikan.</p>
 <h2>Bagaimana cara menemukan versi V8 dengan versi tertentu dari io.js?</h2>
 <p>io.js menyediakan cara sederhana untuk membuat daftar semua dependensi dan versi masing-masing yang dikirimkan dengan biner tertentu melalui objek <code>process</code> global. Dalam kasus V8 <em>engine</em>, ketik kode dibawah ini di terminal Anda untuk menampilkan versinya:</p>
 <p><code>`sh iojs p process.versions.v8</code> `</p>
@@ -121,7 +121,7 @@
   <footer class="content">
     <nav>
       <a href="https://github.com/iojs/io.js/issues" i18n-issues-link>Isu GitHub</a><!--
-   --><a href="https://github.com/iojs" i18n-org-link>GitHub Organisasi</a><!--
+   --><a href="https://github.com/iojs" i18n-org-link>Organisasi GitHub</a><!--
    --><a href="https://webchat.freenode.net/?channels=io.js" i18n-irc-link>Obrolan IRC</a><!--
    --><a href="http://logs.libuv.org/io.js/latest" i18n-irc-logs-link>Catatan</a><!--
    --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme" i18n-gov-link>Tata Kelola</a>
@@ -135,10 +135,10 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-02-20 14:45:25 UTC
+Build Time: 2015-02-23 14:14:37 UTC
 
-Commit Sha: 626785252f037c99c2fdbf1d93e71019684a2cb4
-Commit Msg: update io.js version to 1.3.0 in all languages
+Commit Sha: 376152ea842064dcfebad73deeca744e22dc87f0
+Commit Msg: Merge pull request #230 from paazmaya/finnish-coming
 
 =========== END BUILD INFORMATION ===========
 -->
