@@ -4,14 +4,14 @@
 
 [io.js](https://github.com/iojs/io.js) 是一个衍生自 [node.js](https://nodejs.org/)&#8482; ，并兼容 [npm](https://www.npmjs.org/) 的开发平台。
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.3.0/)
+[![io.js]({{iojs.img}})]({{iojs.link}})
 
-[1.3.0 版本](https://iojs.org/dist/v1.3.0/)
+[{{iojs.value}} 版本]({{iojs.link}})
 
 下载
-[Linux](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi), [Win64](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi),
-[Mac](https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg), 或 [其他](https://iojs.org/dist/v1.3.0/) 版本。
+[Linux]({{linux.link}}),
+[Win32]({{win32.link}}), [Win64]({{win64.link}}),
+[Mac]({{mac.link}}), 或 [其他]({{iojs.link}}) 版本。
 
 
 [更新日志](https://github.com/iojs/iojs-cn/blob/master/CHANGELOG.md)

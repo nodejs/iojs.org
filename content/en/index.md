@@ -4,16 +4,16 @@ Bringing [ES6](es6.html) to the Node Community!
 
 [io.js](https://github.com/iojs/io.js) is an [npm](https://www.npmjs.org/) compatible platform originally based on [node.js](https://nodejs.org/)&#8482;.
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.3.0/)
+[![io.js]({{iojs.img}})]({{iojs.link}})
 
-[Version 1.3.0](https://iojs.org/dist/v1.3.0/)
+[Version {{iojs.value}}]({{iojs.link}})
 
 Download for
-[Linux](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi),
-[Win64](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi),
-[Mac](https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg) or
-[others](https://iojs.org/dist/v1.3.0/).
+[{{linux.name}}]({{linux.link}}),
+[{{win32.name}}]({{win32.link}}),
+[{{win64.name}}]({{win64.link}}),
+[{{mac.name}}]({{mac.link}}) or
+[{{others.name}}]({{iojs.link}}).
 
 
 [Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)

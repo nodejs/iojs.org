@@ -4,16 +4,16 @@
 
 [io.js](https://github.com/iojs/io.js) ist eine [npm](https://www.npmjs.org/)-kompatible Plattform, die ursprünglich auf [node.js](https://nodejs.org/)&#8482; basiert.
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.3.0/)
+[![io.js]({{iojs.img}})]({{iojs.link}})
 
-[Version 1.3.0](https://iojs.org/dist/v1.3.0/)
+[Version {{iojs.value}}]({{iojs.link}})
 
 Herunterladen für
-[Linux](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi),
-[Win64](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi),
-[Mac](https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg) oder
-[andere](https://iojs.org/dist/v1.3.0/).
+[Linux]({{linux.link}}),
+[Win32]({{win32.link}}),
+[Win64]({{win64.link}}),
+[Mac]({{mac.link}}) oder
+[andere]({{iojs.link}}).
 
 
 [Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)

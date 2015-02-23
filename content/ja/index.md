@@ -12,16 +12,16 @@ Bringing [ES6](es6.html) to the Node Community!
 
 [io.js](https://github.com/iojs/io.js)は、[node.js](https://nodejs.org/)&#8482;をベースに作られた[npm](https://www.npmjs.com/)互換プラットフォームです。
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.3.0/)
+[![io.js]({{iojs.img}})]({{iojs.link}})
 
-[Version 1.3.0](https://iojs.org/dist/v1.3.0/)
+[Version {{iojs.value}}]({{iojs.link}})
 
 Download for
-[Linux](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi),
-[Win64](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi),
-[Mac](https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg) or
-[others](https://iojs.org/dist/v1.3.0/).
+[Linux]({{linux.link}}),
+[Win32]({{win32.link}}),
+[Win64]({{win64.link}}),
+[Mac]({{mac.link}}) or
+[others]({{iojs.link}}).
 
 <!-- 
 [Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
