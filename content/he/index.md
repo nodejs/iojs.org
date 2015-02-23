@@ -2,7 +2,7 @@
 
 # JavaScript I/O
 
-מביאים את [ES6](es6.html) לקהילתNode
+מביאים את [ES6](es6.html) לקהילת Node
 
 [io.js](https://github.com/iojs/io.js)
 היא פלטפורמה מבוססת במקור על 
