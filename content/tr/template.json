@@ -1,12 +1,12 @@
 {
   "browser-title":"io.js - JavaScript I/O",
   "logo-text":"io.js",
-  "faq-link":"FAQ",
+  "faq-link":"SSS",
   "es6-link":"ES6",
-  "api-link":"API Docs",
-  "issues-link":"GitHub Issues",
+  "api-link":"API Dökümanları",
+  "issues-link":"GitHub Hatalar",
   "org-link":"GitHub Org",
   "irc-link":"IRC Chat",
-  "irc-logs-link":"Logs",
-  "gov-link":"Governance"
+  "irc-logs-link":"Kayıtlar",
+  "gov-link":"Yönetim"
 }
