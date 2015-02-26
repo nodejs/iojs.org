@@ -6,11 +6,15 @@ var gulp = require('gulp'); // because this is a gulp task. duh.
 var HTMLtemplate = require('html-template'); // substack's html template implementation
 var md = require('markdown-it')({ html: true }); // to convert markdown to html
 var source = require('vinyl-source-stream'); // used to convert substack's readStream to vinylStream
-var replaceStream = require('replacestream'); // used to add an element to the html: making sure each page has it's own class if needed in css
 var moment = require('moment-timezone');
 var exec = require('child_process').exec
 var utils = require('../util/template-utils.js');
 var path = require('path');
+var crypto = require("crypto");
+var gulpif = require('gulp-if');
+var handlebars = require('gulp-compile-handlebars');
+var buffer = require('vinyl-buffer');
+var rename = require('gulp-rename');
 
 gulp.task('templates', function() {
   var separator = '<SEPARATOR>';
@@ -40,30 +44,59 @@ gulp.task('templates', function() {
         var html = md.render(markdown); // convert md string to html string
         var thisFileJSON = _.cloneDeep(templateJSON); // clone in the template JSON object
         var pageTitle = thisFileJSON['browser-title'];
-        thisFileJSON = _.omit(thisFileJSON, 'browser-title');
-        var finalJSON = {};
-        _.forEach(thisFileJSON, function(value, key) {
-          finalJSON['[i18n-' + key + ']'] = value;
-        })
-        finalJSON['[i18n-content]'] = html; // Attach md2html string to the interpolation object
-        var htmlObj = HTMLtemplate(); // finally using that holder for the template stream
-        i18nObj = htmlObj.template('i18n', {
-          include: false
-        }); // same
         var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.html'; // get the main template file location. There can be multiple, this is just a proof of concept
         var destinationDirectory = path.dirname('public/' + file.filepathArray.join('/'));
-        var fileStream = fs.createReadStream(filepath) // pulling this code from substack's example on html-template
-          .pipe(replaceStream('<title i18n-title>io.js - JavaScript I/O</title>', '<title i18n-title>' + pageTitle + '</title>'))
-          .pipe(replaceStream('markdown-page=""', 'markdown-page="' + file.filename + '"')) // add css-triggerable attribute to body
-          .pipe(replaceStream('[page-stylesheet]', file.filename)) // require in specific stylesheet
-          .pipe(replaceStream('Build Time:', 'Build Time: ' + buildTime))
-          .pipe(replaceStream('Commit Sha:', 'Commit Sha: ' + commitSha))
-          .pipe(replaceStream('Commit Msg:', 'Commit Msg: ' + commitMsg))
-          .pipe(htmlObj)
-          .pipe(source(file.filename + '.html')) // converting the readStream to a vinyl stream so gulp can write it back to the disk
-          .pipe(gulp.dest(destinationDirectory)); // dump it in the appropriate language subfolder
-        i18nObj.write(finalJSON); // write the interpolation JSON to the template
-        i18nObj.end(); // saving? this is taken from substack too.
+        var hashes = [];
+        var isChangedFile = function(vinylFile) {
+          if (vinylFile.isNull()) {
+            return;
+          }
+          if (hashes[vinylFile.path] != null) {
+            console.log('skipped', vinylFile.path, hashes[vinylFile.path]);
+            return hashes[vinylFile.path];
+          }
+
+          var currentContent = fs.readFileSync(path.join(destinationDirectory, file.filename + '.html'), {encoding: 'utf8'});
+          var currentHash = currentContent.match(/Hashsum:\s(\b([a-f0-9]{40})\b)/);
+          if (currentHash && currentHash.length > 2) {
+            currentHash = currentHash[1]
+          } else {
+            currentHash = null
+          }
+
+          var contents = String(vinylFile.contents);
+          var newHash = crypto
+            .createHash("sha1")
+            .update(vinylFile.contents, "binary")
+            .digest("hex");
+
+          var isChanged = (currentHash !== newHash);
+
+          console.log('is changed', vinylFile.path, currentHash, newHash)
+
+          if (isChanged) {
+            contents = contents.replace(/Hashsum:(?:\s+\b([a-f0-9]{40})\b)?/, `Hashsum: ${newHash}`)
+            contents = contents.replace('Build Time:', `Build Time: ${buildTime}`)
+            contents = contents.replace('Commit Sha:', `Commit Sha: ${commitSha}`)
+            contents = contents.replace('Commit Msg:', `Commit Msg: ${commitMsg}`)
+            vinylFile.contents = new Buffer(contents);
+          }
+          hashes[vinylFile.path] = isChanged;
+          return isChanged;
+        };
+        var fileStream = gulp.src(filepath) // pulling this code from substack's example on html-template
+          .pipe(rename(file.filename + '.html')) // converting the readStream to a vinyl stream so gulp can write it back to the disk
+          .pipe(buffer())
+          .pipe(handlebars({
+            i18n: thisFileJSON,
+            content: html,
+            lang: lang,
+            build: {
+              markdownPage: file.filename,
+              pageStylesheet: file.filename
+            }
+          }))
+          .pipe(gulpif(isChangedFile, gulp.dest(destinationDirectory))); // dump it in the appropriate language subfolder
       });
     });
   });
