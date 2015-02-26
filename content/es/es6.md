@@ -2,7 +2,7 @@
 
 io.js está construido sobre versiones modernas de [V8](https://code.google.com/p/v8/). Manteniéndolo actualizado con las últimas versiones de este motor nos aseguramos que las nuevas funcionalidades de la [especificación ECMA-262 de JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) estén disponibles para los desarrolladores de io.js de manera oportuna, así como también las mejoras de rendimiento y estabilidad.
 
-La versión 1.1.0 de io.js utiliza V8 4.1.0.14, que incluye las mejoras de ES6 superando claramente la versión 3.26.33 que será incluida con joyent/node@0.12.x.
+La versión 1.1.0 de io.js utiliza V8 4.1.0.21, que incluye las mejoras de ES6 superando claramente la versión 3.26.33 que será incluida con joyent/node@0.12.x.
 
 ## No más --harmony flag
 

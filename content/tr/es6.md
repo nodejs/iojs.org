@@ -2,7 +2,7 @@
 
 io.js, [V8](https://code.google.com/p/v8/) javascript motorunun en modern sürümüyle derlenmiştir. Bu motoru güncel sürümde tutarak [JavaScript ECMA-262 tanımlayıcı dökümanı](http://www.ecma-international.org/publications/standards/Ecma-262.htm) ile belirtilmiş yeni özelliklere io.js geliştiricilerinin en kısa zamanda ulaşmasını sağlıyoruz, bu arada performans ve kararlığın arttırılmasına devam ediyoruz.
 
-io.js 1.1.0 sürümü V8 4.1.0.14 sürümüyle gelmektedir, ayrıca joyent/node@0.12.x sürümünde bulunan V8 3.26.33 motoruna göre daha gelişmiş ES6 özelliklerine sahiptir.
+io.js 1.1.0 sürümü V8 4.1.0.21 sürümüyle gelmektedir, ayrıca joyent/node@0.12.x sürümünde bulunan V8 3.26.33 motoruna göre daha gelişmiş ES6 özelliklerine sahiptir.
 
 ## --harmony bayrağına gerek yok
 
