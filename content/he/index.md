@@ -12,7 +12,7 @@
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.4.1/)
 
-[Version 1.4.1](https://iojs.org/dist/v1.4.1/)
+[גרסא 1.4.1](https://iojs.org/dist/v1.4.1/)
 
 הורדות
 [Linux](https://iojs.org/dist/v1.4.1/iojs-v1.4.1-linux-x64.tar.xz),
