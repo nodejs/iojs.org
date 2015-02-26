@@ -4,14 +4,14 @@
 
 [io.js](https://github.com/iojs/io.js) 是一个衍生自 [node.js](https://nodejs.org/)&#8482; ，并兼容 [npm](https://www.npmjs.org/) 的开发平台。
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.3.0/)
+[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.4.1/)
 
-[1.3.0 版本](https://iojs.org/dist/v1.3.0/)
+[1.4.1 版本](https://iojs.org/dist/v1.4.1/)
 
 下载
-[Linux](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi), [Win64](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi),
-[Mac](https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg), 或 [其他](https://iojs.org/dist/v1.3.0/) 版本。
+[Linux](https://iojs.org/dist/v1.4.1/iojs-v1.4.1-linux-x64.tar.xz),
+[Win32](https://iojs.org/dist/v1.4.1/iojs-v1.4.1-x86.msi), [Win64](https://iojs.org/dist/v1.4.1/iojs-v1.4.1-x64.msi),
+[Mac](https://iojs.org/dist/v1.4.1/iojs-v1.4.1.pkg), 或 [其他](https://iojs.org/dist/v1.4.1/) 版本。
 
 
 [更新日志](https://github.com/iojs/iojs-cn/blob/master/CHANGELOG.md)
