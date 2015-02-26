@@ -46,14 +46,14 @@ gulp.task('templates', function() {
         var pageTitle = thisFileJSON['browser-title'];
         var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.html'; // get the main template file location. There can be multiple, this is just a proof of concept
         var destinationDirectory = path.dirname('public/' + file.filepathArray.join('/'));
-        var hashes = [];
+        var changedFileCache = [];
+
         var isChangedFile = function(vinylFile) {
           if (vinylFile.isNull()) {
             return;
           }
-          if (hashes[vinylFile.path] != null) {
-            console.log('skipped', vinylFile.path, hashes[vinylFile.path]);
-            return hashes[vinylFile.path];
+          if (changedFileCache[vinylFile.path] != null) {
+            return changedFileCache[vinylFile.path];
           }
 
           var currentContent = fs.readFileSync(path.join(destinationDirectory, file.filename + '.html'), {encoding: 'utf8'});
@@ -72,8 +72,6 @@ gulp.task('templates', function() {
 
           var isChanged = (currentHash !== newHash);
 
-          console.log('is changed', vinylFile.path, currentHash, newHash)
-
           if (isChanged) {
             contents = contents.replace(/Hashsum:(?:\s+\b([a-f0-9]{40})\b)?/, `Hashsum: ${newHash}`)
             contents = contents.replace('Build Time:', `Build Time: ${buildTime}`)
@@ -81,21 +79,24 @@ gulp.task('templates', function() {
             contents = contents.replace('Commit Msg:', `Commit Msg: ${commitMsg}`)
             vinylFile.contents = new Buffer(contents);
           }
-          hashes[vinylFile.path] = isChanged;
+          changedFileCache[vinylFile.path] = isChanged;
           return isChanged;
         };
+
+        var templateContent = {
+          i18n: thisFileJSON,
+          content: html,
+          lang: lang,
+          build: {
+            markdownPage: file.filename,
+            pageStylesheet: file.filename
+          }
+        };
+
         var fileStream = gulp.src(filepath) // pulling this code from substack's example on html-template
           .pipe(rename(file.filename + '.html')) // converting the readStream to a vinyl stream so gulp can write it back to the disk
           .pipe(buffer())
-          .pipe(handlebars({
-            i18n: thisFileJSON,
-            content: html,
-            lang: lang,
-            build: {
-              markdownPage: file.filename,
-              pageStylesheet: file.filename
-            }
-          }))
+          .pipe(handlebars(templateContent))
           .pipe(gulpif(isChangedFile, gulp.dest(destinationDirectory))); // dump it in the appropriate language subfolder
       });
     });
