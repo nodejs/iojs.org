@@ -34,7 +34,7 @@
 
   <div class="content clearfix"><h1>ES6 con io.js</h1>
 <p>io.js integra al suo interno una versione moderna del motore <a href="https://code.google.com/p/v8/">V8</a>. Rimanendo aggiornati con le ultime versioni di questo motore, possiamo rendere disponibili le nuove caratteristiche delle <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">specifiche JavaScript ECMA-262</a> agli sviluppatori io.js in modo rapido, assieme ai continui miglioramenti nella stabilità e nelle prestazioni.</p>
-<p>La versione 1.2.0 di io.js viene rilasciata con la V8 4.1.0.14, che include caratteristiche di ES6 più avanzate rispetto alla versione 3.26.33 che sarà rilasciata assieme a joyent/node@0.12.x.</p>
+<p>La versione 1.2.0 di io.js viene rilasciata con la V8 4.1.0.21, che include caratteristiche di ES6 più avanzate rispetto alla versione 3.26.33 che sarà rilasciata assieme a joyent/node@0.12.x.</p>
 <h2>Il flag --harmony non è più necessario</h2>
 <p>Con joyent/node@0.12.x (V8 3.26), il flag di runtime <code>--harmony</code> abilita le caratteristiche di ES6 <strong>completed</strong>, <strong>staged</strong> ed <strong>in progress</strong> tutte insieme, in blocco (con l'eccezione delle semantiche non-standard, non-harmony per <code>typeof</code>, che sono abilitate dal flag <code>--harmony-typeof</code>). Ciò implica che alcune caratteristiche problematiche come i <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> sono disponibili allo stesso livello dei <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, che hanno pochissimi difetti conosciuti o addirittura nessuno. Per questo motivo, sarebbe stato meglio o abilitare solo alcune caratteristiche utilizzando flag specifici, (es. <code>--harmony-generators</code>), o semplicemente abilitarle tutte ma usarne solo un insieme ridotto.</p>
 <p>Con io.js@1.x (V8 4.1+), tutta questa complessità è stata superata. Tutte le caratteristiche di harmony sono suddivise logicamente in tre gruppi per le caratteristiche <strong>shipping</strong>, <strong>staged</strong> ed <strong>in progress</strong>:</p>
@@ -130,11 +130,11 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-02-26 12:44:12 UTC
+Build Time: 2015-02-26 23:13:46 UTC
 
-Commit Sha: 68970fd56e9b43ccbb6bfd2d7720ef484936f92f
-Commit Msg: Initial public template changes resulting from template modifications
-Hashsum: f93f3e1974feae129ba544bd66114f4f2719e613
+Commit Sha: 6c600bad98d85681edbc2efedc9cd3aa6f02a980
+Commit Msg: update v8 version to 4.1.0.21 in all languages
+Hashsum: d692bad33f5df66ab2e9e46c73affe5ecd2007c7
 
 =========== END BUILD INFORMATION ===========
 -->

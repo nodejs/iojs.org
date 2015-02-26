@@ -34,7 +34,7 @@
 
   <div class="content clearfix"><h1>H ES6 στην io.js</h1>
 <p>Η io.js έχει δομηθεί πάνω στις νεότερες εκδόσεις της <a href="https://code.google.com/p/v8/">V8</a>. Με συνεχείς ενημερώσεις σύμφωνα με τις τελευταίες εκδόσεις της V8 εξασφαλίζεται ότι νέες δυνατότητες και χαρακτηριστικά από την <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> προσφέρονται στους io.js developers εγκαίρως, καθώς και η συνεχής βελτιώση της απόδοσης και της σταθερότητας της.</p>
-<p>Η έκδοση 1.3.0 της io.js έρχεται μαζί με την έκδοση 4.1.0.14 της V8, η οποία περιλαμβάνει χαρακτηριστικά από την ES6, πολύ περισσότερα από την έκδοση 3.26.33 που προσφέρετε από την joyent/node@0.12.x.</p>
+<p>Η έκδοση 1.4.1 της io.js έρχεται μαζί με την έκδοση 4.1.0.21 της V8, η οποία περιλαμβάνει χαρακτηριστικά από την ES6, πολύ περισσότερα από την έκδοση 3.26.33 που προσφέρετε από την joyent/node@0.12.x.</p>
 <h2>Όχι πια --harmony flag</h2>
 <p>Στην joyent/node@0.12.x (V8 3.26), με <code>--harmony</code> runtime flag ενεργοποιούνται όλες μαζί οι δυνατότητες της ES6 είτε είναι <strong>ολοκληρωμένες (completed)</strong>, είτε <strong>σε φάση ελέγχου (staged)</strong> είτε <strong>υπό ανάπτυξη (in progress)</strong> (με εξαίρεση τα nonstandard/non-harmonious semantics για το <code>typeof</code> τα οποία βρίσκονται υπό το flag <code>--harmony-typeof</code>). Αυτό σημαίνει πως κάποια χαρακτηριστικά τα οποία περιέχουν σφάλματα ή δεν λειτουργούν καθόλου, όπως π.χ. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> ήταν διαθέσιμα στους developers μαζί με χαρακτηριστικά τα οποία είχαν λίγα ή καθόλου γνωστά προβλήματα όπως π.χ. οι <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>. Ως εκ τούτου, ήταν καλή πρακτική είτε να ενεργοποιείς μόνο συγκεκριμένα χαρακτηριστικά χρησιμοποιώντας συγκεκριμένα runtime harmony flags (π.χ. <code>--harmony-generators</code>), είτε να ενεργοποιείς όλα τα χαρακτηριστικά και να χρησιμοποιείς μόνο ένα υποσύνολο από αυτά.</p>
 <p>Με την io.js@1.x (V8 4.1+), όλη αυτή η πολυπλοκότητα εξαλείφεται. Όλα τα χαρακτηριστικά της έκδοσης harmony είναι λογικά διαχωρισμένα σε τρεις ομάδες <strong>έτοιμα (shipping)</strong>, <strong>σε φάση ελέγχου(staged)</strong> και <strong>υπό ανάπτυξη(in progress)</strong>:</p>
@@ -136,11 +136,11 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-02-26 12:44:12 UTC
+Build Time: 2015-02-26 23:13:46 UTC
 
-Commit Sha: 68970fd56e9b43ccbb6bfd2d7720ef484936f92f
-Commit Msg: Initial public template changes resulting from template modifications
-Hashsum: 278d99f1ecba9034975290f4551735d3190438dd
+Commit Sha: 6c600bad98d85681edbc2efedc9cd3aa6f02a980
+Commit Msg: update v8 version to 4.1.0.21 in all languages
+Hashsum: e2c1f6904831a431ddd0051c1aac31af11e3a938
 
 =========== END BUILD INFORMATION ===========
 -->
