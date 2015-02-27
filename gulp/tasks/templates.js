@@ -55,8 +55,11 @@ gulp.task('templates', function() {
           if (changedFileCache[vinylFile.path] != null) {
             return changedFileCache[vinylFile.path];
           }
-
-          var currentContent = fs.readFileSync(path.join(destinationDirectory, file.filename + '.html'), {encoding: 'utf8'});
+          var currentFilePath = path.join(destinationDirectory, file.filename + '.html');
+          if (fs.existsSync(currentFilePath) === false) {
+            return false;
+          }
+          var currentContent = fs.readFileSync(currentFilePath, {encoding: 'utf8'});
           var currentHash = currentContent.match(/Hashsum:\s(\b([a-f0-9]{40})\b)/);
           if (currentHash && currentHash.length > 2) {
             currentHash = currentHash[1]
