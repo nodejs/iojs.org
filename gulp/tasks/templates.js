@@ -57,7 +57,7 @@ gulp.task('templates', function() {
           }
           var currentFilePath = path.join(destinationDirectory, file.filename + '.html');
           if (fs.existsSync(currentFilePath) === false) {
-            return false;
+            return true;
           }
           var currentContent = fs.readFileSync(currentFilePath, {encoding: 'utf8'});
           var currentHash = currentContent.match(/Hashsum:\s(\b([a-f0-9]{40})\b)/);
