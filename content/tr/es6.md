@@ -2,7 +2,7 @@
 
 io.js, [V8](https://code.google.com/p/v8/) javascript motorunun en modern sürümüyle derlenmiştir. Bu motoru güncel sürümde tutarak [JavaScript ECMA-262 tanımlayıcı dökümanı](http://www.ecma-international.org/publications/standards/Ecma-262.htm) ile belirtilmiş yeni özelliklere io.js geliştiricilerinin en kısa zamanda ulaşmasını sağlıyoruz, bu arada performans ve kararlığın arttırılmasına devam ediyoruz.
 
-io.js 1.1.0 sürümü V8 4.1.0.21 sürümüyle gelmektedir, ayrıca joyent/node@0.12.x sürümünde bulunan V8 3.26.33 motoruna göre daha gelişmiş ES6 özelliklerine sahiptir.
+io.js 1.1.0 sürümü V8 4.1.0.14 sürümüyle gelmektedir, ayrıca joyent/node@0.12.x sürümünde bulunan V8 3.26.33 motoruna göre daha gelişmiş ES6 özelliklerine sahiptir.
 
 ## --harmony bayrağına gerek yok
 
@@ -13,7 +13,7 @@ Belirtilen sebeplerden ötürü en mantıklı uygulamalar, bazı özellikleri ak
 io.js@1.x (V8 4.1+) sürümüyle beraber tüm bu karmaşıklık ortadan kalkmaktadır. Tüm ES6 (harmoni) özellikleri **taşınıyor**, **düzenleme** ve **geliştirme** olmak üzere mantıksal üç gruba ayrılmıştır. Bu özellikler;
 
 *   Tüm **taşınıyor** özellikleri V8 tarafından kararlı olarak kabul görmüş, [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [yeni string metodları](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) gibi özellikler ile **io.js tarafından varsayılan** olarak açılmış özelliklerdir ve herhangi bir çalışma bayrağına gerek **duymazlar**.
-*   **düzenleme** durumunda ki özellikler testleri tamamlanmamış veya son tanımlayıcı dökümanına uygun hale getirilmemiş ve V8 takımı tarafından kararlı olarak belirtilmemiş özellikleri içerir. (örn: there might be some edge cases left to discover). V8 3.26 sürümünde [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) bu duruma eşdeğer yapıdadır. Bu özellikleri kullanmakta ki riski göze alıyorsanız, `--es_staging` (veya eşanlamlısı `--harmony`) çalışma bayrağını kullanmanız gerekir.
+*   **düzenleme** durumunda ki özellikler testleri tamamlanmamış veya son tanımlayıcı dökümanına uygun hale getirilmemiş ve V8 takımı tarafından kararlı olarak belirtilmemiş özellikleri içerir. (örn: henüz keşfedilmemiş, araştırılmamış kısımlar olabilir). V8 3.26 sürümünde [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) bu duruma eşdeğer yapıdadır. Bu özellikleri kullanmakta ki riski göze alıyorsanız, `--es_staging` (veya eşanlamlısı `--harmony`) çalışma bayrağını kullanmanız gerekir.
 *   Yüksek ihtimalle test işlemlerinde dahi olsa sorun yaratacak, diğer tüm **geliştirme** aşamasındaki özellikleri kendilerine özel harmoni bayraklarıyla etkinleştirebilirsiniz. (örn: `--harmony_arrow_functions`)
 
 ## io.js üzerinde varsayılan olarak gelen ES6 özellikleri hangileridir (çalışma bayrağı gerektirmez) ?
