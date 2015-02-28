@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # io.js ile ES6
 
 io.js, [V8](https://code.google.com/p/v8/) javascript motorunun en modern sürümüyle derlenmiştir. Bu motoru güncel sürümde tutarak [JavaScript ECMA-262 tanımlayıcı dökümanı](http://www.ecma-international.org/publications/standards/Ecma-262.htm) ile belirtilmiş yeni özelliklere io.js geliştiricilerinin en kısa zamanda ulaşmasını sağlıyoruz, bu arada performans ve kararlığın arttırılmasına devam ediyoruz.
@@ -70,5 +69,3 @@ io.js basit bir şekilde, tüm bağımlılıkları ve ilgili sürümleri listele
 ```sh
 iojs -p process.versions.v8
 ```
-
->>>>>>> upstream/master
