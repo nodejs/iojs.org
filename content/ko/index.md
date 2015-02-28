@@ -4,15 +4,15 @@
 
 [io.js](https://github.com/iojs/io.js)는 [node.js](https://nodejs.org/)&#8482;를 기반으로 만든 [npm](https://www.npmjs.org/) 호환 플랫폼이다.
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.3.0/)
+[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.4.1/)
 
-[버전 1.3.0](https://iojs.org/dist/v1.3.0/)
+[버전 1.4.1](https://iojs.org/dist/v1.4.1/)
 
-[Linux](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x86.msi),
-[Win64](https://iojs.org/dist/v1.3.0/iojs-v1.3.0-x64.msi),
-[Mac](https://iojs.org/dist/v1.3.0/iojs-v1.3.0.pkg),
-[기타](https://iojs.org/dist/v1.3.0/) 다운로드.
+[Linux](https://iojs.org/dist/v1.4.1/iojs-v1.4.1-linux-x64.tar.xz),
+[Win32](https://iojs.org/dist/v1.4.1/iojs-v1.4.1-x86.msi),
+[Win64](https://iojs.org/dist/v1.4.1/iojs-v1.4.1-x64.msi),
+[Mac](https://iojs.org/dist/v1.4.1/iojs-v1.4.1.pkg),
+[기타](https://iojs.org/dist/v1.4.1/) 다운로드.
 
 [변경이력](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
 

@@ -1,20 +1,22 @@
-# ES6 on io.js
+<div dir="rtl" lang="he">
+# ES6 ב io.js 
 
-io.js is built against modern versions of [V8](https://code.google.com/p/v8/). By keeping up-to-date with the latest releases of this engine we ensure new features from the [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) are brought to io.js developers in a timely manner, as well as continued performance and stability improvements.
+נבנה לצד הגרסאות העדכניות של מנוע ה [V8](https://code.google.com/p/v8/). 
+שמירה על עדכניות ומודרניות מבטיחים לנו כפלטפורמה לספק את המלוא התכונות החדשות מ[JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) מבעוד מועד. כמו כן, שיפורי ביצועים יציבות וכיוצא בזה.
 
-Version 1.3.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.26.33 that will be shipped with joyent/node@0.12.x.
+גרסת 1.4.1 מובאת עם גרסת 4.1.0.21 של הV8 שכוללת תכונותֿ/פיצ׳רים מES6 (ראה למטה), בשונה מגרסת 3.26.33 של הV8 שמובאת עם גרסה 0.12 של joyent/node
 
-## No more --harmony flag
+# אין יותר את הדגל --harmony
 
-On joyent/node@0.12.x (V8 3.26), the `--harmony` runtime flag enabled all **completed**, **staged** and **in progress** ES6 features together, in bulk (with the exception of nonstandard/non-harmonious semantics for `typeof` which were hidden under `--harmony-typeof`). This meant that some really buggy or even broken features like [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) were just as readily available for developers as [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), which had very little or even no known-issues. As such, it was best practice to either enable only certain features by using specific runtime harmony feature flags (e.g. `--harmony-generators`), or simply enable all of them and then use a restricted subset.
+בגרסת 0.12 של Joyent/node דגל הזמן ריצה(--harmony) מדליק/מביא לשימוש את כל התכונות/פיצ׳רים ה״יציבים״, ב"staging", וב-״inprogress״/בפיתוח של ES6.(משמע, כי ייתכן ״באגים״, ״׳פיצ׳רים לא שלמים״ וכיוצא בזה. למשל: [Arrow Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) אשר זמינים בחופשיות לשימוש כמו: Generators (אשר כמעט יציבים לחלוטין).
+לכן, רוב המשתמשים מעדיפים להדליק דגלים ספציפים למשל: `--harmony-generators`.
+בגרסת 1.x של iojs (גרסת 4.1 של V8) אין כל מורכבות.
+כל הפ׳יצרים/תכונות של ES6 מחולקים ל3 תת קבוצות. shipping(יציב), staging, ובפיתוח.
+* יציב: כל הפיצ׳רים שמוגדרים יציבים בV8. למשל: `generators` `templates` ועוד תכונות נוספות למחרוזות(strings).
+* סטג׳ינג:  פיצ׳רים לפני סיום, שעדיין לא נבדקו לחלוטין או עודכנו לspec הנוכחי, ולכן לא נחשבים ״יציבים״ על ידי הV8. (למשל: סטאטוס הgenerators בגרסת 3.26 של הV8). על מנת להדליק/להביא לידי שימוש את בפיצ׳רים הללו השתמש בדגל `--es_staging`.
+* בפיתוח: כל הפיצ׳רים ב״פיתוח״ יכולים להידלק על ידי דגל `--harmony_arrow_functions`
 
-With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for **shipping**, **staged** and **in progress** features:
-
-*   All **shipping** features, the ones that V8 has considered stable, like [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [new string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) and many others are turned **on by default on io.js** and do **NOT** require any kind of runtime flag.
-*   Then there are **staged** features which are almost-completed features that haven't been completely tested or updated to the latest spec yet and therefore are not considered stable by the V8 team (e.g. there might be some edge cases left to discover). This is probably the equivalent of the state of [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) on 3.26. These are the "use at your own risk" type of features that now require a runtime flag: `--es_staging` (or its synonym, `--harmony`).
-*   Finally, all **in progress** features can be activated individually by their respective harmony flag (e.g. `--harmony_arrow_functions`), although this is highly discouraged unless for testing purposes.
-
-## Which ES6 features ship with io.js by default (no runtime flag required)?
+## איזה פיצ׳רים/תכונות מוגדרים כיציבים וזמינים ללא שימוש בדגלים ?
 
 
 *   Block scoping
@@ -25,7 +27,7 @@ With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features ar
 
     *   `function`-in-blocks
 
-    >As of v8 3.31.74.1, block-scoped declarations are [intentionally implemented with a non-compliant limitation to strict mode code](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Developers should be aware that this will change as v8 continues towards ES6 specification compliance.
+    >נכון לגרסת 3.31.74.1 v8, הצהרות של block-scoped מיושמות במכוון בהגבלה שאינה תואמת ל"strict mode". משתמשים צריכים להיות מודעים לכך שזה ישתנה ראה: [דיון](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es)
 
 *   Collections
 
@@ -49,23 +51,22 @@ With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features ar
 
 *   [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
 
-You can view a more detailed list, including a comparison with other engines, on the [compat-table](https://kangax.github.io/compat-table/es6/) project page.
+הינך יכול לצפות ברשימה המלאה, כולל השוואה עם מנועים אחרים/מקבילים. ראה: [compat-table](https://kangax.github.io/compat-table/es6/)
 
-## Which ES6 features are behind the --es_staging flag?
-
+## איזה פיצ׳רים/תכונות מאופשרים על ידי הדלקת דגל ה״סטג׳ינג״ ?
 *   [Classes](https://github.com/lukehoban/es6features#classes) (strict mode only)
 *   [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals)
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (user-definable results for `Object.prototype.toString`)
 
-## I have my infrastructure set up to leverage the --harmony flag. Should I remove it?
+## אלו פיצ׳רים/תכונות נמצאים ב״פיתוח״ ?
+פיצ׳רים/תכונות חדשים באופן קוב מתווספים למנוע הV8. באופן כללי, אין הערכה מדוייקת מתי ייכנסו ליציבות בiojs.
+בכל גרסא של iojs ניתנת לך האפשרות לצפות בפיצ׳רים/תכונות שבפיתוח על ידי הרצה של הפקודה: `iojs --v8-options | grep "in progress"`.( עלייך לדעת שפיצ׳רים אלו עלולים להיות ״שבורים״ וששימוש בהם הינו על אחריותך :)).
 
-The current behaviour of the `--harmony` flag on io.js is to enable **staged** features only. After all, it is now a synonym of `--es_staging`. As mentioned above, these are completed features that have not been considered stable yet. If you want to play safe, especially on production environments, consider removing this runtime flag until it ships by default on V8 and, consequently, on io.js. If you keep this enabled, you should be prepared for further io.js upgrades to break your code if V8 changes their semantics to more closely follow the standard.
+## יש לי תשתית קיימת / פרוייקט שהתחלתי שמשתמש בדגל --harmony האם אני צריך להסיר אותו ?
+שימוש בדגל זה בiojs ידליק את התכונות שקיימות בגרסת ה״סטייג׳ינג״. כפי שהוזכר למעלה, אם הינך מחפש יציבות במיוחד בסביבת ״פרודקשיין״ העדיפות הינה לא להשתמש בדגלים.
+אם הינך מחליט בכל זאת להריץ את התוכנה שלך על דגל, עליך להיות מודע כי הקוד שלך עלול להישבר בעתיד בהתאם לעידכוני גרסא של מנוע הV8.
 
-## How do I find which version of V8 ships with a particular version of io.js?
+## איך אני בודק את גרסת מנוע הV8 בגרסת הiojs שאני מריץ ?
+iojs מספק מידע על כל התלויות באובייקט הגלובלי(`process`), במקרה של הV8 הקלד את הפקודה הבא בטרמינל:`iojs -p process.versions.v8`
 
-io.js provides a simple way to list all dependencies and respective versions that ship with a specific binary through the `process` global object. In case of the V8 engine, type the following in your terminal to retrieve its version:
-
-```sh
-iojs -p process.versions.v8
-```

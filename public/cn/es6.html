@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 
 <head>
   <meta charset="utf-8">
-  <title i18n-title>io.js - JavaScript I/O</title>
+  <title>io.js - JavaScript I/O</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
@@ -24,17 +24,17 @@
 
   <header>
     <div class="content">
-      <a href="index.html" class="logo" i18n-logo-text>io.js</a>
+      <a href="index.html" class="logo">io.js</a>
       <div class="spacer"></div>
-      <a href="faq.html" i18n-faq-link>常见问题</a>
-      <a href="es6.html" i18n-es6-link>ES6</a>
-      <a href="https://iojs.org/api/" i18n-api-link>API 文档</a>
+      <a href="faq.html">常见问题</a>
+      <a href="es6.html">ES6</a>
+      <a href="https://iojs.org/api/">API 文档</a>
     </div>
   </header>
 
-  <div class="content clearfix" i18n-content><h1>io.js 运行 ES6</h1>
+  <div class="content clearfix"><h1>io.js 运行 ES6</h1>
 <p>io.js 是基于 <a href="https://code.google.com/p/v8/">V8</a> 引擎的较新版本构建的。通过持续跟进最新版的 V8 引擎，我们可以保证及时地为开发者带来最新的 <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 规范</a> 中的语言特性，同时也能得到性能和稳定性的提升。</p>
-<p>io.js 1.3.0 集成了 V8 4.1.0.14 版本，其中包含的 ES6 特性远超 joyent/node@0.12.x 集成的 3.26.33 版本所包含的。</p>
+<p>io.js 1.4.1 集成了 V8 4.1.0.21 版本，其中包含的 ES6 特性远超 joyent/node@0.12.x 集成的 3.26.33 版本所包含的。</p>
 <h2>干掉 --harmony</h2>
 <p>在 joyent/node@0.12.x (V8 3.26) 版本中，<code>--harmony</code> 运行时参数会一并开启所有 <strong>已完成</strong>，<strong>待完成</strong> 和 <strong>修订中</strong> 的 ES6 的一大堆特性 (除了 <code>typeof</code> 的非标准/不确定的特性需要通过 <code>--harmony-typeof</code> 开启之外)。这就意味着一些真正鸡肋甚至废弃的特性，譬如 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> 都会像 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> 那样开放给开发者，它们很偏门，甚至缺少相关资料。因此，最好的做法是，要么通过加特定参数(例如 <code>--harmony-generators</code>) 开启稳定的特性，要么直接开启全部但严格地使用特定部分特性。</p>
 <p>使用 io.js@1.x (V8 4.1+)，妈妈再也不担心我了。所有的特性在逻辑上被分为 <strong>已完成</strong>，<strong>待完成</strong> 和 <strong>修订中</strong> 三部分：</p>
@@ -121,11 +121,11 @@
 
   <footer class="content">
     <nav>
-      <a href="https://github.com/iojs/io.js/issues" i18n-issues-link>GitHub Issues</a><!--
-   --><a href="https://github.com/iojs" i18n-org-link>GitHub Org</a><!--
-   --><a href="https://webchat.freenode.net/?channels=io.js" i18n-irc-link>IRC Chat</a><!--
-   --><a href="http://logs.libuv.org/io.js/latest" i18n-irc-logs-link>Logs</a><!--
-   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme" i18n-gov-link>项目管理</a>
+      <a href="https://github.com/iojs/io.js/issues">GitHub Issues</a><!--
+   --><a href="https://github.com/iojs">GitHub Org</a><!--
+   --><a href="https://webchat.freenode.net/?channels=io.js">IRC Chat</a><!--
+   --><a href="http://logs.libuv.org/io.js/latest">Logs</a><!--
+   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">项目管理</a>
     </nav>
   </footer>
 
@@ -136,10 +136,11 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-02-20 14:45:25 UTC
+Build Time: 2015-02-26 23:13:46 UTC
 
-Commit Sha: 626785252f037c99c2fdbf1d93e71019684a2cb4
-Commit Msg: update io.js version to 1.3.0 in all languages
+Commit Sha: 6c600bad98d85681edbc2efedc9cd3aa6f02a980
+Commit Msg: update v8 version to 4.1.0.21 in all languages
+Hashsum: 6e15ffa5f4934bd5a9b3645771fb6ccf36653f2b
 
 =========== END BUILD INFORMATION ===========
 -->

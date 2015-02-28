@@ -2,7 +2,7 @@
 
 io.js는 [V8](https://code.google.com/p/v8/)의 새로운 버전으로 빌드한다. V8 엔진의 최신 버전을 사용함으로써 [JavaScript ECMA-262 사양](http://www.ecma-international.org/publications/standards/Ecma-262.htm)의 신기능을 io.js 개발자가 즉시 이용할 수 있을 뿐만 아니라, 지속적인 성능과 안정성 개선 또한 보장하게 된다.
 
-io.js 1.3.0 버전은 V8 4.1.0.14와 함께 제공되는데, 이는 Node.js™ 0.12.x의 3.28.73 버전보다 더 많은 ES6 기능이 구현되어 있다.
+io.js 1.4.1 버전은 V8 4.1.0.21와 함께 제공되는데, 이는 Node.js™ 0.12.x의 3.28.73 버전보다 더 많은 ES6 기능이 구현되어 있다.
 
 ## --harmony 플래그는 이제 그만
 

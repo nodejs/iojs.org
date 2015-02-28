@@ -34,7 +34,7 @@ would like to contribute to the translation of iojs.org, please refer to the fol
     * [`iojs-sv`](https://github.com/iojs/iojs-sv) Swedish Community
     * [`iojs-tr`](https://github.com/iojs/iojs-tr) Turkish Community
     * [`iojs-tw`](https://github.com/iojs/iojs-tw) Taiwan Community
-    * [`iojs-uk`](https://github.com/iojs/iojs-uk) Ukranian Community
+    * [`iojs-uk`](https://github.com/iojs/iojs-uk) Ukrainian Community
     
 ## For Localization Groups
 * Ensure that any site translations are done as pull requests into this repo. This will ensure the build process, layout, and styling, remain consistent across the different translations of the site.

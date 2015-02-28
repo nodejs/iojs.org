@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JavaScript I/O
 
 [ES6](es6.html)'ı Node topluluğuna kazandırdık
@@ -19,3 +20,5 @@ ve [diğerleri](https://iojs.org/dist/v1.4.1/).
 Test amaçlı olarak [gecelik derlemeleri kullanabilirsiniz](https://iojs.org/download/nightly/)
 
 [Sık Sorulan Sorular](/tr/faq.html)
+
+>>>>>>> upstream/master

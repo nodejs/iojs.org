@@ -1,34 +1,34 @@
-# FAQ
+<div dir="rtl" lang="he">
 
-## What is io.js?
+# שאלות נפוצות
 
-[io.js](https://github.com/iojs/io.js) is a JavaScript platform built on [Chrome's V8 runtime](http://code.google.com/p/v8/). This project began as a fork of [Joyent's Node.js™](https://nodejs.org/) and is compatible with the [npm](https://www.npmjs.org/) ecosystem.
+## מה זה io.js?
 
-Why? io.js aims to provide faster and predictable release cycles. It currently merges in the latest language, API and performance improvements to V8 while also updating libuv and other base libraries.
+io.js היא פלטפורמת ג'אווהסקריפט הבנוייה על [מנוע V8 של כרום](http://code.google.com/p/v8/). הפרוייקט התחיל כפיצול מ [Node.js™ של חברת Joynet](https://nodejs.org/) והוא עובד היטב עם מערכת ה[npm](https://www.npmjs.org/)
 
-This project aims to continue development of io.js under an "[open governance model](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" as opposed to corporate stewardship.
+המטרה של io.js היא לספק שחרורים בקצב מהיר וצפוי יותר.  כרגע נמצאים בו השיפורים העדכניים לשפה, הAPI והביצועים של V8, בנוסף, אנו מעדכנים את libuv וספריות בסיס אחרות.
 
-## Version 1.0.x?
+מטרת הפרוייקט היא להמשיך את הפיתוח של io.js תחת מודל "[ממשל פתוח](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)", בניגוד לשליטה ע"י קואופרטיב או חברה.
 
-io.js has moved to [Semver](http://semver.org/) and the changes between Node.js™ 0.10 and io.js 1.0.0 were significant enough
-to warrant a major version increment.
 
-Our [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) for v1.x provides a [summary of changes from Node.js v0.10.35 to io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+## גירסה 1.0.x?
 
-## How can I contribute?
+שיטת הגירסאות של io.js הומרה ל[Semver](http://semver.org/), והשינויים בין Node.js™ 0.10 לבין io.js 1.0.0 היו משמעותיים מספיק בשביל להצדיק הקפצת גירסת major.
 
-Everyone can help. io.js adheres to a [code of conduct](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), and contributions, releases, and contributorship are under an [open governance](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme) model.
+ה[CHANGELOG (אנגלית)](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) עבור גירסה 1.x מכיל את [תקציר השינויים מNode.js v0.10.35 אל io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
-To get started, there are open [ discussions on GitHub](https://github.com/iojs/io.js/issues), and we'd love to hear your feedback.
-Becoming involved in discussions is a good way to get a feel of where you can help out further. If there is
-something there you feel you can tackle, please [make a pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+## איך אני יכול לתרום?
 
-In addition, using [Nodebug.me](http://nodebug.me/) is a good way to help Triage the issues in the backlog.
+כל אחד יכול לעזור. io.js שומר על [קוד התנהגות](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), וכל התרומות והשחרורים הם תחת מודל [הממשל הפתוח](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme).
 
-## Where do discussions take place?
+בשביל להתחיל, [יש דיונים פתוחים בGitHub (אנגלית)](https://github.com/iojs/io.js/issues), ונשמח לקבל מכם משוב. להשתתף בדיונים היא דרך נהדרת לקבל מושג של איפה תוכלו לעזור יותר. אם יש משהו שאתם חושבים שתוכלו לטפל בו, נשמח ל[pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions) מכם.
 
-There is an #io.js channel on Freenode IRC. We keep logs of the channel [here](http://logs.libuv.org/io.js/latest).
+בנוסף, שימוש ב[Nodebug.me](http://nodebug.me/) היא דרך טובה לעזור ולזהות את הבעיות הדחופות יותר.
 
-## What is open source governance?
+## איפה הדיונים?
 
-Open source governance advocates the application of the philosophies of the open source and open content movements in order to enable any interested party to add to the creation of the end product, as with a wiki document. Legislation is democratically opened to the general citizenry, employing their collective wisdom to benefit the decision-making process and improve democracy. [[source]](https://en.wikipedia.org/wiki/Open-source_governance)
+יש ערוץ #io.js בIRC תחת רשת Freenode, יש לנו לוגים של הערוץ [כאן](http://logs.libuv.org/io.js/latest).
+
+## מהו מודל הממשל הפתוח?
+
+ממשל פתוח היא שיטה הפועלת ליישום פילוסופיות הקוד הפתוח והתוכן הפתוח בשביל לאפשר לכל צד מעוניין להוסיף ליצירת המוצר הסופי, בדומה למסמך Wiki. חקיקה היא דמוקרטית ופתוחה לציבור הרחב, תוך ניצול לטובה של החוכמה המשותפת לטובת תהליך קבלת ההחלטות ושיפור הדמוקרטיה. [[מקור (אנגלית)]](https://en.wikipedia.org/wiki/Open-source_governance)
