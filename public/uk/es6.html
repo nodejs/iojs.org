@@ -34,7 +34,7 @@
 
   <div class="content clearfix"><h1>ES6 в io.js</h1>
 <p>io.js побудований на основі сучасних версій <a href="https://code.google.com/p/v8/">V8</a>. Підтримуючи останні версії <a href="https://code.google.com/p/v8/">V8</a> в io.js, ми гарантуємо наявність нових можливостей <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a>, які привносяться до io.js розробників своєчасно, а також підвищують швидкість роботи та стабільність.</p>
-<p>Версія io.js 1.4.1 має версію V8 4.1.0.21, яка включає в себе ES6 можливості, котрих немає в V8 3.28.73, яка іде в поставці з Node™@0.12x.</p>
+<p>Версія io.js 1.4.2 має версію V8 4.1.0.21, яка включає в себе ES6 можливості, котрих немає в V8 3.28.73, яка іде в поставці з Node™@0.12x.</p>
 <h1>Більше ніяких --harmony параметрів</h1>
 <p>В Node.js™@0.12x (V8 3.28+), --harmony параметр вмикає всі <strong>shipping</strong>, <strong>staged</strong> та <strong>in progress</strong> ES6 можливості (окрім proxies, котрі вмикаються параметром --harmony-proxies). Це означає що код з помилками, чи навіть непрацюючі можливості, наприклад <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a> стають доступними в коді так само, як і <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">генератори</a>, котрі не мають відомих проблем взагалі. Багато розробників вмикають лише ті можливості, котрі їм потрібні, використовуючи параметри запуску (наприклад, <code>--harmony-generators</code>). Чи взагалі, вмикають всі можливості одним параметром.</p>
 <p>З io.js@1.x (V8 4.1+) складність використання ES6 можливостей зникає. Всі harmony можливості логічно розподілені на три групи <strong>shipping</strong>, <strong>staged</strong> та <strong>in progress</strong>:</p>
@@ -142,11 +142,11 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-02-26 23:13:46 UTC
+Build Time: 2015-03-01 00:47:46 UTC
 
-Commit Sha: 6c600bad98d85681edbc2efedc9cd3aa6f02a980
-Commit Msg: update v8 version to 4.1.0.21 in all languages
-Hashsum: a4fed240ceeac386e7a3d2da4229eb56342ebd49
+Commit Sha: e00b7f5270dc4ea17df8c6a6dccdd124244b2fff
+Commit Msg: Fixes to the order for when handlebars should execute on markdown
+Hashsum: 4bdfd6fa950ec432d09fa06431d995e6385f06e1
 
 =========== END BUILD INFORMATION ===========
 -->
