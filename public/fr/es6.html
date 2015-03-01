@@ -34,7 +34,7 @@
 
   <div class="content clearfix"><h1>ES6 et io.js</h1>
 <p>io.js est construit sur des versions modernes de <a href="https://code.google.com/p/v8/">V8</a>. En restant à jour avec les dernières livraisons du moteur, nous nous assurons que les dernières fonctionnalités de la <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">spécification JavaScript ECMA-262</a> sont mises à disposition des développeurs io.js en continu, ainsi que des améliorations de performance et de stabilité.</p>
-<p>La version 1.4.2 d'io.js est livrée avec V8 4.1.0.21 qui inclue des fonctionnalités ES6 qui vont bien au delà de la version 3.28.73 qui sera fournie avec joyent/node@0.12.x.</p>
+<p>La version 1.4.3 d'io.js est livrée avec V8 4.1.0.21 qui inclue des fonctionnalités ES6 qui vont bien au delà de la version 3.28.73 qui sera fournie avec joyent/node@0.12.x.</p>
 <h2>Disparition de l'option --harmony</h2>
 <p>Avec joyent/node@0.12.x (V8 3.28+), l'option <code>--harmony</code> activait toutes les fonctionnalités d'ES6 en même temps, qu'elles soient <strong>shipping</strong> (livrées), <strong>staged</strong> (en phase d'acceptation) ou <strong>in progress</strong> (en développement) (à l'exception de la sémantique non-standard/non-harmony de <code>typeof</code> qui était cachée derrière l'option <code>--harmony-typeof</code>). Ceci signifiait que certaines fonctionnalités défectueuses ou inopérantes telles que les <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxy</a> étaient mises à disposition tout comme les <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">générateurs</a>, qui en revanche n'avaient que peu de défauts connus. De fait, il est de bonne pratique d'activer uniquement certaines fonctionnalités via l'utilisation d'options d'éxécution de fonctionnalités harmony (comme `--harmony-generators par exemple), ou simplement de toutes les activer mais de n'en utiliser qu'une partie.</p>
 <p>Avec io.js@1.x (V8 4.1+), cette complexité disparait. Toutes les fonctionnalités d'harmony sont à présent séparées en trois groupes distincts: <strong>livrées</strong>, <strong>en phase d'acceptation</strong> ou <strong>en développement</strong>.</p>
@@ -141,11 +141,11 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-03-01 00:47:46 UTC
+Build Time: 2015-03-01 00:59:13 UTC
 
-Commit Sha: e00b7f5270dc4ea17df8c6a6dccdd124244b2fff
-Commit Msg: Fixes to the order for when handlebars should execute on markdown
-Hashsum: 36c18a8d9c48797edf77fb752af5be3847fc2f85
+Commit Sha: 94d6715bb4c3660b4177c84ad0c8234e8e5ac00d
+Commit Msg: Generated public/ with latest version (1.4.2)
+Hashsum: d60f44f9f1ef4a972c7892a3613bb4f2870aa7ca
 
 =========== END BUILD INFORMATION ===========
 -->

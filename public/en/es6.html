@@ -34,7 +34,7 @@
 
   <div class="content clearfix"><h1>ES6 on io.js</h1>
 <p>io.js is built against modern versions of <a href="https://code.google.com/p/v8/">V8</a>. By keeping up-to-date with the latest releases of this engine we ensure new features from the <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> are brought to io.js developers in a timely manner, as well as continued performance and stability improvements.</p>
-<p>Version 1.4.2 of io.js ships with V8 4.1.0.21, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x.</p>
+<p>Version 1.4.3 of io.js ships with V8 4.1.0.21, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x.</p>
 <h2>No more --harmony flag</h2>
 <p>On Node.js™@0.12.x (V8 3.28+), the <code>--harmony</code> runtime flag enables all <strong>completed</strong>, <strong>staged</strong> and <strong>in progress</strong> ES6 features together, in bulk (with the exception of <code>proxies</code> which are hidden under <code>--harmony-proxies</code>). This means that some really buggy or even broken features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a> are just as readily available for developers as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, which have very little or even no known-issues. As such, most developers tend to enable only certain features by using specific runtime harmony feature flags (e.g. <code>--harmony-generators</code>), or simply enable all of them and then use a restricted subset.</p>
 <p>With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for <strong>shipping</strong>, <strong>staged</strong> and <strong>in progress</strong> features:</p>
@@ -141,11 +141,11 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-03-01 00:47:46 UTC
+Build Time: 2015-03-01 00:59:13 UTC
 
-Commit Sha: e00b7f5270dc4ea17df8c6a6dccdd124244b2fff
-Commit Msg: Fixes to the order for when handlebars should execute on markdown
-Hashsum: 5f4a2a571f64820bd01f16f79ff90c70cb87f3d8
+Commit Sha: 94d6715bb4c3660b4177c84ad0c8234e8e5ac00d
+Commit Msg: Generated public/ with latest version (1.4.2)
+Hashsum: c2dc47847b90d5c331b0179899666aa1402de5b3
 
 =========== END BUILD INFORMATION ===========
 -->
