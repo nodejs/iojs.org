@@ -38,6 +38,9 @@
       "github": "zeke"
     }
   ],
+  "scripts": {
+    "build": "gulp"
+  },
   "dependencies": {
     "autoprefixer-core": "^5.1.5",
     "browserify": "^8.1.1",
