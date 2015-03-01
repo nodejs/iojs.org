@@ -3,7 +3,6 @@ var config = require('../config').templates; // pull in the pathing config file
 var fs = require('fs'); // used to work with substack's module
 var glob = require('glob'); // to dynamically read in all content md files
 var gulp = require('gulp'); // because this is a gulp task. duh.
-var HTMLtemplate = require('html-template'); // substack's html template implementation
 var md = require('markdown-it')({ html: true }); // to convert markdown to html
 var source = require('vinyl-source-stream'); // used to convert substack's readStream to vinylStream
 var moment = require('moment-timezone');
@@ -12,13 +11,15 @@ var utils = require('../util/template-utils.js');
 var path = require('path');
 var crypto = require("crypto");
 var gulpif = require('gulp-if');
-var handlebars = require('gulp-compile-handlebars');
+var gulpHandlebars = require('gulp-compile-handlebars');
+var Handlebars = require('handlebars');
 var buffer = require('vinyl-buffer');
 var rename = require('gulp-rename');
 
 gulp.task('templates', function() {
   var separator = '<SEPARATOR>';
   var cmd = 'git log --no-color --pretty=format:\'[ "%H", "%s", "%cr", "%an" ],\' --abbrev-commit';
+  var projectJSON = require('../../source/project.json');
   cmd = cmd.replace(/"/g, separator);
   _command(cmd, function(str) {
     str = str.substr(0, str.length - 1);
@@ -40,8 +41,11 @@ gulp.task('templates', function() {
       var markdownFilesInThisLang = utils.loadMdFiles(contentFiles, lang); // load all the md files
 
       _.forEach(markdownFilesInThisLang, function(file) { // iterate over the md files present in this language to apply the template to them
-        var markdown = String(fs.readFileSync(file.srcPath)); // read in the md file, convert buffer to string
-        var html = md.render(markdown); // convert md string to html string
+        var markdownRaw = String(fs.readFileSync(file.srcPath)); // read in the md file, convert buffer to string
+        var markdownHandlebars = Handlebars.compile(markdownRaw)({
+          project: projectJSON
+        });
+        var html = md.render(markdownHandlebars); // convert md string to html string
         var thisFileJSON = _.cloneDeep(templateJSON); // clone in the template JSON object
         var pageTitle = thisFileJSON['browser-title'];
         var filepath = __dirname.split('gulp/tasks')[0] + 'source/templates/main.html'; // get the main template file location. There can be multiple, this is just a proof of concept
@@ -60,6 +64,7 @@ gulp.task('templates', function() {
             return true;
           }
           var currentContent = fs.readFileSync(currentFilePath, {encoding: 'utf8'});
+
           var currentHash = currentContent.match(/Hashsum:\s(\b([a-f0-9]{40})\b)/);
           if (currentHash && currentHash.length > 2) {
             currentHash = currentHash[1]
@@ -68,6 +73,7 @@ gulp.task('templates', function() {
           }
 
           var contents = String(vinylFile.contents);
+
           var newHash = crypto
             .createHash("sha1")
             .update(vinylFile.contents, "binary")
@@ -93,13 +99,14 @@ gulp.task('templates', function() {
           build: {
             markdownPage: file.filename,
             pageStylesheet: file.filename
-          }
+          },
+          project: projectJSON
         };
 
         var fileStream = gulp.src(filepath) // pulling this code from substack's example on html-template
           .pipe(rename(file.filename + '.html')) // converting the readStream to a vinyl stream so gulp can write it back to the disk
           .pipe(buffer())
-          .pipe(handlebars(templateContent))
+          .pipe(gulpHandlebars(templateContent))
           .pipe(gulpif(isChangedFile, gulp.dest(destinationDirectory))); // dump it in the appropriate language subfolder
       });
     });

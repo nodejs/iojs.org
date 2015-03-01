@@ -2,7 +2,7 @@
 
 io.js est construit sur des versions modernes de [V8](https://code.google.com/p/v8/). En restant à jour avec les dernières livraisons du moteur, nous nous assurons que les dernières fonctionnalités de la [spécification JavaScript ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm) sont mises à disposition des développeurs io.js en continu, ainsi que des améliorations de performance et de stabilité.
 
-La version 1.4.1 d'io.js est livrée avec V8 4.1.0.21 qui inclue des fonctionnalités ES6 qui vont bien au delà de la version 3.28.73 qui sera fournie avec joyent/node@0.12.x.
+La version {{project.current_version}} d'io.js est livrée avec V8 {{project.current_v8}} qui inclue des fonctionnalités ES6 qui vont bien au delà de la version 3.28.73 qui sera fournie avec joyent/node@0.12.x.
 
 ## Disparition de l'option --harmony
 

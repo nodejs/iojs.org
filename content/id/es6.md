@@ -2,7 +2,7 @@
 
 io.js dikembangkan dengan versi modern dari [V8](https://code.google.com/p/v8/). Dengan menjaga tetap teranyar dengan rilis terbaru dari *engine* ini kami memastikan fitur terbaru dari [JavaScript ECMA-262 spesifikasi](http://www.ecma-international.org/publications/standards/Ecma-262.htm)  tersedia untuk pengembang io.js dengan tepat waktu, serta perbaikan yang berkelanjutan pada kinerja dan stabilitas.
 
-Versi 1.4.1 dari io.js dikeluarkan dengan V8 4.1.0.21, yang meliputi ES6 fitur jauh melampaui versi 3.26.33 yang akan dikirim dengan joyent/node@0.12.x.
+Versi {{project.current_version}} dari io.js dikeluarkan dengan V8 {{project.current_v8}}, yang meliputi ES6 fitur jauh melampaui versi 3.26.33 yang akan dikirim dengan joyent/node@0.12.x.
 
 ## Tidak ada lagi --harmony flag
 

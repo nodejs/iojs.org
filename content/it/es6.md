@@ -2,7 +2,7 @@
 
 io.js integra al suo interno una versione moderna del motore [V8](https://code.google.com/p/v8/). Rimanendo aggiornati con le ultime versioni di questo motore, possiamo rendere disponibili le nuove caratteristiche delle [specifiche JavaScript ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm) agli sviluppatori io.js in modo rapido, assieme ai continui miglioramenti nella stabilità e nelle prestazioni.
 
-La versione 1.2.0 di io.js viene rilasciata con la V8 4.1.0.21, che include caratteristiche di ES6 più avanzate rispetto alla versione 3.26.33 che sarà rilasciata assieme a joyent/node@0.12.x.
+La versione 1.2.0 di io.js viene rilasciata con la V8 {{project.current_v8}}, che include caratteristiche di ES6 più avanzate rispetto alla versione 3.26.33 che sarà rilasciata assieme a joyent/node@0.12.x.
 
 ## Il flag --harmony non è più necessario
 
