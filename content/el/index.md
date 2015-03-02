@@ -13,7 +13,7 @@
 [Win32](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}-x86.msi),
 [Win64](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}-x64.msi),
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg) ή
-[others](https://iojs.org/dist/v{{project.current_version}}/).
+[άλλες εκδόσεις](https://iojs.org/dist/v{{project.current_version}}/).
 
 
 [Ιστορικό](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
