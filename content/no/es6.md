@@ -7,7 +7,7 @@ spesifikasjonen](http://www.ecma-international.org/publications/standards/Ecma-2
 er tilgjengelig for io.js utviklere innen rimelig tid. I tillegg vil
 sikkerhets- og ytelesesforbedringer komme raskt.
 
-Versjon 1.4.2 av io.js kommer med V8 versjon 4.1.0.21, denne inkluderer
+Versjon {{project.current_version}} av io.js kommer med V8 versjon {{project.current_v8}}, denne inkluderer
 ES6-funksjoner godt forbi versjon 3.28.73 som vil bli levert med Node.js™
 0.12.x.
 
@@ -128,4 +128,3 @@ du skrive følgende i terminalen:
 ```sh
 iojs -p process.versions.v8
 ```
-
