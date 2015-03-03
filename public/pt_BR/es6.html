@@ -34,7 +34,7 @@
 
   <div class="content clearfix"><h1>ES6 no io.js</h1>
 <p>O io.js é construído usando versões modernas do <a href="https://code.google.com/p/v8/">V8</a>. Mantendo-nos atualizados com as últimas versões desta engine, garantimos que novas funcionalidades da <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">especificação JavaScript ECMA-262</a> são trazidas para desenvolvedores io.js rapidamente, além de manter performance continuada e melhorias de estabilidade.</p>
-<p>A versão 1.4.2 do io.js vem com o V8 4.1.0.21, que inclui funcionalidades do ES6 bem além da versão 3.26.33 que vem com o joyent/node@0.12.x.</p>
+<p>A versão 1.4.3 do io.js vem com o V8 4.1.0.21, que inclui funcionalidades do ES6 bem além da versão 3.26.33 que vem com o joyent/node@0.12.x.</p>
 <h2>Não mais flag --harmony</h2>
 <p>No joyent/node@0.12.x (V8 3.26), a flag de runtime <code>--harmony</code> habilitava todas funcionalidades ES6 <strong>completas</strong>, <strong>em teste</strong> e <strong>em progresso</strong> juntas, de uma vez só (com a exceção de semânticas não padrão/não harmoniosas para <code>typeof</code> que estavam escondidas sob <code>--harmony-typeof</code>). Isto significava que algumas funcionalidades realmente bugadas ou mesmo quebradas como os <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> estavam prontamente disponíveis para desenvolvedores como os <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, que tinham poucos ou mesmo nenhuma issue conhecida. Portanto, era uma boa prática ou habilitar apenas certas funcionalidades usando flags de runtime harmony para funcionalidades específicas (por ex. <code>--harmony-generators</code>), ou simplesmente habilitar tudo e depois usar apenas um subconjunto restrito.</p>
 <p>Com o io.js@1.x (V8 4.1+), toda esta complexidade vai embora. Todas as funcionalidades harmony agora estão logicamente divididas em três grupos para funcionalidades <strong>entregues</strong>, <strong>sob testes</strong> e <strong>em progresso</strong>:</p>
@@ -136,11 +136,11 @@
 <!--
 =========== BUILD INFORMATION ===========
 
-Build Time: 2015-03-01 00:47:46 UTC
+Build Time: 2015-03-03 02:46:30 UTC
 
-Commit Sha: e00b7f5270dc4ea17df8c6a6dccdd124244b2fff
-Commit Msg: Fixes to the order for when handlebars should execute on markdown
-Hashsum: 08977a60019a51b478f549337891287085a2333b
+Commit Sha: f3ff1b9607b09507fadcf14efd592b5d1e98d19a
+Commit Msg: fixes content/es to use version variable, bumps to 1.4.3
+Hashsum: 168db9c28781b3eb3c8ccd0e112b181b75707744
 
 =========== END BUILD INFORMATION ===========
 -->
