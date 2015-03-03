@@ -66,6 +66,7 @@
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
     "vinyl-buffer": "^1.0.0",
+    "vinyl-map": "^1.0.1",
     "vinyl-source-stream": "^1.0.0"
   }
 }
