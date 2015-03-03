@@ -82,6 +82,15 @@ function generateContentAndTemplates() {
         markdownPage: fileName,
         pageStylesheet: fileName
       },
+      page: {
+        languages: projectJSON.languages.map(function(lang) {
+          return {
+            code: lang.code,
+            name: lang.name,
+            url: `/${lang.code}/${fileName}.html`
+          }
+        })
+      },
       project: projectJSON
     }
 
