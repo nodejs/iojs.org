@@ -28,7 +28,7 @@ npm install
 
 ### Local Development
 ```
-npm run gulp
+npm run gulp develop
 ```
 
 Or just run `gulp` if you have it installed globally. You can also run `npm run gulp build` to run the build script, if you don't wish to have a dev server running.
