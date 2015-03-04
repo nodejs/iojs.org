@@ -87,7 +87,7 @@ function generateContentAndTemplates() {
           return {
             code: lang.code,
             name: lang.name,
-            url: `/${lang.code}/${fileName}.html`
+            url: '/${lang.code}/${fileName}.html'
           }
         })
       },
