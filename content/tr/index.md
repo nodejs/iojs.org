@@ -19,4 +19,4 @@ ve [diğerleri](https://iojs.org/dist/v{{project.current_version}}/)
 
 Test amaçlı olarak [gecelik derlemeleri kullanabilirsiniz](https://iojs.org/download/nightly/)
 
-[Sık Sorulan Sorular](/faq.html)
+[Sık Sorulan Sorular](faq.html)

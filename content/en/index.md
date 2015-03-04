@@ -20,4 +20,4 @@ Download for
 
 [Nightly releases](https://iojs.org/download/nightly/) are available for testing.
 
-[Frequently Asked Questions](/faq.html)
+[Frequently Asked Questions](faq.html)

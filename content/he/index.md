@@ -5,9 +5,9 @@
 מביאים את [ES6](es6.html) לקהילת Node
 
 [io.js](https://github.com/iojs/io.js)
-היא פלטפורמה מבוססת במקור על 
+היא פלטפורמה מבוססת במקור על
 [node.js](https://nodejs.org/)&#8482;
-תואמת 
+תואמת
 [npm](https://www.npmjs.org/)
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
@@ -26,4 +26,4 @@
 [בנייה ליילית](https://iojs.org/download/nightly)
 מוצעת לצורכי בדיקה
 
-[שאלות נפוצות](/faq.html)
+[שאלות נפוצות](faq.html)

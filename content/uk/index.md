@@ -19,4 +19,4 @@
 
 [Нічні релізи](https://iojs.org/download/nightly/) доступні для завантаження і тестування.
 
-[FAQ](/faq.html)
+[FAQ](faq.html)
