@@ -1,10 +1,14 @@
 var gulp = require('gulp');
-var runSequence = require('run-sequence');
 
-gulp.task('default', function(cb){
-  runSequence(
-    // 'clean',
-    ['stylus', 'templates'],
-    ['watch', 'server'],
-  cb);
+gulp.task('default', function(){
+
+  var message =
+  '---- io.js website ----\n' +
+  'gulp tasks available:\n'   +
+  '- develop\n' +
+  '- build\n'   +
+  '- server\n'  +
+  '- clean\n';
+
+  console.log(message);
 });
