@@ -30,6 +30,9 @@ npm install
 ```
 npm run gulp
 ```
+
+Or just run `gulp`. You can too run `npm run gulp build` to only build the project.
+
 Runs a local HTTP server on port 4657 with live-reload, which will update
 your browser immediately with content or style changes. Generated assets
 are provided to the [./public]() directory for publishing.
