@@ -32,7 +32,8 @@
     </div>
   </header>
 
-  <div class="content clearfix"><h1>io.js 的 ES6</h1>
+  <div class="content content--body clearfix">
+    <h1>io.js 的 ES6</h1>
 <p>io.js 建構於目前版本的 <a href="https://code.google.com/p/v8/">V8</a> 之上，將會持續更新並引入最新的引擎版本，以確保最新的 <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> 特性能以最短的時間內被 io.js 的開發人員所使用，並藉著不斷快速更新此持續改善效能及穩定度。</p>
 <p>目前釋出的 io.js v1.4.3 版本已採用 V8 4.1.0.21，其支援的 ES6 特性遠超過 joyent/node@0.12.x 所使用的 V8 3.26.23 。</p>
 <h2>不再需要 --harmony 參數</h2>
@@ -117,7 +118,8 @@
 <p>io.js 提供了一個非常簡單的方法去取得所有的依賴函式庫及版本號，只要透過存取 <code>process</code> 全域物件即可。所以，如果想知道 V8 引擎的版本資訊，可以直接在終端機（Terminal）上輸入：</p>
 <pre><code class="language-sh">iojs -p process.versions.v8
 </code></pre>
-</div>
+
+  </div>
 
   <footer class="content">
     <nav>
@@ -127,20 +129,13 @@
    --><a href="http://logs.libuv.org/io.js/latest">日誌</a><!--
    --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">專案管理</a>
     </nav>
+    <nav class="languageFooter">
+      <a><strong>Languages</strong></h3><!--
+    --><a href="/cn/es6.html" lang="cn">简体中文</a><a href="/de/es6.html" lang="de">Deutsch</a><a href="/el/es6.html" lang="el">Ελληνικά</a><a href="/en/es6.html" lang="en">English</a><a href="/es/es6.html" lang="es">Español</a><a href="/fi/es6.html" lang="fi">Suomi</a><a href="/fr/es6.html" lang="fr">Français</a><a href="/he/es6.html" lang="he">עברית</a><a href="/id/es6.html" lang="id">Bahasa Indonesia</a><a href="/it/es6.html" lang="it">Italiano</a><a href="/ja/es6.html" lang="ja">日本語</a><a href="/ko/es6.html" lang="ko">한국어</a><a href="/no/es6.html" lang="no">Norsk</a><a href="/pt_BR/es6.html" lang="pt_BR">Português (BR)</a><a href="/pt_PT/es6.html" lang="pt_PT">Português (PT)</a><a href="/ru/es6.html" lang="ru">Русский</a><a href="/tr/es6.html" lang="tr">Türkçe</a><a href="/uk/es6.html" lang="uk">Українська</a><a href="/zh_TW/es6.html" lang="zh_TW">正體中文（台灣）</a>
+    </nav>
   </footer>
 
 <!-- See something you like? Want to help? Visit https://github.com/iojs/website to contribute  -->
 </body>
 
 </html>
-<!--
-=========== BUILD INFORMATION ===========
-
-Build Time: 2015-03-03 02:46:30 UTC
-
-Commit Sha: f3ff1b9607b09507fadcf14efd592b5d1e98d19a
-Commit Msg: fixes content/es to use version variable, bumps to 1.4.3
-Hashsum: d7da151ddeb176a11bad0d2752b77d71e20da16c
-
-=========== END BUILD INFORMATION ===========
--->
