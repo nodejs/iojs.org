@@ -11,7 +11,7 @@
     "url": "https://github.com/iojs/website/issues"
   },
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "./node_modules/gulp/bin/gulp.js"
   },
   "homepage": "https://github.com/iojs/website",
   "contributors": [
