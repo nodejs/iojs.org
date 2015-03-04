@@ -29,7 +29,7 @@ npm install
 
 ### Local Development
 ```
-npm start
+npm run gulp
 ```
 Runs a local HTTP server on port 4657 with live-reload, which will update
 your browser immediately with content or style changes. Generated assets
