@@ -23,7 +23,6 @@
 ### Dependencies
 ```
 git clone https://github.com/iojs/website.git
-npm install -g gulp
 npm install
 ```
 
