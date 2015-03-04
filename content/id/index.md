@@ -2,7 +2,7 @@
 
 Membawa [ES6](es6.html) ke Komunitas Node!
 
-[io.js](https://github.com/iojs/io.js) adalah [npm](https://www.npmjs.org/) platform yang kompatibel dengan [node.js](https: //nodejs.org/)™.
+[io.js](https://github.com/iojs/io.js) adalah [npm](https://www.npmjs.org/) platform yang kompatibel dengan [node.js](https://nodejs.org/)™.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 
