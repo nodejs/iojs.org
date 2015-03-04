@@ -55,7 +55,7 @@ function generateContentAndTemplates() {
    */
   base = path.resolve(__dirname, '..', '..'); /* 1 */
   contentBase = path.resolve(base, 'content'); /* 2 */
-  projectJSON = require('../../source/project.json'); /* 3 */
+  projectJSON = require('../../source/project.js'); /* 3 */
   i18nJSON = {}; /* 4 */
   hbsTemplates = {}; /* 5 */
 
