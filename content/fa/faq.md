@@ -4,7 +4,7 @@
 
 ## io.js چیست؟
 
-[io.js](https://github.com/iojs/io.js) یک سکوی جاوااسکریپت ساخته‌شده بر روی [V8 runtime کروم](http://code.google.com/p/v8/) است. این پروژه به عنوان یک انشعاب از [Node.js™ (متعلق به شرکت Joyent)](https://nodejs.ir/) و آغاز شده و با [npm](https://www.npmjs.org/) سازگار می‌باشد.
+[io.js](https://github.com/iojs/io.js) یک سکوی جاوااسکریپت ساخته‌شده بر روی [V8 runtime کروم](http://code.google.com/p/v8/) است. این پروژه به عنوان یک انشعاب از [Node.js™ (متعلق به شرکت Joyent)](https://nodejs.ir/) آغاز شده و با [npm](https://www.npmjs.org/) سازگار می‌باشد.
 
 ## چرا؟
 
@@ -20,14 +20,14 @@ io.js به [Semver](http://semver.org/) انتقال یافته است و تغی
 
 ## چگونه می‌توانم کمک کنم؟
 
-همه می‌توانند کمک کنند. io.js به یکسری [مقررات رفتاری](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct) پایبند است، و مشارکت‌ها، انتشهارها و همکاری تحت یک  [مدل حاکمیت باز](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme) انجام می‌پذیرند.
+همه می‌توانند کمک کنند. io.js به یکسری [مقررات رفتاری](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct) پایبند است و مشارکت‌ها، انتشارها و همکاری تحت یک  [مدل حاکمیت باز](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme) انجام می‌پذیرند.
 
-برای شروع کار، [مباحث باز روی گیتهاب](https://github.com/iojs/io.js/issues) قرار دارند و  ما مشتاق به شنیدن بازخوردهای شما هستیم.
-درگیر شدن با مباحث راه خوبی برای درک این است که شما در کدام قسمت می‌توانید کمک بیشتری به انجام برسانید. اگر چیزی وجود دارد که شما احساس می‌کنید از عهدهٔ آن برمی‌آیید، لطفا [یک pull request بسازید](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+برای شروع کار، [بحث‌های باز روی گیت‌هاب](https://github.com/iojs/io.js/issues) قرار دارند و  ما مشتاق به شنیدن بازخوردهای شما هستیم.
+درگیر شدن با بحث‌ها راه خوبی برای درک این است که شما در کدام قسمت می‌توانید کمک بیشتری به انجام برسانید. اگر چیزی وجود دارد که شما احساس می‌کنید از عهدهٔ آن برمی‌آیید، لطفا [یک pull request بسازید](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
 
-بعلاوه، استفاده از [Nodebug.me](http://nodebug.me/) راه خوبی برای کمک به دسته‌بندی مباحث در انبار است.
+بعلاوه، استفاده از [Nodebug.me](http://nodebug.me/) راه خوبی برای کمک به دسته‌بندی issue‌ها در انبار است.
 
-## مباحث در کجا صورت می‌گیرند؟
+## بحث‌ها در کجا صورت می‌گیرند؟
 
 کانال #io.js یک کانال IRC روی Freenode است. ما سیاه‌های کانال را [اینجا](http://logs.libuv.org/io.js/latest) نگهداری می‌کنیم.
 
