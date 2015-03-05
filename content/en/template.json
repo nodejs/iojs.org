@@ -24,7 +24,7 @@
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
     "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} are available for testing.",
     "short_description": "{{link 'website'}} is an {{link 'npm'}} compatible platform originally based on {{link 'nodejs'}}.",
-    "slogan": "Bringing {{link 'es6'}} to the Node Community!"
+    "slogan": "Bringing {{link 'pages.es6'}} to the Node Community!"
   },
   "links": {
     "nodejs": "Node.js™",

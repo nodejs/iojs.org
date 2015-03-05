@@ -11,5 +11,19 @@
   "irc-logs-link":"Logs",
   "gov-link":"项目管理",
   "verbose_version": "{{project.current_version}} 版本",
-  "home_download_links": "下载 {{> current_download_links}} 版本。"
+  "downloads": {
+    "all": "其他"
+  },
+  "home": {
+    "download_links": "下载 {{> current_download_links}} 版本。",
+    "nightly_releases": "{{link '每日构建版本' 'https://iojs.org/download/nightly/'}} 可用于测试。",
+    "short_description": "{{link 'website'}} 是一个衍生自 {{link 'nodejs'}}，并兼容 {{link 'npm'}} 的开发平台。",
+    "slogan": "将 {{link 'pages.es6'}} 带入 Node 社区！"
+  },
+  "links": {
+    "pages": {
+      "changelog": "更新日志",
+      "faq_verbose": "常见问题"
+    }
+  }
 }
