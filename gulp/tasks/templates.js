@@ -118,6 +118,22 @@ function generateContentAndTemplates() {
     return new Handlebars.SafeString(result);
   });
 
+  LocalHandlebars.registerHelper('link', function(text, url, env) {
+    var key = text;
+
+    if (arguments.length == 2) {
+      env = url;
+      text = traverse(env.data.root.i18n.links, key);
+      url = traverse(env.data.root.project.links, key);
+    }
+    text = Handlebars.Utils.escapeExpression(text);
+    url  = Handlebars.Utils.escapeExpression(url);
+
+    var result = '<a href="' + url + '">' + text + '</a>';
+
+    return new Handlebars.SafeString(result);
+  });
+
   // we returned a wrapped function to help us cache some work (above)
   return function(contentBuffer, file) {
     var fileName, fileType, contentRaw, lang, templateJSON, contentHandlebarsCompiled,

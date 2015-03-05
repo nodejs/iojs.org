@@ -36,7 +36,13 @@ project.languages = [
 project.links = {
   nodejs: 'https://nodejs.org/',
   npm: 'https://www.npmjs.org/',
-  website: `https://iojs.org/`
+  website: 'https://iojs.org/',
+  pages: {
+    home: './index.html',
+    es6: './es6.html',
+    faq: './faq.html',
+    faq_verbose: './faq.html'
+  }
 };
 
 var baseURL = `https://iojs.org/dist`;

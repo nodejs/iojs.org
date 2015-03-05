@@ -22,11 +22,20 @@
   "verbose_version": "Version {{project.current_version}}",
   "home": {
     "download_links": "Download for {{> current_download_links}}",
-    "short_description": "{{link 'website'}} is an {{link 'npm'}} compatible platform originally based on {{link 'nodejs'}}."
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} are available for testing.",
+    "short_description": "{{link 'website'}} is an {{link 'npm'}} compatible platform originally based on {{link 'nodejs'}}.",
+    "slogan": "Bringing {{link 'es6'}} to the Node Community!"
   },
   "links": {
     "nodejs": "Node.js™",
     "npm": "npm",
-    "website": "io.js"
+    "website": "io.js",
+    "pages": {
+      "home": "Home",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Frequenty Asked Questions"
+    }
   }
 }
