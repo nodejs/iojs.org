@@ -1,5 +1,4 @@
 /*
- * 1. because this is a gulp task. duh.
  * 2. to convert markdown to html
  * 3. handlebars is used to convert `{{ }}` placeholders
  *    in markdown, html, to output
@@ -12,14 +11,13 @@
  */
 var fs = require('fs');
 var path = require('path');
-var gulp = require('gulp'); /* 1 */
+var gulp = require('gulp');
 var md = require('markdown-it')({ html: true }); /* 2 */
 var Handlebars = require('handlebars'); /* 3 */
 var buffer = require('vinyl-buffer'); /* 4 */
 var vinylMap = require('vinyl-map'); /* 5 */
 var rename = require('gulp-rename'); /* 6 */
 var utils = require('../util/template-utils.js'); /* 7 */
-
 
 /*
   generateContentAndTemplates()
@@ -41,7 +39,7 @@ var utils = require('../util/template-utils.js'); /* 7 */
   Returns: a gulp-friendly pipe task (function)
 */
 function generateContentAndTemplates() {
-  var base, projectJSON, i18nJSON, hbsTemplates;
+  var base, projectJSON, i18nJSON, hbsTemplates, LocalHandlebars;
 
   /*
    * cache variables and lookups used on subsequent runs of the pipe task:
@@ -52,19 +50,35 @@ function generateContentAndTemplates() {
    * 3. `projectJSON` is global, re-used across all languages
    * 4. `i18nJSON` caches the template JSON for each language (avoids duplicated work)
    * 5. `hbsTemplates` caches the handlebars FUNCTION for each template to save overhead
+   * 5. `LocalHandlebars` is a sandboxed version of Handlebars, avoids injecting
+         helpers and partials at a global scale.
    */
   base = path.resolve(__dirname, '..', '..'); /* 1 */
   contentBase = path.resolve(base, 'content'); /* 2 */
   projectJSON = require('../../source/project.js'); /* 3 */
   i18nJSON = {}; /* 4 */
   hbsTemplates = {}; /* 5 */
+  LocalHandlebars = Handlebars.create() /* 6 */
+
+  LocalHandlebars.registerHelper('i18n', function(scope, i18n_key, env) {
+    var data, lang, result;
+
+    data = env.data.root;
+    lang = data.lang;
+    result = data.i18n[scope][i18n_key];
+
+    console.log(i18n_key);
+
+    return new Handlebars.SafeString(result);
+  });
 
   // we returned a wrapped function to help us cache some work (above)
   return function(contentBuffer, file) {
-    var fileName, contentRaw, lang, templateJSON, contentHandlebarsCompiled,
+    var fileName, fileType, contentRaw, lang, templateJSON, contentHandlebarsCompiled,
         contentMarkdownCompiled, template, contentTemplateCompiled;
 
     fileName = path.parse(file).name
+    fileType = path.parse(file).ext === ".html" ? "html" : "markdown"
     contentRaw = contentBuffer.toString();
 
     // determine the language based off of the current path
@@ -96,10 +110,14 @@ function generateContentAndTemplates() {
 
     // initial Handlebars compile, Markdown content, before parsing
     // (otherwise the `{{ }}` can be escaped)
-    contentHandlebarsCompiled = Handlebars.compile(contentRaw)(templateJSON);
+    contentHandlebarsCompiled = LocalHandlebars.compile(contentRaw)(templateJSON);
 
-    // Turn `.md` in to `.html`
-    contentMarkdownCompiled = md.render(contentHandlebarsCompiled)
+    // When required, turn `.md` in to `.html`
+    if (fileType === "markdown") {
+      contentMarkdownCompiled = md.render(contentHandlebarsCompiled);
+    } else {
+      contentMarkdownCompiled = contentHandlebarsCompiled;
+    }
 
     // this is hard-coded right now, but planned to be dynamic:
     template = 'main.html';
@@ -107,7 +125,7 @@ function generateContentAndTemplates() {
     // fetch the final template function we need (if not already cached)
     if (hbsTemplates[template] == null) {
       var templateBody =  fs.readFileSync(path.join(base, 'source', 'templates', template), {encoding: 'utf8'});
-      hbsTemplates[template] = Handlebars.compile(templateBody);
+      hbsTemplates[template] = LocalHandlebars.compile(templateBody);
     }
 
     // Adds the inner-content already processed to the templateJSON
@@ -157,7 +175,7 @@ var processMarkdown = function(eventOrStream, filePath) {
 }
 
 gulp.task('templates', function() {
-  var stream = gulp.src('content/**/*.md');
+  var stream = gulp.src('content/**/*.{md,html}');
   return processMarkdown(stream);
 });
 
