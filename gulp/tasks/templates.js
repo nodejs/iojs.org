@@ -19,6 +19,10 @@ var vinylMap = require('vinyl-map'); /* 5 */
 var rename = require('gulp-rename'); /* 6 */
 var utils = require('../util/template-utils.js'); /* 7 */
 
+function traverse(obj, str) {
+  return str.split(".").reduce(function(o, x) { return o[x] }, obj);
+}
+
 /*
   generateContentAndTemplates()
   =============
@@ -60,14 +64,56 @@ function generateContentAndTemplates() {
   hbsTemplates = {}; /* 5 */
   LocalHandlebars = Handlebars.create() /* 6 */
 
-  LocalHandlebars.registerHelper('i18n', function(scope, i18n_key, env) {
-    var data, lang, result;
+  LocalHandlebars.registerPartial('current_download_links', `{{#project.current_version_downloads}}<a href="{{url}}">{{i18n "downloads" key}}</a>{{/project.current_version_downloads}}`)
+
+  LocalHandlebars.registerHelper('i18n', function() {
+    var scope, i18n_key, env, key, data, lang, result;
+
+    var args = Array.prototype.slice.call(arguments);
+
+    if (args.length === 2) {
+      scope = null;
+      i18n_key = args[0];
+      env = args[1];
+      key = i18n_key;
+    }
+    if (args.length === 3) {
+      scope = args[0];
+      i18n_key = args[1];
+      env = args[2];
+      key = [scope, i18n_key].join('.');
+    }
 
     data = env.data.root;
     lang = data.lang;
-    result = data.i18n[scope][i18n_key];
+    result = traverse(data.i18n, key);
 
-    console.log(i18n_key);
+    return new Handlebars.SafeString(result);
+  });
+
+  LocalHandlebars.registerHelper('hb', function() {
+    var scope, i18n_key, env, key, data, lang, result;
+
+    var args = Array.prototype.slice.call(arguments);
+
+    if (args.length === 2) {
+      scope = null;
+      i18n_key = args[0];
+      env = args[1];
+      key = i18n_key;
+    }
+    if (args.length === 3) {
+      scope = args[0];
+      i18n_key = args[1];
+      env = args[2];
+      key = [scope, i18n_key].join('.');
+    }
+
+    data = env.data.root;
+    lang = data.lang;
+    result = traverse(data.i18n, key);
+
+    result = LocalHandlebars.compile(result)(env.data.root);
 
     return new Handlebars.SafeString(result);
   });

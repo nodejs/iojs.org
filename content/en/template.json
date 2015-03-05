@@ -17,5 +17,8 @@
     "win64": "Win64",
     "mac": "Mac",
     "all": "Others"
-  }
+  },
+  "changelog": "Changelog",
+  "verbose_version": "Version {{project.current_version}}",
+  "home_download_links": "Download for {{> current_download_links}}"
 }

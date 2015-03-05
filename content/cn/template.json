@@ -9,5 +9,7 @@
   "org-link":"GitHub Org",
   "irc-link":"IRC Chat",
   "irc-logs-link":"Logs",
-  "gov-link":"项目管理"
+  "gov-link":"项目管理",
+  "verbose_version": "{{project.current_version}} 版本",
+  "home_download_links": "下载 {{> current_download_links}} 版本。"
 }
