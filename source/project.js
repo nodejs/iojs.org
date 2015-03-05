@@ -35,12 +35,12 @@ project.languages = [
 
 var baseURL = `https://iojs.org/dist`;
 project.current_version_downloads = [
-  {key: 'linux', url: `${baseURL}/${project.current_version}/iojs-${project.current_version}-linux-x64.tar.xz`},
-  {key: 'win32', url: `${baseURL}/${project.current_version}/iojs-${project.current_version}-x86.msi`},
-  {key: 'win64', url: `${baseURL}/${project.current_version}/iojs-${project.current_version}-x64.msi`},
-  {key: 'mac', url: `${baseURL}/${project.current_version}/iojs-${project.current_version}.pkg`},
-  {key: 'all', url: `${baseURL}/${project.current_version}/`}
+  {key: 'linux', url: `${baseURL}/v${project.current_version}/iojs-v${project.current_version}-linux-x64.tar.xz`},
+  {key: 'win32', url: `${baseURL}/v${project.current_version}/iojs-v${project.current_version}-x86.msi`},
+  {key: 'win64', url: `${baseURL}/v${project.current_version}/iojs-v${project.current_version}-x64.msi`},
+  {key: 'mac', url: `${baseURL}/v${project.current_version}/iojs-v${project.current_version}.pkg`},
+  {key: 'all', url: `${baseURL}/v${project.current_version}/`}
 ];
-Object.defineProperty(project.current_version_downloads, 'all', {value: `${baseURL}/${project.current_version}/`});
+Object.defineProperty(project.current_version_downloads, 'all', {value: `${baseURL}/v${project.current_version}/`});
 
 module.exports = project;
