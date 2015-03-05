@@ -6,12 +6,19 @@ var CONTENT_DIRECTORY = 'content';
 // load template.json for given language, but use default language as fallback
 // for properties which are not present in the given language
 module.exports.loadTemplateJSON = function(lang) {
-  var defaultJSON = require('../../' + CONTENT_DIRECTORY + '/' + DEFAULT_LANG + '/template.json'); 
+  var defaultJSON = require('../../' + CONTENT_DIRECTORY + '/' + DEFAULT_LANG + '/template.json');
   var templateJSON = require('../../' + CONTENT_DIRECTORY + '/' + lang + '/template.json');
   var finalJSON = _.cloneDeep(defaultJSON);
-  _.forEach(templateJSON, function(value, key) {
-    finalJSON[key] = value;
-  });
+  var merge = function(targetJSON, customJSON) {
+    _.forEach(customJSON, function(value, key) {
+      if (typeof value === "object") {
+        merge(targetJSON[key], value)
+      } else {
+        targetJSON[key] = value;
+      }
+    });
+  }
+  merge(finalJSON, templateJSON)
   return finalJSON;
 };
 
