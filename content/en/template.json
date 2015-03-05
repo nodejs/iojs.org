@@ -18,7 +18,6 @@
     "mac": "Mac",
     "all": "Others"
   },
-  "changelog": "Changelog",
   "verbose_version": "Version {{project.current_version}}",
   "home": {
     "download_links": "Download for {{> current_download_links}}",
@@ -32,6 +31,7 @@
     "npm": "npm",
     "website": "io.js",
     "pages": {
+      "changelog": "Changelog",
       "home": "Home",
       "es6": "ES6",
       "faq": "FAQ",

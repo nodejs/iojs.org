@@ -38,6 +38,7 @@ project.links = {
   npm: 'https://www.npmjs.org/',
   website: 'https://iojs.org/',
   pages: {
+    changelog: 'https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md',
     home: './index.html',
     es6: './es6.html',
     faq: './faq.html',
