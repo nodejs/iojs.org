@@ -33,6 +33,12 @@ project.languages = [
 ]
 */
 
+project.links = {
+  nodejs: 'https://nodejs.org/',
+  npm: 'https://www.npmjs.org/',
+  website: `https://iojs.org/`
+};
+
 var baseURL = `https://iojs.org/dist`;
 project.current_version_downloads = [
   {key: 'linux', url: `${baseURL}/v${project.current_version}/iojs-v${project.current_version}-linux-x64.tar.xz`},

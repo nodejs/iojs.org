@@ -20,5 +20,13 @@
   },
   "changelog": "Changelog",
   "verbose_version": "Version {{project.current_version}}",
-  "home_download_links": "Download for {{> current_download_links}}"
+  "home": {
+    "download_links": "Download for {{> current_download_links}}",
+    "short_description": "{{link 'website'}} is an {{link 'npm'}} compatible platform originally based on {{link 'nodejs'}}."
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js"
+  }
 }
