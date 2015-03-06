@@ -43,7 +43,7 @@ Belirtilen sebeplerden ötürü en mantıklı uygulamalar, bazı özellikleri ak
 <p>io.js@1.x (V8 4.1+) sürümüyle beraber tüm bu karmaşıklık ortadan kalkmaktadır. Tüm ES6 (harmoni) özellikleri <strong>taşınıyor</strong>, <strong>düzenleme</strong> ve <strong>geliştirme</strong> olmak üzere mantıksal üç gruba ayrılmıştır. Bu özellikler;</p>
 <ul>
 <li>Tüm <strong>taşınıyor</strong> özellikleri V8 tarafından kararlı olarak kabul görmüş, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">templates</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">yeni string metodları</a> gibi özellikler ile <strong>io.js tarafından varsayılan</strong> olarak açılmış özelliklerdir ve herhangi bir çalışma bayrağına gerek <strong>duymazlar</strong>.</li>
-<li><strong>düzenleme</strong> durumunda ki özellikler testleri tamamlanmamış veya son tanımlayıcı dökümanına uygun hale getirilmemiş ve V8 takımı tarafından kararlı olarak belirtilmemiş özellikleri içerir. (örn: there might be some edge cases left to discover). V8 3.26 sürümünde <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> bu duruma eşdeğer yapıdadır. Bu özellikleri kullanmakta ki riski göze alıyorsanız, <code>--es_staging</code> (veya eşanlamlısı <code>--harmony</code>) çalışma bayrağını kullanmanız gerekir.</li>
+<li><strong>düzenleme</strong> durumunda ki özellikler testleri tamamlanmamış veya son tanımlayıcı dökümanına uygun hale getirilmemiş ve V8 takımı tarafından kararlı olarak belirtilmemiş özellikleri içerir. (örn: henüz keşfedilmemiş, araştırılmamış kısımlar olabilir). V8 3.26 sürümünde <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> bu duruma eşdeğer yapıdadır. Bu özellikleri kullanmakta ki riski göze alıyorsanız, <code>--es_staging</code> (veya eşanlamlısı <code>--harmony</code>) çalışma bayrağını kullanmanız gerekir.</li>
 <li>Yüksek ihtimalle test işlemlerinde dahi olsa sorun yaratacak, diğer tüm <strong>geliştirme</strong> aşamasındaki özellikleri kendilerine özel harmoni bayraklarıyla etkinleştirebilirsiniz. (örn: <code>--harmony_arrow_functions</code>)</li>
 </ul>
 <h2>io.js üzerinde varsayılan olarak gelen ES6 özellikleri hangileridir (çalışma bayrağı gerektirmez) ?</h2>
@@ -126,7 +126,7 @@ Belirtilen sebeplerden ötürü en mantıklı uygulamalar, bazı özellikleri ak
    --><a href="https://github.com/iojs">GitHub Org</a><!--
    --><a href="https://webchat.freenode.net/?channels=io.js">IRC Chat</a><!--
    --><a href="http://logs.libuv.org/io.js/latest">Kayıtlar</a><!--
-   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">Yönetim</a>
+   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">Yönetim Modeli</a>
     </nav>
     <nav class="languageFooter">
       <a><strong>Languages</strong></h3><!--
