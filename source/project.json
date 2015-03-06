@@ -7,6 +7,7 @@
     {"code": "el", "name": "Ελληνικά", "name-en": "Greek"},
     {"code": "en", "name": "English", "name-en": "English"},
     {"code": "es", "name": "Español", "name-en": "Spanish"},
+    {"code": "fa", "name": "فارسی", "name-en": "Persian"},
     {"code": "fi", "name": "Suomi", "name-en": "Finnish"},
     {"code": "fr", "name": "Français", "name-en": "French"},
     {"code": "he", "name": "עברית", "name-en": "Hebrew", "rtl": true},
