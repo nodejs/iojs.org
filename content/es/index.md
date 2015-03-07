@@ -19,4 +19,4 @@ Descargar para:
 
 [Nightly releases](https://iojs.org/download/nightly/) están disponibles para pruebas.
 
-[Preguntas frecuentes](/faq.html)
+[Preguntas frecuentes](faq.html)

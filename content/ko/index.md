@@ -18,4 +18,4 @@
 
 테스트 용으로 [Nightly 릴리스](https://iojs.org/download/nightly/)를 사용할 수 있다.
 
-[FAQ](/faq.html)
+[FAQ](faq.html)

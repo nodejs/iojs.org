@@ -20,4 +20,4 @@
 
 [Nightly εκδόσεις](https://iojs.org/download/nightly/) είναι διαθέσιμες για testing.
 
-[Συχνές ερωτήσεις](/faq.html)
+[Συχνές ερωτήσεις](faq.html)

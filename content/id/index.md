@@ -21,4 +21,4 @@ Unduh untuk
 [Rilis setiap malam](https://iojs.org/download/nightly/) tersedia untuk pengujian.
 
 
-[Pertanyaan yang sering ditanyakan](/faq.html)
+[Pertanyaan yang sering ditanyakan](faq.html)

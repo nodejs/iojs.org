@@ -35,7 +35,7 @@
   <div class="content content--body clearfix">
     <h1>io.js 的 ES6</h1>
 <p>io.js 建構於目前版本的 <a href="https://code.google.com/p/v8/">V8</a> 之上，將會持續更新並引入最新的引擎版本，以確保最新的 <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> 特性能以最短的時間內被 io.js 的開發人員所使用，並藉著不斷快速更新此持續改善效能及穩定度。</p>
-<p>目前釋出的 io.js v1.4.3 版本已採用 V8 4.1.0.21，其支援的 ES6 特性遠超過 joyent/node@0.12.x 所使用的 V8 3.26.23 。</p>
+<p>目前釋出的 io.js v1.5.0 版本已採用 V8 4.1.0.21，其支援的 ES6 特性遠超過 joyent/node@0.12.x 所使用的 V8 3.26.23 。</p>
 <h2>不再需要 --harmony 參數</h2>
 <p>在 joyent/node@0.12.x (V8 3.26) 上，參數 <code>--harmony</code> 將會一次啟用所有處於<strong>完成（completed）</strong>、**階段性（staged）<strong>及</strong>程序中（in progress）**狀態之下的 ES6 特性支援（除了 <code>proxies</code> ，此特性在使用參數 <code>--harmony-proxies</code> 時會被隱藏）。這意味著一些臭蟲或是很有問題的特性像是 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a> ，可能將會很容易的被開發人員所誤用在專案中，就如同沒有問題的特性 <code>generators</code> 一般。因此，大多數的開發人員通常會代入一些參數，只啟動特定的 harmony 特性支援（如：<code>--harmony-generators</code>），或是直接啟用所有的特性支援，然後在開發時限定只使用特定某些穩定的功能。</p>
 <p>不過在使用 io.js@1.x (V8 4.1+) 之後，前面所提到的所有麻煩將不再是問題。現在所有的 harmony 特性都將會被分類到不同的群組中，分別為 <strong>shipping</strong> 、 <strong>staged</strong> 和 <strong>in progress</strong>：</p>
@@ -130,8 +130,8 @@
    --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">專案管理</a>
     </nav>
     <nav class="languageFooter">
-      <a><strong>Languages</strong></h3><!--
-    --><a href="/cn/es6.html" lang="cn">简体中文</a><a href="/de/es6.html" lang="de">Deutsch</a><a href="/el/es6.html" lang="el">Ελληνικά</a><a href="/en/es6.html" lang="en">English</a><a href="/es/es6.html" lang="es">Español</a><a href="/fi/es6.html" lang="fi">Suomi</a><a href="/fr/es6.html" lang="fr">Français</a><a href="/he/es6.html" lang="he">עברית</a><a href="/id/es6.html" lang="id">Bahasa Indonesia</a><a href="/it/es6.html" lang="it">Italiano</a><a href="/ja/es6.html" lang="ja">日本語</a><a href="/ko/es6.html" lang="ko">한국어</a><a href="/no/es6.html" lang="no">Norsk</a><a href="/pt_BR/es6.html" lang="pt_BR">Português (BR)</a><a href="/pt_PT/es6.html" lang="pt_PT">Português (PT)</a><a href="/ru/es6.html" lang="ru">Русский</a><a href="/tr/es6.html" lang="tr">Türkçe</a><a href="/uk/es6.html" lang="uk">Українська</a><a href="/zh_TW/es6.html" lang="zh_TW">正體中文（台灣）</a>
+      <a><strong>其他語言</strong></h3><!--
+    --><a href="/cn/es6.html" lang="cn">简体中文</a><a href="/de/es6.html" lang="de">Deutsch</a><a href="/el/es6.html" lang="el">Ελληνικά</a><a href="/en/es6.html" lang="en">English</a><a href="/es/es6.html" lang="es">Español</a><a href="/fa/es6.html" lang="fa">فارسی</a><a href="/fi/es6.html" lang="fi">Suomi</a><a href="/fr/es6.html" lang="fr">Français</a><a href="/he/es6.html" lang="he">עברית</a><a href="/id/es6.html" lang="id">Bahasa Indonesia</a><a href="/it/es6.html" lang="it">Italiano</a><a href="/ja/es6.html" lang="ja">日本語</a><a href="/ko/es6.html" lang="ko">한국어</a><a href="/no/es6.html" lang="no">Norsk</a><a href="/pt_BR/es6.html" lang="pt_BR">Português (BR)</a><a href="/pt_PT/es6.html" lang="pt_PT">Português (PT)</a><a href="/ru/es6.html" lang="ru">Русский</a><a href="/tr/es6.html" lang="tr">Türkçe</a><a href="/uk/es6.html" lang="uk">Українська</a><a href="/zh_TW/es6.html" lang="zh_TW">正體中文（台灣）</a>
     </nav>
   </footer>
 

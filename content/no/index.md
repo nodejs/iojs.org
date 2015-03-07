@@ -20,5 +20,5 @@ Last ned til
 
 [Nattlige bygg](https://iojs.org/download/nightly/) er tilgjengelig for testing.
 
-[Ofte stilte spørsmål](/faq.html)
+[Ofte stilte spørsmål](faq.html)
 

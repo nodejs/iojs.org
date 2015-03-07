@@ -23,14 +23,16 @@
 ### Dependencies
 ```
 git clone https://github.com/iojs/website.git
-npm install -g gulp
 npm install
 ```
 
 ### Local Development
 ```
-gulp
+npm run gulp develop
 ```
+
+Or just run `gulp develop` if you have it installed globally. You can also run `npm run gulp build` to run the build script, if you don't wish to have a dev server running.
+
 Runs a local HTTP server on port 4657 with live-reload, which will update
 your browser immediately with content or style changes. Generated assets
 are provided to the [./public]() directory for publishing.

@@ -2,7 +2,7 @@
 
 [ES6](es6.html)'ı Node topluluğuna kazandırdık
 
-[io.js](https://github.com/iojs/io.js), [node.js](https://nodejs.org/)'e dayalı  ve [npm](https://www.npmjs.org/)'le uyumlu bir platformdur&#8482;.
+[io.js](https://github.com/iojs/io.js), [node.js](https://nodejs.org/)&#8482;'e dayalı  ve [npm](https://www.npmjs.org/)'le uyumlu bir platformdur.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 
@@ -19,4 +19,4 @@ ve [diğerleri](https://iojs.org/dist/v{{project.current_version}}/)
 
 Test amaçlı olarak [gecelik derlemeleri kullanabilirsiniz](https://iojs.org/download/nightly/)
 
-[Sık Sorulan Sorular](/faq.html)
+[Sık Sorulan Sorular](faq.html)
