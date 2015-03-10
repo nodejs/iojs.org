@@ -1,5 +1,5 @@
 // temporary merge to help avoid some merge confusion when landed:
-var project = require('./project.js');
+var project = require('./project.json');
 
 project.languages = require('./languages.js');
 

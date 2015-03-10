@@ -128,13 +128,14 @@ function generateContentAndTemplates() {
   });
 
   // we returned a wrapped function to help us cache some work (above)
-  return function(contentBuffer, file) {
-    var fileName, fileType, contentRaw, lang, templateJSON, contentHandlebarsCompiled,
+  return function(vinylFile, _unused_, cb) {
+    var file, fileName, fileType, contentRaw, lang, templateJSON, contentHandlebarsCompiled,
         contentMarkdownCompiled, template, contentTemplateCompiled;
 
+    file = vinylFile.path;
     fileName = path.parse(file).name
     fileType = path.parse(file).ext === ".html" ? "html" : "markdown"
-    contentRaw = contentBuffer.toString();
+    contentRaw = vinylFile.contents.toString();
 
     // determine the language based off of the current path
     lang = path.relative(contentBase, path.dirname(file)).split(path.sep)[0];
@@ -145,6 +146,7 @@ function generateContentAndTemplates() {
 
     // load the current dictionary for the selected lang
     templateJSON = {
+      article: vinylFile._article,
       i18n: i18nJSON[lang],
       lang: lang,
       build: {
@@ -191,7 +193,9 @@ function generateContentAndTemplates() {
     contentTemplateCompiled = hbsTemplates[template](templateJSON)
 
     // Return as a Buffer for additional processing:
-    return new Buffer(contentTemplateCompiled);
+    vinylFile.contents = new Buffer(contentTemplateCompiled);
+    this.push(vinylFile);
+    cb();
   }
 };
 

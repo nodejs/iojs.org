@@ -1,7 +1,7 @@
 /*
  * 1. we get an un-buffered stream we need 100% loaded in order
  *    to properly process
- * 2. the map function helps us "inject" our custom processing steps in to the
+ * 2. the through function helps us "inject" our custom processing steps in to the
  *    incoming file buffer
  * 3. renames our files for output
  */
@@ -9,7 +9,7 @@ var path = require('path');
 var gulp = require('gulp');
 
 var buffer = require('vinyl-buffer'); /* 1 */
-var vinylMap = require('vinyl-map'); /* 2 */
+var through = require('through2'); /* 2 */
 var rename = require('gulp-rename'); /* 3 */
 var generateContentAndTemplates = require('../util/content').generateContentAndTemplates;
 
@@ -42,7 +42,7 @@ var processMarkdown = function(eventOrStream, filePath) {
 
   return stream
     .pipe(buffer())
-    .pipe(vinylMap(generateContentAndTemplates()))
+    .pipe(through.obj(generateContentAndTemplates()))
     .pipe(rename({extname: '.html'}))
     .pipe(gulp.dest('public/'))
 }

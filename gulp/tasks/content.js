@@ -2,7 +2,6 @@ var path = require('path');
 var gulp = require('gulp');
 var clone = require('gulp-clone');
 var buffer = require('vinyl-buffer');
-var vinylMap = require('vinyl-map');
 var mergeStream = require('merge-stream');
 var generateContentAndTemplates = require('../util/content').generateContentAndTemplates;
 var through = require('through2');
@@ -31,6 +30,7 @@ gulp.task('content', function() {
           .pipe(through.obj(function(file, _unused_, cb) {
             file.base = 'content'
             file.path = path.join(base, 'content', lang.code, article.url);
+            file._article = article;
             this.push(file);
             cb();
           }));
@@ -41,6 +41,6 @@ gulp.task('content', function() {
 
   return templateStreams
     .pipe(buffer())
-    .pipe(vinylMap(generateContentAndTemplates()))
+    .pipe(through.obj(generateContentAndTemplates()))
     .pipe(gulp.dest('public/'))
 });

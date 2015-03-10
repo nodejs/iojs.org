@@ -1,7 +1,8 @@
 module.exports = {
   "home": {
-    "url": "home.html",
-    "content": "home.html"
+    "url": "index.html",
+    "content": "home.html",
+    "stylesheets": ["/home.css"]
   },
   "es6": {
     "url": "es6.html"
