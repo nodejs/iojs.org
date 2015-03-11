@@ -2,11 +2,11 @@
 
 Die io.js-Entwicklung basiert auf der aktuellen Version der [V8](https://code.google.com/p/v8/)-Engine. Mit der Bestrebung, ständig die aktuellste Version der V8-Engine einzusetzen, stellen wir sicher, dass neue Funktionen der [JavaScript ECMA-262 Spezifikation](http://www.ecma-international.org/publications/standards/Ecma-262.htm) sowie Geschwindigkeits- und Stabilitätsverbesserungen schnell für io.js-Entwickler zu Verfügung stehen.
 
-Die Version 1.3.0 von io.js wird mit der V8-Version 4.1.0.14 ausgeliefert, welche bereits ES6-Funktionen beinhaltet, die deutlich weiterentwickelter sind, als jene der Version 3.26.33, die in joyent/node@0.12.x enthalten sind.
+Die Version {{project.current_version}} io.js wird mit der V8-Version {{project.current_v8}} ausgeliefert, welche bereits ES6-Funktionen beinhaltet, die deutlich weiterentwickelter sind, als jene der Version 3.28.73, die in joyent/node@0.12.x enthalten sind.
 
 ## Überflüssiger Startparameter `--harmony`
 
-In joyent/node@0.12.x (V8 3.26) aktiviert der Startparameter `--harmony` alle ES6-Funktionen auf einmal. Enthalten sind alle jene Funktionen, die als **completed** (Fertiggestellt), **staged** (Auslieferungsvorbereitung) und **in progress** (Entwicklungsphase) gekennzeichnet sind. (Mit der Ausnahme des _nonstandard/non-harmonious_ Ausdrucks `typeof`, welcher sich hinter dem Startparameter `--harmony-typeof` versteckt). Das bedeutet, dass einige sehr fehlerhafte oder sogar kaputte Funktionen wie [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) genauso frei verfügbar sind, wie solche Funktionen wie [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), die nur sehr wenige Fehler enthalten, wenn überhaupt. Daraus hätte sich die Best-Practice ergeben die entweder nur bestimmte Funktionen durch einzelne Startparameter verfügbar machen (z.B. `--harmony-generators`), oder einfach alle Funktionen einschalten, aber dann nur eine sehr restriktive Untermenge an Funktionen zu verwenden.
+In joyent/node@0.12.x (V8 3.28+) aktiviert der Startparameter `--harmony` alle ES6-Funktionen auf einmal. Enthalten sind alle jene Funktionen, die als **completed** (Fertiggestellt), **staged** (Auslieferungsvorbereitung) und **in progress** (Entwicklungsphase) gekennzeichnet sind. (Mit der Ausnahme des _nonstandard/non-harmonious_ Ausdrucks `typeof`, welcher sich hinter dem Startparameter `--harmony-typeof` versteckt). Das bedeutet, dass einige sehr fehlerhafte oder sogar kaputte Funktionen wie [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) genauso frei verfügbar sind, wie solche Funktionen wie [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), die nur sehr wenige Fehler enthalten, wenn überhaupt. Daraus hätte sich die Best-Practice ergeben die entweder nur bestimmte Funktionen durch einzelne Startparameter verfügbar machen (z.B. `--harmony-generators`), oder einfach alle Funktionen einschalten, aber dann nur eine sehr restriktive Untermenge an Funktionen zu verwenden.
 
 Anders in io.js<span>@</span>1.x (V8 4.1+), hier entfällt diese Komplexität: Alle "harmony"-Funktionen sind nun in logische Gruppen aufgeteilt. Diese Gruppen sind: shipping (Ausgeliefert), staged (Bereit zur Auslieferung) und in progress (Noch in Entwicklung).
 
@@ -57,6 +57,10 @@ Eine detailliertere Liste, die dazu noch Vergleiche zu anderen Engines enthält,
 *   [Object literal Erweiterung](https://github.com/lukehoban/es6features#enhanced-object-literals)
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (Festlegbare Ausgabe von `Object.prototype.toString`)
+
+## In meiner Infrastruktur kommt der Paramterer `--harmony` zum Einsatz. Ist es sinnvoll diesen Parameter zu entfernen?
+
+Das Startparameter `--harmony` schaltet lediglich die **staged**-Funktionen ein und ist als Synonym zu `--es_staging` zu verstehen. Wie oben bereits beschrieben, werden hierdurch mehr oder weniger vollständige Funktionen aktiviert, die noch nicht als stabil zu bezeichnen sind. Wer auf Nummer sicher gehen will, gerade in produktiven Umgebungen, sollte ernsthaft darüber nachdenken, diesen Startparameter nicht zu verwenden, bis die benötigte Funktion in V8 standardmäßig zu Verfügung steht, und somit auch in io.js. Wird der Parameter trotzdem verwendet, muss man damit rechnen, dass künftige io.js-Aktualisierungen den eigenen Code fehlschlagen lässt, falls Funktionen der V8-Engine an den aktuellen Standard angepasst werden.
 
 ## Wie erkenne ich, mit welcher V8 Version io.js ausgeliefert wurde?
 
