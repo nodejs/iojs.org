@@ -62,7 +62,7 @@ Eine detailliertere Liste, die dazu noch Vergleiche zu anderen Engines enthält,
 
 Neue Funktionen werden ständing zur V8-Engine hinzugefügt. Allgemein gesagt, werden diese erwartungsgemäß in zukünftigen io.js-Versionen verfügbar sein. Der Zeitrahmen ist noch unbekannt.
 
-Es ist möglich alle *in progress*-Funktionen, der installierten io.js-Version aufzulisten. Dafür gibt es den Startparamter `--v8-options`. Es ist zu beachten, dass diese Funktionen, V8-Engine, unvollständig oder gar kaputt sind. Es gilt: Benutzen auf eigene Gefahr!
+Es ist möglich alle *in progress*-Funktionen, der installierten io.js-Version aufzulisten. Dafür gibt es den Startparamter `--v8-options`. Es ist zu beachten, dass diese V8-Funktionen unvollständig oder gar kaputt sind. Es gilt: Benutzen auf eigene Gefahr!
 
 ```sh
 iojs --v8-options | grep "in progress"
@@ -74,7 +74,7 @@ Das Startparameter `--harmony` schaltet lediglich die **staged**-Funktionen ein 
 
 ## Wie erkenne ich, mit welcher V8 Version io.js ausgeliefert wurde?
 
-io.js bietet eine einfache Möglichkeit, alle Abhängigkeiten der jeweilig installierten Version, durch das globale Objekt `process` aufzulisten. Durch folgenden Konsolen-Befehl kann die Version des V8-Engines ausgegeben werden:
+io.js bietet eine einfache Möglichkeit, alle Abhängigkeiten der jeweilig installierten Version, durch das globale Objekt `process` aufzulisten. Durch folgenden Konsolen-Befehl kann die Version der V8-Engines ausgegeben werden:
 
 ```sh
 iojs -p process.versions.v8
