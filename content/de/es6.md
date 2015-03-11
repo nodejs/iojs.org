@@ -58,10 +58,6 @@ Eine detailliertere Liste, die dazu noch Vergleiche zu anderen Engines enthält,
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (Festlegbare Ausgabe von `Object.prototype.toString`)
 
-## In meiner Infrastruktur kommt der Paramterer `--harmony` zum Einsatz. Ist es sinnvoll diesen Parameter zu entfernen?
-
-Das Startparameter `--harmony` schaltet lediglich die **staged**-Funktionen ein und ist als Synonym zu `--es_staging` zu verstehen. Wie oben bereits beschrieben, werden hierdurch mehr oder weniger vollständige Funktionen aktiviert, die noch nicht als stabil zu bezeichnen sind. Wer auf Nummer sicher gehen will, gerade in produktiven Umgebungen, sollte ernsthaft darüber nachdenken, diesen Startparameter nicht zu verwenden, bis die benötigte Funktion in V8 standardmäßig zu Verfügung steht, und somit auch in io.js. Wird der Parameter trotzdem verwendet, muss man damit rechnen, dass künftige io.js-Aktualisierungen den eigenen Code fehlschlagen lässt, falls Funktionen der V8-Engine an den aktuellen Standard angepasst werden.
-
 ## Wie erkenne ich, mit welcher V8 Version io.js ausgeliefert wurde?
 
 io.js bietet eine einfache Möglichkeit, alle Abhängigkeiten der jeweilig installierten Version, durch das globale Objekt `process` aufzulisten. Durch folgenden Konsolen-Befehl kann die Version des V8-Engines ausgegeben werden:
