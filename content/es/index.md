@@ -1,22 +1,22 @@
 # JavaScript I/O
 
-Traer [ES6](es6.html) a la Comunidad Nodo!
+¡Llevando [ES6](es6.html) a la Comunidad de Node!
 
-[io.js](https://github.com/iojs/io.js) es una plataforma compatible [npm](https://www.npmjs.org/) originalmente basado en [node.js](https://nodejs.org/)&#8482;.
+[io.js](https://github.com/iojs/io.js) es una plataforma compatible con [npm](https://www.npmjs.org/) y basada originalmente en [node.js](https://nodejs.org/)&#8482;.
 
-[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v1.2.0/)
+[![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 
-[Version 1.2.0](https://iojs.org/dist/v1.2.0/)
+[Versión {{project.current_version}}](https://iojs.org/dist/v{{project.current_version}}/)
 
-Descargar de
-[Linux](https://iojs.org/dist/v1.2.0/iojs-v1.2.0-linux-x64.tar.xz),
-[Win32](https://iojs.org/dist/v1.2.0/iojs-v1.2.0-x86.msi), [Win64](https://iojs.org/dist/v1.2.0/iojs-v1.2.0-x64.msi),
-o
-[Mac](https://iojs.org/dist/v1.2.0/iojs-v1.2.0.pkg).
+Descargar para:
+[Linux](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}-linux-x64.tar.xz),
+[Win32](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}-x86.msi), [Win64](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}-x64.msi),
+ó
+[Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg).
 
 
-[Cambios](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
+[Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
 
-[Lanzamientos nocturnos](https://iojs.org/download/nightly/) están disponibles para las pruebas.
+[Nightly releases](https://iojs.org/download/nightly/) están disponibles para pruebas.
 
-[Preguntas más frecuentes](/faq.html)
+[Preguntas frecuentes](faq.html)

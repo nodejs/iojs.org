@@ -2,7 +2,7 @@
 
 O io.js é construído usando versões modernas do [V8](https://code.google.com/p/v8/). Mantendo-nos atualizados com as últimas versões desta engine, garantimos que novas funcionalidades da [especificação JavaScript ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm) são trazidas para desenvolvedores io.js rapidamente, além de manter performance continuada e melhorias de estabilidade.
 
-A versão 1.2.0 do io.js vem com o V8 4.1.0.14, que inclui funcionalidades do ES6 bem além da versão 3.26.33 que vem com o joyent/node@0.12.x.
+A versão {{project.current_version}} do io.js vem com o V8 {{project.current_v8}}, que inclui funcionalidades do ES6 bem além da versão 3.26.33 que vem com o joyent/node@0.12.x.
 
 ## Não mais flag --harmony
 
@@ -35,7 +35,9 @@ Com o io.js@1.x (V8 4.1+), toda esta complexidade vai embora. Todas as funcional
 
     *   [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
-    *   [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)*   [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+    *   [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+
+*   [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 
 *   [Literais Binários e Octais](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
 

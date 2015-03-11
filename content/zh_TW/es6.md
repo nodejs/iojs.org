@@ -2,7 +2,7 @@
 
 io.js 建構於目前版本的 [V8](https://code.google.com/p/v8/) 之上，將會持續更新並引入最新的引擎版本，以確保最新的 [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) 特性能以最短的時間內被 io.js 的開發人員所使用，並藉著不斷快速更新此持續改善效能及穩定度。
 
-目前釋出的 io.js v1.2.0 版本已採用 V8 4.1.0.14，其支援的 ES6 特性遠超過 joyent/node@0.12.x 所使用的 V8 3.26.23 。
+目前釋出的 io.js v{{project.current_version}} 版本已採用 V8 {{project.current_v8}}，其支援的 ES6 特性遠超過 joyent/node@0.12.x 所使用的 V8 3.26.23 。
 
 ## 不再需要 --harmony 參數
 
@@ -35,7 +35,9 @@ io.js 建構於目前版本的 [V8](https://code.google.com/p/v8/) 之上，將�
 
     *   [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
-    *   [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)*   [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+    *   [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+
+*   [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 
 *   [Binary and Octal literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
 

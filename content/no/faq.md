@@ -1,34 +1,72 @@
 # FAQ
 
-## What is io.js?
+<a id="hva-er-iojs"></a>
 
-[io.js](https://github.com/iojs/io.js) is a JavaScript platform built on [Chrome's V8 runtime](http://code.google.com/p/v8/). This project began as a fork of [Joyent's Node.js™](https://nodejs.org/) and is compatible with the [npm](https://www.npmjs.org/) ecosystem.
+## Hva er io.js?
 
-Why? io.js aims to provide faster and predictable release cycles. It currently merges in the latest language, API and performance improvements to V8 while also updating libuv and other base libraries.
+[io.js](https://iojs.org/) er en JavaScript-plattform bygget på [Chromes
+V8-kjøremiljø](http://code.google.com/p/v8/). Prosjektet begynte som en fork av
+[Joyents Node.js™](https://nodejs.org/) og er kompatibel med
+[npm's](https://www.npmjs.com/) økosystem.
 
-This project aims to continue development of io.js under an "[open governance model](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" as opposed to corporate stewardship.
+## Hvorfor?
 
-## Version 1.0.x?
+io.js ønsker å tilby raskere og mer forutsigbare lanseringer. For øyeblikket
+inkluderes de nyeste språk-, API-, og ytelsesforbedringene til V8, samtidig som
+libuv og andre grunnbiblioteker blir oppdatert.
 
-io.js has moved to [Semver](http://semver.org/) and the changes between Node.js™ 0.10 and io.js 1.0.0 were significant enough
-to warrant a major version increment.
+Dette prosjektet ønsker å fortsette utviklingen av io.js under en [åpen
+styringsmodell](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme),
+i motsetning til å bli forvaltet av et selskap.
 
-Our [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) for v1.x provides a [summary of changes from Node.js v0.10.35 to io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+<a id="versjonering"></a>
 
-## How can I contribute?
+## Versjon 1.0.x?
 
-Everyone can help. io.js adheres to a [code of conduct](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), and contributions, releases, and contributorship are under an [open governance](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme) model.
+io.js har adoptert [Semver](http://semver.org/), og endringene mellom Node.js™
+0.10 og io.js 1.0.0 var signifikante nok til å rettferdiggjøre en ny
+hovedversjon.
 
-To get started, there are open [ discussions on GitHub](https://github.com/iojs/io.js/issues), and we'd love to hear your feedback.
-Becoming involved in discussions is a good way to get a feel of where you can help out further. If there is
-something there you feel you can tackle, please [make a pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Vår [ENDRINGSLOGG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) for
+v1.x gir deg [et sammendrag av endringene mellom Node.js™ v0.10.35 og io.js
+v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
-In addition, using [Nodebug.me](http://nodebug.me/) is a good way to help Triage the issues in the backlog.
+<a id="hvordan-kan-jeg-bidra"></a>
 
-## Where do discussions take place?
+## Hvordan kan jeg bidra?
 
-There is an #io.js channel on Freenode IRC. We keep logs of the channel [here](http://logs.libuv.org/io.js/latest).
+Alle kan hjelpe til! io.js tar i bruk følgende [retningslinjer for
+oppførsel](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct).
+Bidragsytere, lanseringer og eierskap er underlagt en [åpen
+styringsmodell](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme).
 
-## What is open source governance?
+For å komme i gang finnes det flere åpne [diskusjoner på
+GitHub](https://github.com/iojs/io.js/issues) hvor vi gjerne tar i mot dine
+tilbakemeldinger. Det å involvere seg i diskusjoner er en god måte å finne ut
+av hvordan du kan bidra videre. [Lag gjerne en pull
+request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions)
+om det er noe du føler du kan ta tak i.
 
-Open source governance advocates the application of the philosophies of the open source and open content movements in order to enable any interested party to add to the creation of the end product, as with a wiki document. Legislation is democratically opened to the general citizenry, employing their collective wisdom to benefit the decision-making process and improve democracy. [[source]](https://en.wikipedia.org/wiki/Open-source_governance)
+I tillegg er det å bruke [http://nodebug.me/](Nodebug.me) en ypperlig måte å
+hjelpe til med å bestemme prioritering av problemer i produktkøen.
+
+<a id="hvor-tar-diskusjoner-plass"></a>
+
+## Hvor tar diskusjoner plass?
+
+I tillegg til den offisielle #io.js-kanalen på Freenode finnes det en norsk
+[Gitter-kanal](https://gitter.im/iojs/iojs-no). Førstnevnte føres det logger av,
+som du kan finne [her](http://logs.libuv.org/io.js/latest).
+
+<a id="hva-er-en-aapen-styringsmodell"></a>
+
+## Hva innebærer en åpen styringsmodell?
+
+En åpen styringsmodell viderefører filosofiene bak bevegelsene for åpen
+kildekode og åpent innehold. Dette lar så mange som mulig bidra til
+sluttproduktet, som med et wiki-dokument. Lovgivningen er demokratisk åpnet, for
+å ta i bruk den kollektive visdommen for å styrke beslutningsprosessen, samt
+demokratiet i seg selv.
+
+Kilde (engelsk): https://en.wikipedia.org/wiki/Open-source_governance
+

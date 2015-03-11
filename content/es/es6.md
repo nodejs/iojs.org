@@ -1,68 +1,68 @@
-# ES6 on io.js
+# ES6 en io.js
 
-io.js is built against modern versions of [V8](https://code.google.com/p/v8/). By keeping up-to-date with the latest releases of this engine we ensure new features from the [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) are brought to io.js developers in a timely manner, as well as continued performance and stability improvements.
+io.js está construido sobre versiones modernas de [V8](https://code.google.com/p/v8/). Manteniéndolo actualizado con las últimas versiones de este motor nos aseguramos que las nuevas funcionalidades de la [especificación ECMA-262 de JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) estén disponibles para los desarrolladores de io.js de manera oportuna, así como también las mejoras de rendimiento y estabilidad.
 
-Version 1.2.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.26.33 that will be shipped with joyent/node@0.12.x.
+La versión {{project.current_version}} de io.js utiliza V8 {{project.current_v8}}, que incluye las mejoras de ES6 superando claramente la versión 3.26.33 que será incluida con joyent/node@0.12.x.
 
-## No more --harmony flag
+## No más --harmony flag
 
-On joyent/node@0.12.x (V8 3.26), the `--harmony` runtime flag enabled all **completed**, **staged** and **in progress** ES6 features together, in bulk (with the exception of nonstandard/non-harmonious semantics for `typeof` which were hidden under `--harmony-typeof`). This meant that some really buggy or even broken features like [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) were just as readily available for developers as [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), which had very little or even no known-issues. As such, it was best practice to either enable only certain features by using specific runtime harmony feature flags (e.g. `--harmony-generators`), or simply enable all of them and then use a restricted subset.
+En joyent/node@0.12.x (V8 3.26), la flag `--harmony` habilita todas las mejoras **completed**, **staged** e **in progress** de ES6, en una sola (con la excepción de los semánticos non-standard/non-harmonious para `typeof` el cuál está oculto bajo  `--harmony-typeof`).  Esto significaba que algunas mejoras experimentales o incluso dañadas, como [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy), estaban tan fácilmente disponibles para los desarrolladores como [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), lo cual traía muy pocos o casi nulos problemas conocidos. Así, era mejor práctica habilitar sólo algunas mejoras usando flags harmony específicas (ej. `--harmony-generators`), o simplemente habilitarlas todas y después restringirlas una por una.
 
-With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for **shipping**, **staged** and **in progress** features:
+Con  io.js@1.x (V8 4.1+), toda la complejidad queda eliminada. Todas las mejoras harmony están ahora equitativamente separadas en tres grupos: **shipping**, **staged** e **in progress**.
 
-*   All **shipping** features, the ones that V8 has considered stable, like [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [new string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) and many others are turned **on by default on io.js** and do **NOT** require any kind of runtime flag.
-*   Then there are **staged** features which are almost-completed features that haven't been completely tested or updated to the latest spec yet and therefore are not considered stable by the V8 team (e.g. there might be some edge cases left to discover). This is probably the equivalent of the state of [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) on 3.26. These are the "use at your own risk" type of features that now require a runtime flag: `--es_staging` (or its synonym, `--harmony`).
-*   Finally, all **in progress** features can be activated individually by their respective harmony flag (e.g. `--harmony_arrow_functions`), although this is highly discouraged unless for testing purposes.
+Todas las mejoras **shipping**, las que el equipo de V8 consideran estables, como [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [nuevos métodos de  string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) y muchas más están **disponibles por defecto en io.js** y **NO** requieren ningún tipo de configuración.
+* Y están las funcionalidades **staged** que son funcionalidades casi completas que no han sido totalmente probadas o actualizadas a la última especificación todavía y no son consideradas estables por el equipo de V8 (ej. podría haber algunos casos raros por descubrir). Este es probablemente el equivalente al estado de los [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) en 3.26. Estas son las funcionalidades del tipo "use at your own risk" (usar bajo tu responsabilidad) que requieren una flag: `--es_staging` (o su sinónimo, `--harmony`).
+* Finalmente, todas la funcionalidades **in progress** se pueden activar individualmente por su respectiva harmony flag (ejemplo: `--harmony_arrow_functions`), aunque esto no está recomendado a menos que sea para pruebas.
 
-## Which ES6 features ship with io.js by default (no runtime flag required)?
+## ¿Qué características de ES6 vienen con io.js por defecto (no es necesaria la runtime flag)?
 
 
-*   Block scoping
+* Block scoping
 
-    *   [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+    * [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
-    *   [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+    * [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
-    *   `function`-in-blocks
+    * `function`- en bloques
 
-    >As of v8 3.31.74.1, block-scoped declarations are [intentionally implemented with a non-compliant limitation to strict mode code](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Developers should be aware that this will change as v8 continues towards ES6 specification compliance.
+    >Como en v8 3.31.74.1, las declaraciones block-scoped están [intencionalmente implementadas con una limitación no estandarizada por código en strict mode](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Los desarrolladores deben tener en cuenta que esto va a cambiar cuando v8 continúe hacia la aplicación del estándar ES6.
 
-*   Collections
+* Colecciones
 
-    *   [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+    * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
-    *   [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
+    * [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
 
-    *   [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+    * [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
-    *   [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)*   [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+    * [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)* [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 
-*   [Binary and Octal literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
+* [Literales Binarios y Octales](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
 
-*   [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+* [Promesas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
-*   [New String methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object)
+* [New String methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object)
 
-*   [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+* [Símbolos](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 
-*   [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
+* [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
 
-You can view a more detailed list, including a comparison with other engines, on the [compat-table](https://kangax.github.io/compat-table/es6/) project page.
+Puedes ver una lista más detallada, incluyendo la comparación con otros motores, en la página del proyecto [compat-table](https://kangax.github.io/compat-table/es6/).
 
-## Which ES6 features are behind the --es_staging flag?
+## ¿Qué funcionales de ES6 están detrás de la --es_staging flag?
 
-*   [Classes](https://github.com/lukehoban/es6features#classes) (strict mode only)
-*   [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals)
+* [Clases](https://github.com/lukehoban/es6features#classes) (sólo en strict mode)
+* [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals)
 
-*   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (user-definable results for `Object.prototype.toString`)
+* [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (resultados definidos por el usuario para `Object.prototype.toString`)
 
-## I have my infrastructure set up to leverage the --harmony flag. Should I remove it?
+## Tengo mi infraestructura configurada para hacer uso de la `--harmony` flag  ¿Debo eliminarla?
 
-The current behaviour of the `--harmony` flag on io.js is to enable **staged** features only. After all, it is now a synonym of `--es_staging`. As mentioned above, these are completed features that have not been considered stable yet. If you want to play safe, especially on production environments, consider removing this runtime flag until it ships by default on V8 and, consequently, on io.js. If you keep this enabled, you should be prepared for further io.js upgrades to break your code if V8 changes their semantics to more closely follow the standard.
+El comportamiento actual de `--harmony` flag en io.js es el de sólo activar funcionalidades **staged**. Después de todo, es ahora un sinónimo de `--es_staging`.  Como se mencionó anteriormente, estas son funcionalidades completadas que no han sido consideradas estables todavía. Si quieres ir por lo seguro, especialmente en entornos de producción, considera no utilizar esta flag hasta que venga por defecto en V8 y, consecuentemente, en io.js. Si la mantienes activada, debes prepararte para que actualizaciones futuras de io.js rompan tu código en caso que V8 cambie su semántica a siguiendo de forma mas cercana el estándar.
 
-## How do I find which version of V8 ships with a particular version of io.js?
+## ¿Cómo determino la versión de V8 que se distribuye con una versión en particular de io.js?
 
-io.js provides a simple way to list all dependencies and respective versions that ship with a specific binary through the `process` global object. In case of the V8 engine, type the following in your terminal to retrieve its version:
+io.js provee una manera sencilla de listar todas las dependencias y respectivas versiones que se distribuyen con un binario específico, a través del objeto global `process`. En el caso del motor V8, escribe lo siguiente en tu terminal para obtener su versión:
 
 ```sh
 iojs -p process.versions.v8
