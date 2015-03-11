@@ -58,6 +58,16 @@ Eine detailliertere Liste, die dazu noch Vergleiche zu anderen Engines enthält,
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (Festlegbare Ausgabe von `Object.prototype.toString`)
 
+## An welchen ES6-Funktionen wird gerade gearbeitet?
+
+Neue Funktionen werden ständing zur V8-Engine hinzugefügt. Allgemein gesagt, werden diese erwartungsgemäß in zukünftigen io.js-Versionen verfügbar sein. Der Zeitrahmen ist noch unbekannt.
+
+Es ist möglich alle *in progress*-Funktionen, der installierten io.js-Version aufzulisten. Dafür gibt es den Startparamter `--v8-options`. Es ist zu beachten, dass diese Funktionen, V8-Engine, unvollständig oder gar kaputt sind. Es gilt: Benutzen auf eigene Gefahr!
+
+```sh
+iojs --v8-options | grep "in progress"
+```
+
 ## In meiner Infrastruktur kommt der Paramterer `--harmony` zum Einsatz. Ist es sinnvoll diesen Parameter zu entfernen?
 
 Das Startparameter `--harmony` schaltet lediglich die **staged**-Funktionen ein und ist als Synonym zu `--es_staging` zu verstehen. Wie oben bereits beschrieben, werden hierdurch mehr oder weniger vollständige Funktionen aktiviert, die noch nicht als stabil zu bezeichnen sind. Wer auf Nummer sicher gehen will, gerade in produktiven Umgebungen, sollte ernsthaft darüber nachdenken, diesen Startparameter nicht zu verwenden, bis die benötigte Funktion in V8 standardmäßig zu Verfügung steht, und somit auch in io.js. Wird der Parameter trotzdem verwendet, muss man damit rechnen, dass künftige io.js-Aktualisierungen den eigenen Code fehlschlagen lässt, falls Funktionen der V8-Engine an den aktuellen Standard angepasst werden.
