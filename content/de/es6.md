@@ -74,7 +74,7 @@ Das Startparameter `--harmony` schaltet lediglich die **staged**-Funktionen ein 
 
 ## Wie erkenne ich, mit welcher V8-Version io.js ausgeliefert wurde?
 
-io.js bietet eine einfache Möglichkeit, alle Abhängigkeiten der jeweilig installierten Version, durch das globale Objekt `process` aufzulisten. Durch folgenden Konsolen-Befehl kann die Version der V8-Engines ausgegeben werden:
+io.js bietet eine einfache Möglichkeit, alle Abhängigkeiten der jeweilig installierten Version, durch das globale Objekt `process` aufzulisten. Durch folgenden Konsolen-Befehl kann die Version der V8-Engine ausgegeben werden:
 
 ```sh
 iojs -p process.versions.v8
