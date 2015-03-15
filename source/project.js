@@ -1,5 +1,10 @@
 // temporary merge to help avoid some merge confusion when landed:
-var project = require('./project.json');
+var versions = require('./versions.json');
+
+var project = {};
+
+project.current_version = versions[0].version.replace(/^v/, '');
+project.current_v8 = versions[0].v8;
 
 project.languages = require('./languages.js');
 
