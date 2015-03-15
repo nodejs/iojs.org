@@ -1,0 +1,31 @@
+<h1>{{i18n 'releases.title'}}</h1>
+
+<table class="releaseTable">
+  <tr>
+    <th>Version</th>
+    <th>Date</th>
+    <th>v8</th>
+    <th>npm</th>
+    <th></th>
+    <th></th>
+  </tr>
+{{#project.versions}}
+  <tr>
+    <td class="releaseTable-version">{{version}}</td>
+    <td>{{date}}</td>
+    <td>{{v8}}</td>
+    <td>{{npm}}</td>
+    <td>
+      <a href="http://iojs.org/dist/{{version}}">
+        {{i18n 'releases.downloads'}}
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/iojs/io.js/blob/{{version}}/CHANGELOG.md">
+        {{i18n 'links.pages.changelog'}}
+      </a>
+    </td>
+
+  </tr>
+{{/project.versions}}
+</table>

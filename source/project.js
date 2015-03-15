@@ -5,6 +5,7 @@ var project = {};
 
 project.current_version = versions[0].version.replace(/^v/, '');
 project.current_v8 = versions[0].v8;
+project.versions = versions;
 
 project.languages = require('./languages.js');
 

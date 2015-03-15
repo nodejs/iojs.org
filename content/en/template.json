@@ -27,6 +27,10 @@
     "slogan": "Bringing {{link 'pages.es6'}} to the Node Community!",
     "news_link": "{{link 'Weekly Update - March 13th' 'https://medium.com/node-js-javascript/io-js-week-of-march-13th-e3024cc66802'}} <small>featuring core and community updates ({{link 'Medium' 'https://medium.com/node-js-javascript/io-js-week-of-march-13th-e3024cc66802'}})</small>"
   },
+  "releases": {
+    "title": "io.js Release History",
+    "downloads": "Downloads"
+  },
   "links": {
     "nodejs": "Node.js™",
     "npm": "npm",
