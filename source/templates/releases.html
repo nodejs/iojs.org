@@ -9,7 +9,8 @@
     <th></th>
     <th></th>
   </tr>
-{{#project.versions}}
+
+  {{#project.versions}}
   <tr>
     <td class="releaseTable-version">{{version}}</td>
     <td>{{date}}</td>
@@ -25,7 +26,6 @@
         {{i18n 'links.pages.changelog'}}
       </a>
     </td>
-
   </tr>
-{{/project.versions}}
+  {{/project.versions}}
 </table>
