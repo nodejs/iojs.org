@@ -7,14 +7,12 @@ var generateContentAndTemplates = require('../util/content').generateContentAndT
 var through = require('through2');
 
 gulp.task('content', function() {
-  var base, contentJSON, languagesJSON, matchHTML, templates, templateStreams;
-
-  base = path.resolve(__dirname, '..', '..');
-  contentJSON = require('../../source/content.js');
-  languagesJSON = require('../../source/languages.js');
-  matchHTML = /\.html$/;
-  templates = {};
-  templateStreams = mergeStream();
+  var base = path.resolve(__dirname, '..', '..');
+  var contentJSON = require('../../source/content.js');
+  var languagesJSON = require('../../source/languages.js');
+  var matchHTML = /\.html$/;
+  var templates = {};
+  var templateStreams = mergeStream();
 
   Object.keys(contentJSON).filter(function(key) {
     var article = contentJSON[key];

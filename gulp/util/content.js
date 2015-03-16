@@ -36,8 +36,6 @@ function traverse(obj, str) {
   Returns: a gulp-friendly pipe task (function)
 */
 function generateContentAndTemplates() {
-  var base, projectJSON, i18nJSON, hbsTemplates, LocalHandlebars;
-
   /*
    * cache variables and lookups used on subsequent runs of the pipe task:
    *
@@ -50,61 +48,51 @@ function generateContentAndTemplates() {
    * 5. `LocalHandlebars` is a sandboxed version of Handlebars, avoids injecting
          helpers and partials at a global scale.
    */
-  base = path.resolve(__dirname, '..', '..'); /* 1 */
-  contentBase = path.resolve(base, 'content'); /* 2 */
-  projectJSON = require('../../source/project.js'); /* 3 */
-  i18nJSON = {}; /* 4 */
-  hbsTemplates = {}; /* 5 */
-  LocalHandlebars = Handlebars.create() /* 6 */
+  var base = path.resolve(__dirname, '..', '..'); /* 1 */
+  var contentBase = path.resolve(base, 'content'); /* 2 */
+  var projectJSON = require('../../source/project.js'); /* 3 */
+  var i18nJSON = {}; /* 4 */
+  var hbsTemplates = {}; /* 5 */
+  var LocalHandlebars = Handlebars.create() /* 6 */
 
   LocalHandlebars.registerPartial('current_download_links', `{{#project.current_version_downloads}}<a href="{{url}}">{{i18n "downloads" key}}</a>{{/project.current_version_downloads}}`)
 
   LocalHandlebars.registerHelper('i18n', function() {
-    var scope, i18n_key, env, key, data, lang, result;
+    var env, key;
 
-    var args = Array.prototype.slice.call(arguments);
-
-    if (args.length === 2) {
-      scope = null;
-      i18n_key = args[0];
-      env = args[1];
-      key = i18n_key;
+    // function(key, env)
+    if (arguments.length === 2) {
+      key = arguments[0];
+      env = arguments[1];
     }
-    if (args.length === 3) {
-      scope = args[0];
-      i18n_key = args[1];
-      env = args[2];
-      key = [scope, i18n_key].join('.');
+    // function(scope, key, env)
+    if (arguments.length === 3) {
+      key = arguments[0] + '.' + arguments[1];
+      env = arguments[2];
     }
 
-    data = env.data.root;
-    lang = data.lang;
-    result = traverse(data.i18n, key);
+    var data = env.data.root;
+    var result = traverse(data.i18n, key);
 
     return new Handlebars.SafeString(result);
   });
 
   LocalHandlebars.registerHelper('hb', function() {
-    var scope, i18n_key, env, key, data, lang, result;
+    var env, key;
 
-    var args = Array.prototype.slice.call(arguments);
-
-    if (args.length === 2) {
-      scope = null;
-      i18n_key = args[0];
-      env = args[1];
-      key = i18n_key;
+    // function(key, env)
+    if (arguments.length === 2) {
+      key = arguments[0];
+      env = arguments[1];
     }
-    if (args.length === 3) {
-      scope = args[0];
-      i18n_key = args[1];
-      env = args[2];
-      key = [scope, i18n_key].join('.');
+    // function(scope, key, env)
+    if (arguments.length === 3) {
+      key = arguments[0] + '.' + arguments[1];
+      env = arguments[2];
     }
 
-    data = env.data.root;
-    lang = data.lang;
-    result = traverse(data.i18n, key);
+    var data = env.data.root;
+    var result = traverse(data.i18n, key);
 
     result = LocalHandlebars.compile(result)(env.data.root);
 
@@ -129,23 +117,20 @@ function generateContentAndTemplates() {
 
   // we returned a wrapped function to help us cache some work (above)
   return function(vinylFile, _unused_, cb) {
-    var file, fileName, fileType, contentRaw, lang, templateJSON, contentHandlebarsCompiled,
-        contentMarkdownCompiled, template, contentTemplateCompiled;
-
-    file = vinylFile.path;
-    fileName = path.parse(file).name
-    fileType = path.parse(file).ext === ".html" ? "html" : "markdown"
-    contentRaw = vinylFile.contents.toString();
+    var file = vinylFile.path;
+    var fileName = path.parse(file).name
+    var fileType = path.parse(file).ext === ".html" ? "html" : "markdown"
+    var contentRaw = vinylFile.contents.toString();
 
     // determine the language based off of the current path
-    lang = path.relative(contentBase, path.dirname(file)).split(path.sep)[0];
+    var lang = path.relative(contentBase, path.dirname(file)).split(path.sep)[0];
 
     if (i18nJSON[lang] == null) {
       i18nJSON[lang] = utils.loadTemplateJSON(lang);
     }
 
     // load the current dictionary for the selected lang
-    templateJSON = {
+    var templateJSON = {
       article: vinylFile._article,
       i18n: i18nJSON[lang],
       lang: lang,
@@ -167,17 +152,17 @@ function generateContentAndTemplates() {
 
     // initial Handlebars compile, Markdown content, before parsing
     // (otherwise the `{{ }}` can be escaped)
-    contentHandlebarsCompiled = LocalHandlebars.compile(contentRaw)(templateJSON);
+    var contentHandlebarsCompiled = LocalHandlebars.compile(contentRaw)(templateJSON);
 
     // When required, turn `.md` in to `.html`
     if (fileType === "markdown") {
-      contentMarkdownCompiled = md.render(contentHandlebarsCompiled);
+      var contentMarkdownCompiled = md.render(contentHandlebarsCompiled);
     } else {
-      contentMarkdownCompiled = contentHandlebarsCompiled;
+      var contentMarkdownCompiled = contentHandlebarsCompiled;
     }
 
     // this is hard-coded right now, but planned to be dynamic:
-    template = 'main.html';
+    var template = 'main.html';
 
     // fetch the final template function we need (if not already cached)
     if (hbsTemplates[template] == null) {
@@ -190,7 +175,7 @@ function generateContentAndTemplates() {
     templateJSON.content = contentMarkdownCompiled;
 
     // Compile a version of the template with the content inside:
-    contentTemplateCompiled = hbsTemplates[template](templateJSON)
+    var contentTemplateCompiled = hbsTemplates[template](templateJSON)
 
     // Return as a Buffer for additional processing:
     vinylFile.contents = new Buffer(contentTemplateCompiled);
