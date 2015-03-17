@@ -18,7 +18,8 @@ project.links = {
     home: './index.html',
     es6: './es6.html',
     faq: './faq.html',
-    faq_verbose: './faq.html'
+    faq_verbose: './faq.html',
+    releases: './releases.html'
   }
 };
 

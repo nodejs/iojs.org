@@ -37,6 +37,7 @@
     "website": "io.js",
     "pages": {
       "changelog": "Changelog",
+      "releases": "Releases",
       "home": "Home",
       "es6": "ES6",
       "faq": "FAQ",
