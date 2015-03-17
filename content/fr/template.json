@@ -1,0 +1,14 @@
+{
+  "browser-title":"io.js - JavaScript I/O",
+  "contribute-message":"Quelque chose vous plaît ? Envie de nous aider ? Allez sur https://github.com/iojs/website pour contribuer",
+  "heading-languages":"Langues",
+  "logo-text":"io.js",
+  "faq-link":"FAQ",
+  "es6-link":"ES6",
+  "api-link":"Doc de l'API",
+  "issues-link":"Questions GitHub",
+  "org-link":"Organisation GitHub",
+  "irc-link":"Chat IRC",
+  "irc-logs-link":"Logs",
+  "gov-link":"Gouvernance"
+}
