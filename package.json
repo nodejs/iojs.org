@@ -63,6 +63,7 @@
     "markdown-it": "^3.0.4",
     "merge-stream": "^0.1.7",
     "moment-timezone": "^0.3.0",
+    "request": "^2.53.0",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
     "through2": "^0.6.3",

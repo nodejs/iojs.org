@@ -9,5 +9,9 @@ module.exports = {
   },
   "faq": {
     "url": "faq.html"
+  },
+  "releases": {
+    "url": "releases.html",
+    "content": "releases.html"
   }
 }
