@@ -1,12 +1,21 @@
 {
-    "browser-title": "io.js - JavaScript I/O",
-    "logo-text": "io.js",
-    "faq-link": "Preguntas Frecuentes",
-    "es6-link": "ES6",
-    "api-link": "Documentación de la API",
-    "issues-link": "GitHub Issues",
-    "org-link": "GitHub Org",
-    "irc-link": "Canal IRC",
-    "irc-logs-link": "Logs",
-    "gov-link": "Gobierno"
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "¿Ves algo que te interese? ¿Quieres ayudar? Visita https://github.com/iojs/iojs-es para contribuir",
+  "heading-languages": "Idiomas",
+  "logo-text": "io.js",
+  "faq-link": "FAQ",
+  "es6-link": "ES6",
+  "api-link": "Documentación de la API",
+  "issues-link": "GitHub Issues",
+  "org-link": "GitHub Org",
+  "irc-link": "Canal IRC",
+  "irc-logs-link": "Logs",
+  "gov-link": "Gobierno",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "Otros"
+  }
 }
