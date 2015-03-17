@@ -53,7 +53,7 @@ Puedes ver una lista más detallada, incluyendo la comparación con otros motore
 
 ## ¿Qué funcionales de ES6 están detrás de la --es_staging flag?
 
-* [Clases](https://github.com/lukehoban/es6features#classes) (sólo en strict mode, utilizando la flag `--harmony_classes` lo que implica que el block scope y object literal extensions)
+* [Clases](https://github.com/lukehoban/es6features#classes) (sólo en strict mode, utilizando la flag `--harmony_classes` lo que implica block scope y object literal extensions)
 
 * [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals) (tras la flag `--harmony_object_literals`)
 
@@ -71,7 +71,7 @@ iojs --v8-options | grep "in progress"
 
 ## Tengo mi infraestructura configurada para hacer uso de la `--harmony` flag  ¿Debo eliminarla?
 
-El comportamiento actual de `--harmony` flag en io.js es el de sólo activar funcionalidades **staged**. Después de todo, es ahora un sinónimo de `--es_staging`.  Como se mencionó anteriormente, estas son funcionalidades completadas que no han sido consideradas estables todavía. Si quieres ir por lo seguro, especialmente en entornos de producción, considera no utilizar esta flag hasta que venga por defecto en V8 y, consecuentemente, en io.js. Si la mantienes activada, debes prepararte para que actualizaciones futuras de io.js rompan tu código en caso que V8 cambie su semántica a siguiendo de forma mas cercana el estándar.
+El comportamiento actual de la `--harmony` flag en io.js es el de sólo activar funcionalidades **staged**. Después de todo, es ahora un sinónimo de `--es_staging`.  Como se mencionó anteriormente, estas son funcionalidades completadas que no han sido consideradas estables todavía. Si quieres ir por lo seguro, especialmente en entornos de producción, considera no utilizar esta flag hasta que venga por defecto en V8 y, consecuentemente, en io.js. Si la mantienes activada, debes prepararte para que actualizaciones futuras de io.js rompan tu código en caso que V8 cambie su semántica a siguiendo de forma mas cercana el estándar.
 
 ## ¿Cómo determino la versión de V8 que se distribuye con una versión en particular de io.js?
 
