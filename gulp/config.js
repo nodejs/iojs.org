@@ -12,7 +12,7 @@ module.exports = {
   },
   templates: {
     templateSrc: src + '/templates/**/*.html',
-    contentSrc: content + '/**/*.md',
+    contentSrc: content + '/**/*.{html,md}',
     templateJSONsrc: content + '/**/template.json',
     dest: dest
   },
