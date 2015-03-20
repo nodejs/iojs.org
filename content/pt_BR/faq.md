@@ -10,7 +10,7 @@ Este projeto tem como objetivo continuar o desenvolvimento do io.js sob um "[mod
 
 ## Versão 1.0.x?
 
-io.js passou a usar [Semver](http://semver.org/) e as mudanças entre o Node.js™ 0.10 e io.js 1.0.0 foram significativas o suficiente para justificar um grande incremento da versão.
+io.js passou a usar [Semver](http://semver.org/lang/pt-BR/) e as mudanças entre o Node.js™ 0.10 e io.js 1.0.0 foram significativas o suficiente para justificar um grande incremento da versão.
 
 Nosso [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) para a v1.x fornece um [resumo das alterações do Node.js v0.10.35 para o io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
