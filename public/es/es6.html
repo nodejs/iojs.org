@@ -26,7 +26,7 @@
     <div class="content">
       <a href="index.html" class="logo">io.js</a>
       <div class="spacer"></div>
-      <a href="faq.html">Preguntas Frecuentes</a>
+      <a href="faq.html">FAQ</a>
       <a href="es6.html">ES6</a>
       <a href="https://iojs.org/api/">Documentación de la API</a>
     </div>
@@ -35,7 +35,7 @@
   <div class="content content--body clearfix">
     <h1>ES6 en io.js</h1>
 <p>io.js está construido sobre versiones modernas de <a href="https://code.google.com/p/v8/">V8</a>. Manteniéndolo actualizado con las últimas versiones de este motor nos aseguramos que las nuevas funcionalidades de la <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">especificación ECMA-262 de JavaScript</a> estén disponibles para los desarrolladores de io.js de manera oportuna, así como también las mejoras de rendimiento y estabilidad.</p>
-<p>La versión 1.5.1 de io.js utiliza V8 4.1.0.21, que incluye las mejoras de ES6 superando claramente la versión 3.26.33 que será incluida con joyent/node@0.12.x.</p>
+<p>La versión 1.6.2 de io.js utiliza V8 4.1.0.25, que incluye las mejoras de ES6 superando claramente la versión 3.28.73 que será incluida con joyent/node@0.12.x.</p>
 <h2>No más --harmony flag</h2>
 <p>En joyent/node@0.12.x (V8 3.26), la flag <code>--harmony</code> habilita todas las mejoras <strong>completed</strong>, <strong>staged</strong> e <strong>in progress</strong> de ES6, en una sola (con la excepción de los semánticos non-standard/non-harmonious para <code>typeof</code> el cuál está oculto bajo  <code>--harmony-typeof</code>).  Esto significaba que algunas mejoras experimentales o incluso dañadas, como <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a>, estaban tan fácilmente disponibles para los desarrolladores como <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, lo cual traía muy pocos o casi nulos problemas conocidos. Así, era mejor práctica habilitar sólo algunas mejoras usando flags harmony específicas (ej. <code>--harmony-generators</code>), o simplemente habilitarlas todas y después restringirlas una por una.</p>
 <p>Con  io.js@1.x (V8 4.1+), toda la complejidad queda eliminada. Todas las mejoras harmony están ahora equitativamente separadas en tres grupos: <strong>shipping</strong>, <strong>staged</strong> e <strong>in progress</strong>.</p>
@@ -76,7 +76,10 @@
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></p>
 </li>
 <li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a>* <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a></p>
 </li>
 </ul>
 </li>
@@ -100,17 +103,22 @@
 <h2>¿Qué funcionales de ES6 están detrás de la --es_staging flag?</h2>
 <ul>
 <li>
-<p><a href="https://github.com/lukehoban/es6features#classes">Clases</a> (sólo en strict mode)</p>
+<p><a href="https://github.com/lukehoban/es6features#classes">Clases</a> (sólo en strict mode, utilizando la flag <code>--harmony_classes</code> lo que implica block scope y object literal extensions)</p>
 </li>
 <li>
-<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal extensions</a></p>
+<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal extensions</a> (tras la flag <code>--harmony_object_literals</code>)</p>
 </li>
 <li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (resultados definidos por el usuario para <code>Object.prototype.toString</code>)</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (tras la flag <code>--harmony_tostring</code>, resultados personalizados para <code>Object.prototype.toString</code>)</p>
 </li>
 </ul>
+<h2>¿Qué características de ES6 están en progreso?</h2>
+<p>Constantemente se van añadiendo nuevas características al motor V8. En general, puedes espera que llegen en un futuro a una publicación de io.js, aunque el tiempo exacto es desconocido.</p>
+<p>Puedes listar todas las características que estan <em>en progreso</em> en cada publicación de io.js usando grep a través del argumento <code>--v8-options</code>. Por favor ten encuenta que son características aún no terminadas y posiblemente rotas de V8, así que usalas bajo tu responsabilidad:</p>
+<pre><code class="language-sh">iojs --v8-options | grep &quot;in progress&quot;
+</code></pre>
 <h2>Tengo mi infraestructura configurada para hacer uso de la <code>--harmony</code> flag  ¿Debo eliminarla?</h2>
-<p>El comportamiento actual de <code>--harmony</code> flag en io.js es el de sólo activar funcionalidades <strong>staged</strong>. Después de todo, es ahora un sinónimo de <code>--es_staging</code>.  Como se mencionó anteriormente, estas son funcionalidades completadas que no han sido consideradas estables todavía. Si quieres ir por lo seguro, especialmente en entornos de producción, considera no utilizar esta flag hasta que venga por defecto en V8 y, consecuentemente, en io.js. Si la mantienes activada, debes prepararte para que actualizaciones futuras de io.js rompan tu código en caso que V8 cambie su semántica a siguiendo de forma mas cercana el estándar.</p>
+<p>El comportamiento actual de la <code>--harmony</code> flag en io.js es el de sólo activar funcionalidades <strong>staged</strong>. Después de todo, es ahora un sinónimo de <code>--es_staging</code>.  Como se mencionó anteriormente, estas son funcionalidades completadas que no han sido consideradas estables todavía. Si quieres ir por lo seguro, especialmente en entornos de producción, considera no utilizar esta flag hasta que venga por defecto en V8 y, consecuentemente, en io.js. Si la mantienes activada, debes prepararte para que actualizaciones futuras de io.js rompan tu código en caso que V8 cambie su semántica a siguiendo de forma mas cercana el estándar.</p>
 <h2>¿Cómo determino la versión de V8 que se distribuye con una versión en particular de io.js?</h2>
 <p>io.js provee una manera sencilla de listar todas las dependencias y respectivas versiones que se distribuyen con un binario específico, a través del objeto global <code>process</code>. En el caso del motor V8, escribe lo siguiente en tu terminal para obtener su versión:</p>
 <pre><code class="language-sh">iojs -p process.versions.v8
@@ -127,12 +135,12 @@
    --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">Gobierno</a>
     </nav>
     <nav class="languageFooter">
-      <a><strong>Languages</strong></h3><!--
+      <a><strong>Idiomas</strong></h3><!--
     --><a href="/cn/es6.html" lang="cn">简体中文</a><a href="/de/es6.html" lang="de">Deutsch</a><a href="/el/es6.html" lang="el">Ελληνικά</a><a href="/en/es6.html" lang="en">English</a><a href="/es/es6.html" lang="es">Español</a><a href="/fa/es6.html" lang="fa">فارسی</a><a href="/fi/es6.html" lang="fi">Suomi</a><a href="/fr/es6.html" lang="fr">Français</a><a href="/he/es6.html" lang="he">עברית</a><a href="/id/es6.html" lang="id">Bahasa Indonesia</a><a href="/it/es6.html" lang="it">Italiano</a><a href="/ja/es6.html" lang="ja">日本語</a><a href="/ko/es6.html" lang="ko">한국어</a><a href="/no/es6.html" lang="no">Norsk</a><a href="/pt_BR/es6.html" lang="pt_BR">Português (BR)</a><a href="/pt_PT/es6.html" lang="pt_PT">Português (PT)</a><a href="/ru/es6.html" lang="ru">Русский</a><a href="/tr/es6.html" lang="tr">Türkçe</a><a href="/uk/es6.html" lang="uk">Українська</a><a href="/zh_TW/es6.html" lang="zh_TW">正體中文（台灣）</a>
     </nav>
   </footer>
 
-<!-- See something you like? Want to help? Visit https://github.com/iojs/website to contribute  -->
+<!-- ¿Ves algo que te interese? ¿Quieres ayudar? Visita https://github.com/iojs/iojs-es para contribuir  -->
 </body>
 
 </html>

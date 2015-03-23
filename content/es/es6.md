@@ -2,7 +2,7 @@
 
 io.js está construido sobre versiones modernas de [V8](https://code.google.com/p/v8/). Manteniéndolo actualizado con las últimas versiones de este motor nos aseguramos que las nuevas funcionalidades de la [especificación ECMA-262 de JavaScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) estén disponibles para los desarrolladores de io.js de manera oportuna, así como también las mejoras de rendimiento y estabilidad.
 
-La versión {{project.current_version}} de io.js utiliza V8 {{project.current_v8}}, que incluye las mejoras de ES6 superando claramente la versión 3.26.33 que será incluida con joyent/node@0.12.x.
+La versión {{project.current_version}} de io.js utiliza V8 {{project.current_v8}}, que incluye las mejoras de ES6 superando claramente la versión 3.28.73 que será incluida con joyent/node@0.12.x.
 
 ## No más --harmony flag
 
@@ -35,7 +35,9 @@ Todas las mejoras **shipping**, las que el equipo de V8 consideran estables, com
 
     * [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
-    * [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)* [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+    * [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+
+    * [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 
 * [Literales Binarios y Octales](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
 
@@ -51,14 +53,25 @@ Puedes ver una lista más detallada, incluyendo la comparación con otros motore
 
 ## ¿Qué funcionales de ES6 están detrás de la --es_staging flag?
 
-* [Clases](https://github.com/lukehoban/es6features#classes) (sólo en strict mode)
-* [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals)
+* [Clases](https://github.com/lukehoban/es6features#classes) (sólo en strict mode, utilizando la flag `--harmony_classes` lo que implica block scope y object literal extensions)
 
-* [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (resultados definidos por el usuario para `Object.prototype.toString`)
+* [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals) (tras la flag `--harmony_object_literals`)
+
+* [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (tras la flag `--harmony_tostring`, resultados personalizados para `Object.prototype.toString`)
+
+## ¿Qué características de ES6 están en progreso?
+
+Constantemente se van añadiendo nuevas características al motor V8. En general, puedes espera que llegen en un futuro a una publicación de io.js, aunque el tiempo exacto es desconocido.
+
+Puedes listar todas las características que estan *en progreso* en cada publicación de io.js usando grep a través del argumento `--v8-options`. Por favor ten encuenta que son características aún no terminadas y posiblemente rotas de V8, así que usalas bajo tu responsabilidad:
+
+```sh
+iojs --v8-options | grep "in progress"
+```
 
 ## Tengo mi infraestructura configurada para hacer uso de la `--harmony` flag  ¿Debo eliminarla?
 
-El comportamiento actual de `--harmony` flag en io.js es el de sólo activar funcionalidades **staged**. Después de todo, es ahora un sinónimo de `--es_staging`.  Como se mencionó anteriormente, estas son funcionalidades completadas que no han sido consideradas estables todavía. Si quieres ir por lo seguro, especialmente en entornos de producción, considera no utilizar esta flag hasta que venga por defecto en V8 y, consecuentemente, en io.js. Si la mantienes activada, debes prepararte para que actualizaciones futuras de io.js rompan tu código en caso que V8 cambie su semántica a siguiendo de forma mas cercana el estándar.
+El comportamiento actual de la `--harmony` flag en io.js es el de sólo activar funcionalidades **staged**. Después de todo, es ahora un sinónimo de `--es_staging`.  Como se mencionó anteriormente, estas son funcionalidades completadas que no han sido consideradas estables todavía. Si quieres ir por lo seguro, especialmente en entornos de producción, considera no utilizar esta flag hasta que venga por defecto en V8 y, consecuentemente, en io.js. Si la mantienes activada, debes prepararte para que actualizaciones futuras de io.js rompan tu código en caso que V8 cambie su semántica a siguiendo de forma mas cercana el estándar.
 
 ## ¿Cómo determino la versión de V8 que se distribuye con una versión en particular de io.js?
 
