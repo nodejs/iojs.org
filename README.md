@@ -46,9 +46,17 @@ deployed within a few minutes.
 
 ## Current Project Team Members
 
-* Trent Oswald (@therebelrobot) **Facilitator**
-* Mikeal Rogers (@mikeal)
-* Jeremiah Senkpiel (@Fishrock123)
+The io.js Website project team comprises a group of core collaborators and a
+sub-group that forms the Working Group (WG) which governs the project.
+For more information about the governance of the io.js Website project, see
+[GOVERNANCE.md](./GOVERNANCE.md).
+
+* Trent Oswald (@therebelrobot) - Working Group, Facilitator
+* Jeremiah Senkpiel (@Fishrock123) - Working Group
+* Sean Ouimet (@snostorm) - Working Group
+* Anton Wilhelm (@timaschew)
 * Charlie Robbins (@indexzero)
-* Sean Ouimet (@snostorm)
+* Frederic Hemberger (@fhemberger)
+* Mikeal Rogers (@mikeal)
 * Zeke Sikelianos (@zeke)
+* "&! (bitandbang)" (@bnb)
