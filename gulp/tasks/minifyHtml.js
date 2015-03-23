@@ -8,4 +8,4 @@ gulp.task('minifyHtml', function() {
     .pipe(minifyHTML())
     .pipe(gulp.dest(config.dest))
     .pipe(size());
-})
+});
