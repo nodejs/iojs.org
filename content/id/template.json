@@ -1,12 +1,42 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "logo-text":"io.js",
-  "faq-link":"FAQ",
-  "es6-link":"ES6",
-  "api-link":"Dokumentasi API",
-  "issues-link":"Isu GitHub",
-  "org-link":"Organisasi GitHub",
-  "irc-link":"Obrolan IRC",
-  "irc-logs-link":"Catatan",
-  "gov-link":"Tata Kelola"
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "Tertarik dengan proyek ini? Mau turun tangan membantu? Kunjungi https://github.com/iojs/website untuk berkontribusi",
+  "heading-languages": "Bahasa",
+  "logo-text": "io.js",
+  "faq-link": "FAQ",
+  "es6-link": "ES6",
+  "api-link": "Dokumentasi API",
+  "issues-link": "Isu GitHub",
+  "org-link": "Organisasi GitHub",
+  "irc-link": "Obrolan IRC",
+  "irc-logs-link": "Catatan",
+  "gov-link": "Tata Kelola",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "Lainnya"
+  },
+  "verbose_version": "Versi {{project.current_version}}",
+  "home": {
+    "download_links": "Unduh untuk {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Rilis setiap malam (Nightly)' 'https://iojs.org/download/nightly/'}} tersedia untuk pengujian.",
+    "short_description": "{{link 'website'}} adalah sebuah platform {{link 'npm'}} yang kompatibel dengan {{link 'nodejs'}}.",
+    "slogan": "Membawa {{link 'pages.es6'}} ke Komunitas Node!",
+    "news_link": "{{link 'Update Mingguan – 20 Maret' 'https://medium.com/@iojs_id/io-js-pekan-20-maret-b759c1fc04a'}} <small>menampilkan update dari inti dan komunitas ({{link 'Medium' 'https://medium.com/@iojs_id/io-js-pekan-20-maret-b759c1fc04a'}})</small>"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Changelog",
+      "home": "Home",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Pertanyaan yang Sering Ditanyakan (FAQ)"
+    }
+  }
 }
