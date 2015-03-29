@@ -23,6 +23,10 @@
     "slogan": "{{link 'pages.es6'}} pour la communauté Node!",
     "news_link": "Dernières nouvelles: {{link 'Medium' 'https://medium.com/@iojs_fr'}} ou {{link 'Twitter' 'https://twitter.com/iojs_fr'}}"
   },
+  "releases": {
+    "title": "Toutes les versions de io.js",
+    "downloads": "Téléchargements"
+  },
   "links": {
     "nodejs": "Node.js™",
     "npm": "npm",
