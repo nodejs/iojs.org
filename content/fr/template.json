@@ -10,5 +10,29 @@
   "org-link":"Organisation GitHub",
   "irc-link":"Chat IRC",
   "irc-logs-link":"Logs",
-  "gov-link":"Gouvernance"
+  "gov-link":"Gouvernance",
+  "downloads": {
+    "all": "Autres"
+  },
+  "verbose_version": "Version {{project.current_version}}",
+  "home": {
+    "download_links": "Télécharger pour {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "Les {{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} sont disponibles pour des tests.",
+    "short_description": "{{link 'website'}} est une plateforme compatible avec {{link 'npm'}} et basée sur {{link 'nodejs'}}.",
+    "slogan": "{{link 'pages.es6'}} pour la communauté Node!",
+    "news_link": "Dernières nouvelles: {{link 'Medium' 'https://medium.com/@iojs_fr'}} ou {{link 'Twitter' 'https://twitter.com/iojs_fr'}}"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Changelog",
+      "home": "Accueil",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Foire aux questions"
+    }
+  }
 }
