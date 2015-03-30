@@ -17,7 +17,13 @@
     <p class="home-download-list">
       {{hb 'home.download_links'}}
     </p>
-    <p>{{link 'pages.changelog'}}</p>
+    <p>
+    {{#if i18n.home.custom_changelog}}
+      {{hb 'home.custom_changelog'}}
+    {{~^~}}
+      {{link 'pages.changelog'}}
+    {{/if}}
+    </p>
   </div>
 </div>
 

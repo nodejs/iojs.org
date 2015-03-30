@@ -38,7 +38,7 @@
 <p>io.js 1.6.2 集成了 V8 4.1.0.25 版本，其中包含的 ES6 特性远超 joyent/node@0.12.x 集成的 3.26.33 版本所包含的。</p>
 <h2>干掉 --harmony</h2>
 <p>在 joyent/node@0.12.x (V8 3.26) 版本中，<code>--harmony</code> 运行时参数会一并开启所有 <strong>已完成</strong>，<strong>待完成</strong> 和 <strong>修订中</strong> 的 ES6 的一大堆特性 (除了 <code>typeof</code> 的非标准/不确定的特性需要通过 <code>--harmony-typeof</code> 开启之外)。这就意味着一些真正鸡肋甚至废弃的特性，譬如 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> 都会像 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> 那样开放给开发者，它们很偏门，甚至缺少相关资料。因此，最好的做法是，要么通过加特定参数(例如 <code>--harmony-generators</code>) 开启稳定的特性，要么直接开启全部但严格地使用特定部分特性。</p>
-<p>使用 io.js@1.x (V8 4.1+)，妈妈再也不担心我了。所有的特性在逻辑上被分为 <strong>已完成</strong>，<strong>待完成</strong> 和 <strong>修订中</strong> 三部分：</p>
+<p>使用 io.js@1.x (V8 4.1+)，就没那么复杂了。所有的特性在逻辑上被分为 <strong>已完成</strong>，<strong>待完成</strong> 和 <strong>修订中</strong> 三部分：</p>
 <ul>
 <li>所有 <strong>已完成</strong> 的特性，都是在 V8 中被认为已经稳定的，例如 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>，<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">模板</a>，<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">新增的字符串方法</a>等都会在 <strong>io.js 中默认开启</strong>，并且<strong>不需要</strong>加任何运行时参数。</li>
 <li>再就是 <strong>待完成</strong> 的特性。<strong>待完成</strong> 的特性都是基本完成但未经充分测试的，或者更新为最新的特性，因此 V8 团队认为这些是不稳定的 (可能有些坑没被覆盖到)，就像 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> 在 3.26 版本中的状态。我们提供了类似“自担风险”的功能。你需要加入参数：<code>--es_staging</code> (或者别名，<code>--harmony</code>)。</li>
@@ -136,7 +136,7 @@
     </nav>
   </footer>
 
-  <!-- See something you like? Want to help? Visit https://github.com/iojs/website to contribute  -->
+  <!-- See something you like? Want to help? Visit https://github.com/iojs/iojs-cn to contribute  -->
 </body>
 
 </html>
