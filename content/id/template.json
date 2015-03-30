@@ -27,6 +27,10 @@
     "slogan": "Membawa {{link 'pages.es6'}} ke Komunitas Node!",
     "news_link": "{{link 'Update Mingguan – 20 Maret' 'https://medium.com/@iojs_id/io-js-pekan-20-maret-b759c1fc04a'}} <small>menampilkan update dari inti dan komunitas ({{link 'Medium' 'https://medium.com/@iojs_id/io-js-pekan-20-maret-b759c1fc04a'}})</small>"
   },
+  "releases": {
+    "title": "Sejarah Perilisan io.js",
+    "downloads": "Unduhan"
+  },
   "links": {
     "nodejs": "Node.js™",
     "npm": "npm",
