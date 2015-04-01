@@ -17,5 +17,31 @@
     "win64": "Win64",
     "mac": "Mac",
     "all": "Others"
+  },
+  "verbose_version": "Version {{project.current_version}}",
+  "home": {
+    "download_links": "Download for {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'ナイトリーリリース版' 'https://iojs.org/download/nightly/'}} のダウンロードも可能です。",
+    "short_description": "{{link 'website'}} は、 {{link 'nodejs'}}をベースに作られた{{link 'npm'}} 互換プラットフォームです。",
+    "slogan": "{{link 'pages.es6'}} をNodeコミュニティへ！",
+    "news_link": "{{link 'Weekly Update – March 27th' 'http://blog.iojs.jp/2015-03-27.html'}} <small>コア機能とコミュニティのアップデートはこちら ({{link 'blog.iojs.jp' 'http://blog.iojs.jp/2015-03-27.html'}})</small>"
+  },
+  "releases": {
+    "title": "io.js リリース履歴",
+    "downloads": "ダウンロード"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "変更点",
+      "releases": "リリース",
+      "home": "Home",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "よくある質問"
+    }
   }
 }
