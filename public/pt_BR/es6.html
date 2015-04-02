@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>io.js - JavaScript I/O</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="x-ua-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
   <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
@@ -35,7 +35,7 @@
   <div class="content content--body clearfix">
     <h1>ES6 no io.js</h1>
 <p>O io.js é construído usando versões modernas do <a href="https://code.google.com/p/v8/">V8</a>. Mantendo-nos atualizados com as últimas versões desta engine, garantimos que novas funcionalidades da <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">especificação JavaScript ECMA-262</a> são trazidas para desenvolvedores io.js rapidamente, além de manter performance continuada e melhorias de estabilidade.</p>
-<p>A versão 1.6.2 do io.js vem com o V8 4.1.0.25, que inclui funcionalidades do ES6 bem além da versão 3.26.33 que vem com o joyent/node@0.12.x.</p>
+<p>A versão 1.6.3 do io.js vem com o V8 4.1.0.27, que inclui funcionalidades do ES6 bem além da versão 3.26.33 que vem com o joyent/node@0.12.x.</p>
 <h2>Não mais flag --harmony</h2>
 <p>No joyent/node@0.12.x (V8 3.26), a flag de runtime <code>--harmony</code> habilitava todas funcionalidades ES6 <strong>completas</strong>, <strong>em teste</strong> e <strong>em progresso</strong> juntas, de uma vez só (com a exceção de semânticas não padrão/não harmoniosas para <code>typeof</code> que estavam escondidas sob <code>--harmony-typeof</code>). Isto significava que algumas funcionalidades realmente bugadas ou mesmo quebradas como os <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> estavam prontamente disponíveis para desenvolvedores como os <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, que tinham poucos ou mesmo nenhuma issue conhecida. Portanto, era uma boa prática ou habilitar apenas certas funcionalidades usando flags de runtime harmony para funcionalidades específicas (por ex. <code>--harmony-generators</code>), ou simplesmente habilitar tudo e depois usar apenas um subconjunto restrito.</p>
 <p>Com o io.js@1.x (V8 4.1+), toda esta complexidade vai embora. Todas as funcionalidades harmony agora estão logicamente divididas em três grupos para funcionalidades <strong>entregues</strong>, <strong>sob testes</strong> e <strong>em progresso</strong>:</p>

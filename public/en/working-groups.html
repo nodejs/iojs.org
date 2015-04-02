@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>io.js - JavaScript I/O</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="x-ua-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
   <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
@@ -47,7 +47,18 @@ think it would benefit from being done as an autonomous project.</p>
 Group should be dissolved and the responsibility for governance absorbed
 back in to the TC.</p>
 <h2>Current Working Groups</h2>
-<h3>Website</h3>
+<ul>
+<li><a href="#website">Website</a></li>
+<li><a href="#streams">Streams</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#tracing">Tracing</a></li>
+<li><a href="#i18n">i18n</a></li>
+<li><a href="#evangelism">Evangelism</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#starting-a-wg">Starting a Working Group</a></li>
+<li><a href="#bootstrap-governance">Bootstrap Governance</a></li>
+</ul>
+<h3><a href="https://github.com/iojs/website">Website</a></h3>
 <p>The website working group's purpose is to build and maintain a public
 website for the <code>io.js</code> project.</p>
 <p>Its responsibilities are:</p>
@@ -57,9 +68,7 @@ website for the <code>io.js</code> project.</p>
 releases and features.</li>
 <li>Foster and enable a community of translators.</li>
 </ul>
-<p>The current members can be found in their
-<a href="https://github.com/iojs/website#current-project-team-members">README</a>.</p>
-<h3>Streams</h3>
+<h3><a href="https://github.com/iojs/readable-stream">Streams</a></h3>
 <p>The Streams WG is dedicated to the support and improvement of the Streams API
 as used in io.js and the npm ecosystem. We seek to create a composable API that
 solves the problem of representing multiple occurrences of an event over time
@@ -76,19 +85,7 @@ responsibilities include:</p>
 <li>Recommending versions of readable-stream to be included in io.js.</li>
 <li>Messaging about the future of streams to give the community advance notice of changes.</li>
 </ul>
-<p>Initial members are:</p>
-<ul>
-<li>@chrisdickinson</li>
-<li>@isaacs</li>
-<li>@rvagg</li>
-<li>@Raynos</li>
-<li>@calvinmetcalf</li>
-<li>@sonewman</li>
-<li>@mafintosh</li>
-<li>@timgestson</li>
-<li>@domenic</li>
-</ul>
-<h3>Build</h3>
+<h3><a href="https://github.com/iojs/build">Build</a></h3>
 <p>The build working group's purpose is to create and maintain a
 distributed automation infrastructure.</p>
 <p>Its responsibilities are:</p>
@@ -99,21 +96,17 @@ distributed automation infrastructure.</p>
 <li>Creates and manages official docker images.</li>
 <li>Creates and manages build-containers.</li>
 </ul>
-<p>The current members can be found in their
-<a href="https://github.com/iojs/build#people">README</a>.</p>
-<h3>Tracing</h3>
+<h3><a href="https://github.com/iojs/tracing-wg">Tracing</a></h3>
 <p>The tracing working group's purpose is to increase the
 transparency of software written in io.js.</p>
 <p>Its responsibilities are:</p>
 <ul>
 <li>Collaboration with V8 to integrate with <code>trace_event</code>.</li>
-<li>Maintinence and iteration on AsyncWrap.</li>
-<li>Maintinence and improvements to system tracing support (DTrace, LTTng, etc).</li>
-<li>Documention of tracing and debugging techniques.</li>
+<li>Maintenance and iteration on AsyncWrap.</li>
+<li>Maintenance and improvements to system tracing support (DTrace, LTTng, etc.)</li>
+<li>Documentation of tracing and debugging techniques.</li>
 <li>Fostering a tracing and debugging ecosystem.</li>
 </ul>
-<p>The current members can be found in their
-<a href="https://github.com/iojs/tracing-wg#people">README</a>.</p>
 <h3>i18n</h3>
 <p>The i18n working groups handle more than just translations. They
 are endpoints for community members to collaborate with each
@@ -123,7 +116,7 @@ language community might then produce multiple localizations for
 various project resources.</p>
 <p>Their responsibilities are:</p>
 <ul>
-<li>Translation of any io.js materials they believe are relevant to their
+<li>Translations of any io.js materials they believe are relevant to their
 community.</li>
 <li>Review processes for keeping translations up
 to date and of high quality.</li>
@@ -131,42 +124,44 @@ to date and of high quality.</li>
 <li>Promotion of io.js speakers for meetups and conferences in their
 language.</li>
 </ul>
-<p>Membership is maintained by each language community.</p>
+<p>Each language community maintains its own membership.</p>
 <ul>
-<li><a href="http://github.com/iojs/iojs-bg">iojs-bg</a></li>
-<li><a href="http://github.com/iojs/iojs-bn">iojs-bn</a></li>
-<li><a href="http://github.com/iojs/iojs-cn">iojs-cn</a></li>
-<li><a href="http://github.com/iojs/iojs-cs">iojs-cs</a></li>
-<li><a href="http://github.com/iojs/iojs-da">iojs-da</a></li>
-<li><a href="http://github.com/iojs/iojs-de">iojs-de</a></li>
-<li><a href="http://github.com/iojs/iojs-el">iojs-el</a></li>
-<li><a href="http://github.com/iojs/iojs-es">iojs-es</a></li>
-<li><a href="http://github.com/iojs/iojs-fa">iojs-fa</a></li>
-<li><a href="http://github.com/iojs/iojs-fi">iojs-fi</a></li>
-<li><a href="http://github.com/iojs/iojs-fr">iojs-fr</a></li>
-<li><a href="http://github.com/iojs/iojs-he">iojs-he</a></li>
-<li><a href="http://github.com/iojs/iojs-hi">iojs-hi</a></li>
-<li><a href="http://github.com/iojs/iojs-hu">iojs-hu</a></li>
-<li><a href="http://github.com/iojs/iojs-id">iojs-id</a></li>
-<li><a href="http://github.com/iojs/iojs-it">iojs-it</a></li>
-<li><a href="http://github.com/iojs/iojs-ja">iojs-ja</a></li>
-<li><a href="http://github.com/iojs/iojs-ka">iojs-ka</a></li>
-<li><a href="http://github.com/iojs/iojs-ko">iojs-ko</a></li>
-<li><a href="http://github.com/iojs/iojs-mk">iojs-mk</a></li>
-<li><a href="http://github.com/iojs/iojs-nl">iojs-nl</a></li>
-<li><a href="http://github.com/iojs/iojs-no">iojs-no</a></li>
-<li><a href="http://github.com/iojs/iojs-pl">iojs-pl</a></li>
-<li><a href="http://github.com/iojs/iojs-pt">iojs-pt</a></li>
-<li><a href="http://github.com/iojs/iojs-ro">iojs-ro</a></li>
-<li><a href="http://github.com/iojs/iojs-ru">iojs-ru</a></li>
-<li><a href="http://github.com/iojs/iojs-sv">iojs-sv</a></li>
-<li><a href="http://github.com/iojs/iojs-ta">iojs-ta</a></li>
-<li><a href="http://github.com/iojs/iojs-tr">iojs-tr</a></li>
-<li><a href="http://github.com/iojs/iojs-tw">iojs-tw</a></li>
-<li><a href="http://github.com/iojs/iojs-uk">iojs-uk</a></li>
-<li><a href="http://github.com/iojs/iojs-vi">iojs-vi</a></li>
+<li><a href="http://github.com/iojs/iojs-ar">iojs-ar - Arabic (اللغة العربية)</a></li>
+<li><a href="http://github.com/iojs/iojs-bg">iojs-bg - Bulgarian (български език)</a></li>
+<li><a href="http://github.com/iojs/iojs-bn">iojs-bn - Bengali (বাংলা)</a></li>
+<li><a href="http://github.com/iojs/iojs-cn">iojs-cn - Chinese (中文)</a></li>
+<li><a href="http://github.com/iojs/iojs-cs">iojs-cs - Czech (Český Jazyk)</a></li>
+<li><a href="http://github.com/iojs/iojs-da">iojs-da - Danish (Dansk)</a></li>
+<li><a href="http://github.com/iojs/iojs-de">iojs-de - German (Deutsch)</a></li>
+<li><a href="http://github.com/iojs/iojs-el">iojs-el - Greek (Ελληνικά)</a></li>
+<li><a href="http://github.com/iojs/iojs-es">iojs-es - Spanish (Español)</a></li>
+<li><a href="http://github.com/iojs/iojs-fa">iojs-fa - Persian (فارسی)</a></li>
+<li><a href="http://github.com/iojs/iojs-fi">iojs-fi - Finnish (Suomi)</a></li>
+<li><a href="http://github.com/iojs/iojs-fr">iojs-fr - French (Français)</a></li>
+<li><a href="http://github.com/iojs/iojs-he">iojs-he - Hebrew (עברית)</a></li>
+<li><a href="http://github.com/iojs/iojs-hi">iojs-hi - Hindi (फिजी बात)</a></li>
+<li><a href="http://github.com/iojs/iojs-hu">iojs-hu - Hungarian (Magyar)</a></li>
+<li><a href="http://github.com/iojs/iojs-id">iojs-id - Indonesian (Bahasa Indonesia)</a></li>
+<li><a href="http://github.com/iojs/iojs-it">iojs-it - Italian (Italiano)</a></li>
+<li><a href="http://github.com/iojs/iojs-ja">iojs-ja - Japanese (日本語)</a></li>
+<li><a href="http://github.com/iojs/iojs-ka">iojs-ka - Georgian (ქართული)</a></li>
+<li><a href="http://github.com/iojs/iojs-ko">iojs-ko - Korean (조선말)</a></li>
+<li><a href="http://github.com/iojs/iojs-mk">iojs-mk - Macedonian (Mакедонски)</a></li>
+<li><a href="http://github.com/iojs/iojs-ms">iojs-ms - Malay (بهاس ملايو)</a></li>
+<li><a href="http://github.com/iojs/iojs-nl">iojs-nl - Dutch (Nederlands)</a></li>
+<li><a href="http://github.com/iojs/iojs-no">iojs-no - Norwegian (Norsk)</a></li>
+<li><a href="http://github.com/iojs/iojs-pl">iojs-pl - Polish (Język Polski)</a></li>
+<li><a href="http://github.com/iojs/iojs-pt">iojs-pt - Portuguese (Português)</a></li>
+<li><a href="http://github.com/iojs/iojs-ro">iojs-ro - Romanian (Română)</a></li>
+<li><a href="http://github.com/iojs/iojs-ru">iojs-ru - Russian (Русский)</a></li>
+<li><a href="http://github.com/iojs/iojs-sv">iojs-sv - Swedish (Svenska)</a></li>
+<li><a href="http://github.com/iojs/iojs-ta">iojs-ta - Tamil (தமிழ்)</a></li>
+<li><a href="http://github.com/iojs/iojs-tr">iojs-tr - Turkish (Türkçe)</a></li>
+<li><a href="http://github.com/iojs/iojs-tw">iojs-tw - Taiwanese (Hō-ló)</a></li>
+<li><a href="http://github.com/iojs/iojs-uk">iojs-uk - Ukrainian (Українська)</a></li>
+<li><a href="http://github.com/iojs/iojs-vi">iojs-vi - Vietnamese (Tiếng Việtnam)</a></li>
 </ul>
-<h3>Evangelism</h3>
+<h3><a href="https://github.com/iojs/evangelism">Evangelism</a></h3>
 <p>The evangelism working group promotes the accomplishments
 of io.js and lets the community know how they can get involved.</p>
 <p>Their responsibilities are:</p>
@@ -178,9 +173,7 @@ of io.js and lets the community know how they can get involved.</p>
 <li>Publishing regular update summaries and other promotional
 content.</li>
 </ul>
-<p>The current members can be found in their
-<a href="https://github.com/iojs/evangelism#people">README</a>.</p>
-<h3>Roadmap</h3>
+<h3><a href="https://github.com/iojs/roadmap">Roadmap</a></h3>
 <p>The roadmap working group is responsible for user community outreach
 and the translation of their concerns into a plan of action for io.js.</p>
 <p>The final <a href="./ROADMAP.md">ROADMAP</a> document is still owned by the TC and requires
@@ -191,15 +184,13 @@ the same approval for changes as any other project asset.</p>
 <li>Find or potentially create tools that allow for broader participation.</li>
 <li>Create Pull Requests for relevant changes to <a href="./ROADMAP.md">Roadmap.md</a></li>
 </ul>
-<p>The current members can be found in their
-<a href="https://github.com/iojs/roadmap#people">README</a>.</p>
 <h2>Starting a WG</h2>
 <p>A Working Group is established by first defining a charter  that can be
 ratified by the TC. A charter is a <em>statement of purpose</em>, a
 <em>list of responsibilities</em> and a <em>list of initial membership</em>.</p>
 <p>A working group needs 3 initial members. These should be individuals
 already undertaking the work described in the charter.</p>
-<p>The list of responsibilities should be specific. Once established these
+<p>The list of responsibilities should be specific. Once established, these
 responsibilities are no longer governed by the TC and therefore should
 not be broad or subjective. The only recourse the TC has over the working
 group is to revoke the entire charter and take on the work previously
@@ -208,7 +199,7 @@ done by the working group themselves.</p>
 undertaken by another WG then the charter will additionally have to be
 ratified by that WG.</p>
 <p>You can submit the WG charter for ratification by sending
-a Pull Request to this document which adds it to the
+a Pull Request to this document, which adds it to the
 list of current Working Groups. Once ratified the list of
 members should be maintained in the Working Group's
 README.</p>
@@ -219,7 +210,7 @@ LICENSE. The WG is free to change these documents through their own
 governance process, hence the term &quot;bootstrap.&quot;</p>
 <h3><em>[insert WG name]</em> Working Group</h3>
 <p>The io.js <em>[insert WG name]</em> is jointly governed by a Working Group (WG)
-which is responsible for high-level guidance of the project.</p>
+that is responsible for high-level guidance of the project.</p>
 <p>The WG has final authority over this project including:</p>
 <ul>
 <li>Technical direction</li>
@@ -286,13 +277,13 @@ the WG membership shares an employer, then the situation must be
 immediately remedied by the resignation or removal of one or more WG
 members affiliated with the over-represented employer(s).</p>
 <h3>WG Meetings</h3>
-<p>The WG meets weekly on a Google Hangout On Air. The meeting is run by
-a designated moderator approved by the WG. Each meeting should be
+<p>The WG meets weekly on a Google Hangout On Air. A designated moderator
+approved by the WG runs the meeting. Each meeting should be
 published to YouTube.</p>
-<p>Items are added to the WG agenda which are considered contentious or
+<p>Items are added to the WG agenda that are considered contentious or
 are modifications of governance, contribution policy, WG membership,
 or release process.</p>
-<p>The intention of the agenda is not to approve or review all patches,
+<p>The intention of the agenda is not to approve or review all patches;
 that should happen continuously on GitHub and be handled by the larger
 group of Collaborators.</p>
 <p>Any community member or contributor can ask that something be added to
@@ -306,11 +297,11 @@ cannot veto or remove items.</p>
 <p>The WG may invite persons or representatives from certain projects to
 participate in a non-voting capacity.</p>
 <p>The moderator is responsible for summarizing the discussion of each
-agenda item and send it as a pull request after the meeting.</p>
+agenda item and sends it as a pull request after the meeting.</p>
 <h3>Consensus Seeking Process</h3>
 <p>The WG follows a
 <a href="http://en.wikipedia.org/wiki/Consensus-seeking_decision-making">Consensus Seeking</a>
-decision making model.</p>
+decision-making model.</p>
 <p>When an agenda item has appeared to reach a consensus the moderator
 will ask &quot;Does anyone object?&quot; as a final call for dissent from the
 consensus.</p>

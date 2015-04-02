@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>io.js - JavaScript I/O</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="x-ua-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
   <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
@@ -35,7 +35,7 @@
   <div class="content content--body clearfix">
     <h1>ES6 ja io.js</h1>
 <p>io.js nojaa tuoreisiin <a href="https://code.google.com/p/v8/">V8</a>:n versioihin. Pysymällä ajan tasalla viimeisimpien versioiden kanssa varmistetaan sekä uusimpien <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> ominaisuuksien, että suorituskykyyn ja vakauteen liittyvien parannusten nopea saapuminen kehittäjien ulottuville.</p>
-<p>io.js:n versio 1.6.2 sisältää V8 version 4.1.0.25, mikä ES6:n osalta ylittää tuntuvasti ominaisuuksiltaan version 3.28.72 mikä sisältyy Node.js™ 0.12.x-versioihin.</p>
+<p>io.js:n versio 1.6.3 sisältää V8 version 4.1.0.27, mikä ES6:n osalta ylittää tuntuvasti ominaisuuksiltaan version 3.28.72 mikä sisältyy Node.js™ 0.12.x-versioihin.</p>
 <h2>Ei enää --harmony lippua</h2>
 <p>Node.js™@0.12.x (V8 3.28+) ajonaikainen <code>--harmony</code>-lippu aktivoi kaikki <strong>valmiit</strong>, <strong>koekäyttövaiheen</strong> ja <strong>kehitysvaiheen</strong> ES6-ominaisuudet (poikkeuksena <code>proxies</code>, joille on oma <code>--harmony-proxies</code>-lippunsa). Toisin sanoen jotkin bugiset tai jopa rikkinäiset ominaisuudet kuten <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a> on yhtä lailla käytettävissä kuin <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, millä on vähän tai ei yhtään tunnettuja ongelmia. Usein kehittäjät ottavat käyttöön vain tiettyjä ominaisuuksia käyttämällä täsmällisiä ajonaikaisia ominaisuuslippuja (esim. <code>--harmony-generators</code>), tai yksinkertaisesti ottavat kaiken käyttöön ja pitäytyvät käytössään rajatussa osassa.</p>
 <p>io.js@1.8 (V8 4.1+) myötä nuo hankaluudet poistuvat. Kaikki harmonyn ominaisuudet on nyt loogisesti jaoteltu kolmeen ryhmään, eli <strong>valmiisiin</strong>, <strong>koekäyttövaiheen</strong> ja <strong>kehitysvaiheen</strong> ominaisuuksiin:</p>

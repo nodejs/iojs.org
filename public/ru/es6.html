@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>io.js - JavaScript I/O</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="x-ua-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
   <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
@@ -35,7 +35,7 @@
   <div class="content content--body clearfix">
     <h1>ES6 в io.js</h1>
 <p>В основе io.js стоит современная версия <a href="https://code.google.com/p/v8/">V8</a>. Придерживаясь самых последних версий этого движка, мы гарантируем, что новые возможности <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">спецификации JavaScript ECMA-262</a> станут доступны разработчикам io.js своевременно, а вместе с ними и улучшения, связанные с производительностью и стабильностью.</p>
-<p>Версия io.js 1.6.2 основана на версии V8 4.1.0.25, которая включает в себя гораздо больше возможностей ES6 в отличие от версии 3.28.73, на которой основан joyent/node@0.12.x</p>
+<p>Версия io.js 1.6.3 основана на версии V8 4.1.0.27, которая включает в себя гораздо больше возможностей ES6 в отличие от версии 3.28.73, на которой основан joyent/node@0.12.x</p>
 <h2>Теперь без флага --harmony</h2>
 <p>В joyent/node@0.12.x (V8 3.28) флаг <code>--harmony</code> включает все <strong>completed</strong>, <strong>staged</strong> и <strong>in progress</strong> возможности ES6 одновременно, (исключая нестандартную семантику для <code>typeof</code>, которая скрыта за флагом <code>--harmony-typeof</code>). Это означает, что некоторые содержащие множество ошибок возможности, такие как <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">прокси</a>, одинаково доступны для разработчиков как и, например, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">генераторы</a>, которые имеют очень мало или вообще не имеют известных проблем. Поэтому, хорошей практикой было бы либо включать только конкретные возможности, используя определенные флаги harmony (например <code>--harmony-generators</code>), или включить все, но использовать ограниченное их подмножество.</p>
 <p>В io.js@1.x (V8 4.1+) исчезает любая сложность. Все возможности спецификации логически разделены на три группы — <strong>shipping</strong>, <strong>staged</strong> и <strong>in progress</strong>:</p>
