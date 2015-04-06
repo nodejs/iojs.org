@@ -35,7 +35,7 @@
   <div class="content content--body clearfix">
     <h1>io.js 运行 ES6</h1>
 <p>io.js 是基于 <a href="https://code.google.com/p/v8/">V8</a> 引擎的较新版本构建的。通过持续跟进最新版的 V8 引擎，我们可以保证及时地为开发者带来最新的 <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 规范</a> 中的语言特性，同时也能得到性能和稳定性的提升。</p>
-<p>io.js 1.6.3 集成了 V8 4.1.0.27 版本，其中包含的 ES6 特性远超 joyent/node@0.12.x 集成的 3.26.33 版本所包含的。</p>
+<p>io.js 1.6.4 集成了 V8 4.1.0.27 版本，其中包含的 ES6 特性远超 joyent/node@0.12.x 集成的 3.26.33 版本所包含的。</p>
 <h2>干掉 --harmony</h2>
 <p>在 joyent/node@0.12.x (V8 3.26) 版本中，<code>--harmony</code> 运行时参数会一并开启所有 <strong>已完成</strong>，<strong>待完成</strong> 和 <strong>修订中</strong> 的 ES6 的一大堆特性 (除了 <code>typeof</code> 的非标准/不确定的特性需要通过 <code>--harmony-typeof</code> 开启之外)。这就意味着一些真正鸡肋甚至废弃的特性，譬如 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> 都会像 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> 那样开放给开发者，它们很偏门，甚至缺少相关资料。因此，最好的做法是，要么通过加特定参数(例如 <code>--harmony-generators</code>) 开启稳定的特性，要么直接开启全部但严格地使用特定部分特性。</p>
 <p>使用 io.js@1.x (V8 4.1+)，就没那么复杂了。所有的特性在逻辑上被分为 <strong>已完成</strong>，<strong>待完成</strong> 和 <strong>修订中</strong> 三部分：</p>
