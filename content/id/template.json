@@ -25,7 +25,7 @@
     "nightly_releases": "{{link 'Rilis setiap malam (Nightly)' 'https://iojs.org/download/nightly/'}} tersedia untuk pengujian.",
     "short_description": "{{link 'website'}} adalah sebuah platform {{link 'npm'}} yang kompatibel dengan {{link 'nodejs'}}.",
     "slogan": "Membawa {{link 'pages.es6'}} ke Komunitas Node!",
-    "news_link": "{{link 'Update Mingguan – 27 Maret' 'https://medium.com/@iojs_id/io-js-pekan-27-maret-1cc953495b2'}} <small>menampilkan update dari inti dan komunitas ({{link 'Medium' 'https://medium.com/@iojs_id/io-js-pekan-27-maret-1cc953495b2'}})</small>"
+    "news_link": "{{link 'Update Mingguan – 3 April' 'https://medium.com/@iojs_id/io-js-pekan-3-april-4cc818e9a32e'}} <small>menampilkan update dari inti dan komunitas ({{link 'Medium' 'https://medium.com/@iojs_id/io-js-pekan-3-april-4cc818e9a32e'}})</small>"
   },
   "releases": {
     "title": "Sejarah Perilisan io.js",
