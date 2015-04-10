@@ -45,5 +45,13 @@ would like to contribute to the translation of iojs.org, please refer to the fol
     * `faq.md` (this contains markdown for the faq page)
     * `es6.md` (this contains markdown for the ES6 explanation page)
     * Any additional md files that are to be added can be done here, and will be dynamically generated into html using the template.
+* Prefix your PR with the localization group's name (e.g. `iojs-no`). If you are only translating one of the above files, please mention them in your PR's subject as well, e.g.:
+```
+    iojs-de: Add files - index.md, faq.md
+    iojs-pt: Add files - 15 files
+
+    iojs-fr: Update files - es6.md
+    iojs-ja: Update files - all files
+```
 * Do not make language specific changes to layout or styling in a translation PR. If they are needed, make a separate styling/layout pr and chat with one of the website WG about the change. We want to make sure, for example, a Chinese layout change doesn't cascade failure to the German page.
 * To be merged, translation PR's require a Website WG +1 and a +1 from another native speaker in your language. Make sure whoever you have review the PR adds a +1 in the comments of it so we know it is translated properly.
