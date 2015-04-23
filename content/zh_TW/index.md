@@ -2,7 +2,7 @@
 
 讓 [ES6](es6.html) 走入 Node.js 社群！
 
-[io.js](https://github.com/iojs/io.js) 是一個與 [npm](https://www.npmjs.org/) 相容並以 [node.js](https://nodejs.org/)&#8482; 為基礎的應用程式平台。
+[io.js](https://github.com/iojs/io.js) 是一個與 [npm](https://www.npmjs.com/) 相容並以 [node.js](https://nodejs.org/)&#8482; 為基礎的應用程式平台。
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 

@@ -2,7 +2,7 @@
 
 [ES6](es6.html)를 노드 커뮤니티에!
 
-[io.js](https://github.com/iojs/io.js)는 [node.js](https://nodejs.org/)&#8482;를 기반으로 만든 [npm](https://www.npmjs.org/) 호환 플랫폼이다.
+[io.js](https://github.com/iojs/io.js)는 [node.js](https://nodejs.org/)&#8482;를 기반으로 만든 [npm](https://www.npmjs.com/) 호환 플랫폼이다.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 

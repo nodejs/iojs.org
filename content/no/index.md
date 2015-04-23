@@ -2,7 +2,7 @@
 
 Bringer [ES6](es6.html) til Node-fellesskapet!
 
-[io.js](https://iojs.org)  er en [npm](https://www.npmjs.org)-kompatibel
+[io.js](https://iojs.org)  er en [npm](https://www.npmjs.com)-kompatibel
 platform opprinnelig basert på [node.js](https://nodejs.org/)&#8482;.
 
 [![io.js](/images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)

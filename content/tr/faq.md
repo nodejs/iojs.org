@@ -2,7 +2,7 @@
 
 ## İo.js nedir?
 
-[io.js](https://github.com/iojs/io.js) [Chrome V8](http://code.google.com/p/v8/) üzerine inşa edilmiş bir Javascript platformudur. Proje [Joyent's Node.js™](https://nodejs.org/) klonu ve [npm](https://www.npmjs.org/) ekosistemiyle uyumlu çalışmaktadır.
+[io.js](https://github.com/iojs/io.js) [Chrome V8](http://code.google.com/p/v8/) üzerine inşa edilmiş bir Javascript platformudur. Proje [Joyent's Node.js™](https://nodejs.org/) klonu ve [npm](https://www.npmjs.com/) ekosistemiyle uyumlu çalışmaktadır.
 
 ## Neden?
 

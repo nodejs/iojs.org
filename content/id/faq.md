@@ -2,7 +2,7 @@
 
 ## Apa io.js?
 
-[io.js](https://github.com/iojs/io.js) adalah platform JavaScript dibangun di atas [V8 runtime Chrome](http://code.google.com/p/v8/). Proyek ini dimulai sebagai sebuah cabang dari [Joyent di Node.js ™](https://nodejs.org/) dan kompatibel dengan ekosistem [NPM](https://www.npmjs.org/).
+[io.js](https://github.com/iojs/io.js) adalah platform JavaScript dibangun di atas [V8 runtime Chrome](http://code.google.com/p/v8/). Proyek ini dimulai sebagai sebuah cabang dari [Joyent di Node.js ™](https://nodejs.org/) dan kompatibel dengan ekosistem [NPM](https://www.npmjs.com/).
 
 Mengapa? io.js bertujuan untuk memberikan siklus rilis lebih cepat dan dapat diprediksi. Saat ini menyatu dalam API dan perbaikan kinerja versi terbaru untuk V8 dan juga memperbarui [libuv](https://github.com/libuv/libuv) dan *library* dasar lainnya.
 

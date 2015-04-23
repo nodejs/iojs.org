@@ -2,7 +2,7 @@
 
 ## io.js란?
 
-[io.js](https://github.com/iojs/io.js)는 [Chrome의 V8 런타임](http://code.google.com/p/v8/) 위에서 만들어진 JavaScript 플랫폼이다. [Joyent의 Node.js™](https://nodejs.org/)의 포크로 시작해, [npm](https://www.npmjs.org/) 환경과 호환하고 있다.
+[io.js](https://github.com/iojs/io.js)는 [Chrome의 V8 런타임](http://code.google.com/p/v8/) 위에서 만들어진 JavaScript 플랫폼이다. [Joyent의 Node.js™](https://nodejs.org/)의 포크로 시작해, [npm](https://www.npmjs.com/) 환경과 호환하고 있다.
 
 ## 왜?
 

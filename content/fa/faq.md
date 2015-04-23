@@ -4,7 +4,7 @@
 
 ## io.js چیست؟
 
-[io.js](https://github.com/iojs/io.js) یک سکوی جاوااسکریپت ساخته‌شده بر روی [V8 runtime کروم](http://code.google.com/p/v8/) است. این پروژه به عنوان یک انشعاب از [Node.js™ (متعلق به شرکت Joyent)](https://nodejs.ir/) آغاز شده و با [npm](https://www.npmjs.org/) سازگار می‌باشد.
+[io.js](https://github.com/iojs/io.js) یک سکوی جاوااسکریپت ساخته‌شده بر روی [V8 runtime کروم](http://code.google.com/p/v8/) است. این پروژه به عنوان یک انشعاب از [Node.js™ (متعلق به شرکت Joyent)](https://nodejs.ir/) آغاز شده و با [npm](https://www.npmjs.com/) سازگار می‌باشد.
 
 ## چرا؟
 

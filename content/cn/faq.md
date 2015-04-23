@@ -2,7 +2,7 @@
 
 ## io.js 是什么？
 
-[io.js](https://github.com/iojs/io.js) 是基于 [Chrome's V8 运行环境](http://code.google.com/p/v8/) 的 JavaScript 平台。本项目基于 [Joyent的 Node.js™](https://nodejs.org/) 项目并继续开发，兼容 [npm](https://www.npmjs.org/) 生态系统。
+[io.js](https://github.com/iojs/io.js) 是基于 [Chrome's V8 运行环境](http://code.google.com/p/v8/) 的 JavaScript 平台。本项目基于 [Joyent的 Node.js™](https://nodejs.org/) 项目并继续开发，兼容 [npm](https://www.npmjs.com/) 生态系统。
 
 想知道为什么？io.js 能提供更短、可预测的发布周期。目前，它融合了最新的语言特性，API 和 V8 引擎的性能改进，并且会持续更新 libuv 和其他底层库。
 
