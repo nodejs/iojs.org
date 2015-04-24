@@ -20,7 +20,13 @@ project.links = {
     faq: './faq.html',
     faq_verbose: './faq.html',
     releases: './releases.html'
-  }
+  },
+  rss: [
+    {
+      title: 'Releases (GitHub)',
+      url: 'https://github.com/iojs/io.js/releases.atom'
+    }
+  ]
 };
 
 var baseURL = `https://iojs.org/dist`;
