@@ -25,7 +25,7 @@
     "nightly_releases": "{{link 'ナイトリーリリース版' 'https://iojs.org/download/nightly/'}} のダウンロードも可能です。",
     "short_description": "{{link 'website'}} は、 {{link 'nodejs'}}をベースに作られた{{link 'npm'}} 互換プラットフォームです。",
     "slogan": "{{link 'pages.es6'}} をNodeコミュニティへ！",
-    "news_link": "{{link 'Weekly Update – March 27th' 'http://blog.iojs.jp/2015-03-27.html'}} <small>コア機能とコミュニティのアップデートはこちら ({{link 'blog.iojs.jp' 'http://blog.iojs.jp/2015-03-27.html'}})</small>"
+    "news_link": "{{link 'Weekly Update – April 17th' 'http://blog.iojs.jp/2015-04-17.html'}} <small>コア機能とコミュニティのアップデートはこちら ({{link 'blog.iojs.jp' 'http://blog.iojs.jp/2015-04-17.html'}})</small>"
   },
   "releases": {
     "title": "io.js リリース履歴",
