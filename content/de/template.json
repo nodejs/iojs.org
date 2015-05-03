@@ -1,12 +1,46 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "logo-text":"io.js",
-  "faq-link":"FAQ",
-  "es6-link":"ES6",
-  "api-link":"API Docs",
-  "issues-link":"GitHub Issues",
-  "org-link":"GitHub Org",
-  "irc-link":"IRC Chat",
-  "irc-logs-link":"Logs",
-  "gov-link":"Governance"
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "See something you like? Want to help? Visit https://github.com/iojs/website to contribute",
+  "heading-languages": "Sprachen",
+  "logo-text": "io.js",
+  "faq-link": "FAQ",
+  "es6-link": "ES6",
+  "api-link": "API Docs",
+  "issues-link": "GitHub Issues",
+  "org-link": "GitHub Org",
+  "irc-link": "IRC Chat",
+  "irc-logs-link": "Logs",
+  "gov-link": "Governance",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "andere"
+  },
+  "verbose_version": "Version {{project.current_version}}",
+  "home": {
+    "download_links": "Herunterladen für {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} stehen zum Testen zur Verfügung.",
+    "short_description": "{{link 'website'}} ist eine {{link 'npm'}}-kompatible Plattform, die ursprünglich auf {{link 'nodejs'}} basiert.",
+    "slogan": "{{link 'pages.es6'}} für die Node-Community!"
+  },
+  "releases": {
+    "title": "io.js Release History",
+    "downloads": "Downloads"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Changelog",
+      "releases": "Releases",
+      "home": "Startseite",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Häufig gestellte Fragen"
+    }
+  }
 }
