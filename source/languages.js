@@ -18,5 +18,6 @@ module.exports = [
   {"code": "ru", "name": "Русский", "name-en": "Russian"},
   {"code": "tr", "name": "Türkçe", "name-en": "Turkish"},
   {"code": "uk", "name": "Українська", "name-en": "Ukrainian"},
-  {"code": "zh_TW", "name": "正體中文（台灣）", "name-en": "Chinese Traditional (Taiwan)"}
+  {"code": "zh_TW", "name": "正體中文（台灣）", "name-en": "Chinese Traditional (Taiwan)"},
+  {"code": "vi", "name" : " Tiếng Việt", "name-en" : "Vietnamese"}
 ]
