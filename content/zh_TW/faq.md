@@ -2,7 +2,7 @@
 
 ## 什麼是 io.js ？
 
-[io.js](https://github.com/iojs/io.js) 是一個以 [Chrome's V8 runtime](http://code.google.com/p/v8/) 為基礎的 JavaScript 應用程式開發平台，這個專案一開始是從 [Joyent's Node.js™](https://nodejs.org/) 分支出來的一個版本，完全與 [npm](https://www.npmjs.org/) 相容。
+[io.js](https://github.com/iojs/io.js) 是一個以 [Chrome's V8 runtime](http://code.google.com/p/v8/) 為基礎的 JavaScript 應用程式開發平台，這個專案一開始是從 [Joyent's Node.js™](https://nodejs.org/) 分支出來的一個版本，完全與 [npm](https://www.npmjs.com/) 相容。
 
 ## 為什麼這麼做呢？
 

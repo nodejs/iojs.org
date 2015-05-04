@@ -2,7 +2,7 @@
 
 ## Τι σημαίνει io.js;
 
-[io.js](https://github.com/iojs/io.js) είναι μία JavaScript πλατφόρμα, βασισμένη στο [V8 runtime του Chrome](http://code.google.com/p/v8/). Αυτό το πρότζεκτ ξεκίνησε σαν ένα fork του [Node.js™ της Joyent](https://nodejs.org/), και είναι συμβατό με το οικοσύστημα του [npm](https://www.npmjs.org/).
+[io.js](https://github.com/iojs/io.js) είναι μία JavaScript πλατφόρμα, βασισμένη στο [V8 runtime του Chrome](http://code.google.com/p/v8/). Αυτό το πρότζεκτ ξεκίνησε σαν ένα fork του [Node.js™ της Joyent](https://nodejs.org/), και είναι συμβατό με το οικοσύστημα του [npm](https://www.npmjs.com/).
 
 ## Γιατί;
 

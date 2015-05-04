@@ -2,7 +2,7 @@
 
 ## İo.js nedir?
 
-[io.js](https://github.com/iojs/io.js) [Chrome V8](http://code.google.com/p/v8/) üzerine inşa edilmiş bir Javascript platformudur. Proje [Joyent's Node.js™](https://nodejs.org/) klonu ve [npm](https://www.npmjs.org/) ekosistemiyle uyumlu çalışmaktadır.
+[io.js](https://github.com/iojs/io.js) [Chrome V8](http://code.google.com/p/v8/) üzerine inşa edilmiş bir Javascript platformudur. Proje [Joyent's Node.js™](https://nodejs.org/) klonu ve [npm](https://www.npmjs.com/) ekosistemiyle uyumlu çalışmaktadır.
 
 ## Neden?
 
@@ -15,7 +15,7 @@ Bu proje, io.js platformunun geliştirilmesine kurumsal yönetim şekline karş�
 io.js [Semver](http://semver.org/) versiyonlama şekline geçiş yaptı ve Node.js™ 0.10 ile io.js 1.0.0 arasındaki değişiklikler bir ana sürüm yükseltilmesini
 gerektirecek kadar önemliydi.
 
-Our [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) for v1.x provides a [summary of changes from Node.js v0.10.35 to io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+v1.x sürümleri için [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) dökümanı, [Node.js v0.10.35 ile io.js v1.0.x arasında ki değişiklikleri](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100) içermektedir.
 
 ## Nasıl Katkıda Bulunabilirim?
 

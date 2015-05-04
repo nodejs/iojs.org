@@ -11,7 +11,7 @@ project.languages = require('./languages.js');
 
 project.links = {
   nodejs: 'https://nodejs.org/',
-  npm: 'https://www.npmjs.org/',
+  npm: 'https://www.npmjs.com/',
   website: 'https://iojs.org/',
   pages: {
     changelog: 'https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md',
@@ -20,7 +20,13 @@ project.links = {
     faq: './faq.html',
     faq_verbose: './faq.html',
     releases: './releases.html'
-  }
+  },
+  rss: [
+    {
+      title: 'Releases (GitHub)',
+      url: 'https://github.com/iojs/io.js/releases.atom'
+    }
+  ]
 };
 
 var baseURL = `https://iojs.org/dist`;

@@ -2,7 +2,7 @@
 
 ## O que é o io.js?
 
-O [io.js](https://github.com/iojs/io.js) é uma plataforma JavaScript construída sob o [runtime do Chrome V8](http://code.google.com/p/v8/). Este projeto começou como um fork do [Node.js™ da Joyent](https://nodejs.org/) e é compatível com o ecossistema do [npm](https://www.npmjs.org/).
+O [io.js](https://github.com/iojs/io.js) é uma plataforma JavaScript construída sob o [runtime do Chrome V8](http://code.google.com/p/v8/). Este projeto começou como um fork do [Node.js™ da Joyent](https://nodejs.org/) e é compatível com o ecossistema do [npm](https://www.npmjs.com/).
 
 Porquê? O io.js procura disponibilizar ciclos de release mais rápidos e previsíveis. Atualmente junta as melhorias mais recentes da linguagem, API e performance do V8 e ao mesmo tempo atualiza a libuv e outras bibliotecas base.
 

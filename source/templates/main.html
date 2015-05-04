@@ -24,6 +24,12 @@
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1369">
   <meta property="og:image:height" content="1563">
+  {{#each project.links.rss}}
+  <link rel="alternate" type="application/atom+xml" title="{{title}}" href="{{url}}" />
+  {{/each}}
+  {{#each i18n.links.rss}}
+  <link rel="alternate" type="application/atom+xml" title="{{title}}" href="{{url}}" />
+  {{/each}}
 </head>
 
 <body markdown-page="{{build.markdownPage}}">
@@ -47,7 +53,7 @@
       {{link 'pages.releases'}}<!--
    --><a href="https://github.com/iojs/io.js/issues">{{i18n.issues-link}}</a><!--
    --><a href="https://github.com/iojs">{{i18n.org-link}}</a><!--
-   --><a href="https://webchat.freenode.net/?channels=io.js">{{i18n.irc-link}}</a><!--
+   --><a href="https://scrollback.io/iojs/all/all-messages">{{i18n.irc-link}}</a><!--
    --><a href="http://logs.libuv.org/io.js/latest">{{i18n.irc-logs-link}}</a><!--
    --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">{{i18n.gov-link}}</a>
     </nav>

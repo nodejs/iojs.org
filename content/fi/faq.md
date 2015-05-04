@@ -2,7 +2,7 @@
 
 ## Mikä on io.js?
 
-[io.js](https://github.com/iojs/io.js) on JavaScript alusta joka perustuu [Chrome's V8 runtime](http://code.google.com/p/v8/):en. Projekti alkoi haaraumana (_fork_) [Joyentin Node.js™](https://nodejs.org/)-projektista ja on yhteensopiva [npm](https://www.npmjs.org/)-ekosysteemin kanssa.
+[io.js](https://github.com/iojs/io.js) on JavaScript alusta joka perustuu [Chrome's V8 runtime](http://code.google.com/p/v8/):en. Projekti alkoi haaraumana (_fork_) [Joyentin Node.js™](https://nodejs.org/)-projektista ja on yhteensopiva [npm](https://www.npmjs.com/)-ekosysteemin kanssa.
 
 ## Miksi?
 

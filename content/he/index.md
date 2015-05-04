@@ -8,7 +8,7 @@
 היא פלטפורמה מבוססת במקור על
 [node.js](https://nodejs.org/)&#8482;
 תואמת
-[npm](https://www.npmjs.org/)
+[npm](https://www.npmjs.com/)
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 

@@ -25,7 +25,7 @@
     "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} are available for testing.",
     "short_description": "{{link 'website'}} is an {{link 'npm'}} compatible platform originally based on {{link 'nodejs'}}.",
     "slogan": "Bringing {{link 'pages.es6'}} to the Node Community!",
-    "news_link": "{{link 'Weekly Update – April 17th' 'https://medium.com/node-js-javascript/io-js-week-of-april-17th-e4c6f2db7659'}}<br><small>featuring core and community updates ({{link 'Medium' 'https://medium.com/node-js-javascript/io-js-week-of-april-17th-e4c6f2db7659'}}, {{link 'News Archive' 'https://medium.com/@iojs/latest'}})</small>"
+    "news_link": "{{link 'Weekly Update – April 24th' 'https://medium.com/node-js-javascript/io-js-week-of-april-24th-bd67dcbdfa65'}}<br><small>featuring core and community updates ({{link 'Medium' 'https://medium.com/node-js-javascript/io-js-week-of-april-24th-bd67dcbdfa65'}}), {{link 'News Archive' 'https://medium.com/@iojs/latest'}})</small>"
   },
   "releases": {
     "title": "io.js Release History",
@@ -42,6 +42,12 @@
       "es6": "ES6",
       "faq": "FAQ",
       "faq_verbose": "Frequently Asked Questions"
-    }
+    },
+    "rss": [
+      {
+        "title": "Weekly Updates (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
   }
 }
