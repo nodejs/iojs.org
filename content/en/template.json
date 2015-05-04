@@ -42,6 +42,12 @@
       "es6": "ES6",
       "faq": "FAQ",
       "faq_verbose": "Frequently Asked Questions"
-    }
+    },
+    "rss": [
+      {
+        "title": "Weekly Updates (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
   }
 }
