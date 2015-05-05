@@ -3,6 +3,9 @@ var src = './source';
 var content = './content';
 
 module.exports = {
+  copyStatic: {
+    src: src + '/static/**/*',
+  },
   stylus: {
     src: src + '/styles/**/*.styl',
     dest: dest,

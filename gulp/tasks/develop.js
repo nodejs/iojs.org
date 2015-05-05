@@ -6,6 +6,7 @@ gulp.task('develop', function(cb){
     'clean',
     'download',
     'content',
+    'copyStatic',
     ['stylus', 'templates'],
     ['watch', 'server'],
   cb);

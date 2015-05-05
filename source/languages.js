@@ -19,5 +19,5 @@ module.exports = [
   {"code": "tr", "name": "Türkçe", "name-en": "Turkish"},
   {"code": "uk", "name": "Українська", "name-en": "Ukrainian"},
   {"code": "zh_TW", "name": "正體中文（台灣）", "name-en": "Chinese Traditional (Taiwan)"},
-  {"code": "vi", "name" : " Tiếng Việt", "name-en" : "Vietnamese"}
+  {"code": "vi", "name" : "Tiếng Việt", "name-en" : "Vietnamese"}
 ]
