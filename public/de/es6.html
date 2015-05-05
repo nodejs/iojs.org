@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>io.js - JavaScript I/O</title>
+  <meta http-equiv="x-ua-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
+  <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="/main.css" rel="stylesheet">
+  <link href="/mobile.css" rel="stylesheet">
+  <link href="/es6.css" rel="stylesheet">
+  <link rel="icon" href="/images/1.0.0.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-1.0.0.png">
+  <meta property="og:image" content="https://iojs.org/images/1.0.0.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1369">
+  <meta property="og:image:height" content="1563">
+</head>
+
+<body markdown-page="es6">
+
+  <header>
+    <div class="content">
+      <a href="index.html" class="logo">io.js</a>
+      <div class="spacer"></div>
+      <a href="faq.html">FAQ</a>
+      <a href="es6.html">ES6</a>
+      <a href="https://iojs.org/api/">API Docs</a>
+    </div>
+  </header>
+
+  <div class="content content--body clearfix">
+    <h1>ES6 und io.js</h1>
+<p>Die io.js-Entwicklung basiert auf der aktuellen Version der <a href="https://code.google.com/p/v8/">V8</a>-Engine. Mit dem Bestrebenp, ständig die aktuellste Version der V8-Engine einzusetzen, stellen wir sicher, dass neue Funktionen der <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 Spezifikation</a> sowie Geschwindigkeits- und Stabilitätsverbesserungen schnell für io.js-Entwickler zu Verfügung stehen.</p>
+<p>Die Version 1.6.4 von io.js wird mit der V8-Version 4.1.0.27 ausgeliefert, welche bereits ES6-Funktionen beinhaltet, die deutlich weiterentwickelter sind, als jene der Version 3.28.73, die in joyent/node@0.12.x enthalten sind.</p>
+<h2>Überflüssiger Startparameter <code>--harmony</code></h2>
+<p>In joyent/node@0.12.x (V8 3.28+) aktiviert der Startparameter <code>--harmony</code> alle ES6-Funktionen auf einmal. Enthalten sind alle jene Funktionen, die als <strong>completed</strong> (Fertiggestellt), <strong>staged</strong> (Auslieferungsvorbereitung) und <strong>in progress</strong> (Entwicklungsphase) gekennzeichnet sind. (Mit der Ausnahme des <em>nonstandard/non-harmonious</em> Ausdrucks <code>typeof</code>, welcher sich hinter dem Startparameter <code>--harmony-typeof</code> versteckt). Das bedeutet, dass einige sehr fehlerhafte oder sogar kaputte Funktionen wie <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> genauso frei verfügbar sind, wie solche Funktionen wie <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, die nur sehr wenige Fehler enthalten, wenn überhaupt. Daraus hätte sich die Best-Practice ergeben, entweder nur bestimmte Funktionen durch einzelne Startparameter verfügbar zu machen (z.B. <code>--harmony-generators</code>), oder einfach alle Funktionen einzuschalten, aber dann nur eine sehr restriktive Untermenge an Funktionen zu verwenden.</p>
+<p>Anders in io.js<span>@</span>1.x (V8 4.1+), hier entfällt diese Komplexität: Alle &quot;harmony&quot;-Funktionen sind nun in logische Gruppen aufgeteilt. Diese Gruppen sind: shipping (Ausgeliefert), staged (Bereit zur Auslieferung) und in progress (Noch in Entwicklung).</p>
+<ul>
+<li>Alle als <strong>shipping</strong> bezeichneten Funktionen (jene die im V8-Projekt als stabil betrachtet werden), also solche wie <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">Templates</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">neue String-Methoden</a> und viele andere, sind bereits <strong>standardmäßig eingeschaltet in io.js</strong> und müssen <strong>NICHT</strong> erst extra durch Startparameter aktiviert werden.</li>
+<li>Dann die <strong>staged</strong>-Funktionen. Diese mehr oder weniger vollständig Funktionen wurden noch nicht komplett getestet oder sind noch nicht auf dem aktuellen Stand der Spezifikationen. Diese werden vom V8-Team deswegen auch als instabil gehandelt (z.B. Verhaltensvorhersagen zu Ausnahmefällen sind noch nicht möglich). Vergleichbar war oder ist die Situation der <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> in V8 3.26. Das sind nun &quot;benutzen auf eigene Gefahr&quot; Funktionen, welche nur über den Startparameter: <code>--es_staging</code> (oder dessen synonym, <code>--harmony</code>) aktivierbar sind.</li>
+<li>Abschließend, alle <strong>in progress</strong>-Funktionen die nur einzelln mittels harmony Startparameter aktivierbar sind (z.B. <code>--harmony_arrow_functions</code>), davon ist aber dringend abzuraten, auser zu testzwecken.</li>
+</ul>
+<h2>Welche ES6-Funktionen sind bereits in io.js enthalten und aktiv (ohne Startparameter verwendbar)?</h2>
+<ul>
+<li>
+<p>Block scoping</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">let</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a></p>
+</li>
+<li>
+<p><code>function</code>-in-blocks</p>
+</li>
+</ul>
+<blockquote>
+<p>Ähnlich wie in v8 3.31.74.1, block-scoped Deklarationen sind <a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">bewusst mit der Limitierung auf den strict-Modus umgesetzt</a>. Entwickler sollten gewarnt sein, denn es wird Änderungen geben, sowie die Entwicklung an V8 weitergeführt werden um den ES6-Spezifikation zu folgen.</p>
+</blockquote>
+</li>
+<li>
+<p>Collections</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">WeakMap</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals">Binary und Octal literals</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">New String methods</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">Template strings</a></p>
+</li>
+</ul>
+<p>Eine detailliertere Liste, die dazu noch Vergleiche zu anderen Engines enthält, gibt es auf der <a href="https://kangax.github.io/compat-table/es6/">compat-table-Projektseite</a>.</p>
+<h2>Welche ES6-Funktionen stehen mit dem Parameter <code>--es_staging</code> zur Verfügung?</h2>
+<ul>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#classes">Classes</a> (Nur im <code>'use strict';</code> Modus)</p>
+</li>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal Erweiterung</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (Festlegbare Ausgabe von <code>Object.prototype.toString</code>)</p>
+</li>
+</ul>
+<h2>An welchen ES6-Funktionen wird gerade gearbeitet?</h2>
+<p>Neue Funktionen werden ständing zur V8-Engine hinzugefügt. Allgemein gesagt, werden diese erwartungsgemäß in zukünftigen io.js-Versionen verfügbar sein. Der Zeitrahmen ist noch unbekannt.</p>
+<p>Es ist möglich alle <em>in progress</em>-Funktionen, der installierten io.js-Version aufzulisten. Dafür gibt es den Startparamter <code>--v8-options</code>. Es ist zu beachten, dass diese V8-Funktionen unvollständig oder gar kaputt sind. Es gilt: Benutzen auf eigene Gefahr!</p>
+<pre><code class="language-sh">iojs --v8-options | grep &quot;in progress&quot;
+</code></pre>
+<h2>In meiner Infrastruktur kommt der Paramterer <code>--harmony</code> zum Einsatz. Ist es sinnvoll diesen Parameter zu entfernen?</h2>
+<p>Das Startparameter <code>--harmony</code> schaltet lediglich die <strong>staged</strong>-Funktionen ein und ist als Synonym zu <code>--es_staging</code> zu verstehen. Wie oben bereits beschrieben, werden hierdurch mehr oder weniger vollständige Funktionen aktiviert, die noch nicht als stabil zu bezeichnen sind. Wer auf Nummer sicher gehen will, gerade in produktiven Umgebungen, sollte ernsthaft darüber nachdenken, diesen Startparameter nicht zu verwenden, bis die benötigte Funktion in V8 standardmäßig zu Verfügung steht, und somit auch in io.js. Wird der Parameter trotzdem verwendet, muss man damit rechnen, dass künftige io.js-Aktualisierungen den eigenen Code fehlschlagen lässt, falls Funktionen der V8-Engine an den aktuellen Standard angepasst werden.</p>
+<h2>Wie erkenne ich, mit welcher V8-Version io.js ausgeliefert wurde?</h2>
+<p>io.js bietet eine einfache Möglichkeit, alle Abhängigkeiten der jeweilig installierten Version, durch das globale Objekt <code>process</code> aufzulisten. Durch folgenden Konsolen-Befehl kann die Version der V8-Engine ausgegeben werden:</p>
+<pre><code class="language-sh">iojs -p process.versions.v8
+</code></pre>
+
+  </div>
+
+  <footer class="content">
+    <nav>
+      <a href="./releases.html">Releases</a><!--
+   --><a href="https://github.com/iojs/io.js/issues">GitHub Issues</a><!--
+   --><a href="https://github.com/iojs">GitHub Org</a><!--
+   --><a href="https://webchat.freenode.net/?channels=io.js">IRC Chat</a><!--
+   --><a href="http://logs.libuv.org/io.js/latest">Logs</a><!--
+   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">Governance</a>
+    </nav>
+    <nav class="languageFooter">
+      <a><strong>Languages</strong></h3><!--
+    --><a href="/cn/es6.html" lang="cn">简体中文</a><a href="/de/es6.html" lang="de">Deutsch</a><a href="/el/es6.html" lang="el">Ελληνικά</a><a href="/en/es6.html" lang="en">English</a><a href="/es/es6.html" lang="es">Español</a><a href="/fa/es6.html" lang="fa">فارسی</a><a href="/fi/es6.html" lang="fi">Suomi</a><a href="/fr/es6.html" lang="fr">Français</a><a href="/he/es6.html" lang="he">עברית</a><a href="/id/es6.html" lang="id">Bahasa Indonesia</a><a href="/it/es6.html" lang="it">Italiano</a><a href="/ja/es6.html" lang="ja">日本語</a><a href="/ko/es6.html" lang="ko">한국어</a><a href="/no/es6.html" lang="no">Norsk</a><a href="/pt_BR/es6.html" lang="pt_BR">Português (BR)</a><a href="/pt_PT/es6.html" lang="pt_PT">Português (PT)</a><a href="/ru/es6.html" lang="ru">Русский</a><a href="/tr/es6.html" lang="tr">Türkçe</a><a href="/uk/es6.html" lang="uk">Українська</a><a href="/zh_TW/es6.html" lang="zh_TW">正體中文（台灣）</a>
+    </nav>
+  </footer>
+
+  <!-- See something you like? Want to help? Visit https://github.com/iojs/website to contribute  -->
+</body>
+
+</html>

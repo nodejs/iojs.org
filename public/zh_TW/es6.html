@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh_TW">
+
+<head>
+  <meta charset="utf-8">
+  <title>io.js - JavaScript I/O</title>
+  <meta http-equiv="x-ua-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
+  <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="/main.css" rel="stylesheet">
+  <link href="/mobile.css" rel="stylesheet">
+  <link href="/es6.css" rel="stylesheet">
+  <link rel="icon" href="/images/1.0.0.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-1.0.0.png">
+  <meta property="og:image" content="https://iojs.org/images/1.0.0.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1369">
+  <meta property="og:image:height" content="1563">
+</head>
+
+<body markdown-page="es6">
+
+  <header>
+    <div class="content">
+      <a href="index.html" class="logo">io.js</a>
+      <div class="spacer"></div>
+      <a href="faq.html">常見問題</a>
+      <a href="es6.html">ES6</a>
+      <a href="https://iojs.org/api/">API 文件</a>
+    </div>
+  </header>
+
+  <div class="content content--body clearfix">
+    <h1>io.js 的 ES6</h1>
+<p>io.js 建構於目前版本的 <a href="https://code.google.com/p/v8/">V8</a> 之上，將會持續更新並引入最新的引擎版本，以確保最新的 <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 specification</a> 特性能以最短的時間內被 io.js 的開發人員所使用，並藉著不斷快速更新此持續改善效能及穩定度。</p>
+<p>目前釋出的 io.js v1.6.4 版本已採用 V8 4.1.0.27，其支援的 ES6 特性遠超過 joyent/node@0.12.x 所使用的 V8 3.26.23 。</p>
+<h2>不再需要 --harmony 參數</h2>
+<p>在 joyent/node@0.12.x (V8 3.26) 上，參數 <code>--harmony</code> 將會一次啟用所有處於<strong>完成（completed）</strong>、**階段性（staged）<strong>及</strong>程序中（in progress）**狀態之下的 ES6 特性支援（除了 <code>proxies</code> ，此特性在使用參數 <code>--harmony-proxies</code> 時會被隱藏）。這意味著一些臭蟲或是很有問題的特性像是 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a> ，可能將會很容易的被開發人員所誤用在專案中，就如同沒有問題的特性 <code>generators</code> 一般。因此，大多數的開發人員通常會代入一些參數，只啟動特定的 harmony 特性支援（如：<code>--harmony-generators</code>），或是直接啟用所有的特性支援，然後在開發時限定只使用特定某些穩定的功能。</p>
+<p>不過在使用 io.js@1.x (V8 4.1+) 之後，前面所提到的所有麻煩將不再是問題。現在所有的 harmony 特性都將會被分類到不同的群組中，分別為 <strong>shipping</strong> 、 <strong>staged</strong> 和 <strong>in progress</strong>：</p>
+<ul>
+<li>所有屬於 <strong>shipping</strong> 群組的特性，都是被 V8 認定為穩定（stable）的功能，如：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> 、 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">templates</a> 、 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">new string methods</a> 。值得一提的是，現在屬於此群組的更多特性都將被 <strong>預設啟用於 io.js</strong> ，且<strong>不需要</strong>在執行時添加使用任何參數。</li>
+<li>那些被歸類為 <strong>staged</strong> 群組的特性，都是功能上幾乎已經完整支援（almost-completed）的特性，但缺少測試或尚未支援到最新的 ES6 規格，所以尚未被 V8 的開發團隊視為穩定（stable）。這些特性的支援可能相當於 V8 3.26 時的 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> ，如果要使用，開發人員必須要自行承擔其風險，而且必須要在執行時使用 <code>--es_staging</code> 參數（同等於 <code>--harmony</code>）。</li>
+<li>最後，所有處於 <strong>in progress</strong> 群組的特性，可以以特定的參數啟用支援（如：<code>--harmony_arrow_functions</code>，儘管這些特性不被推薦使用。</li>
+</ul>
+<h2>什麼樣的 ES6 特性將被 io.js 預設支援？（不需要代入任何參數）</h2>
+<ul>
+<li>
+<p>Block scoping</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">let</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a></p>
+</li>
+<li>
+<p><code>function</code>-in-blocks</p>
+</li>
+</ul>
+<blockquote>
+<p>As of v8 3.31.74.1, block-scoped declarations are <a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">intentionally implemented with a non-compliant limitation to strict mode code</a>. Developers should be aware that this will change as v8 continues towards ES6 specification compliance.</p>
+</blockquote>
+</li>
+<li>
+<p>Collections</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">WeakMap</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals">Binary and Octal literals</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">New String methods</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">Template strings</a></p>
+</li>
+</ul>
+<p>你可以參閱更多的細節，以及比較其他的 JavaScript 引擎，在 <a href="https://kangax.github.io/compat-table/es6/">compat-table</a> 專案網頁。</p>
+<h2>什麼樣的 ES6 特性需要代入 --es_staging 參數？</h2>
+<ul>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#classes">Classes</a> 只有嚴格模式支援）</p>
+</li>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Object literal extensions</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (user-definable results for <code>Object.prototype.toString</code>)</p>
+</li>
+</ul>
+<h2>我過去已經大量使用了 --harmony 參數，我該移除它嗎？</h2>
+<p>目前 <code>--harmony</code> 在 io.js 的行為，只會啟用 <strong>staged</strong> 的特性，與 <code>--es_staging</code> 參數相同。如前面所提及，這些都是些尚未被視為穩定的特性，如果你想要更安全的使用 io.js ，尤其特別是在已上線的服務或產品上使用，請考慮移除並停止使用此參數，直到這些特性被 V8 所預設支援，接著被 io.js 所支援。假設你仍然持續使用這個參數，你可能要有因為升級 io.js 而導致程式壞掉的心理準備，尤其是如果 V8 為了更接近標準而修改語法，就會出現這樣的問題。</p>
+<h2>我如何得知 io.js 正在使用的 V8 版本？</h2>
+<p>io.js 提供了一個非常簡單的方法去取得所有的依賴函式庫及版本號，只要透過存取 <code>process</code> 全域物件即可。所以，如果想知道 V8 引擎的版本資訊，可以直接在終端機（Terminal）上輸入：</p>
+<pre><code class="language-sh">iojs -p process.versions.v8
+</code></pre>
+
+  </div>
+
+  <footer class="content">
+    <nav>
+      <a href="./releases.html">Releases</a><!--
+   --><a href="https://github.com/iojs/io.js/issues">GitHub 議題</a><!--
+   --><a href="https://github.com/iojs">GitHub 組織</a><!--
+   --><a href="https://webchat.freenode.net/?channels=io.js">IRC 討論</a><!--
+   --><a href="http://logs.libuv.org/io.js/latest">日誌</a><!--
+   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">專案管理</a>
+    </nav>
+    <nav class="languageFooter">
+      <a><strong>其他語言</strong></h3><!--
+    --><a href="/cn/es6.html" lang="cn">简体中文</a><a href="/de/es6.html" lang="de">Deutsch</a><a href="/el/es6.html" lang="el">Ελληνικά</a><a href="/en/es6.html" lang="en">English</a><a href="/es/es6.html" lang="es">Español</a><a href="/fa/es6.html" lang="fa">فارسی</a><a href="/fi/es6.html" lang="fi">Suomi</a><a href="/fr/es6.html" lang="fr">Français</a><a href="/he/es6.html" lang="he">עברית</a><a href="/id/es6.html" lang="id">Bahasa Indonesia</a><a href="/it/es6.html" lang="it">Italiano</a><a href="/ja/es6.html" lang="ja">日本語</a><a href="/ko/es6.html" lang="ko">한국어</a><a href="/no/es6.html" lang="no">Norsk</a><a href="/pt_BR/es6.html" lang="pt_BR">Português (BR)</a><a href="/pt_PT/es6.html" lang="pt_PT">Português (PT)</a><a href="/ru/es6.html" lang="ru">Русский</a><a href="/tr/es6.html" lang="tr">Türkçe</a><a href="/uk/es6.html" lang="uk">Українська</a><a href="/zh_TW/es6.html" lang="zh_TW">正體中文（台灣）</a>
+    </nav>
+  </footer>
+
+  <!-- See something you like? Want to help? Visit https://github.com/iojs/website to contribute  -->
+</body>
+
+</html>

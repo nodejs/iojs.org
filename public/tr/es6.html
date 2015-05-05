@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <title>io.js - JavaScript I/O</title>
+  <meta http-equiv="x-ua-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
+  <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="/main.css" rel="stylesheet">
+  <link href="/mobile.css" rel="stylesheet">
+  <link href="/es6.css" rel="stylesheet">
+  <link rel="icon" href="/images/1.0.0.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-1.0.0.png">
+  <meta property="og:image" content="https://iojs.org/images/1.0.0.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1369">
+  <meta property="og:image:height" content="1563">
+</head>
+
+<body markdown-page="es6">
+
+  <header>
+    <div class="content">
+      <a href="index.html" class="logo">io.js</a>
+      <div class="spacer"></div>
+      <a href="faq.html">SSS</a>
+      <a href="es6.html">ES6</a>
+      <a href="https://iojs.org/api/">API Dökümanları</a>
+    </div>
+  </header>
+
+  <div class="content content--body clearfix">
+    <h1>io.js ile ES6</h1>
+<p>io.js, <a href="https://code.google.com/p/v8/">V8</a> javascript motorunun en modern sürümüyle derlenmiştir. Bu motoru güncel sürümde tutarak <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript ECMA-262 tanımlayıcı dökümanı</a> ile belirtilmiş yeni özelliklere io.js geliştiricilerinin en kısa zamanda ulaşmasını sağlıyoruz, bu arada performans ve kararlığın arttırılmasına devam ediyoruz.</p>
+<p>io.js 1.1.0 sürümü V8 4.1.0.27 sürümüyle gelmektedir, ayrıca joyent/node@0.12.x sürümünde bulunan V8 3.26.33 motoruna göre daha gelişmiş ES6 özelliklerine sahiptir.</p>
+<h2>--harmony bayrağına gerek yok</h2>
+<p>joyent/node@0.12.x (V8 3.26) sürümü ile <code>--harmony</code> bayrağı tüm <strong>tamamlanmış</strong>, <strong>düzenleme</strong> ve <strong>geliştirme</strong> durumunda ki ES6 özellikleri aktif eder. (<code>--harmony-typeof</code> bayrağı altında gizlenen <code>typeof</code> için anlamsal standart/uyumlu olmayan istisnalarıda içerir)
+Bu bayrağın belirtilmesi ile <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxies</a> gibi  bazı bozuk veya hatalı özellikleri ile geliştiricilerin kullanımına hazır, az veya hiç hata belirtilmemiş <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> gibi özelliklerde aktif olacaktır.<br>
+Belirtilen sebeplerden ötürü en mantıklı uygulamalar, bazı özellikleri aktif etmek için özel bayraklar belirlemek (örn: <code>--harmony-generators</code>) veya tüm özellikleri etkinleştirip, daha sonra bir alt komut setini sınırlamak olacaktır.</p>
+<p>io.js@1.x (V8 4.1+) sürümüyle beraber tüm bu karmaşıklık ortadan kalkmaktadır. Tüm ES6 (harmoni) özellikleri <strong>taşınıyor</strong>, <strong>düzenleme</strong> ve <strong>geliştirme</strong> olmak üzere mantıksal üç gruba ayrılmıştır. Bu özellikler;</p>
+<ul>
+<li>Tüm <strong>taşınıyor</strong> özellikleri V8 tarafından kararlı olarak kabul görmüş, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">templates</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">yeni string metodları</a> gibi özellikler ile <strong>io.js tarafından varsayılan</strong> olarak açılmış özelliklerdir ve herhangi bir çalışma bayrağına gerek <strong>duymazlar</strong>.</li>
+<li><strong>düzenleme</strong> durumunda ki özellikler testleri tamamlanmamış veya son tanımlayıcı dökümanına uygun hale getirilmemiş ve V8 takımı tarafından kararlı olarak belirtilmemiş özellikleri içerir. (örn: henüz keşfedilmemiş, araştırılmamış kısımlar olabilir). V8 3.26 sürümünde <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">generators</a> bu duruma eşdeğer yapıdadır. Bu özellikleri kullanmakta ki riski göze alıyorsanız, <code>--es_staging</code> (veya eşanlamlısı <code>--harmony</code>) çalışma bayrağını kullanmanız gerekir.</li>
+<li>Yüksek ihtimalle test işlemlerinde dahi olsa sorun yaratacak, diğer tüm <strong>geliştirme</strong> aşamasındaki özellikleri kendilerine özel harmoni bayraklarıyla etkinleştirebilirsiniz. (örn: <code>--harmony_arrow_functions</code>)</li>
+</ul>
+<h2>io.js üzerinde varsayılan olarak gelen ES6 özellikleri hangileridir (çalışma bayrağı gerektirmez) ?</h2>
+<ul>
+<li>
+<p>Blok alanı</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">let</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a></p>
+</li>
+<li>
+<p><code>function</code>-in-blocks</p>
+</li>
+</ul>
+<blockquote>
+<p>V8 3.31.74.1 üstünde blok-alanına <a href="https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es">özel, katı mod kodlama yapısına uyumlu olmayan sınırlama bulunmaktadır</a>. Geliştiriciler bu kuralın V8 üstünde, ilerleyen dönemlerde ES6 tanımlayıcı dökümanına uyumlu yapılacak güncellemelerle değişeceğini unutmamalıdır.</p>
+</blockquote>
+</li>
+<li>
+<p>Koleksiyonlar</p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">WeakMap</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a>*   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*">Generators</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals">İkili ve Sekizli Sayısal Sabitler</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object">Yeni String metodları</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Semboller</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings">String içerisinde template kullanımı</a></p>
+</li>
+</ul>
+<p>Ayrıntılı bir liste arıyorsanız, diğer derleyici motorlarının karşılaştırıldığı <a href="https://kangax.github.io/compat-table/es6/">compat-tablo</a> proje sayfasına bakabilirsiniz.</p>
+<h2>--es_staging bayrağı ile kullanılabilen ES6 özellikleri nelerdir?</h2>
+<ul>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#classes">Classes</a> (sadece katı modda kullanılabilir)</p>
+</li>
+<li>
+<p><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Sabit Obje Uzantıları</a></p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol.toStringTag</code></a> (kullanıcı tanımlı sonuçlar için <code>Object.prototype.toString</code>)</p>
+</li>
+</ul>
+<h2>--harmony bayrağı kullanan bir alt yapıya sahibim. Bu bayrağı kaldırmalımıyım?</h2>
+<p>io.js üzerinde <code>--harmony</code> bayrağı sadece <strong>düzenleme</strong> durumunda ki özelliklleri etkinleştirir. Diğer tüm özellikler için eş değer bayrak, <code>--es_staging</code> bayrağı kullanılmalıdır. Yukarıda da belirtildiği üzere bu bayrak halen kararlı olmamış özellikleri kapsar. Eğer güvenli bir kullanım isterseniz veya üretim ortamında çalışıyorsanız, özellikler io.js üstünde ve dolayısıyla V8 üstünde varsayılan olarak kullanılana kadar bu bayrağı kaldırmayı düşünmelisiniz. Eğer bu bayrağı etkin olarak kullanmaya devam ederseniz, V8 üstünde yapılacak standartlara uygun yapısal değişikliklerde, io.js güncellemelerinin kodunuzu çalışamaz hale getirebileceğine hazırlıklı olmanız gerekmektedir.</p>
+<h2>io.js'in hangi V8 sürümünü kullandığını nasıl bulabilirim?</h2>
+<p>io.js basit bir şekilde, tüm bağımlılıkları ve ilgili sürümleri listelemek için global <code>process</code> nesnesini sunar. V8 motorunun sürüm bilgisini öğrenebilmek için uç birim ekranına aşağıdaki komut satırını yazmanız yeterlidir:</p>
+<pre><code class="language-sh">iojs -p process.versions.v8
+</code></pre>
+
+  </div>
+
+  <footer class="content">
+    <nav>
+      <a href="./releases.html">Releases</a><!--
+   --><a href="https://github.com/iojs/io.js/issues">GitHub Hatalar</a><!--
+   --><a href="https://github.com/iojs">GitHub Org</a><!--
+   --><a href="https://webchat.freenode.net/?channels=io.js">IRC Chat</a><!--
+   --><a href="http://logs.libuv.org/io.js/latest">Kayıtlar</a><!--
+   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">Yönetim Modeli</a>
+    </nav>
+    <nav class="languageFooter">
+      <a><strong>Languages</strong></h3><!--
+    --><a href="/cn/es6.html" lang="cn">简体中文</a><a href="/de/es6.html" lang="de">Deutsch</a><a href="/el/es6.html" lang="el">Ελληνικά</a><a href="/en/es6.html" lang="en">English</a><a href="/es/es6.html" lang="es">Español</a><a href="/fa/es6.html" lang="fa">فارسی</a><a href="/fi/es6.html" lang="fi">Suomi</a><a href="/fr/es6.html" lang="fr">Français</a><a href="/he/es6.html" lang="he">עברית</a><a href="/id/es6.html" lang="id">Bahasa Indonesia</a><a href="/it/es6.html" lang="it">Italiano</a><a href="/ja/es6.html" lang="ja">日本語</a><a href="/ko/es6.html" lang="ko">한국어</a><a href="/no/es6.html" lang="no">Norsk</a><a href="/pt_BR/es6.html" lang="pt_BR">Português (BR)</a><a href="/pt_PT/es6.html" lang="pt_PT">Português (PT)</a><a href="/ru/es6.html" lang="ru">Русский</a><a href="/tr/es6.html" lang="tr">Türkçe</a><a href="/uk/es6.html" lang="uk">Українська</a><a href="/zh_TW/es6.html" lang="zh_TW">正體中文（台灣）</a>
+    </nav>
+  </footer>
+
+  <!-- See something you like? Want to help? Visit https://github.com/iojs/website to contribute  -->
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>io.js - JavaScript I/O</title>
+  <meta http-equiv="x-ua-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="io.js is an npm compatible platform originally based on node.js">
+  <meta name="keywords" content="iojs, io.js, io js, javascript io, uv, libuv, node-forward, node forward, node, node.js, node.js forward, nodejs, nodejs forward, javascript">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="/main.css" rel="stylesheet">
+  <link href="/mobile.css" rel="stylesheet">
+  <link href="/working-groups.css" rel="stylesheet">
+  <link rel="icon" href="/images/1.0.0.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-1.0.0.png">
+  <meta property="og:image" content="https://iojs.org/images/1.0.0.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1369">
+  <meta property="og:image:height" content="1563">
+</head>
+
+<body markdown-page="working-groups">
+
+  <header>
+    <div class="content">
+      <a href="index.html" class="logo">io.js</a>
+      <div class="spacer"></div>
+      <a href="faq.html">FAQ</a>
+      <a href="es6.html">ES6</a>
+      <a href="https://iojs.org/api/">API Docs</a>
+    </div>
+  </header>
+
+  <div class="content content--body clearfix">
+    <h1>io.js Working Groups</h1>
+<p>io.js Working Groups are autonomous projects created by the
+<a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#technical-committee">Technical Committee (TC)</a>.</p>
+<p>Working Groups can be formed at any time but must be ratified by the TC.
+Once formed the work defined in the Working Group charter is the
+responsibility of the WG rather than the TC.</p>
+<p>It is important that Working Groups are not formed pre-maturely. Working
+Groups are not formed to <em>begin</em> a set of tasks but instead are formed
+once that work is already underway and the contributors
+think it would benefit from being done as an autonomous project.</p>
+<p>If the work defined in a Working Group charter is completed the Working
+Group should be dissolved and the responsibility for governance absorbed
+back in to the TC.</p>
+<h2>Current Working Groups</h2>
+<ul>
+<li><a href="#website">Website</a></li>
+<li><a href="#streams">Streams</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#tracing">Tracing</a></li>
+<li><a href="#i18n">i18n</a></li>
+<li><a href="#evangelism">Evangelism</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#docker">Docker</a></li>
+<li><a href="#starting-a-wg">Starting a Working Group</a></li>
+<li><a href="#bootstrap-governance">Bootstrap Governance</a></li>
+</ul>
+<h3><a href="https://github.com/iojs/website">Website</a></h3>
+<p>The website working group's purpose is to build and maintain a public
+website for the <code>io.js</code> project.</p>
+<p>Its responsibilities are:</p>
+<ul>
+<li>Develop and maintain a build and automation system for <code>iojs.org</code>.</li>
+<li>Ensure the site is regularly updated with changes made to <code>io.js</code> like
+releases and features.</li>
+<li>Foster and enable a community of translators.</li>
+</ul>
+<h3><a href="https://github.com/iojs/readable-stream">Streams</a></h3>
+<p>The Streams WG is dedicated to the support and improvement of the Streams API
+as used in io.js and the npm ecosystem. We seek to create a composable API that
+solves the problem of representing multiple occurrences of an event over time
+in a humane, low-overhead fashion. Improvements to the API will be driven by
+the needs of the ecosystem; interoperability and backwards compatibility with
+other solutions and prior versions are paramount in importance. Our
+responsibilities include:</p>
+<ul>
+<li>Addressing stream issues on the io.js issue tracker.</li>
+<li>Authoring and editing stream documentation within the io.js project.</li>
+<li>Reviewing changes to stream subclasses within the io.js project.</li>
+<li>Redirecting changes to streams from the io.js project to this project.</li>
+<li>Assisting in the implementation of stream providers within io.js.</li>
+<li>Recommending versions of readable-stream to be included in io.js.</li>
+<li>Messaging about the future of streams to give the community advance notice of changes.</li>
+</ul>
+<h3><a href="https://github.com/iojs/build">Build</a></h3>
+<p>The build working group's purpose is to create and maintain a
+distributed automation infrastructure.</p>
+<p>Its responsibilities are:</p>
+<ul>
+<li>Produce Packages for all target platforms.</li>
+<li>Run tests.</li>
+<li>Run performance testing and comparisons.</li>
+<li>Creates and manages build-containers.</li>
+</ul>
+<h3><a href="https://github.com/iojs/tracing-wg">Tracing</a></h3>
+<p>The tracing working group's purpose is to increase the
+transparency of software written in io.js.</p>
+<p>Its responsibilities are:</p>
+<ul>
+<li>Collaboration with V8 to integrate with <code>trace_event</code>.</li>
+<li>Maintenance and iteration on AsyncWrap.</li>
+<li>Maintenance and improvements to system tracing support (DTrace, LTTng, etc.)</li>
+<li>Documentation of tracing and debugging techniques.</li>
+<li>Fostering a tracing and debugging ecosystem.</li>
+</ul>
+<h3>i18n</h3>
+<p>The i18n working groups handle more than just translations. They
+are endpoints for community members to collaborate with each
+other in their language of choice.</p>
+<p>Each team is organized around a common spoken language. Each
+language community might then produce multiple localizations for
+various project resources.</p>
+<p>Their responsibilities are:</p>
+<ul>
+<li>Translations of any io.js materials they believe are relevant to their
+community.</li>
+<li>Review processes for keeping translations up
+to date and of high quality.</li>
+<li>Social media channels in their language.</li>
+<li>Promotion of io.js speakers for meetups and conferences in their
+language.</li>
+</ul>
+<p>Each language community maintains its own membership.</p>
+<ul>
+<li><a href="http://github.com/iojs/iojs-ar">iojs-ar - Arabic (اللغة العربية)</a></li>
+<li><a href="http://github.com/iojs/iojs-bg">iojs-bg - Bulgarian (български език)</a></li>
+<li><a href="http://github.com/iojs/iojs-bn">iojs-bn - Bengali (বাংলা)</a></li>
+<li><a href="http://github.com/iojs/iojs-cn">iojs-cn - Chinese (中文)</a></li>
+<li><a href="http://github.com/iojs/iojs-cs">iojs-cs - Czech (Český Jazyk)</a></li>
+<li><a href="http://github.com/iojs/iojs-da">iojs-da - Danish (Dansk)</a></li>
+<li><a href="http://github.com/iojs/iojs-de">iojs-de - German (Deutsch)</a></li>
+<li><a href="http://github.com/iojs/iojs-el">iojs-el - Greek (Ελληνικά)</a></li>
+<li><a href="http://github.com/iojs/iojs-es">iojs-es - Spanish (Español)</a></li>
+<li><a href="http://github.com/iojs/iojs-fa">iojs-fa - Persian (فارسی)</a></li>
+<li><a href="http://github.com/iojs/iojs-fi">iojs-fi - Finnish (Suomi)</a></li>
+<li><a href="http://github.com/iojs/iojs-fr">iojs-fr - French (Français)</a></li>
+<li><a href="http://github.com/iojs/iojs-he">iojs-he - Hebrew (עברית)</a></li>
+<li><a href="http://github.com/iojs/iojs-hi">iojs-hi - Hindi (फिजी बात)</a></li>
+<li><a href="http://github.com/iojs/iojs-hu">iojs-hu - Hungarian (Magyar)</a></li>
+<li><a href="http://github.com/iojs/iojs-id">iojs-id - Indonesian (Bahasa Indonesia)</a></li>
+<li><a href="http://github.com/iojs/iojs-it">iojs-it - Italian (Italiano)</a></li>
+<li><a href="http://github.com/iojs/iojs-ja">iojs-ja - Japanese (日本語)</a></li>
+<li><a href="http://github.com/iojs/iojs-ka">iojs-ka - Georgian (ქართული)</a></li>
+<li><a href="http://github.com/iojs/iojs-ko">iojs-ko - Korean (조선말)</a></li>
+<li><a href="http://github.com/iojs/iojs-mk">iojs-mk - Macedonian (Mакедонски)</a></li>
+<li><a href="http://github.com/iojs/iojs-ms">iojs-ms - Malay (بهاس ملايو)</a></li>
+<li><a href="http://github.com/iojs/iojs-nl">iojs-nl - Dutch (Nederlands)</a></li>
+<li><a href="http://github.com/iojs/iojs-no">iojs-no - Norwegian (Norsk)</a></li>
+<li><a href="http://github.com/iojs/iojs-pl">iojs-pl - Polish (Język Polski)</a></li>
+<li><a href="http://github.com/iojs/iojs-pt">iojs-pt - Portuguese (Português)</a></li>
+<li><a href="http://github.com/iojs/iojs-ro">iojs-ro - Romanian (Română)</a></li>
+<li><a href="http://github.com/iojs/iojs-ru">iojs-ru - Russian (Русский)</a></li>
+<li><a href="http://github.com/iojs/iojs-sv">iojs-sv - Swedish (Svenska)</a></li>
+<li><a href="http://github.com/iojs/iojs-ta">iojs-ta - Tamil (தமிழ்)</a></li>
+<li><a href="http://github.com/iojs/iojs-tr">iojs-tr - Turkish (Türkçe)</a></li>
+<li><a href="http://github.com/iojs/iojs-tw">iojs-tw - Taiwanese (Hō-ló)</a></li>
+<li><a href="http://github.com/iojs/iojs-uk">iojs-uk - Ukrainian (Українська)</a></li>
+<li><a href="http://github.com/iojs/iojs-vi">iojs-vi - Vietnamese (Tiếng Việtnam)</a></li>
+</ul>
+<h3><a href="https://github.com/iojs/evangelism">Evangelism</a></h3>
+<p>The evangelism working group promotes the accomplishments
+of io.js and lets the community know how they can get involved.</p>
+<p>Their responsibilities are:</p>
+<ul>
+<li>Project messaging.</li>
+<li>Official project social media.</li>
+<li>Promotion of speakers for meetups and conferences.</li>
+<li>Promotion of community events.</li>
+<li>Publishing regular update summaries and other promotional
+content.</li>
+</ul>
+<h3><a href="https://github.com/iojs/roadmap">Roadmap</a></h3>
+<p>The roadmap working group is responsible for user community outreach
+and the translation of their concerns into a plan of action for io.js.</p>
+<p>The final <a href="./ROADMAP.md">ROADMAP</a> document is still owned by the TC and requires
+the same approval for changes as any other project asset.</p>
+<p>Their responsibilities are:</p>
+<ul>
+<li>Attract and summarize user community needs and feedback.</li>
+<li>Find or potentially create tools that allow for broader participation.</li>
+<li>Create Pull Requests for relevant changes to <a href="./ROADMAP.md">Roadmap.md</a></li>
+</ul>
+<h3><a href="https://github.com/iojs/docker-iojs">Docker</a></h3>
+<p>The Docker working group's purpose is to build, maintain, and improve official
+Docker images for the <code>io.js</code> project.</p>
+<p>Their responsibilities are:</p>
+<ul>
+<li>Keep the official Docker images updated in line with new <code>io.js</code> releases.</li>
+<li>Decide and implement image improvements and/or fixes.</li>
+<li>Maintain and improve the images' documentation.</li>
+</ul>
+<h2>Starting a WG</h2>
+<p>A Working Group is established by first defining a charter  that can be
+ratified by the TC. A charter is a <em>statement of purpose</em>, a
+<em>list of responsibilities</em> and a <em>list of initial membership</em>.</p>
+<p>A working group needs 3 initial members. These should be individuals
+already undertaking the work described in the charter.</p>
+<p>The list of responsibilities should be specific. Once established, these
+responsibilities are no longer governed by the TC and therefore should
+not be broad or subjective. The only recourse the TC has over the working
+group is to revoke the entire charter and take on the work previously
+done by the working group themselves.</p>
+<p>If the responsibilities described in the charter are currently
+undertaken by another WG then the charter will additionally have to be
+ratified by that WG.</p>
+<p>You can submit the WG charter for ratification by sending
+a Pull Request to this document, which adds it to the
+list of current Working Groups. Once ratified the list of
+members should be maintained in the Working Group's
+README.</p>
+<h2>Bootstrap Governance</h2>
+<p>Once the TC ratifies a charter the WG inherits the following
+documentation for governance, contribution, conduct and an MIT
+LICENSE. The WG is free to change these documents through their own
+governance process, hence the term &quot;bootstrap.&quot;</p>
+<h3><em>[insert WG name]</em> Working Group</h3>
+<p>The io.js <em>[insert WG name]</em> is jointly governed by a Working Group (WG)
+that is responsible for high-level guidance of the project.</p>
+<p>The WG has final authority over this project including:</p>
+<ul>
+<li>Technical direction</li>
+<li>Project governance and process (including this policy)</li>
+<li>Contribution policy</li>
+<li>GitHub repository hosting</li>
+<li>Conduct guidelines</li>
+<li>Maintaining the list of additional Collaborators</li>
+</ul>
+<p>For the current list of WG members, see the project
+<a href="./README.md#current-project-team-members">README.md</a>.</p>
+<h3>Collaborators</h3>
+<p>The <em>[insert WG name]</em> GitHub repository is
+maintained by the WG and additional Collaborators who are added by the
+WG on an ongoing basis.</p>
+<p>Individuals making significant and valuable contributions are made
+Collaborators and given commit-access to the project. These
+individuals are identified by the WG and their addition as
+Collaborators is discussed during the weekly WG meeting.</p>
+<p><em>Note:</em> If you make a significant contribution and are not considered
+for commit-access log an issue or contact a WG member directly and it
+will be brought up in the next WG meeting.</p>
+<p>Modifications of the contents of the <em>[insert WG repo]</em> repository are made on
+a collaborative basis. Anybody with a GitHub account may propose a
+modification via pull request and it will be considered by the project
+Collaborators. All pull requests must be reviewed and accepted by a
+Collaborator with sufficient expertise who is able to take full
+responsibility for the change. In the case of pull requests proposed
+by an existing Collaborator, an additional Collaborator is required
+for sign-off. Consensus should be sought if additional Collaborators
+participate and there is disagreement around a particular
+modification. See <em>Consensus Seeking Process</em> below for further detail
+on the consensus model used for governance.</p>
+<p>Collaborators may opt to elevate significant or controversial
+modifications, or modifications that have not found consensus to the
+WG for discussion by assigning the <strong><em>WG-agenda</em></strong> tag to a pull
+request or issue. The WG should serve as the final arbiter where
+required.</p>
+<p>For the current list of Collaborators, see the project
+<a href="./README.md#current-project-team-members">README.md</a>.</p>
+<h3>WG Membership</h3>
+<p>WG seats are not time-limited.  There is no fixed size of the WG.
+However, the expected target is between 6 and 12, to ensure adequate
+coverage of important areas of expertise, balanced with the ability to
+make decisions efficiently.</p>
+<p>There is no specific set of requirements or qualifications for WG
+membership beyond these rules.</p>
+<p>The WG may add additional members to the WG by unanimous consensus.</p>
+<p>A WG member may be removed from the WG by voluntary resignation, or by
+unanimous consensus of all other WG members.</p>
+<p>Changes to WG membership should be posted in the agenda, and may be
+suggested as any other agenda item (see &quot;WG Meetings&quot; below).</p>
+<p>If an addition or removal is proposed during a meeting, and the full
+WG is not in attendance to participate, then the addition or removal
+is added to the agenda for the subsequent meeting.  This is to ensure
+that all members are given the opportunity to participate in all
+membership decisions.  If a WG member is unable to attend a meeting
+where a planned membership decision is being made, then their consent
+is assumed.</p>
+<p>No more than 1/3 of the WG members may be affiliated with the same
+employer.  If removal or resignation of a WG member, or a change of
+employment by a WG member, creates a situation where more than 1/3 of
+the WG membership shares an employer, then the situation must be
+immediately remedied by the resignation or removal of one or more WG
+members affiliated with the over-represented employer(s).</p>
+<h3>WG Meetings</h3>
+<p>The WG meets weekly on a Google Hangout On Air. A designated moderator
+approved by the WG runs the meeting. Each meeting should be
+published to YouTube.</p>
+<p>Items are added to the WG agenda that are considered contentious or
+are modifications of governance, contribution policy, WG membership,
+or release process.</p>
+<p>The intention of the agenda is not to approve or review all patches;
+that should happen continuously on GitHub and be handled by the larger
+group of Collaborators.</p>
+<p>Any community member or contributor can ask that something be added to
+the next meeting's agenda by logging a GitHub Issue. Any Collaborator,
+WG member or the moderator can add the item to the agenda by adding
+the <strong><em>WG-agenda</em></strong> tag to the issue.</p>
+<p>Prior to each WG meeting the moderator will share the Agenda with
+members of the WG. WG members can add any items they like to the
+agenda at the beginning of each meeting. The moderator and the WG
+cannot veto or remove items.</p>
+<p>The WG may invite persons or representatives from certain projects to
+participate in a non-voting capacity.</p>
+<p>The moderator is responsible for summarizing the discussion of each
+agenda item and sends it as a pull request after the meeting.</p>
+<h3>Consensus Seeking Process</h3>
+<p>The WG follows a
+<a href="http://en.wikipedia.org/wiki/Consensus-seeking_decision-making">Consensus Seeking</a>
+decision-making model.</p>
+<p>When an agenda item has appeared to reach a consensus the moderator
+will ask &quot;Does anyone object?&quot; as a final call for dissent from the
+consensus.</p>
+<p>If an agenda item cannot reach a consensus a WG member can call for
+either a closing vote or a vote to table the issue to the next
+meeting. The call for a vote must be seconded by a majority of the WG
+or else the discussion will continue. Simple majority wins.</p>
+<p>Note that changes to WG membership require unanimous consensus.  See
+&quot;WG Membership&quot; above.</p>
+<h3>Developer's Certificate of Origin 1.0</h3>
+<p>By making a contribution to this project, I certify that:</p>
+<ul>
+<li>(a) The contribution was created in whole or in part by me and I
+have the right to submit it under the open source license indicated
+in the file; or</li>
+<li>(b) The contribution is based upon previous work that, to the best
+of my knowledge, is covered under an appropriate open source license
+and I have the right under that license to submit that work with
+modifications, whether created in whole or in part by me, under the
+same open source license (unless I am permitted to submit under a
+different license), as indicated in the file; or</li>
+<li>(c) The contribution was provided directly to me by some other
+person who certified (a), (b) or (c) and I have not modified it.</li>
+</ul>
+<h3>Code of Conduct</h3>
+<p>This Code of Conduct is adapted from <a href="https://github.com/rust-lang/rust/wiki/Note-development-policy#conduct">Rust's wonderful
+CoC</a>.</p>
+<ul>
+<li>We are committed to providing a friendly, safe and welcoming
+environment for all, regardless of gender, sexual orientation,
+disability, ethnicity, religion, or similar personal characteristic.</li>
+<li>Please avoid using overtly sexual nicknames or other nicknames that
+might detract from a friendly, safe and welcoming environment for
+all.</li>
+<li>Please be kind and courteous. There's no need to be mean or rude.</li>
+<li>Respect that people have differences of opinion and that every
+design or implementation choice carries a trade-off and numerous
+costs. There is seldom a right answer.</li>
+<li>Please keep unstructured critique to a minimum. If you have solid
+ideas you want to experiment with, make a fork and see how it works.</li>
+<li>We will exclude you from interaction if you insult, demean or harass
+anyone.  That is not welcome behaviour. We interpret the term
+&quot;harassment&quot; as including the definition in the <a href="http://citizencodeofconduct.org/">Citizen Code of
+Conduct</a>; if you have any lack of
+clarity about what might be included in that concept, please read
+their definition. In particular, we don't tolerate behavior that
+excludes people in socially marginalized groups.</li>
+<li>Private harassment is also unacceptable. No matter who you are, if
+you feel you have been or are being harassed or made uncomfortable
+by a community member, please contact one of the channel ops or any
+of the TC members immediately with a capture (log, photo, email) of
+the harassment if possible.  Whether you're a regular contributor or
+a newcomer, we care about making this community a safe place for you
+and we've got your back.</li>
+<li>Likewise any spamming, trolling, flaming, baiting or other
+attention-stealing behaviour is not welcome.</li>
+<li>Avoid the use of personal pronouns in code comments or
+documentation. There is no need to address persons when explaining
+code (e.g. &quot;When the developer&quot;)</li>
+</ul>
+
+  </div>
+
+  <footer class="content">
+    <nav>
+      <a href="./releases.html">Releases</a><!--
+   --><a href="https://github.com/iojs/io.js/issues">GitHub Issues</a><!--
+   --><a href="https://github.com/iojs">GitHub Org</a><!--
+   --><a href="https://webchat.freenode.net/?channels=io.js">IRC Chat</a><!--
+   --><a href="http://logs.libuv.org/io.js/latest">Logs</a><!--
+   --><a href="https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme">Governance</a>
+    </nav>
+    <nav class="languageFooter">
+      <a><strong>Languages</strong></h3><!--
+    --><a href="/cn/working-groups.html" lang="cn">简体中文</a><a href="/de/working-groups.html" lang="de">Deutsch</a><a href="/el/working-groups.html" lang="el">Ελληνικά</a><a href="/en/working-groups.html" lang="en">English</a><a href="/es/working-groups.html" lang="es">Español</a><a href="/fa/working-groups.html" lang="fa">فارسی</a><a href="/fi/working-groups.html" lang="fi">Suomi</a><a href="/fr/working-groups.html" lang="fr">Français</a><a href="/he/working-groups.html" lang="he">עברית</a><a href="/id/working-groups.html" lang="id">Bahasa Indonesia</a><a href="/it/working-groups.html" lang="it">Italiano</a><a href="/ja/working-groups.html" lang="ja">日本語</a><a href="/ko/working-groups.html" lang="ko">한국어</a><a href="/no/working-groups.html" lang="no">Norsk</a><a href="/pt_BR/working-groups.html" lang="pt_BR">Português (BR)</a><a href="/pt_PT/working-groups.html" lang="pt_PT">Português (PT)</a><a href="/ru/working-groups.html" lang="ru">Русский</a><a href="/tr/working-groups.html" lang="tr">Türkçe</a><a href="/uk/working-groups.html" lang="uk">Українська</a><a href="/zh_TW/working-groups.html" lang="zh_TW">正體中文（台灣）</a>
+    </nav>
+  </footer>
+
+  <!-- See something you like? Want to help? Visit https://github.com/iojs/website to contribute  -->
+</body>
+
+</html>
