@@ -6,6 +6,7 @@ gulp.task('build', function(cb){
     'clean',
     'download',
     'content',
+    'copyStatic',
     ['stylus', 'templates'],
     'minifyCss',
     cb);
