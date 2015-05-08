@@ -8,6 +8,7 @@ gulp.task('build', function(cb){
     'content',
     'copyStatic',
     ['stylus', 'templates'],
+    'minifyHtml',
     'minifyCss',
     cb);
 });
