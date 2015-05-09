@@ -8,10 +8,10 @@
   "api-link": "API 文档",
   "issues-link": "GitHub Issues",
   "org-link": "GitHub Org",
-  "irc-link": "IRC Chat",
+  "irc-link": "IRC 聊天室",
   "irc-logs-link": "Logs",
   "gov-link": "项目管理",
-  "verbose_version": "{{project.current_version}} 版本",
+  "verbose_version": "版本 {{project.current_version}}",
   "downloads": {
     "linux": "Linux",
     "win32": "Win32",
@@ -34,7 +34,7 @@
     "website": "io.js",
     "pages": {
       "changelog": "更新日志",
-      "home": "Home",
+      "home": "首页",
       "es6": "ES6",
       "faq": "FAQ",
       "faq_verbose": "常见问题"
