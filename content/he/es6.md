@@ -53,14 +53,14 @@
 
 הינך יכול לצפות ברשימה המלאה, כולל השוואה עם מנועים אחרים/מקבילים. ראה: [compat-table](https://kangax.github.io/compat-table/es6/)
 
-## איזה פיצ׳רים/תכונות מאופשרים על ידי הדלקת דגל ה״סטג׳ינג״ ?
+## איזה פיצ׳רים/תכונות מאופשרים על ידי הדלקת דגל ה --es_staging ?
 *   [Classes](https://github.com/lukehoban/es6features#classes) (strict mode only)
 *   [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals)
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (user-definable results for `Object.prototype.toString`)
 
 ## אלו פיצ׳רים/תכונות נמצאים ב״פיתוח״ ?
-פיצ׳רים/תכונות חדשים באופן קוב מתווספים למנוע הV8. באופן כללי, אין הערכה מדוייקת מתי ייכנסו ליציבות בiojs.
+פיצ׳רים/תכונות חדשים מתווספים באופן קבוע למנוע הV8. באופן כללי, אין הערכה מדוייקת מתי ייכנסו ליציבות בiojs.
 בכל גרסא של iojs ניתנת לך האפשרות לצפות בפיצ׳רים/תכונות שבפיתוח על ידי הרצה של הפקודה: `iojs --v8-options | grep "in progress"`.( עלייך לדעת שפיצ׳רים אלו עלולים להיות ״שבורים״ וששימוש בהם הינו על אחריותך :)).
 
 ## יש לי תשתית קיימת / פרוייקט שהתחלתי שמשתמש בדגל --harmony האם אני צריך להסיר אותו ?
