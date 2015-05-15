@@ -34,7 +34,7 @@ module.exports = {
     ]
   },
   cssSrc: dest + '/*.css',
-  htmlSrc: dest + '/*.html',
+  htmlSrc: dest + '/**/*.html',
   dest: dest,
   server: {
     port: 4657
