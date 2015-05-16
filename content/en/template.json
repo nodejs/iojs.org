@@ -25,7 +25,7 @@
     "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} are available for testing.",
     "short_description": "{{link 'website'}} is an {{link 'npm'}} compatible platform originally based on {{link 'nodejs'}}.",
     "slogan": "Bringing {{link 'pages.es6'}} to the Node Community!",
-    "news_link": "{{link 'Weekly Update – May 1st' 'https://medium.com/node-js-javascript/io-js-week-of-may-1st-362e01678d48'}}<br><small>featuring core and community updates ({{link 'Medium' 'https://medium.com/node-js-javascript/io-js-week-of-may-1st-362e01678d48'}}), ({{link 'News Archive' 'https://medium.com/@iojs/latest'}})</small>"
+    "news_link": "{{link 'Weekly Update – May 8th' 'https://medium.com/node-js-javascript/io-js-week-of-may-8th-f9ddd8d3080c'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
   },
   "releases": {
     "title": "io.js Release History",
