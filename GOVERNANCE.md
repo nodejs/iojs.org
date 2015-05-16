@@ -19,7 +19,7 @@ For the current list of WG members, see the project
 
 ## Collaborators
 
-The [iojs/website](https://github.com/iojs/website) GitHub repository is
+The [iojs/website](https://github.com/nodejs/website) GitHub repository is
 maintained by the WG and additional Collaborators who are added by the
 WG on an ongoing basis.
 

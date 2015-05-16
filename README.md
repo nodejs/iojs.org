@@ -11,7 +11,7 @@
   by the project.
 - [./public](./public) **currently** contains the full library of website content generated
   by the build scripts. Changes should not be made directly here. Soon, we'll
-  be switching over to leveraging [iojs/build](https://github.com/iojs/build)
+  be switching over to leveraging [iojs/build](https://github.com/nodejs/build)
   to help automate this.
 - [./source](./source) houses the reusable styling and structural elements used by the
   project.
@@ -22,7 +22,7 @@
 
 ### Dependencies
 ```
-git clone https://github.com/iojs/website.git
+git clone https://github.com/nodejs/website.git
 npm install
 ```
 
@@ -40,7 +40,7 @@ are provided to the [./public]() directory for publishing.
 ## Deployment
 
 The website is currently hosted on a (sponsored) 3rd party provider with a deployment
-process managed via the [io.js build team](https://github.com/iojs/build). As repo
+process managed via the [io.js build team](https://github.com/nodejs/build). As repo
 changes are approved and merged to the master branch, changes are automatically
 deployed within a few minutes.
 

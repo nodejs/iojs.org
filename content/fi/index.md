@@ -2,7 +2,7 @@
 
 Tuomme [ES6](es6.html):n Node-yhteisölle!
 
-[io.js](https://github.com/iojs/io.js) on [npm](https://www.npmjs.com/)-yhteensopiva alusta joka perustuu [node.js](https://nodejs.org/)&#8482;:n.
+[io.js](https://github.com/nodejs/io.js) on [npm](https://www.npmjs.com/)-yhteensopiva alusta joka perustuu [node.js](https://nodejs.org/)&#8482;:n.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 
@@ -15,7 +15,7 @@ Lataa io.js:
 [Macille](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg) tai
 [muu](https://iojs.org/dist/v{{project.current_version}}/).
 
-[Changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
+[Changelog](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
 
 [Jokailtaiset (_nightly_) julkaisut](https://iojs.org/download/nightly/) koekäyttötarkoituksiin.
 

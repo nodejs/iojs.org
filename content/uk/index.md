@@ -2,7 +2,7 @@
 
 Впровадження [ES6](es6.html) в спільноту Node!
 
-[io.js](https://github.com/iojs/io.js) це [npm](https://www.npmjs.com/) сумісна платформа, що побудована на основі [node.js](https://nodejs.org/)&#8482;.
+[io.js](https://github.com/nodejs/io.js) це [npm](https://www.npmjs.com/) сумісна платформа, що побудована на основі [node.js](https://nodejs.org/)&#8482;.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 
@@ -15,7 +15,7 @@
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg) чи
 [інших ОС](https://iojs.org/dist/v{{project.current_version}}/).
 
-[Історія змін](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
+[Історія змін](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
 
 [Нічні релізи](https://iojs.org/download/nightly/) доступні для завантаження і тестування.
 

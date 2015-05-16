@@ -2,23 +2,23 @@
 
 ## Что такое io.js?
 
-[io.js](https://github.com/iojs/io.js) это JavaScript платформа на базе [V8 от Google](http://code.google.com/p/v8/). Этот проект начинался как форк [Node.js™ от Joyent](https://nodejs.org/) и совместим с экосистемой [npm](https://www.npmjs.com/).
+[io.js](https://github.com/nodejs/io.js) это JavaScript платформа на базе [V8 от Google](http://code.google.com/p/v8/). Этот проект начинался как форк [Node.js™ от Joyent](https://nodejs.org/) и совместим с экосистемой [npm](https://www.npmjs.com/).
 
 Зачем? io.js стремится обеспечить более быстрые и предсказуемые циклы разработки. На данный момент проект сочетает последние возможности языка, API, и оптимизации производительности V8, а также обновлённые libuv и другие основные библиотеки.
 
-Проект стремится вести разработку согласно &laquo;[открытой модели управления](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)&raquo;, вместо корпоративной модели.
+Проект стремится вести разработку согласно &laquo;[открытой модели управления](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)&raquo;, вместо корпоративной модели.
 
 ## Версия 1.0.x?
 
 io.js перешёл на [Семантическое Версионирование](http://semver.org/) и изменения между Node.js™ 0.10 и io.js 1.0.0 были достаточно значительными чтобы оправдать увеличение мажорной версии.
 
-Наш [список изменений](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) для v1.x показывает [сводку изменений начиная с Node.js v0.10.35 и заканчивая io.js v1.0.x.](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+Наш [список изменений](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) для v1.x показывает [сводку изменений начиная с Node.js v0.10.35 и заканчивая io.js v1.0.x.](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
 ## Как я могу помочь?
 
-Все могут помочь. io.js придерживается [кодекса поведения](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), и вклад участников, релизы, а также сопровождение вкладов происходят согласно [открытой модели управления](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Все могут помочь. io.js придерживается [кодекса поведения](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), и вклад участников, релизы, а также сопровождение вкладов происходят согласно [открытой модели управления](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
 
-Чтобы начать, на [GitHub](https://github.com/iojs/io.js/issues) открыто множество тем для обсуждения, и мы будем рады услышать ваше мнение. Участие в обсуждениях — хороший способ понять, где вы можете быть полезны в дальнейшем. Если есть что-то, чем вы могли бы заняться, пожалуйста, [сделайте pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Чтобы начать, на [GitHub](https://github.com/nodejs/io.js/issues) открыто множество тем для обсуждения, и мы будем рады услышать ваше мнение. Участие в обсуждениях — хороший способ понять, где вы можете быть полезны в дальнейшем. Если есть что-то, чем вы могли бы заняться, пожалуйста, [сделайте pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
 
 Ещё можно помочь с разбором проблем [Nodebug.me](http://nodebug.me/).
 

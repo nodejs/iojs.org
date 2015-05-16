@@ -1,6 +1,6 @@
 {
   "browser-title": "io.js - JavaScript I/O",
-  "contribute-message": "See something you like? Want to help? Visit https://github.com/iojs/iojs-cn to contribute",
+  "contribute-message": "See something you like? Want to help? Visit https://github.com/nodejs/iojs-cn to contribute",
   "logo-text": "io.js",
   "heading-languages": "其他语言",
   "faq-link": "常见问题",
@@ -21,7 +21,7 @@
   },
   "home": {
     "download_links": "下载 {{> current_download_links}} 版本。",
-    "custom_changelog": "{{link '更新日志' 'https://github.com/iojs/iojs-cn/blob/gh-pages/CHANGELOG.md'}}",
+    "custom_changelog": "{{link '更新日志' 'https://github.com/nodejs/iojs-cn/blob/gh-pages/CHANGELOG.md'}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
     "nightly_releases": "{{link '每日构建版本' 'https://iojs.org/download/nightly/'}} 可用于测试。",
     "short_description": "{{link 'website'}} 是一个衍生自 {{link 'nodejs'}}，并兼容 {{link 'npm'}} 的开发平台。",

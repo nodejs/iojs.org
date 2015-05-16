@@ -4,16 +4,16 @@
   "description": "The website build for iojs.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iojs/website.git"
+    "url": "https://github.com/nodejs/website.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iojs/website/issues"
+    "url": "https://github.com/nodejs/website/issues"
   },
   "scripts": {
     "gulp": "./node_modules/gulp/bin/gulp.js"
   },
-  "homepage": "https://github.com/iojs/website",
+  "homepage": "https://github.com/nodejs/website",
   "contributors": [
     {
       "name": "Trent Oswald",

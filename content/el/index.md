@@ -2,7 +2,7 @@
 
 Φέρνουμε την [ES6](es6.html) στην κοινότητα του Node!
 
-[io.js](https://github.com/iojs/io.js) είναι μια πλατφόρμα συμβατή με το [npm](https://www.npmjs.com/),  βασισμένη στο [node.js](https://nodejs.org/)&#8482;.
+[io.js](https://github.com/nodejs/io.js) είναι μια πλατφόρμα συμβατή με το [npm](https://www.npmjs.com/),  βασισμένη στο [node.js](https://nodejs.org/)&#8482;.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 
@@ -16,7 +16,7 @@
 [άλλες εκδόσεις](https://iojs.org/dist/v{{project.current_version}}/).
 
 
-[Ιστορικό](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
+[Ιστορικό](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
 
 [Nightly εκδόσεις](https://iojs.org/download/nightly/) είναι διαθέσιμες για testing.
 

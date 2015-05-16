@@ -6,36 +6,36 @@ would like to contribute to the translation of iojs.org, please refer to the fol
 
 ## For Individuals wanting to contribute
 * Contact your appropriate localization group, and discuss with them the best possible way to contribute. A list of the localization groups can be found here: 
-    * [`iojs-bn`](https://github.com/iojs/iojs-bn) Bengali Community
-    * [`iojs-cn`](https://github.com/iojs/iojs-cn) Chinese Community 
-    * [`iojs-cs`](https://github.com/iojs/iojs-cs) Czech Community 
-    * [`iojs-da`](https://github.com/iojs/iojs-da) Danish Community 
-    * [`iojs-de`](https://github.com/iojs/iojs-de) German Community
-    * [`iojs-el`](https://github.com/iojs/iojs-el) Greek Community
-    * [`iojs-es`](https://github.com/iojs/iojs-es) Spanish Community
-    * [`iojs-fa`](https://github.com/iojs/iojs-fa) Persian Community 
-    * [`iojs-fi`](https://github.com/iojs/iojs-fi) Finnish Community
-    * [`iojs-fr`](https://github.com/iojs/iojs-fr) French Community
-    * [`iojs-he`](https://github.com/iojs/iojs-he) Hebrew Community
-    * [`iojs-hi`](https://github.com/iojs/iojs-hi) Hindi Community 
-    * [`iojs-hu`](https://github.com/iojs/iojs-hu) Hungarian Community
-    * [`iojs-id`](https://github.com/iojs/iojs-id) Indonesian Community
-    * [`iojs-it`](https://github.com/iojs/iojs-it) Italian Community
-    * [`iojs-ja`](https://github.com/iojs/iojs-ja) Japanese Community
-    * [`iojs-ka`](https://github.com/iojs/iojs-ka) Georgian Community
-    * [`iojs-kr`](https://github.com/iojs/iojs-kr) Korean Community
-    * [`iojs-mk`](https://github.com/iojs/iojs-mk) Macedonian Community
-    * [`iojs-nl`](https://github.com/iojs/iojs-nl) Dutch Community
-    * [`iojs-no`](https://github.com/iojs/iojs-no) Norwegian Community
-    * [`iojs-pl`](https://github.com/iojs/iojs-pl) Polish Community
-    * [`iojs-pt`](https://github.com/iojs/iojs-pt) Portuguese Community
-    * [`iojs-ro`](https://github.com/iojs/iojs-ro) Romanian Community
-    * [`iojs-ru`](https://github.com/iojs/iojs-ru) Russian Community
-    * [`iojs-sv`](https://github.com/iojs/iojs-sv) Swedish Community
-    * [`iojs-tr`](https://github.com/iojs/iojs-tr) Turkish Community
-    * [`iojs-tw`](https://github.com/iojs/iojs-tw) Taiwan Community
-    * [`iojs-uk`](https://github.com/iojs/iojs-uk) Ukrainian Community
-    * [`iojs-vi`](https://github.com/iojs/iojs-vi) Vietnamese Community
+    * [`iojs-bn`](https://github.com/nodejs/iojs-bn) Bengali Community
+    * [`iojs-cn`](https://github.com/nodejs/iojs-cn) Chinese Community 
+    * [`iojs-cs`](https://github.com/nodejs/iojs-cs) Czech Community 
+    * [`iojs-da`](https://github.com/nodejs/iojs-da) Danish Community 
+    * [`iojs-de`](https://github.com/nodejs/iojs-de) German Community
+    * [`iojs-el`](https://github.com/nodejs/iojs-el) Greek Community
+    * [`iojs-es`](https://github.com/nodejs/iojs-es) Spanish Community
+    * [`iojs-fa`](https://github.com/nodejs/iojs-fa) Persian Community 
+    * [`iojs-fi`](https://github.com/nodejs/iojs-fi) Finnish Community
+    * [`iojs-fr`](https://github.com/nodejs/iojs-fr) French Community
+    * [`iojs-he`](https://github.com/nodejs/iojs-he) Hebrew Community
+    * [`iojs-hi`](https://github.com/nodejs/iojs-hi) Hindi Community 
+    * [`iojs-hu`](https://github.com/nodejs/iojs-hu) Hungarian Community
+    * [`iojs-id`](https://github.com/nodejs/iojs-id) Indonesian Community
+    * [`iojs-it`](https://github.com/nodejs/iojs-it) Italian Community
+    * [`iojs-ja`](https://github.com/nodejs/iojs-ja) Japanese Community
+    * [`iojs-ka`](https://github.com/nodejs/iojs-ka) Georgian Community
+    * [`iojs-kr`](https://github.com/nodejs/iojs-kr) Korean Community
+    * [`iojs-mk`](https://github.com/nodejs/iojs-mk) Macedonian Community
+    * [`iojs-nl`](https://github.com/nodejs/iojs-nl) Dutch Community
+    * [`iojs-no`](https://github.com/nodejs/iojs-no) Norwegian Community
+    * [`iojs-pl`](https://github.com/nodejs/iojs-pl) Polish Community
+    * [`iojs-pt`](https://github.com/nodejs/iojs-pt) Portuguese Community
+    * [`iojs-ro`](https://github.com/nodejs/iojs-ro) Romanian Community
+    * [`iojs-ru`](https://github.com/nodejs/iojs-ru) Russian Community
+    * [`iojs-sv`](https://github.com/nodejs/iojs-sv) Swedish Community
+    * [`iojs-tr`](https://github.com/nodejs/iojs-tr) Turkish Community
+    * [`iojs-tw`](https://github.com/nodejs/iojs-tw) Taiwan Community
+    * [`iojs-uk`](https://github.com/nodejs/iojs-uk) Ukrainian Community
+    * [`iojs-vi`](https://github.com/nodejs/iojs-vi) Vietnamese Community
     
 ## For Localization Groups
 * Ensure that any site translations are done as pull requests into this repo. This will ensure the build process, layout, and styling, remain consistent across the different translations of the site.

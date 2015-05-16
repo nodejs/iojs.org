@@ -2,7 +2,7 @@
 
 [ES6](es6.html) для Node-сообщества!
 
-[io.js](https://github.com/iojs/io.js) &mdash; [npm](https://www.npmjs.com/)-совместимая платформа, разработанная на основе [node.js](https://nodejs.org/)&#8482;.
+[io.js](https://github.com/nodejs/io.js) &mdash; [npm](https://www.npmjs.com/)-совместимая платформа, разработанная на основе [node.js](https://nodejs.org/)&#8482;.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 
@@ -16,7 +16,7 @@
 [других](https://iojs.org/dist/v{{project.current_version}}/).
 
 
-[Изменения](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
+[Изменения](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
 
 [Ночные сборки](https://iojs.org/download/nightly/) доступны для тестирования.
 

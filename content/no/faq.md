@@ -16,7 +16,7 @@ inkluderes de nyeste språk-, API-, og ytelsesforbedringene til V8, samtidig som
 libuv og andre grunnbiblioteker blir oppdatert.
 
 Dette prosjektet ønsker å fortsette utviklingen av io.js under en [åpen
-styringsmodell](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme),
+styringsmodell](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme),
 i motsetning til å bli forvaltet av et selskap.
 
 <a id="versjonering"></a>
@@ -27,24 +27,24 @@ io.js har adoptert [Semver](http://semver.org/), og endringene mellom Node.js™
 0.10 og io.js 1.0.0 var signifikante nok til å rettferdiggjøre en ny
 hovedversjon.
 
-Vår [ENDRINGSLOGG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) for
+Vår [ENDRINGSLOGG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) for
 v1.x gir deg [et sammendrag av endringene mellom Node.js™ v0.10.35 og io.js
-v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+v1.0.x](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
 <a id="hvordan-kan-jeg-bidra"></a>
 
 ## Hvordan kan jeg bidra?
 
 Alle kan hjelpe til! io.js tar i bruk følgende [retningslinjer for
-oppførsel](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct).
+oppførsel](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct).
 Bidragsytere, lanseringer og eierskap er underlagt en [åpen
-styringsmodell](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+styringsmodell](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
 
 For å komme i gang finnes det flere åpne [diskusjoner på
-GitHub](https://github.com/iojs/io.js/issues) hvor vi gjerne tar i mot dine
+GitHub](https://github.com/nodejs/io.js/issues) hvor vi gjerne tar i mot dine
 tilbakemeldinger. Det å involvere seg i diskusjoner er en god måte å finne ut
 av hvordan du kan bidra videre. [Lag gjerne en pull
-request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions)
+request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions)
 om det er noe du føler du kan ta tak i.
 
 I tillegg er det å bruke [http://nodebug.me/](Nodebug.me) en ypperlig måte å

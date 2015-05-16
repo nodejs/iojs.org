@@ -4,7 +4,7 @@
 
 آوردن [ES6](../en/es6.html) به جامعهٔ نود!
 
-[io.js](https://github.com/iojs/io.js) یک سکوی سازگار با [npm](https://www.npmjs.com/) برپایهٔ [node.js](https://nodejs.ir/)&#8482; است.
+[io.js](https://github.com/nodejs/io.js) یک سکوی سازگار با [npm](https://www.npmjs.com/) برپایهٔ [node.js](https://nodejs.ir/)&#8482; است.
 
 [![io.js](../images/1.0.0.png)](https://iojs.org/dist/v{{project.current_version}}/)
 
@@ -18,7 +18,7 @@
 [سایر](https://iojs.org/dist/v{{project.current_version}}/).
 
 
-[سیاههٔ تغییرات](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
+[سیاههٔ تغییرات](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
 
 [Nightly releases](https://iojs.org/download/nightly/)[*](https://en.wikipedia.org/wiki/Neutral_build) برای آزمایش در دسترس می‌باشد.
 

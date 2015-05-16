@@ -14,7 +14,7 @@ project.links = {
   npm: 'https://www.npmjs.com/',
   website: 'https://iojs.org/',
   pages: {
-    changelog: 'https://github.com/iojs/io.js/blob/master/CHANGELOG.md',
+    changelog: 'https://github.com/nodejs/io.js/blob/master/CHANGELOG.md',
     home: './index.html',
     es6: './es6.html',
     faq: './faq.html',
@@ -24,7 +24,7 @@ project.links = {
   rss: [
     {
       title: 'Releases (GitHub)',
-      url: 'https://github.com/iojs/io.js/releases.atom'
+      url: 'https://github.com/nodejs/io.js/releases.atom'
     }
   ]
 };

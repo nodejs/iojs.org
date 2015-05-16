@@ -4,7 +4,7 @@
 
 מביאים את [ES6](es6.html) לקהילת Node
 
-[io.js](https://github.com/iojs/io.js)
+[io.js](https://github.com/nodejs/io.js)
 היא פלטפורמה מבוססת במקור על
 [node.js](https://nodejs.org/)&#8482;
 תואמת
@@ -21,7 +21,7 @@
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg).
 
 
-[שינויים אחרונים](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md)
+[שינויים אחרונים](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
 
 [בנייה ליילית](https://iojs.org/download/nightly)
 מוצעת לצורכי בדיקה

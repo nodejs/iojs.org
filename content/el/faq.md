@@ -2,27 +2,27 @@
 
 ## Τι σημαίνει io.js;
 
-[io.js](https://github.com/iojs/io.js) είναι μία JavaScript πλατφόρμα, βασισμένη στο [V8 runtime του Chrome](http://code.google.com/p/v8/). Αυτό το πρότζεκτ ξεκίνησε σαν ένα fork του [Node.js™ της Joyent](https://nodejs.org/), και είναι συμβατό με το οικοσύστημα του [npm](https://www.npmjs.com/).
+[io.js](https://github.com/nodejs/io.js) είναι μία JavaScript πλατφόρμα, βασισμένη στο [V8 runtime του Chrome](http://code.google.com/p/v8/). Αυτό το πρότζεκτ ξεκίνησε σαν ένα fork του [Node.js™ της Joyent](https://nodejs.org/), και είναι συμβατό με το οικοσύστημα του [npm](https://www.npmjs.com/).
 
 ## Γιατί;
 
 Το io.js στοχεύει στο να παράσχει γρηγορότερες και πιο προβλέψιμες εκδόσεις. Αυτην την στιγμή, συγχωνεύει τις πιο πρόσφατες αλλαγές του V8 ως προς την γλώσσα, το API και τις βελτιώσεις στην απόδοση, ενώ παράλληλα προσφέρει αναβαθμίσεις από την βιβλιοθήκη libuv και άλλες βιβλιοθήκες.
 
-Το πρότζεκτ στοχεύει στην συνεχή ανάπτυξη του io.js, ύπο μία "[ανοιχτή διακυβέρνηση](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" αντιθέτα από μία καθοδήγηση από κάποια εταιρία.
+Το πρότζεκτ στοχεύει στην συνεχή ανάπτυξη του io.js, ύπο μία "[ανοιχτή διακυβέρνηση](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" αντιθέτα από μία καθοδήγηση από κάποια εταιρία.
 
 ## Έκδοση 1.0.x;
 
 Το io.js πήγε σε [Semver](http://semver.org/) και οι αλλαγές μεταξύ Node.js™ 0.10 και io.js 1.0.0 είναι αρκετές για να υποστηρίξουν την αύξηση της κύριας έκδοσης (major version).
 
-Το [ιστορικό αλλαγών](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) για την v1.x παρέχει μία [περίληψη των αλλαγών από το Node.js v0.10.35 στο io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+Το [ιστορικό αλλαγών](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) για την v1.x παρέχει μία [περίληψη των αλλαγών από το Node.js v0.10.35 στο io.js v1.0.x](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
 ## Πως μπορώ να συνεισφέρω;
 
-Οποιοσδήποτε μπορεί να βοηθήσει. Το io.js υπακούει σε εναν [κώδικα συμπεριφοράς](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), και οι συνεισφορές και εκδόσεις γίνονται με ένα μοντέλο "[ανοιχτής διακυβέρνησης](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)".
+Οποιοσδήποτε μπορεί να βοηθήσει. Το io.js υπακούει σε εναν [κώδικα συμπεριφοράς](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), και οι συνεισφορές και εκδόσεις γίνονται με ένα μοντέλο "[ανοιχτής διακυβέρνησης](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)".
 
-Για να ξεκινήσετε, υπάρχουν ανοιχτές [συζητήσεις στο GitHub](https://github.com/iojs/io.js/issues), θα θέλαμε να ακούσουμε την γνώμη σας και τις απόψεις σας.
+Για να ξεκινήσετε, υπάρχουν ανοιχτές [συζητήσεις στο GitHub](https://github.com/nodejs/io.js/issues), θα θέλαμε να ακούσουμε την γνώμη σας και τις απόψεις σας.
 
-Συμμετέχοντας στις συζητήσεις είναι ένας καλός τρόπος για να δείτε που και πως μπορείτε να βοηθήσετε το πρότζεκτ. Αν υπάρχει κάτι που θα θέλατε να προσθέσετε ή να βελτιώσετε, δημιουργήστε ένα [pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Συμμετέχοντας στις συζητήσεις είναι ένας καλός τρόπος για να δείτε που και πως μπορείτε να βοηθήσετε το πρότζεκτ. Αν υπάρχει κάτι που θα θέλατε να προσθέσετε ή να βελτιώσετε, δημιουργήστε ένα [pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
 
 Επίσης, χρησιμοποιώντας το [Nodebug.me](http://nodebug.me/) μπορείτε να λύσετε υπάρχοντα προβλήματα.
 
