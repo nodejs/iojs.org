@@ -4,8 +4,8 @@ var path = require('path');
 var request = require('request');
 
 var manifest = {
-  "content/en/governance.md": "https://raw.githubusercontent.com/iojs/io.js/v1.x/GOVERNANCE.md",
-  "content/en/working-groups.md": "https://raw.githubusercontent.com/iojs/io.js/v1.x/WORKING_GROUPS.md",
+  "content/en/governance.md": "https://raw.githubusercontent.com/nodejs/io.js/master/GOVERNANCE.md",
+  "content/en/working-groups.md": "https://raw.githubusercontent.com/nodejs/io.js/master/WORKING_GROUPS.md",
   "source/versions.json": "https://iojs.org/dist/index.json"
 }
 
