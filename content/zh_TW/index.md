@@ -16,7 +16,7 @@
 [others](https://iojs.org/dist/v{{project.current_version}}/).
 
 
-[更新日誌](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[更新日誌](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 每天定時釋出的 [Nightly releases](https://iojs.org/download/nightly/) 版本開放測試！
 
