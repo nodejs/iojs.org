@@ -6,7 +6,7 @@
 
 Warum? io.js Ziel sind schnellere und vorhersehbare Releasezyklen. Momentan übernimmt es die neusten Sprach-, API- und Performance-Verbesserungen von V8, ebenso wie für libuv und anderen grundlegende Bibliotheken.
 
-Das Ziel dieses Projektes ist, die Entwicklung von io.js unter einem "[offenen Aufsichts-Modell](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" voranzutreiben, statt einer unternehmensbezogenen Führung.
+Das Ziel dieses Projektes ist, die Entwicklung von io.js unter einem "[offenen Aufsichts-Modell](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" voranzutreiben, statt einer unternehmensbezogenen Führung.
 
 ## Version 1.0.x?
 
@@ -16,10 +16,10 @@ Unser [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) für v
 
 ## Wie kann ich mitmachen?
 
-Jeder kann mithelfen. io.js folgt einem [Verhaltenscodex](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), und alle Beiträge und Veröffentlichungen stehen unter einem [offenen Aufsichts-Modell](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Jeder kann mithelfen. io.js folgt einem [Verhaltenscodex](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), und alle Beiträge und Veröffentlichungen stehen unter einem [offenen Aufsichts-Modell](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).
 
 Um direkt einzusteigen, schaue dir die offenen [Diskussionen auf GitHub](https://github.com/nodejs/io.js/issues) an, wir würden uns über dein Feedback freuen.
-Sich an Diskussionen zu beteiligen ist ein guter Weg, ein Gespür dafür zu bekommen, wo du weiterhelfen kannst. Wenn es etwas gibt, dass du verändern möchtest, schicke bitte einen [Pull Request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Sich an Diskussionen zu beteiligen ist ein guter Weg, ein Gespür dafür zu bekommen, wo du weiterhelfen kannst. Wenn es etwas gibt, dass du verändern möchtest, schicke bitte einen [Pull Request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 Zusätzlich gibt es mit [Nodebug.me](http://nodebug.me/) eine Möglichkeit dabei zu helfen, bestehende Themen aus dem Backlog zu sichten.
 

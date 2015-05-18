@@ -8,7 +8,7 @@
 
 io.js es un esfuerzo para proveer ciclos de lanzamiento más rápidos y más predecibles. Actualmente converge con la última versión del lenguaje, mejoras en la API y el rendimiento de V8 mientras que también mantiene actualizadas libuv y otras librerías base.
 
-Este proyecto apunta a continuar con el desarrollo de io.js bajo un "[modelo de gobierno abierto](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" en contraste con la gestión corporativa.
+Este proyecto apunta a continuar con el desarrollo de io.js bajo un "[modelo de gobierno abierto](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" en contraste con la gestión corporativa.
 
 ## ¿Versión 1.0.x?
 
@@ -18,10 +18,10 @@ Nuestro [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) para
 
 ## ¿Cómo puedo contribuir?
 
-Todos pueden ayudar. io.js adhiere a un [código de conducta](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), y las contribuciones, releases y colaboradores están bajo un modelo de [gobierno abierto](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Todos pueden ayudar. io.js adhiere a un [código de conducta](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), y las contribuciones, releases y colaboradores están bajo un modelo de [gobierno abierto](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).
 
 Para comenzar, hay [discusiones abiertas](https://github.com/nodejs/io.js/issues) en Github, y nos encantaría escuchar tu opinión.
-Comenzar a participar en discusiones es una buena manera de encontrar dónde puedes ayudar después. Si existe algo que creas que puedes aportar [crea un pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Comenzar a participar en discusiones es una buena manera de encontrar dónde puedes ayudar después. Si existe algo que creas que puedes aportar [crea un pull request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 Adicionalmente,  usar [Nodebug.me](http://nodebug.me/)  es una buena manera de ayudar a priorizar los issues en el backlog.
 

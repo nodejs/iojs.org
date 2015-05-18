@@ -29,10 +29,10 @@ io.js aims to provide faster and predictable release cycles. It currently merges
 io.jsではより早く予測可能なリリースサイクルを実現することを目標にしています。現在のio.jsは、最新V8の言語仕様、API、パフォーマンス改善とアップデートされたlibuvなどのコアライブラリを組み合わせています。
 
 <!-- 
-This project aims to continue development of io.js under an "[open governance model](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" as opposed to corporate stewardship. 
+This project aims to continue development of io.js under an "[open governance model](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" as opposed to corporate stewardship. 
 -->
 
-io.jsでは企業主導ではなく"[オープンガバナンスモデル](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)"によるプロジェクト運営を推進しています。
+io.jsでは企業主導ではなく"[オープンガバナンスモデル](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)"によるプロジェクト運営を推進しています。
 
 <!-- 
 ## Version 1.0.x? 
@@ -59,18 +59,18 @@ v1.xの[変更履歴](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)に
 ## 参加するには？
 
 <!-- 
-Everyone can help. io.js adheres to a [code of conduct](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), and contributions, releases, and contributorship are under an [open governance](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme) model. 
+Everyone can help. io.js adheres to a [code of conduct](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), and contributions, releases, and contributorship are under an [open governance](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme) model. 
 -->
 
-io.jsでは[code of conduct](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct)に従っていれば誰でもプロジェクトに参加できます。リリースやプロジェクトへのコントリビュートは[オープンガバナンスモデル](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)で行なっています。
+io.jsでは[code of conduct](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct)に従っていれば誰でもプロジェクトに参加できます。リリースやプロジェクトへのコントリビュートは[オープンガバナンスモデル](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)で行なっています。
 
 <!-- 
 To get started, there are open [ discussions on GitHub](https://github.com/nodejs/io.js/issues), and we'd love to hear your feedback.
 Becoming involved in discussions is a good way to get a feel of where you can help out further. If there is
-something there you feel you can tackle, please [make a pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions). 
+something there you feel you can tackle, please [make a pull request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions). 
 -->
 
-まずは[GitHubのディスカッション](https://github.com/nodejs/io.js/issues)に参加して意見やフィードバックを交わしてください。何があなたのヘルプを必要としているか雰囲気をつかみやすいと思います。あなたが取り組めそうなものを見つけたら[pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions)を送ってください。
+まずは[GitHubのディスカッション](https://github.com/nodejs/io.js/issues)に参加して意見やフィードバックを交わしてください。何があなたのヘルプを必要としているか雰囲気をつかみやすいと思います。あなたが取り組めそうなものを見つけたら[pull request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions)を送ってください。
 
 <!-- 
 In addition, using [Nodebug.me](http://nodebug.me/) is a good way to help Triage the issues in the backlog. 

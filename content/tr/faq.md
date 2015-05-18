@@ -8,7 +8,7 @@
 
 io.js hızlı ve öngürülebilir sürümler yayınlamayı amaçlamaktadır. io.js libuv ve diğer temel kütüphaneleri güncellerken, en son V8 performans, API ve dil geliştirmelerini birleştirmektedir.
 
-Bu proje, io.js platformunun geliştirilmesine kurumsal yönetim şekline karşı olarak "[açık yönetim modeli](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" altında devam etmeyi amaçlamaktadır.
+Bu proje, io.js platformunun geliştirilmesine kurumsal yönetim şekline karşı olarak "[açık yönetim modeli](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" altında devam etmeyi amaçlamaktadır.
 
 ## Versiyon 1.0.x?
 
@@ -19,9 +19,9 @@ v1.x sürümleri için [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHA
 
 ## Nasıl Katkıda Bulunabilirim?
 
-Herkes yardımda bulunabilir. io.js bir [yönetim kılavuzuna](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct) bağlı kalır, katkılar, yayınlar ve katkıda bulunma rolleri bir [açık yönetim](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme) modeli altındadır.
+Herkes yardımda bulunabilir. io.js bir [yönetim kılavuzuna](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct) bağlı kalır, katkılar, yayınlar ve katkıda bulunma rolleri bir [açık yönetim](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme) modeli altındadır.
 
-Başlangıç için, [GitHub üzerinde tartışmalar](https://github.com/nodejs/io.js/issues) mevcut, geri bildiriminizi duymak isteriz. Tartışmalara dahil olmak nasıl daha fazla yardımcı olabileceğiniz hakkında fikir almak için iyi bir yoldur. Eğer yapabileceğiniz bir şey varsa lütfen [pull request gönderin](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Başlangıç için, [GitHub üzerinde tartışmalar](https://github.com/nodejs/io.js/issues) mevcut, geri bildiriminizi duymak isteriz. Tartışmalara dahil olmak nasıl daha fazla yardımcı olabileceğiniz hakkında fikir almak için iyi bir yoldur. Eğer yapabileceğiniz bir şey varsa lütfen [pull request gönderin](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 Ek olarak, [Nodebug.me](http://nodebug.me/) kullanmak birikmiş işlerin önceliğe göre sıralanmasına yardım etmek için iyi bir yoldur.
 

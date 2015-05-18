@@ -8,7 +8,7 @@
 
 io.js는 보다 빠르고 예측 가능한 릴리스 주기를 목표로 하고 있다. 현재 최신 V8의 언어사양, API, 성능 향상을 통합하고 libuv를 포함한 기반 라이브러리의 업데이트도 하고 있다.
 
-이 프로젝트의 목표는 io.js를 기업 주도가 아닌 "[오픈 거버넌스 모델](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)"로 개발해 나아가는 것이다.
+이 프로젝트의 목표는 io.js를 기업 주도가 아닌 "[오픈 거버넌스 모델](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)"로 개발해 나아가는 것이다.
 
 ## 버전 1.0.x?
 
@@ -18,10 +18,10 @@ v1.x [변경이력](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)에�
 
 ## 어떻게 기여할 수 있나?
 
-아무나 할 수 있다. io.js는 [행동 강령](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct)을 준수하고 기여, 릴리스, 기여자는 [오픈 거버넌스](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme) 모델을 따른다.
+아무나 할 수 있다. io.js는 [행동 강령](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct)을 준수하고 기여, 릴리스, 기여자는 [오픈 거버넌스](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme) 모델을 따른다.
 
 먼저, 이미 [GitHub의 토의](https://github.com/nodejs/io.js/issues)가 열려 있고 우리는 피드백을 환영한다.
-토론에 참여하는 것은 어떻게 도울지 판단하는 데 도움된다. 해결할 수 있다고 생각되면 [풀 리퀘스트를 만들어](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions) 달라.
+토론에 참여하는 것은 어떻게 도울지 판단하는 데 도움된다. 해결할 수 있다고 생각되면 [풀 리퀘스트를 만들어](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions) 달라.
 
 덧붙여, [Nodebug.me](http://nodebug.me/)에서 해결되지 않은 이슈를 평가(Triage)하는 것도 매우 도움된다.
 

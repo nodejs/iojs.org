@@ -10,7 +10,7 @@
 
 هدف io.js ارائهٔ سریع‌تر و قابل پیش‌بینی‌تر در چرخه انتشار است. io.js در حال حاضر در آخرین زبان، API و بهبود عملکرد با V8 یکی است و همچنین libuv و دیگر کتابخانه‌های پایه را بروزرسانی می‌کند.
 
-هدف این پروژه ادامهٔ توسعهٔ io.js تحت یک "[مدل حاکمیت باز](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" به عنوان مخالفت با نظارت شرکت‌ها است.
+هدف این پروژه ادامهٔ توسعهٔ io.js تحت یک "[مدل حاکمیت باز](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" به عنوان مخالفت با نظارت شرکت‌ها است.
 
 ## v1.0.x؟
 
@@ -20,10 +20,10 @@ io.js به [Semver](http://semver.org/) انتقال یافته است و تغی
 
 ## چگونه می‌توانم کمک کنم؟
 
-همه می‌توانند کمک کنند. io.js به یکسری [مقررات رفتاری](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct) پایبند است و مشارکت‌ها، انتشارها و همکاری تحت یک  [مدل حاکمیت باز](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme) انجام می‌پذیرند.
+همه می‌توانند کمک کنند. io.js به یکسری [مقررات رفتاری](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct) پایبند است و مشارکت‌ها، انتشارها و همکاری تحت یک  [مدل حاکمیت باز](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme) انجام می‌پذیرند.
 
 برای شروع کار، [بحث‌های باز روی گیت‌هاب](https://github.com/nodejs/io.js/issues) قرار دارند و  ما مشتاق به شنیدن بازخوردهای شما هستیم.
-درگیر شدن با بحث‌ها راه خوبی برای درک این است که شما در کدام قسمت می‌توانید کمک بیشتری به انجام برسانید. اگر چیزی وجود دارد که شما احساس می‌کنید از عهدهٔ آن برمی‌آیید، لطفا [یک pull request بسازید](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+درگیر شدن با بحث‌ها راه خوبی برای درک این است که شما در کدام قسمت می‌توانید کمک بیشتری به انجام برسانید. اگر چیزی وجود دارد که شما احساس می‌کنید از عهدهٔ آن برمی‌آیید، لطفا [یک pull request بسازید](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 بعلاوه، استفاده از [Nodebug.me](http://nodebug.me/) راه خوبی برای کمک به دسته‌بندی issue‌ها در انبار است.
 

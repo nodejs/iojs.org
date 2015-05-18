@@ -8,7 +8,7 @@
 
 io.js aims to provide faster and predictable release cycles. It currently merges in the latest language, API and performance improvements to V8 while also updating libuv and other base libraries.
 
-This project aims to continue development of io.js under an "[open governance model](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" as opposed to corporate stewardship.
+This project aims to continue development of io.js under an "[open governance model](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" as opposed to corporate stewardship.
 
 ## Version 1.0.x?
 
@@ -19,11 +19,11 @@ Our [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) for v1.x
 
 ## How can I contribute?
 
-Everyone can help. io.js adheres to a [code of conduct](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), and contributions, releases, and contributorship are under an [open governance](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme) model.
+Everyone can help. io.js adheres to a [code of conduct](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), and contributions, releases, and contributorship are under an [open governance](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme) model.
 
 To get started, there are open [ discussions on GitHub](https://github.com/nodejs/io.js/issues), and we'd love to hear your feedback.
 Becoming involved in discussions is a good way to get a feel of where you can help out further. If there is
-something there you feel you can tackle, please [make a pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+something there you feel you can tackle, please [make a pull request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 In addition, using [Nodebug.me](http://nodebug.me/) is a good way to help Triage the issues in the backlog.
 

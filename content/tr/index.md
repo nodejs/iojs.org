@@ -15,7 +15,7 @@ ve [diğerleri](https://iojs.org/dist/v{{project.current_version}}/)
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg).
 
 
-[Değişiklikler](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Değişiklikler](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 Test amaçlı olarak [gecelik derlemeleri kullanabilirsiniz](https://iojs.org/download/nightly/)
 

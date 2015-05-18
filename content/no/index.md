@@ -16,7 +16,7 @@ Last ned til
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg), eller
 [andre](https://iojs.org/dist/v{{project.current_version}}/).
 
-[Se endringer (engelsk)](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Se endringer (engelsk)](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [Nattlige bygg](https://iojs.org/download/nightly/) er tilgjengelig for testing.
 

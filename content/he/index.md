@@ -21,7 +21,7 @@
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg).
 
 
-[שינויים אחרונים](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[שינויים אחרונים](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [בנייה ליילית](https://iojs.org/download/nightly)
 מוצעת לצורכי בדיקה

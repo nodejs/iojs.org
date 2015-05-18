@@ -8,7 +8,7 @@
 
 io.js tähtää nopeampaan ja ennustettavampaan julkaisusykliin. Nykytilassaan se sisältää uusimmat kieli-, API- ja suorituskykymuutokset V8:sta, samalla on päivitetty myös libuv ja muita kantakirjastoja.
 
-Projektin tavoitteena on io.js:n jatkuva kehitys _[avoimen hallintamallin](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)_ alaisuudessa, erona yrityksen johdon alaisena olemiseen.
+Projektin tavoitteena on io.js:n jatkuva kehitys _[avoimen hallintamallin](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)_ alaisuudessa, erona yrityksen johdon alaisena olemiseen.
 
 ## Versio 1.0.x?
 
@@ -18,11 +18,11 @@ Projektin [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) v1
 
 ## Miten voin osallistua?
 
-Jokainen voi olla avuksi. io.js noudattaa määritettyä [käyttäytymiskoodia](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), ja työpanokset, julkaisut ja yhteistyö ovat [avoimen hallintamallin](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme) alaisia.
+Jokainen voi olla avuksi. io.js noudattaa määritettyä [käyttäytymiskoodia](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), ja työpanokset, julkaisut ja yhteistyö ovat [avoimen hallintamallin](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme) alaisia.
 
 Alkuun pääsemiseksi, avoimista asioista [on keskusteluita GitHubissa](https://github.com/nodejs/io.js/issues), joista kuulemme mielellämme palautettasi.
 
-Keskusteluun osallistuminen on hyvä tapa tunnustella mille osa-alueille voisit apuasi tarjota. Jos löydät jotain missä koet pystyväsi olemaan avuksi, [tee pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Keskusteluun osallistuminen on hyvä tapa tunnustella mille osa-alueille voisit apuasi tarjota. Jos löydät jotain missä koet pystyväsi olemaan avuksi, [tee pull request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 Lisäksi, [Nodebug.me](http://nodebug.me/) on hyvä tapa auttaa luokittelemalla ja priorisoimalla (_Triage_) backlogissa olevia avoimia asioita.
 

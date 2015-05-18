@@ -6,7 +6,7 @@
 
 Зачем? io.js стремится обеспечить более быстрые и предсказуемые циклы разработки. На данный момент проект сочетает последние возможности языка, API, и оптимизации производительности V8, а также обновлённые libuv и другие основные библиотеки.
 
-Проект стремится вести разработку согласно &laquo;[открытой модели управления](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)&raquo;, вместо корпоративной модели.
+Проект стремится вести разработку согласно &laquo;[открытой модели управления](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)&raquo;, вместо корпоративной модели.
 
 ## Версия 1.0.x?
 
@@ -16,9 +16,9 @@ io.js перешёл на [Семантическое Версионирован
 
 ## Как я могу помочь?
 
-Все могут помочь. io.js придерживается [кодекса поведения](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), и вклад участников, релизы, а также сопровождение вкладов происходят согласно [открытой модели управления](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Все могут помочь. io.js придерживается [кодекса поведения](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), и вклад участников, релизы, а также сопровождение вкладов происходят согласно [открытой модели управления](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).
 
-Чтобы начать, на [GitHub](https://github.com/nodejs/io.js/issues) открыто множество тем для обсуждения, и мы будем рады услышать ваше мнение. Участие в обсуждениях — хороший способ понять, где вы можете быть полезны в дальнейшем. Если есть что-то, чем вы могли бы заняться, пожалуйста, [сделайте pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Чтобы начать, на [GitHub](https://github.com/nodejs/io.js/issues) открыто множество тем для обсуждения, и мы будем рады услышать ваше мнение. Участие в обсуждениях — хороший способ понять, где вы можете быть полезны в дальнейшем. Если есть что-то, чем вы могли бы заняться, пожалуйста, [сделайте pull request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 Ещё можно помочь с разбором проблем [Nodebug.me](http://nodebug.me/).
 

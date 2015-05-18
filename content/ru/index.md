@@ -16,7 +16,7 @@
 [других](https://iojs.org/dist/v{{project.current_version}}/).
 
 
-[Изменения](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Изменения](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [Ночные сборки](https://iojs.org/download/nightly/) доступны для тестирования.
 

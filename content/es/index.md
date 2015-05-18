@@ -15,7 +15,7 @@ Descargar para:
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg).
 
 
-[Changelog](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Changelog](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [Actualización semanal - 6 de Marzo][1] <small>presentando actualizaciones en core y la comunidad ([Medium][1])</small>
 <br><br> [Nightly releases](https://iojs.org/download/nightly/) están disponibles para pruebas.

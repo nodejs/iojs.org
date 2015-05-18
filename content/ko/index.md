@@ -14,7 +14,7 @@
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg),
 [기타](https://iojs.org/dist/v{{project.current_version}}/) 다운로드.
 
-[변경이력](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[변경이력](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 테스트 용으로 [Nightly 릴리스](https://iojs.org/download/nightly/)를 사용할 수 있다.
 

@@ -7,7 +7,7 @@
 ## Чому? 
 
 io.js спрямований надати швидкі та прогнозовані цикли розробки. Він надає доступ до найновішого синтаксису мови, API та поліпшень швидкості виконання 
-V8,  водночас поновлюючи libuv та інші базові бібліотеки. Цей проект декларує подальшу розробку io.js згідно "[open governance model](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" на відміну від корпоративного керівництва.
+V8,  водночас поновлюючи libuv та інші базові бібліотеки. Цей проект декларує подальшу розробку io.js згідно "[open governance model](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" на відміну від корпоративного керівництва.
 
 ## Версія 1.0.x?
 
@@ -17,10 +17,10 @@ io.js перейшов на дотримування [Semver](http://semver.org/
 
 ## Як я можу допомогти?
 
-Кожний може допомогти. io.js дотримується [кодексу поведінки](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct). Всі внески в розвиток та релізи відповідають моделі [open governance](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Кожний може допомогти. io.js дотримується [кодексу поведінки](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct). Всі внески в розвиток та релізи відповідають моделі [open governance](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).
 
 Для початку, є відкриті [дискусії на GitHub](https://github.com/nodejs/io.js/issues), де ми завжди раді почути та прийняти до уваги вашу думку.
-Приймання активної участі в обговоренні - це один із варіантів допомогти розвитку проекту. Якщо ви внесли зміни в код, будь ласка, [зробіть Pull Request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Приймання активної участі в обговоренні - це один із варіантів допомогти розвитку проекту. Якщо ви внесли зміни в код, будь ласка, [зробіть Pull Request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 Крім того, використовуючи [Nodebug.me](http://nodebug.me/), ви можете допомогти відсортовувати відкриті питання на GitHub.
 

@@ -15,7 +15,7 @@ Download per
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg) o
 [altro](https://iojs.org/dist/v{{project.current_version}}/).
 
-[Changelog](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Changelog](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 Sono disponibili le [Nightly releases](https://iojs.org/download/nightly/) per essere testate.
 

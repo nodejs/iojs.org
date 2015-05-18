@@ -15,7 +15,7 @@ Lataa io.js:
 [Macille](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg) tai
 [muu](https://iojs.org/dist/v{{project.current_version}}/).
 
-[Changelog](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Changelog](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [Jokailtaiset (_nightly_) julkaisut](https://iojs.org/download/nightly/) koekäyttötarkoituksiin.
 

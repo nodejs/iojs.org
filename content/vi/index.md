@@ -16,7 +16,7 @@ Download
 [nền tảng khác](https://iojs.org/dist/v1.3.0/).
 
 
-[Changelog](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Changelog](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [Nightly releases](https://iojs.org/download/nightly/) đã sẵn sàng để thử nghiệm.
 

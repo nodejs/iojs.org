@@ -6,7 +6,7 @@ O [io.js](https://github.com/nodejs/io.js) é uma plataforma JavaScript constru�
 
 Porquê? O io.js procura disponibilizar ciclos de release mais rápidos e previsíveis. Atualmente junta as melhorias mais recentes da linguagem, API e performance do V8 e ao mesmo tempo atualiza a libuv e outras bibliotecas base.
 
-Este projeto procura continuar o desenvolvimento do io.js sob um "[modelo de governança aberta](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)", ao invés de uma administração corporativa.
+Este projeto procura continuar o desenvolvimento do io.js sob um "[modelo de governança aberta](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)", ao invés de uma administração corporativa.
 
 ## Versão 1.0.x?
 
@@ -16,9 +16,9 @@ O nosso [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) da v
 
 ## Como posso contribuir?
 
-Todos podem ajudar. O io.js adere a um [código de conduta](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), e as contribuições, lançamentos e autoria estão sob um modelo de [governança aberta](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Todos podem ajudar. O io.js adere a um [código de conduta](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), e as contribuições, lançamentos e autoria estão sob um modelo de [governança aberta](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).
 
-Para começar, existem [ discussões abertas no GitHub](https://github.com/nodejs/io.js/issues), e adoraríamos ouvir o seu feedback. Envolver-se nas discussões é uma boa maneira de saber onde poderá ajudar mais. Se existir algo que sente que pode fazer, por favor [crie um pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Para começar, existem [ discussões abertas no GitHub](https://github.com/nodejs/io.js/issues), e adoraríamos ouvir o seu feedback. Envolver-se nas discussões é uma boa maneira de saber onde poderá ajudar mais. Se existir algo que sente que pode fazer, por favor [crie um pull request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 Além disso, usar o [Nodebug.me](http://nodebug.me/) é uma boa maneira de ajudar a fazer a triagem dos issues no backlog.
 

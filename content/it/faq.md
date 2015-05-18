@@ -8,7 +8,7 @@
 
 L'obiettivo di io.js è raggiungere un ciclo di sviluppo più rapido e prevedibile. Attualmente unisce gli ultimi miglioramenti a livello di linguaggio e di API V8, aggiornando libuv e altre librerie di base.
 
-Questo progetto mira a proseguire lo sviluppo di io.js utilizzando un "[modello di governance aperto ](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" rispetto ad un'amministrazione di tipo corporativo.
+Questo progetto mira a proseguire lo sviluppo di io.js utilizzando un "[modello di governance aperto ](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" rispetto ad un'amministrazione di tipo corporativo.
 
 ## Versione 1.0.x?
 
@@ -18,11 +18,11 @@ Il nostro [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) pe
 
 ## Come posso contribuire?
 
-Tutti possono aiutare. io.js aderisce ad un [codice di condotta](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), contribuzioni e rilasci sotto un modello di [governance aperto](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Tutti possono aiutare. io.js aderisce ad un [codice di condotta](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), contribuzioni e rilasci sotto un modello di [governance aperto](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).
 
 Per iniziare, ci sono diverse [discussioni aperte su GitHub](https://github.com/nodejs/io.js/issues), e ci piacerebbe un tuo parere.
 Partecipare alle discussioni è un buon punto di partenza per avere un'idea di come si può aiutare ulteriormente.
-Se c'è qualcosa che ti senti in grado di affrontare, puoi aprire [una Pull Request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Se c'è qualcosa che ti senti in grado di affrontare, puoi aprire [una Pull Request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 In aggiunta, [Nodebug.me](http://nodebug.me/) è un buon punto di partenza per risolvere i problemi arretrati.
 

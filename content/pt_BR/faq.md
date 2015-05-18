@@ -6,7 +6,7 @@
 
 Por que? O io.js visa fornecer ciclos de release mais rápidos e previsíveis. Atualmente ele traz as últimas melhorias em linguagem, API e desempenho do V8 e ao mesmo tempo atualizando a libuv e outras bibliotecas base.
 
-Este projeto tem como objetivo continuar o desenvolvimento do io.js sob um "[modelo de governança aberto](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" em oposição à administração corporativa.
+Este projeto tem como objetivo continuar o desenvolvimento do io.js sob um "[modelo de governança aberto](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" em oposição à administração corporativa.
 
 ## Versão 1.0.x?
 
@@ -16,10 +16,10 @@ Nosso [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) para a
 
 ## Como posso contribuir?
 
-Todos podem ajudar. O io.js adere a um [código de conduta](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), e contribuições, lançamentos e autoria de contribuições estão sob um [modelo de governaça aberta](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Todos podem ajudar. O io.js adere a um [código de conduta](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), e contribuições, lançamentos e autoria de contribuições estão sob um [modelo de governaça aberta](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).
 
 Para começar, abra uma [issue no GitHub](https://github.com/nodejs/io.js/issues), e nós vamos adorar ouvir seu feedback.
-Envolver-se em discussões é uma boa forma de ter uma sensação de que você pode ajudar ainda mais. Se houver algo que você sente que você pode resolver, por favor [faça um pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Envolver-se em discussões é uma boa forma de ter uma sensação de que você pode ajudar ainda mais. Se houver algo que você sente que você pode resolver, por favor [faça um pull request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 Além disso, usar o [Nodebug.me](http://nodebug.me/) é uma boa forma de ajudar na triagem de issues no backlog.
 

@@ -15,7 +15,7 @@
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg) чи
 [інших ОС](https://iojs.org/dist/v{{project.current_version}}/).
 
-[Історія змін](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Історія змін](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [Нічні релізи](https://iojs.org/download/nightly/) доступні для завантаження і тестування.
 

@@ -6,7 +6,7 @@
 
 Mengapa? io.js bertujuan untuk memberikan siklus rilis lebih cepat dan dapat diprediksi. Saat ini menyatu dalam API dan perbaikan kinerja versi terbaru untuk V8 dan juga memperbarui [libuv](https://github.com/libuv/libuv) dan *library* dasar lainnya.
 
-Proyek ini bertujuan untuk melanjutkan pengembangan io.js bawah "[open governance model](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" sebagai menentang kepengurusan perusahaan.
+Proyek ini bertujuan untuk melanjutkan pengembangan io.js bawah "[open governance model](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" sebagai menentang kepengurusan perusahaan.
 
 ## 1.0.x Versi?
 
@@ -16,10 +16,10 @@ io.js telah pindah ke [Semver](http://semver.org/) dan perubahan antara Node.jsâ
 
 ## Bagaimana saya dapat berkontribusi?
 
-Setiap orang dapat membantu. io.js dengan mematuhi [kode etik](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), dan kontribusi, rilis, dan contributorship berada di bawah sebuah model [open governance model](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Setiap orang dapat membantu. io.js dengan mematuhi [kode etik](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), dan kontribusi, rilis, dan contributorship berada di bawah sebuah model [open governance model](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).
 
 Untuk memulai, buka [diskusi di GitHub](https://github.com/nodejs/io.js/issues), dan kami akan senang mendengar tanggapan Anda.
-Terlibat dalam diskusi adalah cara yang baik untuk dapar merasakan di mana Anda dapat membantu lebih lanjut. Jika di sana ada sesuatu Anda merasa Anda dapat menangani, silakan [membuat permintaan persetujuan](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+Terlibat dalam diskusi adalah cara yang baik untuk dapar merasakan di mana Anda dapat membantu lebih lanjut. Jika di sana ada sesuatu Anda merasa Anda dapat menangani, silakan [membuat permintaan persetujuan](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 Selain itu, dengan menggunakan [Nodebug.me](http://nodebug.me/) adalah cara yang baik untuk membantu Triage masalah dalam *backlog*.
 

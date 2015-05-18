@@ -6,7 +6,7 @@
 
 Pourquoi? L'objectif de io.js est de fournir des cycles de développement plus rapides et prévisibles. Il fusionne actuellement les dernières fonctionnalités du langage, API et améliorations de performance de V8 tout en mettant à jour libuv et d'autres bibliothèques de base.
 
-Ce projet vise à poursuivre le développement de io.js sous un "[modèle de gouvernance ouvert](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme)" par opposition à la gérance de Node.js™ organisée par Joyent, jugée restreinte.
+Ce projet vise à poursuivre le développement de io.js sous un "[modèle de gouvernance ouvert](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" par opposition à la gérance de Node.js™ organisée par Joyent, jugée restreinte.
 
 ## Version 1.0.x?
 
@@ -16,11 +16,11 @@ Notre [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) pour l
 
 ## Comment puis-je contribuer?
 
-Tout le monde peut aider. Io.js adhère à un [code de conduite](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), et les contributions sont sous un modèle de [gouvernance ouverte](https://github.com/nodejs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Tout le monde peut aider. Io.js adhère à un [code de conduite](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), et les contributions sont sous un modèle de [gouvernance ouverte](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).
 
 Pour commencer, il y a des [ discussions ouvertes sur GitHub](https://github.com/nodejs/io.js/issues), et nous aimerons entendre votre avis.
 S'impliquer dans les discussions est un bon moyen pour savoir comment aider davantage. S'il y a
-quelque chose que vous vous sentez capable d'améliorer, [créez une pull request](https://github.com/nodejs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
+quelque chose que vous vous sentez capable d'améliorer, [créez une pull request](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-contributions).
 
 En outre, utiliser [Nodebug.me](http://nodebug.me/) est un bon moyen pour aider au triage des issues dans le backlog.
 

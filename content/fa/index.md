@@ -18,7 +18,7 @@
 [سایر](https://iojs.org/dist/v{{project.current_version}}/).
 
 
-[سیاههٔ تغییرات](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[سیاههٔ تغییرات](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [Nightly releases](https://iojs.org/download/nightly/)[*](https://en.wikipedia.org/wiki/Neutral_build) برای آزمایش در دسترس می‌باشد.
 

@@ -16,7 +16,7 @@
 [άλλες εκδόσεις](https://iojs.org/dist/v{{project.current_version}}/).
 
 
-[Ιστορικό](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Ιστορικό](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [Nightly εκδόσεις](https://iojs.org/download/nightly/) είναι διαθέσιμες για testing.
 

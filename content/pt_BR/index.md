@@ -15,7 +15,7 @@ ou
 [Mac](https://iojs.org/dist/v{{project.current_version}}/iojs-v{{project.current_version}}.pkg).
 
 
-[Changelog](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)
+[Changelog](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md)
 
 [Releases nightly](https://iojs.org/download/nightly/) estão disponíveis para testes.
 
