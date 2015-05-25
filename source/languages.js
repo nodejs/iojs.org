@@ -1,5 +1,5 @@
 module.exports = [
-  {"code": "cn", "name": "简体中文", "name-en": "Chinese (Simple)"},
+  {"code": "zh", "name": "简体中文", "name-en": "Chinese (Simple)"},
   {"code": "de", "name": "Deutsch", "name-en": "German"},
   {"code": "el", "name": "Ελληνικά", "name-en": "Greek"},
   {"code": "en", "name": "English", "name-en": "English"},
@@ -13,11 +13,11 @@ module.exports = [
   {"code": "ja", "name": "日本語", "name-en": "Japanese"},
   {"code": "ko", "name": "한국어", "name-en": "Korean"},
   {"code": "no", "name": "Norsk", "name-en": "Norwegian"},
-  {"code": "pt_BR", "name": "Português (BR)", "name-en": "Portuguese (Brazil)"},
-  {"code": "pt_PT", "name": "Português (PT)", "name-en": "Portuguese (Portugal)"},
+  {"code": "pt-br", "name": "Português (BR)", "name-en": "Portuguese (Brazil)"},
+  {"code": "pt-pt", "name": "Português (PT)", "name-en": "Portuguese (Portugal)"},
   {"code": "ru", "name": "Русский", "name-en": "Russian"},
   {"code": "tr", "name": "Türkçe", "name-en": "Turkish"},
   {"code": "uk", "name": "Українська", "name-en": "Ukrainian"},
-  {"code": "zh_TW", "name": "正體中文（台灣）", "name-en": "Chinese Traditional (Taiwan)"},
+  {"code": "zh-tw", "name": "正體中文（台灣）", "name-en": "Chinese Traditional (Taiwan)"},
   {"code": "vi", "name" : "Tiếng Việt", "name-en" : "Vietnamese"}
 ]
