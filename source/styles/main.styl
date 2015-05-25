@@ -123,29 +123,18 @@ blockquote
 
 nav
   font-size 0.8rem
-  margin 70px 0 30px 0
+  margin-bottom 30px
   transition all 0.2s
 
-  a
-    display inline-block
-    line-height 2.2
-    padding 0 10px
-    margin 0
-    border-left 1px solid #DDD
-    transition background 0.2s, color 0.2s
-
-    &:first-child, &:hover, &:hover + a
-      border-color transparent
-
-  a[href]
-    &:hover
-      background #F7DF31
-      color #292829
-      border-radius 3px
+  ul
+    text-align center
 
   &.languageFooter
     font-size 0.8rem
     margin-top 30px
+
+    ul
+      display inline
 
     a
       border-left-width 0
@@ -153,9 +142,42 @@ nav
     h3
       display inline
 
+.list-inline
+  list-style-type none
+  display inline-block
+  margin 0
+  padding 0
+
+  li
+    display inline-block
+    margin 0
+    padding 0
+
+  a[href]
+    display inline-block
+    line-height 2.2
+    padding 0 10px
+    margin 0
+    transition background 0.2s, color 0.2s
+
+    &:hover
+      background #F7DF31
+      color #292829
+      border-radius 3px
+
+.list-divider
+  a
+    border-right 1px solid #DDD
+
+  li:last-child a, a:hover
+    border-color transparent
+
 p.lead
   text-align center
 
-// Fix box-sizing issue for rtl languages, see #334
-footer.content
-  display inline-block
+footer
+  margin-top 70px !important
+
+  // Fix box-sizing issue for rtl languages, see #334
+  &.content
+    display inline-block

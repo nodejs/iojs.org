@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="{{lang}}">
-
 <head>
   <meta charset="utf-8">
   <title>{{i18n.browser-title}}</title>
@@ -32,35 +31,41 @@
   {{/each}}
 </head>
 
-<body markdown-page="{{build.markdownPage}}">
+<body data-markdown-page="{{build.markdownPage}}">
 
   <header>
-    <div class="content">
+    <nav class="content" role="navigation">
       <a href="index.html" class="logo">{{i18n.logo-text}}</a>
       <div class="spacer"></div>
       <a href="{{i18n.roadmap-url}}">{{i18n.roadmap-link}}</a>
       <a href="faq.html">{{i18n.faq-link}}</a>
       <a href="es6.html">{{i18n.es6-link}}</a>
       <a href="https://iojs.org/api/">{{i18n.api-link}}</a>
-    </div>
+    </nav>
   </header>
 
-  <div class="content content--body clearfix">
+  <div class="content content--body clearfix" role="main">
     {{{content}}}
   </div>
 
-  <footer class="content">
+  <footer class="content" role="contentinfo">
     <nav>
-      {{link 'pages.releases'}}<!--
-   --><a href="https://github.com/nodejs/io.js/issues">{{i18n.issues-link}}</a><!--
-   --><a href="https://github.com/nodejs">{{i18n.org-link}}</a><!--
-   --><a href="https://scrollback.io/iojs/all/all-messages">{{i18n.irc-link}}</a><!--
-   --><a href="http://logs.libuv.org/io.js/latest">{{i18n.irc-logs-link}}</a><!--
-   --><a href="https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme">{{i18n.gov-link}}</a>
+      <ul class="list-inline list-divider">
+        <li>{{link 'pages.releases'}}</li>
+        <li><a href="https://github.com/nodejs/io.js/issues">{{i18n.issues-link}}</a></li>
+        <li><a href="https://github.com/nodejs">{{i18n.org-link}}</a></li>
+        <li><a href="https://scrollback.io/iojs/all/all-messages">{{i18n.irc-link}}</a></li>
+        <li><a href="http://logs.libuv.org/io.js/latest">{{i18n.irc-logs-link}}</a></li>
+        <li><a href="https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme">{{i18n.gov-link}}</a></li>
+      </ul>
     </nav>
     <nav class="languageFooter">
-      <h3><strong>{{i18n.heading-languages}}</strong></h3><!--
-    -->{{#page.languages}}<a href="{{url}}" lang="{{code}}">{{name}}</a>{{/page.languages}}
+      <h3>{{i18n.heading-languages}}</h3>
+      <ul class="list-inline">
+        {{#page.languages}}
+          <li><a href="{{url}}" lang="{{code}}">{{name}}</a></li>
+        {{/page.languages}}
+      </ul>
     </nav>
   </footer>
 
