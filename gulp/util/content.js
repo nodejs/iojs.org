@@ -55,7 +55,14 @@ function generateContentAndTemplates() {
   var hbsTemplates = {}; /* 5 */
   var LocalHandlebars = Handlebars.create() /* 6 */
 
-  LocalHandlebars.registerPartial('current_download_links', `{{#project.current_version_downloads}}<a href="{{url}}">{{i18n "downloads" key}}</a>{{/project.current_version_downloads}}`)
+  LocalHandlebars.registerHelper('divider', function(context, index) {
+
+    if (index === context.length - 1) { return; }
+    if (index === context.length - 2) { return " & "; }
+    return ", ";
+  });
+
+  LocalHandlebars.registerPartial('current_download_links', `{{#project.current_version_downloads}}<a href="{{url}}">{{i18n "downloads" key}}</a>{{divider ../project.current_version_downloads @index}}{{/project.current_version_downloads}}`)
 
   LocalHandlebars.registerHelper('i18n', function() {
     var env, key;
