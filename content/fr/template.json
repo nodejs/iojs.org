@@ -3,6 +3,8 @@
   "contribute-message":"Quelque chose vous plaît ? Envie de nous aider ? Allez sur https://github.com/nodejs/website pour contribuer",
   "heading-languages":"Langues",
   "logo-text":"io.js",
+  "roadmap-url": "//roadmap.iojs.org/fr/",
+  "roadmap-link": "Roadmap",
   "faq-link":"FAQ",
   "es6-link":"ES6",
   "api-link":"Doc de l'API",

@@ -1,6 +1,8 @@
 {
   "browser-title":"io.js - JavaScript I/O",
   "logo-text":"io.js",
+  "roadmap-url": "//roadmap.iojs.org/tr/",
+  "roadmap-link": "Roadmap",
   "faq-link":"SSS",
   "es6-link":"ES6",
   "api-link":"API Dökümanları",

@@ -3,6 +3,8 @@
   "contribute-message": "知りたい情報がなかったり、書き足したいことがあれば、気軽に https://github.com/nodejs/website にコントリビュートしてください。",
   "heading-languages": "Languages",
   "logo-text": "io.js",
+  "roadmap-url": "//roadmap.iojs.jp",
+  "roadmap-link": "Roadmap",
   "faq-link": "FAQ",
   "es6-link": "ES6",
   "api-link": "API Docs",

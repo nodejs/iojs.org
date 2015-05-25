@@ -2,6 +2,8 @@
   "browser-title":"io.js - JavaScript I/O",
   "heading-languages":"언어",
   "logo-text":"io.js",
+  "roadmap-url": "//roadmap.iojs.org/ko/",
+  "roadmap-link": "Roadmap",
   "faq-link":"FAQ",
   "es6-link":"ES6",
   "api-link":"API 문서",

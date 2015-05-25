@@ -1,6 +1,8 @@
 {
   "browser-title":"io.js - JavaScript I/O",
   "logo-text":"io.js",
+  "roadmap-url": "//roadmap.iojs.org",
+  "roadmap-link": "Roadmap",
   "heading-languages":"其他語言",
   "faq-link":"常見問題",
   "es6-link":"ES6",
