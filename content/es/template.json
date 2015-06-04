@@ -19,5 +19,31 @@
     "win64": "Win64",
     "mac": "Mac",
     "all": "Otros"
+  },
+  "verbose_version": "Versión {{project.current_version}}",
+  "home": {
+    "download_links": "Descargas para {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} estan disponibles para pruebas.",
+    "short_description": "{{link 'website'}} es una plataforma compatible con {{link 'npm'}} y basada originalmente en {{link 'nodejs'}}.",
+    "slogan": "¡Llevando {{link 'pages.es6'}} a la Comunidad de Node!",
+    "news_link": "{{link 'Actualización Semanal – May 15th: io.js decides to join the Node Foundation' 'https://medium.com/node-js-javascript/io-js-week-of-may-15th-9ada45bd8a28'}}<br><small>featuring core and community updates ({{link 'Archivo de Noticias en Medium' 'https://medium.com/@iojs/latest'}})</small>"
+  },
+  "releases": {
+    "title": "Histórico de publicaciones de io.js",
+    "downloads": "Descargas"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Changelog",
+      "releases": "Publicaciones",
+      "home": "Inicio",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Preguntas frecuentes"
+    }
   }
 }
