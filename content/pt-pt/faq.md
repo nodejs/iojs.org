@@ -8,11 +8,9 @@ Porquê? O io.js procura disponibilizar ciclos de release mais rápidos e previs
 
 Este projeto procura continuar o desenvolvimento do io.js sob um "[modelo de governança aberta](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)", ao invés de uma administração corporativa.
 
-## Versão 1.0.x?
+## Porque é que se separou do sistema de versionamento do Node.js?
 
-O io.js passou a usar [Semver](http://semver.org/) e as alterações entre o Node.js™ 0.10 e o io.js 1.0.0 foram significativas o suficiente para justificar um incremento na versão.
-
-O nosso [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) da v1.x disponibiliza um [resumo das alterações do Node.js v0.10.35 para o io.js v1.0.x](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+O io.js passou a usar [Semver](http://semver.org/) e as alterações entre o Node.js™ 0.10 e o io.js 1.0.0 foram significativas o suficiente para justificar um incremento na versão. Desta forma, o versionamento do io.js mantém-se na linha do esquema de versionamento maioritariamente usado no ecosistema do npm.
 
 ## Como posso contribuir?
 
