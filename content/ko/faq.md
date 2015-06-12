@@ -10,11 +10,9 @@ io.js는 보다 빠르고 예측 가능한 릴리스 주기를 목표로 하고 
 
 이 프로젝트의 목표는 io.js를 기업 주도가 아닌 "[오픈 거버넌스 모델](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)"로 개발해 나아가는 것이다.
 
-## 버전 1.0.x?
+## 왜 Node.js의 버전 체계를 지키지 않는가?
 
-io.js는 [Semver](http://semver.org/)([번역](http://semver.org/lang/ko/))로 옮겼고 Node.js™ 0.10과 io.js 1.0.0의 차이는 주 버전을 올리기에 충분하다.
-
-v1.x [변경이력](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md)에는 [Node.js v0.10.35에서 io.js v1.0.x까지의 변경점이 요약](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100)되어 있다.
+io.js는 [Semver](http://semver.org/)([번역](http://semver.org/lang/ko/))로 옮겼고 Node.js™ 0.10과 io.js 1.0.0의 차이는 주 버전을 올리기에 충분하다. io.js의 버전은 npm 생태계에서 사용하는 것과 같은 방식이기도 하다.
 
 ## 어떻게 기여할 수 있나?
 
