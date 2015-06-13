@@ -58,6 +58,16 @@ io.js {{project.current_version}} 集成了 V8 {{project.current_v8}} 版本，�
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (user-definable results for `Object.prototype.toString`)
 
+## 哪些 ES6 特性正在被开发?
+
+新的特性在不断地被加入到 V8 中。一般来讲，请期待它们在接下来的 io.js 版本中被实现，虽然并没有具体的日程表。
+
+你可以通过 `grep` 每个 io.js 发行版的 `--v8-options` 参数来查找那些 *正在被开发* 的特性。请注意这些特性是不完善的、有可能损坏的 V8 特性，所以使用它们请自负风险：
+
+```sh
+iojs --v8-options | grep "in progress"
+```
+
 ## 我已经用了 --harmony ，需要删除吗?
 
 当前 `--harmony` 参数在 io.js 中的行为是开启 **待完成** 特性。别忘了，它还有个别名 `--es_staging`。正如上面所说，这些待完成的特性还不稳定。如果想安全稳定地使用，尤其是在生产环境中，最好删除此运行参数，直到这些特性被默认开启。因此，在 io.js 中。即使你现在保留了这个参数，也应该为以后进一步升级 io.js 做好准备，以备 V8 改为更加符合标准的语意。
