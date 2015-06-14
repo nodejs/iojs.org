@@ -25,8 +25,8 @@ i motsetning til å bli forvaltet av et selskap.
 
 io.js har adoptert [Semver](http://semver.org/), og endringene mellom Node.js™
 0.10 og io.js 1.0.0 var signifikante nok til å rettferdiggjøre en ny
-hovedversjon. På denne måten bruker io.js det samme systemet for versjonsnummer
-som resten av npm.
+hovedversjon. Ved å bytte til Semver bruker io.js det samme systemet for 
+versjonsnumre som storparten av de andre modulene i npm.
 
 <a id="hvordan-kan-jeg-bidra"></a>
 
