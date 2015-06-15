@@ -21,15 +21,12 @@ i motsetning til å bli forvaltet av et selskap.
 
 <a id="versjonering"></a>
 
-## Versjon 1.0.x?
+## Hvorfor gikk dere bort fra Node.js sitt system for versjonsnummer?
 
 io.js har adoptert [Semver](http://semver.org/), og endringene mellom Node.js™
 0.10 og io.js 1.0.0 var signifikante nok til å rettferdiggjøre en ny
-hovedversjon.
-
-Vår [ENDRINGSLOGG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) for
-v1.x gir deg [et sammendrag av endringene mellom Node.js™ v0.10.35 og io.js
-v1.0.x](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+hovedversjon. Ved å bytte til Semver bruker io.js det samme systemet for 
+versjonsnumre som storparten av de andre modulene i npm.
 
 <a id="hvordan-kan-jeg-bidra"></a>
 
