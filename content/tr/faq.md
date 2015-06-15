@@ -10,12 +10,10 @@ io.js hızlı ve öngürülebilir sürümler yayınlamayı amaçlamaktadır. io.
 
 Bu proje, io.js platformunun geliştirilmesine kurumsal yönetim şekline karşı olarak "[açık yönetim modeli](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" altında devam etmeyi amaçlamaktadır.
 
-## Versiyon 1.0.x?
+## Nodejs versiyonlaması neden yanlıştı?
 
 io.js [Semver](http://semver.org/) versiyonlama şekline geçiş yaptı ve Node.js™ 0.10 ile io.js 1.0.0 arasındaki değişiklikler bir ana sürüm yükseltilmesini
-gerektirecek kadar önemliydi.
-
-v1.x sürümleri için [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) dökümanı, [Node.js v0.10.35 ile io.js v1.0.x arasında ki değişiklikleri](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100) içermektedir.
+gerektirecek kadar önemliydi. Iojs'nin kullanmış olduğu versiyonlama sistemini npm uzun süredir kullanıyor.
 
 ## Nasıl Katkıda Bulunabilirim?
 
