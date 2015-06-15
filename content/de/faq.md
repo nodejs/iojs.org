@@ -10,7 +10,7 @@ Das Ziel dieses Projektes ist, die Entwicklung von io.js unter einem "[offenen A
 
 ## Wieso wurde mit dem bisherigen Versionsnummernschema von Node.js gebrochen?
 
-io.js verwendet die [Semver](http://semver.org/)-Versionierung und die Änderungen zwischen Node.js™ 0.10 und io.js 1.0.0 waren gravierend genug, einen großen Versionssprung zu rechtfertigen. Auf diese Weise verwendet io.js das selbe Versionierungsschema, das auch das npm-Ökosystem verwendet.
+io.js verwendet die [Semver](http://semver.org/)-Versionierung und die Änderungen zwischen Node.js™ 0.10 und io.js 1.0.0 waren gravierend genug, einen großen Versionssprung zu rechtfertigen. Auf diese Weise nutzt io.js das selbe Versionierungsschema wie das restliche npm-Ökosystem.
 
 ## Wie kann ich mitmachen?
 
