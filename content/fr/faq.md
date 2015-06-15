@@ -8,11 +8,9 @@ Pourquoi? L'objectif de io.js est de fournir des cycles de développement plus r
 
 Ce projet vise à poursuivre le développement de io.js sous un "[modèle de gouvernance ouvert](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" par opposition à la gérance de Node.js™ organisée par Joyent, jugée restreinte.
 
-## Version 1.0.x?
+## Pourquoi avez-vous rompu avec le système de numérotation de versions de Node.js ?
 
-io.js est passé  à une gestion sémantique de version, [Semver](http://semver.org/) et les changements entre Node.js™ 0.10 et io.js 1.0.0 sont assez significatifs pour légitimer le passage à une nouvelle version majeure.
-
-Notre [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) pour la v1.x fournit un [résumé des changements effectués entre Node.js v0.10.35 et io.js v1.0.x](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+io.js a adopté une approche [Semver](http://semver.org/), et les modifications entre Node.js™ 0.10 et io.js 1.0.0 étaient si importantes qu’elles justifiaient une incrémentation du numéro majeur.  Ainsi, les versions de io.js restent cohérentes avec le schéma de versionnement utilisé par l'écosystème npm.
 
 ## Comment puis-je contribuer?
 
