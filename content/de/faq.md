@@ -8,11 +8,9 @@ Warum? io.js Ziel sind schnellere und vorhersehbare Releasezyklen. Momentan übe
 
 Das Ziel dieses Projektes ist, die Entwicklung von io.js unter einem "[offenen Aufsichts-Modell](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" voranzutreiben, statt einer unternehmensbezogenen Führung.
 
-## Version 1.0.x?
+## Wieso wurde mit dem bisherigen Versionsnummernschema von Node.js gebrochen?
 
-io.js verwendet die [Semver](http://semver.org/)-Versionierung und die Änderungen zwischen Node.js™ 0.10 und io.js 1.0.0 waren gravierend genug, einen großen Versionssprung zu rechtfertigen.
-
-Unser [CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) für v1.x enthält eine [Übersicht der Änderungen von Node.js v0.10.35 zu io.js v1.0.x](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+io.js verwendet die [Semver](http://semver.org/)-Versionierung und die Änderungen zwischen Node.js™ 0.10 und io.js 1.0.0 waren gravierend genug, einen großen Versionssprung zu rechtfertigen. Auf diese Weise nutzt io.js das selbe Versionierungsschema wie das restliche npm-Ökosystem.
 
 ## Wie kann ich mitmachen?
 
