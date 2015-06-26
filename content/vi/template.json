@@ -1,14 +1,55 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "logo-text":"io.js",
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "Bạn muốn thêm cái gì đó? Hay muốn giúp đỡ? Hãy đóng góp tại https://github.com/nodejs/iojs.ore",
+  "heading-languages": "Ngôn ngữ",
+  "logo-text": "io.js",
   "roadmap-url": "http://roadmap.iojs.org",
-  "roadmap-link": "Roadmap",
-  "faq-link":"FAQ",
-  "es6-link":"ES6",
-  "api-link":"Tài liệu API",
-  "issues-link":"GitHub Issues",
-  "org-link":"GitHub Org",
-  "irc-link":"IRC Chat",
-  "irc-logs-link":"Logs",
-  "gov-link":"Quản Trị"
+  "roadmap-link": "Lộ trình",
+  "faq-link": "FAQ",
+  "es6-link": "ES6",
+  "api-link": "API Docs",
+  "issues-link": "GitHub Issues",
+  "org-link": "GitHub Org",
+  "irc-link": "IRC Chat",
+  "irc-logs-link": "Nhật kí",
+  "gov-link": "Quản Trị",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "Others"
+  },
+  "verbose_version": "Phiên bản {{project.current_version}}",
+  "home": {
+    "download_links": "Tải về {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} đã sẵn sàng để kiểm thử.",
+    "short_description": "{{link 'website'}} được phát triển dựa trên {{link 'nodejs'} } và tương thích với nền tảng {{link 'npm'}}.",
+    "slogan": "Mang {{link 'pages.es6'}} đến với cộng đồng Node!",
+    "news_link": "{{link 'Cập nhập tuần – 15/5/2015: io.js đã quyết định tham gia tổ chức Node' 'https://medium.com/node-js-javascript/io-js-week-of-may-15th-9ada45bd8a28'}}<br><smallCập nhập tính năng và cộng đồng tại ({{link 'iojs-vi.com' 'http://iojs-vi.com/'}})</smal"
+  },
+  "releases": {
+    "title": "Lịch sử phát hành io.js",
+    "downloads": "Tải về"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Thay đổi",
+      "releases": "Phát hành",
+      "home": "Trang chủ",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Câu hỏi thường gặp"
+    },
+    "rss": [
+      {
+        "title": "Weekly Updates (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
+  }
 }
