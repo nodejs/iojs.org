@@ -17,7 +17,7 @@
     "linux": "لینوکس",
     "win32": "Win32",
     "win64": "Win64",
-    "mac": "Mac",
+    "mac": "مک",
     "all": "سایر"
   },
   "verbose_version": "نسخه {{project.current_version}}",
