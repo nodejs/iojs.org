@@ -12,11 +12,9 @@
 
 هدف این پروژه ادامهٔ توسعهٔ io.js تحت یک "[مدل حاکمیت باز](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme)" به عنوان مخالفت با نظارت شرکت‌ها است.
 
-## v1.0.x؟
+## چرا شما سیستم شمارگذاری نسخهٔ Node.js را کنار گذاشتید؟
 
-io.js به [Semver](http://semver.org/) انتقال یافته است و تغییرات بین  Node.js™ 0.10 و io.js 1.0.0 به قدر کفایت مهم بودند که حکم تغییر نسخهٔ اساسی را تضمین کنند.
-
-[سیاههٔ تغییرات](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) ما برای v1.x [شرح تغییر از Node.js v0.10.35 به io.js v1.0.x](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100) را ارائهٔ می‌دهد.
+io.js به [Semver](http://semver.org/) انتقال یافته است و تغییرات بین  Node.js™ 0.10 و io.js 1.0.0 به قدر کفایت مهم بودند که حکم تغییر نسخهٔ اساسی را تضمین کنند. این روش نسخه‌بندی io.js در راستای طرح مشابه نسخه‌بندی مورد استفاده در اکوسیستم npm، به این شکل باقی می‌ماند.
 
 ## چگونه می‌توانم کمک کنم؟
 
