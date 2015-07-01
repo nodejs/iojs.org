@@ -1,16 +1,55 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "contribute-message":"See something you like? Want to help? Visit https://github.com/nodejs/website to contribute",
-  "heading-languages":"زبان‌ها",
-  "logo-text":"io.js",
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "See something you like? Want to help? Visit https://github.com/nodejs/website to contribute",
+  "heading-languages": "زبان‌ها",
+  "logo-text": "io.js",
   "roadmap-url": "http://roadmap.iojs.org",
-  "roadmap-link": "Roadmap",
-  "faq-link":"پرسشگان",
-  "es6-link":"ES6",
-  "api-link":"API Docs",
-  "issues-link":"GitHub Issues",
-  "org-link":"GitHub Org",
-  "irc-link":"IRC Chat",
-  "irc-logs-link":"Logs",
-  "gov-link":"Governance"
+  "roadmap-link": "نقشهٔ راه",
+  "faq-link": "پرسشگان",
+  "es6-link": "ES6",
+  "api-link": "API Docs",
+  "issues-link": "GitHub Issues",
+  "org-link": "GitHub Org",
+  "irc-link": "IRC Chat",
+  "irc-logs-link": "سیاهه‌ها",
+  "gov-link": "اداره",
+  "downloads": {
+    "linux": "لینوکس",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "مک",
+    "all": "سایر"
+  },
+  "verbose_version": "نسخه {{project.current_version}}",
+  "home": {
+    "download_links": "دریافت برای {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} برای آزمایش در دسترس می‌باشد.",
+    "short_description": "{{link 'website'}} یک سکوی سازگار با {{link 'npm'}} برپایهٔ {{link 'nodejs'}} می‌باشد.",
+    "slogan": "آوردن {{link 'pages.es6'}} به جامعهٔ Node!",
+    "news_link": "{{link 'Weekly Update – May 15th: io.js decides to join the Node Foundation' 'https://medium.com/node-js-javascript/io-js-week-of-may-15th-9ada45bd8a28'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
+  },
+  "releases": {
+    "title": "تاریخچهٔ انتشار io.js",
+    "downloads": "دریافت‌ها"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "سیاهٔ تغییرات",
+      "releases": "Releases",
+      "home": "خانه",
+      "es6": "ES6",
+      "faq": "پرسشگان",
+      "faq_verbose": "Frequently Asked Questions"
+    },
+    "rss": [
+      {
+        "title": "به‌روزرسانی‌های هفتگی (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
+  }
 }
