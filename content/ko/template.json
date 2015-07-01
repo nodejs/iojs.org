@@ -1,9 +1,10 @@
 {
   "browser-title":"io.js - JavaScript I/O",
+  "contribute-message": "원하는 정보가 있거나 도움이 필요하세요? https://github.com/nodejs/website 에 오셔서 기여해보세요.",
   "heading-languages":"언어",
   "logo-text":"io.js",
   "roadmap-url": "http://roadmap.iojs.org/ko/",
-  "roadmap-link": "Roadmap",
+  "roadmap-link": "로드맵",
   "faq-link":"FAQ",
   "es6-link":"ES6",
   "api-link":"API 문서",
@@ -11,5 +12,44 @@
   "org-link":"GitHub 그룹",
   "irc-link":"IRC 채팅",
   "irc-logs-link":"IRC 채팅 로그",
-  "gov-link":"거버넌스"
+  "gov-link":"거버넌스",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "기타"
+  },
+  "verbose_version": "{{project.current_version}} 버전",
+  "home": {
+    "download_links": "{{> current_download_links}} 다운로드",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "태스트 용으로 {{link 'Nightly releases' 'https://iojs.org/download/nightly/'}}를 사용가능 합니다. 또, io.js의 {{link 'nightlies for the next major version' 'https://iojs.org/download/next-nightly/'}}'도 사용가능 합니다.",
+    "short_description": "{{link 'website'}} 는 {{link 'nodejs'}}를 기반으로 한 {{link 'npm'}} 호환 플렛폼입니다.",
+    "slogan": "{{link 'pages.es6'}}을 노드 커뮤니티에!",
+    "news_link": "{{link 'Weekly Update – May 15th: io.js decides to join the Node Foundation' 'https://medium.com/node-js-javascript/io-js-week-of-may-15th-9ada45bd8a28'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
+  },
+  "releases": {
+    "title": "io.js 릴리스 이력",
+    "downloads": "다운로드"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "변경사항",
+      "releases": "릴리스",
+      "home": "Home",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "자주 묻는 질문"
+    },
+    "rss": [
+      {
+        "title": "io.js 한국 커뮤니티",
+        "url": "http://nodejs.github.io/iojs-ko/"
+      }
+    ]
+  }
 }
