@@ -24,7 +24,7 @@
   "home": {
     "download_links": "Download for {{> current_download_links}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
-    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} are available for testing.",
+    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} are available for testing, also {{link 'nightlies for the next major version' 'https://iojs.org/download/next-nightly/'}}' of io.js.",
     "short_description": "{{link 'website'}} is an {{link 'npm'}} compatible platform originally based on {{link 'nodejs'}}.",
     "slogan": "Bringing {{link 'pages.es6'}} to the Node Community!",
     "news_link": "{{link 'Weekly Update – May 15th: io.js decides to join the Node Foundation' 'https://medium.com/node-js-javascript/io-js-week-of-may-15th-9ada45bd8a28'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
