@@ -10,9 +10,9 @@ joyent/node@0.12.x (V8 3.26) sürümü ile `--harmony` bayrağı tüm **tamamlan
 Bu bayrağın belirtilmesi ile [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) gibi  bazı bozuk veya hatalı özellikleri ile geliştiricilerin kullanımına hazır, az veya hiç hata belirtilmemiş [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) gibi özelliklerde aktif olacaktır.  
 Belirtilen sebeplerden ötürü en mantıklı uygulamalar, bazı özellikleri aktif etmek için özel bayraklar belirlemek (örn: `--harmony-generators`) veya tüm özellikleri etkinleştirip, daha sonra bir alt komut setini sınırlamak olacaktır.
 
-io.js@1.x (V8 4.1+) sürümüyle beraber tüm bu karmaşıklık ortadan kalkmaktadır. Tüm ES6 (harmoni) özellikleri **taşınıyor**, **düzenleme** ve **geliştirme** olmak üzere mantıksal üç gruba ayrılmıştır. Bu özellikler;
+io.js (V8 4.1+) sürümüyle beraber tüm bu karmaşıklık ortadan kalkmaktadır. Tüm ES6 (harmoni) özellikleri **taşınıyor**, **düzenleme** ve **geliştirme** olmak üzere mantıksal üç gruba ayrılmıştır. Bu özellikler;
 
-*   Tüm **taşınıyor** özellikleri V8 tarafından kararlı olarak kabul görmüş, [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [yeni string metodları](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) gibi özellikler ile **io.js tarafından varsayılan** olarak açılmış özelliklerdir ve herhangi bir çalışma bayrağına gerek **duymazlar**.
+*   Tüm **taşınıyor** özellikleri V8 tarafından kararlı olarak kabul görmüş,[classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [yeni string metodları](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) gibi özellikler ile **io.js tarafından varsayılan** olarak açılmış özelliklerdir ve herhangi bir çalışma bayrağına gerek **duymazlar**.
 *   **düzenleme** durumunda ki özellikler testleri tamamlanmamış veya son tanımlayıcı dökümanına uygun hale getirilmemiş ve V8 takımı tarafından kararlı olarak belirtilmemiş özellikleri içerir. (örn: henüz keşfedilmemiş, araştırılmamış kısımlar olabilir). V8 3.26 sürümünde [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) bu duruma eşdeğer yapıdadır. Bu özellikleri kullanmakta ki riski göze alıyorsanız, `--es_staging` (veya eşanlamlısı `--harmony`) çalışma bayrağını kullanmanız gerekir.
 *   Yüksek ihtimalle test işlemlerinde dahi olsa sorun yaratacak, diğer tüm **geliştirme** aşamasındaki özellikleri kendilerine özel harmoni bayraklarıyla etkinleştirebilirsiniz. (örn: `--harmony_arrow_functions`)
 
@@ -28,6 +28,7 @@ io.js@1.x (V8 4.1+) sürümüyle beraber tüm bu karmaşıklık ortadan kalkmakt
     *   `function`-in-blocks
 
     >V8 3.31.74.1 üstünde blok-alanına [özel, katı mod kodlama yapısına uyumlu olmayan sınırlama bulunmaktadır](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Geliştiriciler bu kuralın V8 üstünde, ilerleyen dönemlerde ES6 tanımlayıcı dökümanına uyumlu yapılacak güncellemelerle değişeceğini unutmamalıdır.
+*   [Classlar](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) (sadece strict modda)
 
 *   Koleksiyonlar
 
@@ -41,6 +42,8 @@ io.js@1.x (V8 4.1+) sürümüyle beraber tüm bu karmaşıklık ortadan kalkmakt
 
 *   [İkili ve Sekizli Sayısal Sabitler](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
 
+*   [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals) (shorthand properties and methods)
+
 *   [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 *   [Yeni String metodları](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object)
@@ -52,9 +55,6 @@ io.js@1.x (V8 4.1+) sürümüyle beraber tüm bu karmaşıklık ortadan kalkmakt
 Ayrıntılı bir liste arıyorsanız, diğer derleyici motorlarının karşılaştırıldığı [compat-tablo](https://kangax.github.io/compat-table/es6/) proje sayfasına bakabilirsiniz. 
 
 ## --es_staging bayrağı ile kullanılabilen ES6 özellikleri nelerdir?
-
-*   [Classes](https://github.com/lukehoban/es6features#classes) (sadece katı modda kullanılabilir)
-*   [Sabit Obje Uzantıları](https://github.com/lukehoban/es6features#enhanced-object-literals)
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (kullanıcı tanımlı sonuçlar için `Object.prototype.toString`)
 
