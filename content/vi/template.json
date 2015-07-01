@@ -1,5 +1,7 @@
 {
   "browser-title":"io.js - JavaScript I/O",
+  "contribute-message": "Thấy những thứ mà bạn thích? Bạn muốn giúp đỡ? Hãy đến https://github.com/nodejs/website to contribute",
+  "heading-languages": "Languages",
   "logo-text":"io.js",
   "roadmap-url": "http://roadmap.iojs.org",
   "roadmap-link": "Roadmap",
@@ -10,5 +12,44 @@
   "org-link":"GitHub Org",
   "irc-link":"IRC Chat",
   "irc-logs-link":"Logs",
-  "gov-link":"Quản Trị"
+  "gov-link":"Quản Trị",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "Others"
+  },
+  "verbose_version": "Version {{project.current_version}}",
+  "home": {
+    "download_links": "Download for {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} đã sẵn sàng để thử nghiệm.",
+    "short_description": "{{link 'website'}} được phát triển dựa trên {{link 'nodejs'}} và tương thích với nền tảng {{link 'npm'}} .",
+    "slogan": "Mang {{link 'pages.es6'}} đến với cộng đồng Node!",
+    "news_link": "{{link 'Weekly Update – May 15th: io.js quyết định gia nhập Node Foundation' 'http://iojs-vi.com/weekly/2015/06/28/weekly-update-3.html'}}<br><small>({{link 'Các tin tức mới' 'http://iojs-vi.com'}})</small>"
+  },
+  "releases": {
+    "title": "io.js Release History",
+    "downloads": "Downloads"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Changelog",
+      "releases": "Releases",
+      "home": "Home",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Câu hỏi thường gặp"
+    },
+    "rss": [
+      {
+        "title": "Weekly Updates (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
+  }
 }
