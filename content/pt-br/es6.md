@@ -8,9 +8,9 @@ A versão {{project.current_version}} do io.js vem com o V8 {{project.current_v8
 
 No joyent/node@0.12.x (V8 3.26), a flag de runtime `--harmony` habilitava todas funcionalidades ES6 **completas**, **em teste** e **em progresso** juntas, de uma vez só (com a exceção de semânticas não padrão/não harmoniosas para `typeof` que estavam escondidas sob `--harmony-typeof`). Isto significava que algumas funcionalidades realmente bugadas ou mesmo quebradas como os [proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) estavam prontamente disponíveis para desenvolvedores como os [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), que tinham poucos ou mesmo nenhuma issue conhecida. Portanto, era uma boa prática ou habilitar apenas certas funcionalidades usando flags de runtime harmony para funcionalidades específicas (por ex. `--harmony-generators`), ou simplesmente habilitar tudo e depois usar apenas um subconjunto restrito.
 
-Com o io.js@1.x (V8 4.1+), toda esta complexidade vai embora. Todas as funcionalidades harmony agora estão logicamente divididas em três grupos para funcionalidades **entregues**, **sob testes** e **em progresso**:
+Com o io.js (V8 4.1+), toda esta complexidade vai embora. Todas as funcionalidades harmony agora estão logicamente divididas em três grupos para funcionalidades **entregues**, **sob testes** e **em progresso**:
 
-*   Todas funcionalidades **entregues**, aquelas consideradas estáveis pelo V8, como [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [novos métodos de string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) e muitas outras são **habilitadas por padrão no io.js** e **NÃO** requerem qualquer tipo de flag de runtime.
+*   Todas funcionalidades **entregues**, aquelas consideradas estáveis pelo V8, como [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [novos métodos de string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) e muitas outras são **habilitadas por padrão no io.js** e **NÃO** requerem qualquer tipo de flag de runtime.
 *   Então há as funcionalidades **em testes** que são funcionalidades quase completas que não foram completamente testadas ou atualizadas com a última especificação e portanto não são consideradas estáveis pela equipe do V8 (por ex. pode haver alguns edge cases restando a descobrir). Isto é provavelmente o equivalente ao estado dos [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) no 3.26. Estas são funcionalidades do tipo "use sob seu próprio risco" que agora requerem a flag: `--es_staging` (ou seu sinônimo, `--harmony`).
 *   Finalmente, todas funcionalidades **em progresso** podem ser ativadas individualmente pela sua respectiva flag harmony (por ex. `--harmony_arrow_functions`). No entanto, isto é altamente desemcorajado a não ser para fins de teste.
 
@@ -27,6 +27,7 @@ Com o io.js@1.x (V8 4.1+), toda esta complexidade vai embora. Todas as funcional
 
     >Desde o v8 3.31.74.1, declarações em escopo de bloco são [intencionalmente implementadas como uma limitação em não conformidade com código em modo estrito](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Desenvolvedores devem estar cientes que isto deve mudar assim que o v8 continuar em direção à conformidade com a especificação ES6.
 
+*   [Classes](https://github.com/lukehoban/es6features#classes) (modo estrito apenas)
 *   Coleções
 
     *   [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
@@ -40,6 +41,7 @@ Com o io.js@1.x (V8 4.1+), toda esta complexidade vai embora. Todas as funcional
 *   [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 
 *   [Literais Binários e Octais](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
+*   [Extensões de literal de objetos](https://github.com/lukehoban/es6features#enhanced-object-literals)
 
 *   [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
@@ -52,9 +54,6 @@ Com o io.js@1.x (V8 4.1+), toda esta complexidade vai embora. Todas as funcional
 Você pode ver uma lista mais detalhada, incluindo uma comparação com outras engines, no página do projeto da [tabela de compatibilidade](https://kangax.github.io/compat-table/es6/).
 
 ## Que funcionalidades ES6 estão sob a flag --es_staging?
-
-*   [Classes](https://github.com/lukehoban/es6features#classes) (modo estrito apenas)
-*   [Extensões de literal de objetos](https://github.com/lukehoban/es6features#enhanced-object-literals)
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (resultados definidos pelo usuário para `Object.prototype.toString`)
 
