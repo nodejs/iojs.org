@@ -15,6 +15,19 @@ By making a contribution to this project, I certify that:
   person who certified (a), (b) or (c) and I have not modified it.
 
 
+## Contribution Guidelines
+
+While you're working on contributions, and submitting pull requests (PRs) to add those contributions, to this project, please keep these guidelines in mind. We _expect_ submitted code, and its associated PR, to follow our standards. When submitting code, you can ensure you follow these standards by utilizing our .editorconfig file, located in the root folder of this repository. If these procedures are followed, fixing PRs to the satisfaction of both the submitter and the Website WG Contributors will be simplified greatly.
+
+#### Code
+* __One topic per PR:__ Please commit code/writing covering a single topic or feature with a single PR. The project is easier to maintain when we can easily grasp everything a PR is doing, and can reference each feature by individual PR in the future.
+
+#### Pull Requests
+* __PR Timeout__: If a PR has merge conflicts or one or more downvotes and the author of a PR doesn't respond to inquiries or requests posted to the PR issue, the PR will be closed at the discretion of a WG Contributor.
+* __Controversial PRs:__ If a PR is controversial, it will be discussed by Contributors in the issue, and, if required, in the bi-weekly Website Working Group (WG) meeting.
+* __Contributor votes for merge:__ WG members will need to approve, or +1, your contribution in order for it to be accepted and merged into the main repo.
+
+
 ## Code of Conduct
 
 This Code of Conduct is adapted from [Rust's wonderful
@@ -43,7 +56,7 @@ CoC](https://github.com/rust-lang/rust/wiki/Note-development-policy#conduct).
   you feel you have been or are being harassed or made uncomfortable
   by a community member, please contact one of the channel ops or any
   of the TC members immediately with a capture (log, photo, email) of
-  the harassment if possible.  Whether you're a regular contributor or
+  the harassment if possible.  Whether you're a regular Contributor or
   a newcomer, we care about making this community a safe place for you
   and we've got your back.
 * Likewise any spamming, trolling, flaming, baiting or other
