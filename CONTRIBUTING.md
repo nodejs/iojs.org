@@ -17,7 +17,7 @@ By making a contribution to this project, I certify that:
 
 ## Contribution Guidelines
 
-While you're working on contributions, and submitting pull requests (PRs) to add those contributions, to this project, please keep these guidelines in mind. We _expect_ submitted code, and its associated PR, to follow our standards. When submitting code, you can ensure you follow these standards by utilizing our .editorconfig file, located in the root folder of this repository. If you follow our procedures, nobody's time will need to be spent fixing your time fixing PRs to the satisfaction of both yourself and the Website WG Contributors.
+While you're working on contributions, and submitting pull requests (PRs) to add those contributions, to this project, please keep these guidelines in mind. We _expect_ submitted code, and its associated PR, to follow our standards. When submitting code, you can ensure you follow these standards by utilizing our .editorconfig file, located in the root folder of this repository. If these procedures are followed, fixing PRs to the satisfaction of both the submitter and the Website WG Contributors will be simplified greatly.
 
 #### Code
 * __One topic per PR:__ Please commit code/writing covering a single topic or feature with a single PR. The project is easier to maintain when we can easily grasp everything a PR is doing, and can reference each feature by individual PR in the future.
