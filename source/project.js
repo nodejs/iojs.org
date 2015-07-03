@@ -9,6 +9,11 @@ project.versions = versions;
 
 project.languages = require('./languages.js');
 
+project.banner = {
+  visible: true,
+  content: 'Important <a href="#">security release</a>, please update now!'
+};
+
 project.links = {
   nodejs: 'https://nodejs.org/',
   npm: 'https://www.npmjs.com/',

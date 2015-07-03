@@ -8,6 +8,10 @@
   {{hb 'home.short_description'}}
 </p>
 
+{{#if project.banner.visible}}
+<div class="home-download-banner">{{{project.banner.content}}}</div>
+{{/if}}
+
 <div class="home-download">
   <a href="{{project.current_version_downloads.all}}" class="home-logo"><img src="/images/1.0.0.png" alt="io.js"></a>
   <div class="home-download-details">
