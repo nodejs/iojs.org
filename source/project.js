@@ -11,7 +11,7 @@ project.languages = require('./languages.js');
 
 project.banner = {
   visible: true,
-  content: 'Important <a href="#">security release</a>, please update now!'
+  content: 'Critical <a href="https://medium.com/@iojs/important-security-upgrades-for-node-js-and-io-js-8ac14ece5852">security release</a>, please update now!'
 };
 
 project.links = {
