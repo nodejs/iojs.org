@@ -25,7 +25,7 @@
     "download_links": "下载 {{> current_download_links}} 版本。",
     "custom_changelog": "{{link '更新日志' 'https://github.com/nodejs/iojs-cn/blob/gh-pages/CHANGELOG.md'}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
-    "nightly_releases": "{{link '每日构建版本' 'https://iojs.org/download/nightly/'}} 可用于测试。",
+    "nightly_releases": "{{link '每日构建版本' 'https://iojs.org/download/nightly/'}} 和 {{link '下个主要版本的每日构建版本' 'https://iojs.org/download/next-nightly/'}} 均可用于测试。",
     "short_description": "{{link 'website'}} 是一个衍生自 {{link 'nodejs'}}，并兼容 {{link 'npm'}} 的开发平台。",
     "slogan": "将 {{link 'pages.es6'}} 带入 Node 社区！",
     "news_link": "{{link '每周播报' 'http://cn.iojs.org/weekly/'}} <small>核心特性和社区动态 ({{link 'Medium' 'https://medium.com/node-js-javascript/'}})</small>"
