@@ -28,7 +28,7 @@
     "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} برای آزمایش در دسترس می‌باشد.",
     "short_description": "{{link 'website'}} یک سکوی سازگار با {{link 'npm'}} برپایهٔ {{link 'nodejs'}} می‌باشد.",
     "slogan": "آوردن {{link 'pages.es6'}} به جامعهٔ Node!",
-    "news_link": "{{link 'Weekly Update – May 15th: io.js decides to join the Node Foundation' 'https://medium.com/node-js-javascript/io-js-week-of-may-15th-9ada45bd8a28'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
+    "news_link": "{{link 'Weekly Update – June 26th' 'https://medium.com/@iojs/io-js-week-of-june-26th-51ab30238256'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
   },
   "releases": {
     "title": "تاریخچهٔ انتشار io.js",
