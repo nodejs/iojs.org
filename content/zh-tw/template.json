@@ -1,15 +1,55 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "logo-text":"io.js",
-  "roadmap-url": "http://roadmap.iojs.org",
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "See something you like? Want to help? Visit https://github.com/nodejs/iojs-tw to contribute",
+  "logo-text": "io.js",
+  "roadmap-url": "http://roadmap.iojs.org/tw/",
   "roadmap-link": "Roadmap",
-  "heading-languages":"其他語言",
-  "faq-link":"常見問題",
-  "es6-link":"ES6",
-  "api-link":"API 文件",
-  "issues-link":"GitHub 議題",
-  "org-link":"GitHub 組織",
-  "irc-link":"IRC 討論",
-  "irc-logs-link":"日誌",
-  "gov-link":"專案管理"
+  "heading-languages": "其他語言",
+  "faq-link": "常見問題",
+  "es6-link": "ES6",
+  "api-link": "API 文件",
+  "issues-link": "GitHub 議題",
+  "org-link": "GitHub 組織",
+  "irc-link": "IRC 聊天室",
+  "irc-logs-link": "日誌",
+  "gov-link": "專案管理",
+  "verbose_version": "版本 {{project.current_version}}",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "其他"
+  },
+  "home": {
+    "download_links": "下载 {{> current_download_links}} 版本。",
+    "custom_changelog": "{{link '更新記錄' 'https://github.com/nodejs/iojs-cn/blob/gh-pages/CHANGELOG.md'}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "每天定時釋出的 {{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} 版本開放測試，<br>{{link '下一個 io.js 主要版本' 'https://iojs.org/download/next-nightly/'}}也是每天釋出。",
+    "short_description": "{{link 'website'}} 是一個與 {{link 'npm'}} 相容並以 {{link 'nodejs'}} 為基礎的應用程式平台。",
+    "slogan": "將 {{link 'pages.es6'}} 帶入 Node 社群！",
+    "news_link": "{{link '每週週報' 'http://tw.iojs.org/'}} <small>核心功能和社群動態 ({{link 'Medium' 'https://medium.com/node-js-javascript/'}})</small>"
+  },
+  "releases": {
+    "title": "io.js 發佈記錄",
+    "downloads": "下載"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "更新記錄",
+      "home": "首頁",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "常見問題"
+    }
+    "rss": [
+      {
+        "title": "Weekly Updates (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
+  }
 }
