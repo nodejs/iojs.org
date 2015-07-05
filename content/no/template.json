@@ -1,14 +1,55 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "logo-text":"io.js",
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "Ser du noe du liker? Vil du hjelpe til? Gå til https://github.com/nodejs/website for å bidra",
+  "heading-languages": "Språk",
+  "logo-text": "io.js",
   "roadmap-url": "http://roadmap.iojs.org",
   "roadmap-link": "Roadmap",
-  "faq-link":"FAQ",
-  "es6-link":"ES6",
-  "api-link":"API",
-  "issues-link":"GitHub Issues",
-  "org-link":"GitHub Org",
-  "irc-link":"IRC Chat",
-  "irc-logs-link":"Historikk",
-  "gov-link":"Styringsmodell"
+  "faq-link": "FAQ",
+  "es6-link": "ES6",
+  "api-link": "API",
+  "issues-link": "GitHub Issues",
+  "org-link": "GitHub Org",
+  "irc-link": "IRC Chat",
+  "irc-logs-link": "Historikk",
+  "gov-link": "Styringsmodell",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "Andre"
+  },
+  "verbose_version": "Versjon {{project.current_version}}",
+  "home": {
+    "download_links": "Last ned for {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Nattlige bygg' 'https://iojs.org/download/nightly/'}} er tilgjengelig for testing,<br> og {{link 'nattlige bygg av neste hovedversjon' 'https://iojs.org/download/next-nightly/'}} av io.js.",
+    "short_description": "{{link 'website'}} er en {{link 'npm'}}-kompatibel platform opprinnelig basert på {{link 'nodejs'}}.",
+    "slogan": "Bringer {{link 'pages.es6'}} til Node-felleskapet!",
+    "news_link": "{{link 'Weekly Update – June 26th' 'https://medium.com/@iojs/io-js-week-of-june-26th-51ab30238256'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
+  },
+  "releases": {
+    "title": "io.js utgivelseshistorikk",
+    "downloads": "Nedlastinger"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Endringslogg",
+      "releases": "Utgivelser",
+      "home": "Hjem",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Ofte stilte spørsmål"
+    },
+    "rss": [
+      {
+        "title": "Ukentlige oppdateringer (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
+  }
 }
