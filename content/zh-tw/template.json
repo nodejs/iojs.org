@@ -23,12 +23,11 @@
   },
   "home": {
     "download_links": "下载 {{> current_download_links}} 版本。",
-    "custom_changelog": "{{link '更新記錄' 'https://github.com/nodejs/iojs-cn/blob/gh-pages/CHANGELOG.md'}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
     "nightly_releases": "每天定時釋出的 {{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} 版本開放測試，<br>{{link '下一個 io.js 主要版本' 'https://iojs.org/download/next-nightly/'}}也是每天釋出。",
     "short_description": "{{link 'website'}} 是一個與 {{link 'npm'}} 相容並以 {{link 'nodejs'}} 為基礎的應用程式平台。",
     "slogan": "將 {{link 'pages.es6'}} 帶入 Node 社群！",
-    "news_link": "{{link '每週週報' 'http://tw.iojs.org/'}} <small>核心功能和社群動態 ({{link 'Medium' 'https://medium.com/node-js-javascript/'}})</small>"
+    "news_link": "{{link '每週週報' 'http://tw.iojs.org/'}} <small>核心功能和社群動態 ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
   },
   "releases": {
     "title": "io.js 發佈記錄",
@@ -40,6 +39,7 @@
     "website": "io.js",
     "pages": {
       "changelog": "更新記錄",
+      "releases": "發行版本",
       "home": "首頁",
       "es6": "ES6",
       "faq": "FAQ",
