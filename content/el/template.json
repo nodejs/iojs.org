@@ -18,15 +18,15 @@
     "win32": "Win32",
     "win64": "Win64",
     "mac": "Mac",
-    "all": "Others"
+    "all": "άλλα"
   },
   "verbose_version": "Έκδοση {{project.current_version}}",
   "home": {
     "download_links": "Λήψη για {{> current_download_links}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
     "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} είναι διαθέσιμες για δοκιμή,<br> επίσης {{link 'nightlies for the next major version' 'https://iojs.org/download/next-nightly/'}} του io.js.",
-    "short_description": "{{link 'website'}} is an {{link 'npm'}} compatible platform originally based on {{link 'nodejs'}}.",
-    "slogan": "Φέρνοντας {{link 'pages.es6'}} στην κοινότητα του Node!",
+    "short_description": "{{link 'website'}} είναι μια πλατφόρμα συμβατή με το {{link 'npm'}}, βασισμένη στο {{link 'nodejs'}}.",
+    "slogan": "Φέρνουμε την {{link 'pages.es6'}} στην κοινότητα του Node!",
     "news_link": "{{link 'Weekly Update – June 26th' 'https://medium.com/@iojs/io-js-week-of-june-26th-51ab30238256'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
   },
   "releases": {
