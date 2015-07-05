@@ -1,16 +1,55 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "contribute-message":"Gosta do que vê? Quer ajudar? Visite https://github.com/nodejs/website para contribuir",
-  "heading-languages":"Idiomas",
-  "logo-text":"io.js",
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "Gosta do que vê? Quer ajudar? Visite https://github.com/nodejs/website para contribuir",
+  "heading-languages": "Idiomas",
+  "logo-text": "io.js",
   "roadmap-url": "http://roadmap.iojs.org/pt-BR/",
   "roadmap-link": "Roadmap",
-  "faq-link":"FAQ",
-  "es6-link":"ES6",
-  "api-link":"Documentação da API",
-  "issues-link":"Issues no GitHub",
-  "org-link":"Perfil GitHub",
-  "irc-link":"Chat IRC",
-  "irc-logs-link":"Logs",
-  "gov-link":"Governança"
+  "faq-link": "FAQ",
+  "es6-link": "ES6",
+  "api-link": "Documentação da API",
+  "issues-link": "Issues no GitHub",
+  "org-link": "Perfil GitHub",
+  "irc-link": "Chat IRC",
+  "irc-logs-link": "Logs",
+  "gov-link": "Governança",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "Outros"
+  },
+  "verbose_version": "Versão {{project.current_version}}",
+  "home": {
+    "download_links": "Download para {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Versões nightly' 'https://iojs.org/download/nightly/'}} estão disponíveis para teste,<br> assim como {{link 'versões nightly da próxima versão' 'https://iojs.org/download/next-nightly/'}} do io.js.",
+    "short_description": "{{link 'website'}} é uma plataforma compatível com o {{link 'npm'}}, originalmente baseada em {{link 'nodejs'}}.",
+    "slogan": "Trazendo {{link 'pages.es6'}} à comunidade Node!",
+    "news_link": "{{link 'Weekly Update – June 26th' 'https://medium.com/@iojs/io-js-week-of-june-26th-51ab30238256'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
+  },
+  "releases": {
+    "title": "Histórico de Lançamentos do io.js",
+    "downloads": "Downloads"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Registo de alterações",
+      "releases": "Lançamentos",
+      "home": "Início",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Perguntas Frequentes"
+    },
+    "rss": [
+      {
+        "title": "Atualizações Semanais (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
+  }
 }
