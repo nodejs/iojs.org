@@ -1,15 +1,55 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "logo-text":"io.js",
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "Βλέπεις κάτι που σου αρέσει; Θέλεις να βοηθήσεις; Επισκέψου την https://github.com/nodejs/website για να συνεισφέρεις.",
+  "heading-languages": "Γλώσσες",
+  "logo-text": "io.js",
   "roadmap-url": "http://roadmap.iojs.org",
-  "roadmap-link": "Roadmap",
-  "heading-languages":"Γλώσσες",
-  "faq-link":"FAQ",
-  "es6-link":"ES6",
-  "api-link":"API",
-  "issues-link":"GitHub Issues",
-  "org-link":"GitHub Org",
-  "irc-link":"IRC",
+  "roadmap-link": "Δρομολόγηση",
+  "faq-link": "FAQ",
+  "es6-link": "ES6",
+  "api-link": "API Docs",
+  "issues-link": "GitHub Issues",
+  "org-link": "GitHub Org",
+  "irc-link": "IRC Chat",
   "irc-logs-link":"Ιστορικό",
-  "gov-link":"Διακυβέρνηση"
+  "gov-link": "Διακυβέρνηση",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "άλλα"
+  },
+  "verbose_version": "Έκδοση {{project.current_version}}",
+  "home": {
+    "download_links": "Λήψη για {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} είναι διαθέσιμες για δοκιμή,<br> επίσης {{link 'nightlies for the next major version' 'https://iojs.org/download/next-nightly/'}} του io.js.",
+    "short_description": "{{link 'website'}} είναι μια πλατφόρμα συμβατή με το {{link 'npm'}}, βασισμένη στο {{link 'nodejs'}}.",
+    "slogan": "Φέρνουμε την {{link 'pages.es6'}} στην κοινότητα του Node!",
+    "news_link": "{{link 'Weekly Update – June 26th' 'https://medium.com/@iojs/io-js-week-of-june-26th-51ab30238256'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
+  },
+  "releases": {
+    "title": "io.js Release History",
+    "downloads": "Downloads"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Αλλαγές",
+      "releases": "Δημοσιεύσεις",
+      "home": "Κεντρική",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Συχνές ερωτήσεις"
+    },
+    "rss": [
+      {
+        "title": "Εβδομαδιαίες ενημερώσεις (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
+  }
 }
