@@ -27,7 +27,7 @@
     "nightly_releases": "태스트 용으로 {{link 'Nightly releases' 'https://iojs.org/download/nightly/'}}를 사용가능 합니다. 또, io.js의 {{link 'nightlies for the next major version' 'https://iojs.org/download/next-nightly/'}}'도 사용가능 합니다.",
     "short_description": "{{link 'website'}} 는 {{link 'nodejs'}}를 기반으로 한 {{link 'npm'}} 호환 플렛폼입니다.",
     "slogan": "{{link 'pages.es6'}}을 노드 커뮤니티에!",
-    "news_link": "{{link 'Weekly Update – May 15th: io.js decides to join the Node Foundation' 'https://medium.com/node-js-javascript/io-js-week-of-may-15th-9ada45bd8a28'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
+    "news_link": "{{link 'io.js 주간 뉴스 2015년 6월 19일' 'http://nodejs.github.io/iojs-ko/weekly/2015/06/19/weekly/'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
   },
   "releases": {
     "title": "io.js 릴리스 이력",
