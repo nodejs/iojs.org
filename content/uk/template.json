@@ -1,14 +1,55 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "logo-text":"io.js",
-  "roadmap-url": "http://roadmap.iojs.org/uk/",
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "Хочеш допомогти? Перейди за посиланням - https://github.com/nodejs/website",
+  "heading-languages": "Мови",
+  "logo-text": "io.js",
+  "roadmap-url": "http://roadmap.iojs.org",
   "roadmap-link": "Roadmap",
-  "faq-link":"FAQ",
-  "es6-link":"ES6",
-  "api-link":"API Документація",
-  "issues-link":"GitHub Дискусії",
-  "org-link":"GitHub Спільнота",
-  "irc-link":"IRC Чат",
-  "irc-logs-link":"IRC Журнал",
-  "gov-link":"Управління"
+  "faq-link": "FAQ",
+  "es6-link": "ES6",
+  "api-link": "API Документація",
+  "issues-link": "GitHub Дискусії",
+  "org-link": "GitHub Спільнота",
+  "irc-link": "IRC Чат",
+  "irc-logs-link": "IRC Журнал",
+  "gov-link": "Управління",
+  "downloads": {
+    "linux": "Linux",
+    "win32": "Win32",
+    "win64": "Win64",
+    "mac": "Mac",
+    "all": "Others"
+  },
+  "verbose_version": "Version {{project.current_version}}",
+  "home": {
+    "download_links": "Скачати для {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "{{link 'Нічні збірки' 'https://iojs.org/download/nightly/'}} доступні для тестування,<br> також {{link 'нічні збірки наступной версії' 'https://iojs.org/download/next-nightly/'}} io.js.",
+    "short_description": "{{link 'Веб-сайт'}} це {{link 'npm'}} сумісна платформа, базована на {{link 'nodejs'}}.",
+    "slogan": "Привносимо {{link 'pages.es6'}} в Node Community!",
+    "news_link": "{{link 'Weekly Update – June 26th' 'https://medium.com/@iojs/io-js-week-of-june-26th-51ab30238256'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
+  },
+  "releases": {
+    "title": "Історія релізів io.js",
+    "downloads": "Загрузки"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Лог змін",
+      "releases": "Релізи",
+      "home": "Головна",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "FAQ"
+    },
+    "rss": [
+      {
+        "title": "Щотижневі оновлення (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
+  }
 }
