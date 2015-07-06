@@ -25,7 +25,7 @@
     "download_links": "Yüklenebilir Dağıtımlar {{> current_download_links}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
     "nightly_releases": "{{link 'Gecelik Derlemeler' 'https://iojs.org/download/nightly/'}}'i Test amaçlı olarak kullanabilirsiniz,<br> ve {{link 'gelecek major versiyonuda ' 'https://iojs.org/download/next-nightly/'}} iojs'da kullanabilirsiniz.",
-    "short_description": "{{link 'website'}},{{link 'nodejs'}}™'e dayalı ve {link 'npm'}}'le uyumlu bir platformdur.",
+    "short_description": "{{link 'website'}},{{link 'nodejs'}}™'e dayalı ve {{link 'npm'}}'le uyumlu bir platformdur.",
     "slogan": "{{link 'pages.es6'}}'ı Node topluluğuna kazandırdık!",
     "news_link": "{{link 'Haftalık Bülten – 19 Haziran: Linux vakfı  Node.js Vakfını duyurdu' 'https://medium.com/iojstr-haftalik-bulten/io-js-19-may%C4%B1s-2015-haftas%C4%B1-5720853aeeaf'}}<br><small>diğer bültenler için ({{link 'Medium Bülten Arşivine göz atın' 'https://medium.com/@iojs_tr/latest'}})</small>"
   },
