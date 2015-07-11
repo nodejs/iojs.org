@@ -12,9 +12,7 @@ Project sẽ được tiếp tục phát triển dưới 1 "[mô hình quản l�
 
 ## Đánh dấu các phiên bản
 
-io.js đã chuyển sang sử dụng [Semver](http://semver.org/) và những thay đổi giữa Node.js™ 0.10 và io.js 1.0.0 là đủ lớn để việc nâng 1 phiên bản chính là hợp lý.
-
-[CHANGELOG](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md) cho phiên bản v1.x sẽ cũng cấp [tóm tắt những thay đổi từ Node.js v0.10.35 đến io.js v1.0.x](https://github.com/nodejs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
+io.js đã chuyển sang sử dụng [Semver](http://semver.org/) và những thay đổi giữa Node.js™ 0.10 và io.js 1.0.0 là đủ lớn để việc nâng 1 phiên bản chính là hợp lý.Với cách đánh dấu phiên bản này, iojs có cùng phương pháp với cách NPM sử dụng.
 
 ## Làm cách nào để tôi đóng góp ?
 Tất cả mọi người đều có thể giúp io.js bằng cách [tuân thủ theo quy tắc ứng xử](https://github.com/nodejs/io.js/blob/master/CONTRIBUTING.md#code-of-conduct), và những contributions, releases, và contributorship đều dưới sự thông qua của [1 mô hình quản lý mở](https://github.com/nodejs/io.js/blob/master/GOVERNANCE.md#readme).

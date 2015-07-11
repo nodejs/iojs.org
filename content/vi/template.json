@@ -24,10 +24,10 @@
   "home": {
     "download_links": "Download for {{> current_download_links}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
-    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} đã sẵn sàng để thử nghiệm.",
+    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} đã sẵn sàng để tải về,<br> Và {{link 'các bản nightly' 'https://iojs.org/download/next-nightly/'}} cho phiên bản chính thức tiếp theo của io.js.",
     "short_description": "{{link 'website'}} được phát triển dựa trên {{link 'nodejs'}} và tương thích với nền tảng {{link 'npm'}} .",
     "slogan": "Mang {{link 'pages.es6'}} đến với cộng đồng Node!",
-    "news_link": "{{link 'Weekly Update – May 15th: io.js quyết định gia nhập Node Foundation' 'http://iojs-vi.com/weekly/2015/06/28/weekly-update-3.html'}}<br><small>({{link 'Các tin tức mới' 'http://iojs-vi.com'}})</small>"
+    "news_link": "{{link 'Weekly Update – June 26th' 'http://iojs-vi.com/weekly/2015/07/03/weekly-update.html'}}<br><small>({{link 'Các tin tức mới' 'http://iojs-vi.com'}})</small>"
   },
   "releases": {
     "title": "io.js Release History",
