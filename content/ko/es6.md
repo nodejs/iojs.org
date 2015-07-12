@@ -6,12 +6,12 @@ io.js {{project.current_version}} 버전은 V8 {{project.current_v8}}와 함께 
 
 ## --harmony 플래그는 이제 그만
 
-Node.js™@0.12.x (V8 3.28+)에서 `--harmony` 플래그를 사용하면 ES6 기능에서 **완료됨**, **준비됨**, **진행 중** 상태인 (`--harmony-proxies` 밑에 숨어 있는 `proxies`를 제외하고) 모든 기능을 사용할 수 있게 한다. 이 말은 거의 문제없는 [제네레이터](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function*)도, [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) 같은 정말 버그가 많거나 망가져 있는 기능도 사용 가능하게 된다는 이야기이다. 그래서 개발자 대부분은 특정 하모니 기능 플래그(예를 들어 `--harmony-generators`)를 사용해 특정 기능만 사용하거나, 모두 사용 가능하게 한 다음에 일부분만 사용하는 경향이 있다.
+Node.js™@0.12.x(V8 3.28+)에서 `--harmony` 플래그를 사용하면 ES6 기능에서 **완료됨**, **준비됨**, **진행 중** 상태인 (`--harmony-proxies` 밑에 숨어 있는 `proxies`를 제외하고) 모든 기능을 사용할 수 있게 한다. 이 말은 거의 문제없는 [제네레이터](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function*)도, [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) 같은 정말 버그가 많거나 망가져 있는 기능도 사용 가능하게 된다는 이야기이다. 그래서 개발자 대부분은 특정 하모니 기능 플래그(예를 들어 `--harmony-generators`)를 사용해 특정 기능만 사용하거나, 모두 사용 가능하게 한 다음에 일부분만 사용하는 경향이 있다.
 
-io.js@1.x (V8 4.1+)는 이렇게 복잡하지 않도록 모든 하모니 기능을 논리적인 3가지 그룹 **배포 중**, **준비됨**, **개발 중**으로 나뉜다.
+io.js(V8 4.1+)는 이렇게 복잡하지 않도록 모든 하모니 기능을 논리적인 3가지 그룹 **배포 중**, **준비됨**, **개발 중**으로 나뉜다.
 
-*   모든 **배포 중** 기능, 예를 들면 [제네레이터](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [템플릿](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [새 String 메소드](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) 같은 V8의 안정적인 모든 기능은 어떤 실행 플래그도 **없이**, **io.js에서 기본적으로 사용 가능**하다.
-*   그리고 **준비됨** 기능은 거의 완성되었지만, 아직 테스트가 완료되지 않았거나 최신 사양으로 고쳐지지 않아서 V8 팀이 안정적이라 판단하지 않는(예를 들어 아직 발견되지 않은 에지 케이스가 있을 수 있음) 기능이다. 이건 아마 3.26의 [제네레이터](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)의 상태와 같다. 이 "사용할 때의 위험성은 직접 감수해야" 하는 기능들은 이제 `--es_staging` (아니면, `--harmony`) 실행 플래그가 필요하다.
+*   모든 **배포 중** 기능, 예를 들면 [클래스](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [제네레이터](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [템플릿](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [새 String 메소드](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) 같은 V8의 안정적인 모든 기능은 어떤 실행 플래그도 **없이**, **io.js에서 기본적으로 사용 가능**하다.
+*   그리고 **준비됨** 기능은 거의 완성되었지만, 아직 테스트가 완료되지 않았거나 최신 사양으로 고쳐지지 않아서 V8 팀이 안정적이라 판단하지 않는(예를 들어 아직 발견되지 않은 에지 케이스가 있을 수 있음) 기능이다. 이건 아마 3.26의 [제네레이터](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)의 상태와 같다. 이 "사용할 때의 위험성은 직접 감수해야" 하는 기능들은 이제 `--es_staging`(아니면, `--harmony`) 실행 플래그가 필요하다.
 *   마지막으로, 모든 **개발 중** 기능은 각각의 하모니 플래그로 (예를 들어 `--harmony_arrow_functions`) 독립적으로 사용 가능하다. 하지만 테스트 이외의 목적으로 사용하는 것은 매우 권장하지 않는다.
 
 ## io.js에서 기본으로(실행 플래그 없이) 제공하는 ES6 기능은 무엇인가?
@@ -25,6 +25,8 @@ io.js@1.x (V8 4.1+)는 이렇게 복잡하지 않도록 모든 하모니 기능�
     *   블록 내 `function`
 
     > V8 3.31.74.1에서 블록 스코프의 선언은 [strict 모드 코드에서만 호환되도록 의도적으로 구현되었다](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). 개발자는 V8이 ES6 사양을 준수함에 따라 이것이 변경될 수도 있다는 것을 알아야 한다.
+
+*   [클래스](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) (strict 모드에서만)
 
 *   컬렉션
 
@@ -40,6 +42,8 @@ io.js@1.x (V8 4.1+)는 이렇게 복잡하지 않도록 모든 하모니 기능�
 
 *   [이진, 팔진 리터럴](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
 
+*   [객체 리터럴 확장](https://github.com/lukehoban/es6features#enhanced-object-literals) (단축 프로퍼티와 메소드)
+
 *   [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 *   [새 String 메소드](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object)
@@ -51,10 +55,6 @@ io.js@1.x (V8 4.1+)는 이렇게 복잡하지 않도록 모든 하모니 기능�
 [compat-table](https://kangax.github.io/compat-table/es6/) 프로젝트 페이지에서 다른 엔진과의 비교와 함께 더 자세한 목록을 볼 수 있다.
 
 ## --es_staging에는 어떤 ES6 기능이 있는가?
-
-*   [Classes](https://github.com/lukehoban/es6features#classes) (`--harmony_classes` 플래그로, strict 모드에서만 사용 가능하며, 이는 블록 스코프와 객체 리터럴 확장을 포함함)
-
-*   [객체 리터럴 확장](https://github.com/lukehoban/es6features#enhanced-object-literals) (`--harmony_object_literals` 플래그)
 
 *   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (`Object.prototype.toString`의 결과를 사용자가 정의 가능, `--harmony_tostring` 플래그)
 
