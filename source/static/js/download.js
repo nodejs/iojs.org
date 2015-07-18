@@ -7,7 +7,7 @@
   var db = d.getElementById('home-downloadbutton');
   var version = db.dataset.version;
   var dlLocal = db.dataset.dlLocal;
-  var href;
+  var href = ''; //If we can't match, just link it directly to the download list.
   switch (os && os[1]) {
     case 'Mac':
       href = 'iojs-' + version + '.pkg';
