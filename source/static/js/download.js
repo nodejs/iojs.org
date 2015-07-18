@@ -5,6 +5,7 @@
     n.cpuClass === 'x64' ? 'x64' : 'x86';
   var base = 'https://iojs.org/dist/latest/';
   var db = d.getElementById('home-downloadbutton');
+  if (!db) { return; }
   var version = db.dataset.version;
   var dlLocal = db.dataset.dlLocal;
   var href = ''; //If we can't match, just link it directly to the download list.
