@@ -27,4 +27,4 @@ Es gibt einen #io.js-Kanal auf dem Freenode IRC. Diskussionslogs dieses Kanals g
 
 ## Was ist Open-Source Governance?
 
-Das Open-Source Aufsichtsmodell befürwortet die Teilnahme an den Open-Source- und Open-Content-Bewegungen, damit jeder Interessierte an dem Endprodukt teilhaben kann, so wie bei einem Wiki-Eintrag. Die Gesetzgebung ist demokratisch jedem geöffnet, um sich so den generellen Consensus zu Nutzen zu machen, wovon die Enscheidungskraft und die Demokratie des Projektes profitieren. [[Quelle in Englisch]](https://en.wikipedia.org/wiki/Open-source_governance)
+Das Open-Source Aufsichtsmodell befürwortet die Teilnahme an den Open-Source- und Open-Content-Bewegungen, damit jeder Interessierte an dem Endprodukt teilhaben kann, so wie bei einem Wiki-Eintrag. Dieses Vorgehen steht dabei für jeden offen: Durch den gemeinsamen Erfahrungsschatz der Beteiligten soll so die Entscheidungsfindung in einem demokratischen Prozess verbessert werden. [[Quelle in Englisch]](https://en.wikipedia.org/wiki/Open-source_governance)
