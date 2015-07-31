@@ -29,14 +29,13 @@ Med io.js@1.x (V8 4.1+) forsvinner all denne kompleksiteten. Alle harmony-funksj
 er nå logisk fordelt inn i tre grupper for **shipping**-, **staged**- og **in
 progress**-funksjoner:
 
- * Alle **shipping**-funksjoner, som V8 har vurdert som stabile, for eksempel
+*   Alle **shipping**-funksjoner, som V8 har vurdert som stabile, for eksempel
 [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*),
 [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings),
 [new string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object)
 og mange flere er nå skrudd **på som standard i io.js** og krever  **INGEN**
 flagg.
-
- * Deretter er det **staged**-funksjoner, som er nesten fullførte funksjoner
+*   Deretter er det **staged**-funksjoner, som er nesten fullførte funksjoner
 som ikke har blitt fullstendig testet eller oppdatert i henhold til den siste
 spesifikasjonen enda. Følgelig er de ikke ansett som stabile av V8 laget
 (f.eks. kan det være noen 'edge cases' som ikke har blitt oppdaget). Dette er
@@ -44,65 +43,59 @@ mest sannsynlig ekvivalent med tilstanden til
 [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 i 3.26. Disse er "bruk på egen risiko" funksjoner som nå krever flagget :
 `--es_staging` (eller synonymet, `--harmony`).
-
- * Til slutt, alle **in progress**-funksjoner kan bli aktivert individuelt av
+*   Til slutt, alle **in progress**-funksjoner kan bli aktivert individuelt av
 deres respektive harmony-flagg (f.eks. `--harmony_arrow_functions`), selv om
 dette ikke er anbefalt med mindre det brukes til testing.
 
 ## Hvilke ES6-funksjoner følger med io.js som standard (uten å bruke flagg)?
 
- * Block scoping
+*   Block scoping
 
-   * [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+    *   [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
-   * [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+    *   [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
-   * `function`-in-blocks
+    *   `function`-in-blocks
 
-> Fra og med v8 3.31.74.1, er block-scoped declarations [forsettlig implementert
-> med en ikke-kompatibel begrensning til strict modus
-> kode](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es).
-> Utviklere bør være klar over at dette vil endres i takt med V8 sin
-> implementasjon av ES6-spesifikasjonen.
+    > Fra og med v8 3.31.74.1, er block-scoped declarations [forsettlig implementert med en ikke-kompatibel begrensning til strict modus kode](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Utviklere bør være klar over at dette vil endres i takt med V8 sin implementasjon av ES6-spesifikasjonen.
 
- * Collections
+*   [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) (bare i strict modus)
 
-   * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+*   Collections
 
-   * [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
+    * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
-   * [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+    * [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
 
-   * [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+    * [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
- * [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+    * [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
 
- * [Binary and Octal literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
+*   [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 
- * [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+*   [Binary and Octal literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals)
 
- * [New String methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object)
+*   [Object literal extensions](https://github.com/lukehoban/es6features#enhanced-object-literals) (shorthand egenskaper og metoder)
 
- * [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+*   [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
- * [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
+*   [New String methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object)
 
-Du kan se en mer detaljert liste med sammenligninger opp mot andre motorer på
-prosjektsiden til (https://kangax.github.io/compat-table/es6/)[compat-table].
+*   [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+
+*   [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
+
+Du kan se en mer detaljert liste med sammenligninger opp mot andre motorer på prosjektsiden til [compat-table](https://kangax.github.io/compat-table/es6/).
 
 ## Hvilke ES6-funksjoner ligger i --es_staging-flagget?
 
- * [Classes](https://github.com/lukehoban/es6features#classes) (strict mode only)
+*   [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (brukerdefinert resultat av `Object.prototype.toString`, bak flagget `--harmony_tostring`)
 
- * [Object literal extensions(https://github.com/lukehoban/es6features#enhanced-object-literals)]
+## Hvilke ES6-funksjoner er under utvikling?
 
- * [`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (user-definable results for `Object.prototype.toString`)
+Nye funksjoner legges inn i V8 motoren hele tiden. På generell basis kan man forvente at disse funksjonene blir tilgjengelig i en framtidig io.js utgivelse. Det kan ikke antas noe om hvor lang tid det tar.
 
-## Which ES6 features are in progress?
-
-New features are constantly being added to the V8 engine. Generally speaking, expect them to land on a future io.js release, although timing is unknown.
-
-You may list all the *in progress* features available on each io.js release by grepping through the `--v8-options` argument. Please note that these are incomplete and possibly broken features of V8, so use them at your own risk:
+Listen over alle funksjoner som er *under utvikling* og er tilgjengelig i en io.js utgivelse kan listes ut med `--v8-options` argumentet. Vær oppmerksom på at dette er uferdige funksjoner og muligens funksjoner med feil, bruk dem på eget ansvar:
 
 ```sh
 iojs --v8-options | grep "in progress"
