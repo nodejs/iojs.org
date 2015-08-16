@@ -22,7 +22,7 @@
 
 ### Dependencies
 ```
-git clone https://github.com/nodejs/website.git
+git clone https://github.com/nodejs/iojs.org.git
 npm install
 ```
 
