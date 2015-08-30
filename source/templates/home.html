@@ -19,7 +19,7 @@
       <a href="{{project.current_version_downloads.all}}">{{hb 'verbose_version'}}</a>
     </p>
     <p class="home-download-list">
-      {{hb 'home.download_links'}}
+        <a href="https://iojs.org/dist/latest/" class="home-download-button" id="home-downloadbutton" data-version="{{project.current_version}}" data-dl-local="{{hb 'home.download_for'}}">{{hb 'home.download_button'}}</a>
     </p>
     <p>
     {{#if i18n.home.custom_changelog}}
@@ -27,6 +27,8 @@
     {{~^~}}
       {{link 'pages.changelog'}}
     {{/if}}
+        &nbsp;&nbsp;&nbsp;
+      <a href="https://iojs.org/dist/latest/">{{hb 'downloads.all'}}</a>
     </p>
   </div>
 </div>
@@ -41,3 +43,5 @@
   <p>{{hb 'home.nightly_releases'}}</p>
   <p>{{hb 'home.faq_verbose'}}</p>
 </div>
+
+<script src="/js/download.js" charset="utf-8"></script>

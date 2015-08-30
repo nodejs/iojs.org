@@ -18,10 +18,12 @@
     "win32": "Win32",
     "win64": "Win64",
     "mac": "Mac",
-    "all": "Others"
+    "all": "Other Downloads"
   },
   "verbose_version": "Version {{project.current_version}}",
   "home": {
+    "download_button": "Download",
+    "download_for": "Download for",
     "download_links": "Download for {{> current_download_links}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
     "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} are available for testing,<br> also {{link 'nightlies for the next major version' 'https://iojs.org/download/next-nightly/'}} of io.js.",
