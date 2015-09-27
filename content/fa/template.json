@@ -1,23 +1,23 @@
 {
   "isRTL": true,
   "browser-title": "io.js - JavaScript I/O",
-  "contribute-message": "See something you like? Want to help? Visit https://github.com/nodejs/website to contribute",
+  "contribute-message": "از چیزی خوشتان آمده است؟ می‌خواهید کمک کنید؟ این صفحه را ببینید https://github.com/nodejs/website to contribute",
   "heading-languages": "زبان‌ها",
   "logo-text": "io.js",
   "roadmap-url": "http://roadmap.iojs.org",
   "roadmap-link": "نقشهٔ راه",
   "faq-link": "پرسشگان",
   "es6-link": "ES6",
-  "api-link": "API Docs",
-  "issues-link": "GitHub Issues",
-  "org-link": "GitHub Org",
-  "irc-link": "IRC Chat",
+  "api-link": "مستندات رابط برنامه‌نویسی",
+  "issues-link": "مشکلات در گیت‌هاب",
+  "org-link": "سازمان در گیت‌هاب",
+  "irc-link": "گپ آی‌آر‌سی",
   "irc-logs-link": "سیاهه‌ها",
   "gov-link": "اداره",
   "downloads": {
     "linux": "لینوکس",
-    "win32": "Win32",
-    "win64": "Win64",
+    "win32": "ویندوز ۳۲ بیت",
+    "win64": "ویندوز ۶۴ بیت",
     "mac": "مک",
     "all": "سایر"
   },
@@ -25,10 +25,10 @@
   "home": {
     "download_links": "دریافت برای {{> current_download_links}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
-    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} برای آزمایش در دسترس می‌باشد.",
+    "nightly_releases": "{{link 'انتشار‌های شبانه' 'https://iojs.org/download/nightly/'}} برای آزمایش در دسترس می‌باشد.",
     "short_description": "{{link 'website'}} یک سکوی سازگار با {{link 'npm'}} برپایهٔ {{link 'nodejs'}} می‌باشد.",
     "slogan": "آوردن {{link 'pages.es6'}} به جامعهٔ Node!",
-    "news_link": "{{link 'Weekly Update – June 26th' 'https://medium.com/@iojs/io-js-week-of-june-26th-51ab30238256'}}<br><small>featuring core and community updates ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
+    "news_link": "{{link 'بروزرسانی هفتگی – ۲۶ ژوئن' 'https://medium.com/@iojs/io-js-week-of-june-26th-51ab30238256'}}<br><small>شامل بروزرسانی‌های هسته و جامعه کاربری ({{link 'بایگانی اخبار در Medium' 'https://medium.com/@iojs/latest'}})</small>"
   },
   "releases": {
     "title": "تاریخچهٔ انتشار io.js",
@@ -39,12 +39,12 @@
     "npm": "npm",
     "website": "io.js",
     "pages": {
-      "changelog": "سیاهٔ تغییرات",
-      "releases": "Releases",
+      "changelog": "سیاههٔ تغییرات",
+      "releases": "انتشار‌ها",
       "home": "خانه",
       "es6": "ES6",
       "faq": "پرسشگان",
-      "faq_verbose": "Frequently Asked Questions"
+      "faq_verbose": "پاسخ پرسش‌های متداول"
     },
     "rss": [
       {
