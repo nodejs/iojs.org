@@ -1,7 +1,7 @@
 {
   "isRTL": true,
   "browser-title": "io.js - JavaScript I/O",
-  "contribute-message": "See something you like? Want to help? Visit https://github.com/nodejs/website to contribute",
+  "contribute-message": "از چیزی خوشتان آمده است؟ می‌خواهید کمک کنید؟ این صفحه را ببینید https://github.com/nodejs/website to contribute",
   "heading-languages": "زبان‌ها",
   "logo-text": "io.js",
   "roadmap-url": "http://roadmap.iojs.org",
@@ -16,8 +16,8 @@
   "gov-link": "اداره",
   "downloads": {
     "linux": "لینوکس",
-    "win32": "Win32",
-    "win64": "Win64",
+    "win32": "ویندوز ۳۲ بیت",
+    "win64": "ویندوز ۶۴ بیت",
     "mac": "مک",
     "all": "سایر"
   },
@@ -40,7 +40,7 @@
     "website": "io.js",
     "pages": {
       "changelog": "سیاهٔ تغییرات",
-      "releases": "Releases",
+      "releases": "توزیع‌ها",
       "home": "خانه",
       "es6": "ES6",
       "faq": "پرسشگان",
