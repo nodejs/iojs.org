@@ -56,6 +56,6 @@
   },
   "deprecation": {
     "title": "io.js has merged with the Node.js project again.",
-    "content": "There won't be any further separate io.js releases, all of io.js' features are available in Node.js v4 and above.<br>{{link 'Visit nodejs.org' 'https://nodejs.org'}} {{link 'Download latest Node.js version' 'https://nodejs.org/en/download/'}}"
+    "content": "There won't be any further separate io.js releases (except for critical security fixes). All of the features in io.js are available in Node.js v4 and above.<br>{{link 'Visit nodejs.org' 'https://nodejs.org'}} {{link 'Download latest Node.js version' 'https://nodejs.org/en/download/'}}"
   }
 }
