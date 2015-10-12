@@ -19,5 +19,43 @@
     "win64": "Win64",
     "mac": "Mac",
     "all": "Altro"
+  },
+  "verbose_version": "Versione {{project.current_version}}",
+  "home": {
+    "download_button": "Download",
+    "download_for": "Download per",
+    "download_links": "Download per {{> current_download_links}}",
+    "faq_verbose": "{{link 'pages.faq_verbose'}}",
+    "nightly_releases": "Sono disponibili le {{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} per essere testate,<br> anche le {{link 'nightly per la prossima versione maggiore' 'https://iojs.org/download/next-nightly/'}} di io.js.",
+    "short_description": "{{link 'website'}} è una piattaforma compatibile con {{link 'npm'}} basata originariamente su {{link 'nodejs'}}.",
+    "slogan": "{{link 'pages.es6'}} per la Comunità Node!",
+    "news_link": "{{link 'Aggiornamento settimanale – 18 settembre' 'https://medium.com/node-js-javascript/node-js-news-september-18th-c879f372abd7'}}<br><small>con aggiornamenti core e comunitari ({{link 'Archivio delle news su Medium' 'https://medium.com/@iojs/latest'}})</small>"
+  },
+  "releases": {
+    "title": "Cronologia delle release di io.js",
+    "downloads": "Download"
+  },
+  "links": {
+    "nodejs": "Node.js™",
+    "npm": "npm",
+    "website": "io.js",
+    "pages": {
+      "changelog": "Changelog",
+      "releases": "Release",
+      "home": "Home",
+      "es6": "ES6",
+      "faq": "FAQ",
+      "faq_verbose": "Domande frequenti"
+    },
+    "rss": [
+      {
+        "title": "Aggiornamenti settimanali (Medium)",
+        "url": "https://medium.com/feed/@iojs"
+      }
+    ]
+  },
+  "deprecation": {
+    "title": "io.js si è riunito con il progetto Node.js.",
+    "content": "Non vi saranno ulteriori release separate di io.js (eccetto per fix di sicurezza critici). Tutte le funzioni di io.js sono disponibili in Node.js v4 e superiori.<br>{{link 'Visita nodejs.org' 'https://nodejs.org'}} {{link \"Scarica l'ultima versione di Node.js\" 'https://nodejs.org/en/download/'}}"
   }
 }
