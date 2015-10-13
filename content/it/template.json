@@ -29,7 +29,7 @@
     "nightly_releases": "Sono disponibili le {{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} per essere testate,<br> anche le {{link 'nightly per la prossima versione maggiore' 'https://iojs.org/download/next-nightly/'}} di io.js.",
     "short_description": "{{link 'website'}} è una piattaforma compatibile con {{link 'npm'}} basata originariamente su {{link 'nodejs'}}.",
     "slogan": "{{link 'pages.es6'}} per la Comunità Node!",
-    "news_link": "{{link 'Aggiornamento settimanale – 18 settembre' 'https://medium.com/node-js-javascript/node-js-news-september-18th-c879f372abd7'}}<br><small>con aggiornamenti core e comunitari ({{link 'Archivio delle news su Medium' 'https://medium.com/@iojs/latest'}})</small>"
+    "news_link": "{{link 'Aggiornamento settimanale – 18 settembre' 'https://medium.com/node-js-javascript/node-js-news-september-18th-c879f372abd7'}}<br><small>con aggiornamenti di base e comunitari ({{link 'Archivio delle news su Medium' 'https://medium.com/@iojs/latest'}})</small>"
   },
   "releases": {
     "title": "Cronologia delle release di io.js",
