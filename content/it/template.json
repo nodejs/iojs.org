@@ -56,6 +56,6 @@
   },
   "deprecation": {
     "title": "io.js si è riunito con il progetto Node.js.",
-    "content": "Non vi saranno ulteriori release separate di io.js (eccetto per fix di sicurezza critici). Tutte le funzioni di io.js sono disponibili in Node.js v4 e superiori.<br>{{link 'Visita nodejs.org' 'https://nodejs.org'}} {{link \"Scarica l'ultima versione di Node.js\" 'https://nodejs.org/en/download/'}}"
+    "content": "Non vi saranno ulteriori release di io.js. Tutte le funzioni di io.js sono disponibili in Node.js v4 e superiori.<br>{{link 'Visita nodejs.org' 'https://nodejs.org'}} {{link \"Scarica l'ultima versione di Node.js\" 'https://nodejs.org/en/download/'}}"
   }
 }
