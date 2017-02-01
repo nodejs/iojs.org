@@ -25,7 +25,7 @@
     "download_links": "Herunterladen für {{> current_download_links}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
     "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} stehen zum Testen zur Verfügung.",
-    "short_description": "{{link 'website'}} ist eine {{link 'npm'}}-kompatible Plattform, die ursprünglich auf {{link 'nodejs'}} basiert.",
+    "short_description": "{{link 'website'}} ist eine {{link 'npm'}}-kompatible Plattform, die ursprünglich auf {{link 'nodejs'}} basiert ist.",
     "slogan": "{{link 'pages.es6'}} für die Node-Community!"
   },
   "releases": {
