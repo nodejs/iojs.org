@@ -1,37 +1,39 @@
 {
-  "browser-title":"io.js - JavaScript I/O",
-  "contribute-message": "Thấy những thứ mà bạn thích? Bạn muốn giúp đỡ? Hãy đến https://github.com/nodejs/website to contribute",
+  "browser-title": "io.js - JavaScript I/O",
+  "contribute-message": "Đây là một trong những thứ mà bạn thích? Bạn muốn đóng góp? Hãy đến https://github.com/nodejs/website",
   "heading-languages": "Languages",
-  "logo-text":"io.js",
+  "logo-text": "io.js",
   "roadmap-url": "http://roadmap.iojs.org",
   "roadmap-link": "Roadmap",
-  "faq-link":"FAQ",
-  "es6-link":"ES6",
-  "api-link":"Tài liệu API",
-  "issues-link":"GitHub Issues",
-  "org-link":"GitHub Org",
-  "irc-link":"IRC Chat",
-  "irc-logs-link":"Logs",
-  "gov-link":"Quản Trị",
+  "faq-link": "FAQ",
+  "es6-link": "ES6",
+  "api-link": "Tài liệu API",
+  "issues-link": "GitHub Issues",
+  "org-link": "GitHub Org",
+  "irc-link": "IRC Chat",
+  "irc-logs-link": "Logs",
+  "gov-link": "Governance",
   "downloads": {
     "linux": "Linux",
     "win32": "Win32",
     "win64": "Win64",
     "mac": "Mac",
-    "all": "Others"
+    "all": "Các phiên bản khác"
   },
-  "verbose_version": "Version {{project.current_version}}",
+  "verbose_version": "Phiên phản {{project.current_version}}",
   "home": {
-    "download_links": "Download for {{> current_download_links}}",
+    "download_button": "Tải về",
+    "download_for": "Tải về cho",
+    "download_links": "Tải về cho {{> current_download_links}}",
     "faq_verbose": "{{link 'pages.faq_verbose'}}",
-    "nightly_releases": "{{link 'Nightly releases' 'https://iojs.org/download/nightly/'}} đã sẵn sàng để tải về,<br> Và {{link 'các bản nightly' 'https://iojs.org/download/next-nightly/'}} cho phiên bản chính thức tiếp theo của io.js.",
-    "short_description": "{{link 'website'}} được phát triển dựa trên {{link 'nodejs'}} và tương thích với nền tảng {{link 'npm'}} .",
-    "slogan": "Mang {{link 'pages.es6'}} đến với cộng đồng Node!",
-    "news_link": "{{link 'Weekly Update – June 26th' 'http://iojs-vi.com/weekly/2015/07/03/weekly-update.html'}}<br><small>({{link 'Các tin tức mới' 'http://iojs-vi.com'}})</small>"
+    "nightly_releases": "{{link 'các phiên bản Nightly' 'https://iojs.org/download/nightly/'}} đã sẳn sàng cho việc dùng thử,<br> cũng như {{link 'các phiên bản nightly của các phiên bản chính thức tiếp theo' 'https://iojs.org/download/next-nightly/'}} của io.js.",
+    "short_description": "{{link 'website'}} dựa trên {{link 'nodejs'}}  {{link 'npm'}}.",
+    "slogan": "Mang {{link 'pages.es6'}} đến Cộng đồng Node!",
+    "news_link": "{{link 'Weekly Update – September 18th' 'https://medium.com/node-js-javascript/node-js-news-september-18th-c879f372abd7'}}<br><small>cập nhật tin tức về các tính năng chính và công đồng ({{link 'News Archive on Medium' 'https://medium.com/@iojs/latest'}})</small>"
   },
   "releases": {
-    "title": "io.js Release History",
-    "downloads": "Downloads"
+    "title": "Lịch sử phát hành các phiên bản io.js",
+    "downloads": "Tải về"
   },
   "links": {
     "nodejs": "Node.js™",
@@ -39,17 +41,21 @@
     "website": "io.js",
     "pages": {
       "changelog": "Changelog",
-      "releases": "Releases",
-      "home": "Home",
+      "releases": "Các phiên bản chính thức",
+      "home": "Trang chủ",
       "es6": "ES6",
       "faq": "FAQ",
-      "faq_verbose": "Câu hỏi thường gặp"
+      "faq_verbose": "Các câu hỏi thường gặp"
     },
     "rss": [
       {
-        "title": "Weekly Updates (Medium)",
+        "title": "Các cập nhật hàng tuần (Medium)",
         "url": "https://medium.com/feed/@iojs"
       }
     ]
+  },
+  "deprecation": {
+    "title": "Một lần nữa, io.js đã được hợp nhất với dự án Node.js",
+    "content": "Điều này có nghĩa là, sẽ không có bất kì phiên bản io.js nào được phát hành trong tương lai. Tất cả các tính năng của io.js hiện đã có mặt trong Node.js v4 trở đi (version 4+).<br>{{link 'Truy cập trang nodejs.org' 'https://nodejs.org'}} {{link 'Tải về phiên bản mới nhất của Node.js' 'https://nodejs.org/en/download/'}}"
   }
 }
